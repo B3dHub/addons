@@ -178,7 +178,7 @@ export default function QuickBakerPage() {
         <CardContent>
           <Image
             className="rounded-lg"
-            src="/images/quick-baker/object_bake.gif"
+            src="./images/quick-baker/object_bake.gif"
             alt=""
             width={1024}
             height={1024}
@@ -196,7 +196,7 @@ export default function QuickBakerPage() {
         <CardContent>
           <Image
             className="rounded-lg"
-            src="/images/quick-baker/high_to_low_bake.gif"
+            src="./images/quick-baker/high_to_low_bake.gif"
             alt=""
             width={1024}
             height={1024}
@@ -214,7 +214,7 @@ export default function QuickBakerPage() {
         <CardContent>
           <Image
             className="rounded-lg"
-            src="/images/quick-baker/single_texture_set.gif"
+            src="./images/quick-baker/single_texture_set.gif"
             alt=""
             width={1024}
             height={1024}
@@ -232,7 +232,7 @@ export default function QuickBakerPage() {
         <CardContent>
           <Image
             className="rounded-lg"
-            src="/images/quick-baker/multiple_texture_set.gif"
+            src="./images/quick-baker/multiple_texture_set.gif"
             alt=""
             width={1024}
             height={1024}
@@ -250,7 +250,7 @@ export default function QuickBakerPage() {
         <CardContent>
           <Image
             className="rounded-lg"
-            src="/images/quick-baker/auto_cage.gif"
+            src="./images/quick-baker/auto_cage.gif"
             alt=""
             width={1024}
             height={1024}
@@ -268,7 +268,7 @@ export default function QuickBakerPage() {
         <CardContent>
           <Image
             className="rounded-lg"
-            src="/images/quick-baker/auto_udim_bake.gif"
+            src="./images/quick-baker/auto_udim_bake.gif"
             alt=""
             width={1024}
             height={1024}
@@ -286,7 +286,7 @@ export default function QuickBakerPage() {
         <CardContent>
           <Image
             className="rounded-lg"
-            src="/images/quick-baker/channel_packing.gif"
+            src="./images/quick-baker/channel_packing.gif"
             alt=""
             width={1024}
             height={1024}
@@ -304,7 +304,7 @@ export default function QuickBakerPage() {
         <CardContent>
           <Image
             className="rounded-lg"
-            src="/images/quick-baker/vertex_color_material_id.gif"
+            src="./images/quick-baker/vertex_color_material_id.gif"
             alt=""
             width={1024}
             height={1024}
@@ -320,7 +320,7 @@ export default function QuickBakerPage() {
         <CardContent>
           <Image
             className="rounded-lg"
-            src="/images/quick-baker/existing_texture_bake.gif"
+            src="./images/quick-baker/existing_texture_bake.gif"
             alt=""
             width={1024}
             height={1024}
@@ -338,7 +338,7 @@ export default function QuickBakerPage() {
         <CardContent>
           <Image
             className="rounded-lg"
-            src="/images/quick-baker/map_preview.gif"
+            src="./images/quick-baker/map_preview.gif"
             alt=""
             width={1024}
             height={1024}
@@ -354,7 +354,7 @@ export default function QuickBakerPage() {
         <CardContent>
           <Image
             className="rounded-lg"
-            src="/images/quick-baker/node_bake.gif"
+            src="./images/quick-baker/node_bake.gif"
             alt=""
             width={1024}
             height={1024}
@@ -370,7 +370,7 @@ export default function QuickBakerPage() {
         <CardContent>
           <Image
             className="rounded-lg"
-            src="/images/quick-baker/node_bake.gif"
+            src="./images/quick-baker/node_bake.gif"
             alt=""
             width={1024}
             height={1024}
@@ -388,7 +388,7 @@ export default function QuickBakerPage() {
         <CardContent>
           <Image
             className="rounded-lg"
-            src="/images/quick-baker/udim_node_bake.gif"
+            src="./images/quick-baker/udim_node_bake.gif"
             alt=""
             width={1024}
             height={1024}
@@ -404,7 +404,7 @@ export default function QuickBakerPage() {
         <CardContent>
           <Image
             className="rounded-lg"
-            src="/images/quick-baker/maps.png"
+            src="./images/quick-baker/maps.png"
             alt=""
             width={1024}
             height={1024}
@@ -420,7 +420,7 @@ export default function QuickBakerPage() {
         <CardContent>
           <Image
             className="rounded-lg"
-            src="/images/quick-baker/maps.png"
+            src="./images/quick-baker/maps.png"
             alt=""
             width={1024}
             height={1024}
