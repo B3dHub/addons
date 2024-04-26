@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 
 export default function QuickBakerPage() {
   return (
-    <div className="mx-5 my-5 flex flex-col justify-center gap-5 max-w-4xl">
+    <div className="px-5 my-5 flex flex-col justify-center gap-5">
       <Card>
         <CardHeader>
           <CardTitle>Introduction</CardTitle>
