@@ -18,7 +18,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
 import Support from "@/components/support";
 import OtherAddons from "@/components/other-addons";
@@ -32,17 +32,19 @@ export const metadata: Metadata = {
 
 export default function QuickDecalPage() {
   return (
-    <div className="px-5 my-5 flex flex-col justify-center gap-5">
+    <div className="mx-auto px-5 my-5 flex flex-col justify-center gap-5 w-[688px]">
       <Card>
         <CardHeader>
           <CardTitle>Introduction</CardTitle>
           <CardDescription>
-            Quick Baker is a PBR texture-baking addon that uses the native
-            Blender baking operator for baking PBR texture, and mask maps. The
-            addon extends the Blender baking process for multiple objects with
-            multiple maps. It can bake objects and high to low-poly objects with
-            multiple maps. It makes high to low-poly baking very simple and easy
-            with a click cage setup.
+            Quick Decal is a simple, yet powerful, addon that allows you to add
+            decals to your models. It uses a controller empty to add decals
+            without introducing extra geometry to your model. This is achieved
+            by blending your existing material with the Quick Decal material.
+          </CardDescription>
+          <CardDescription>
+            It supports multiple objects and materials. It works in both Eevee
+            and Cycles render engines.
           </CardDescription>
         </CardHeader>
         {/* <CardContent>
@@ -52,112 +54,90 @@ export default function QuickDecalPage() {
       </Card>
       <Card>
         <CardHeader>
-          <CardTitle>Why to choose Quick Baker?</CardTitle>
-          <CardDescription>Quick Baker vs Others</CardDescription>
+          <CardTitle>Why to choose Quick Decal?</CardTitle>
+          <CardDescription>Quick Decal vs Others</CardDescription>
         </CardHeader>
         <CardContent>
           <Table>
-            {/* <TableCaption>A list of your recent invoices.</TableCaption> */}
+            {/* <TableCaption>
+              More features in the future based on requests.
+            </TableCaption> */}
             <TableHeader>
               <TableRow>
                 <TableHead>Features</TableHead>
-                <TableHead className="text-center">Quick Baker</TableHead>
+                <TableHead className="text-center">Quick Decal</TableHead>
                 <TableHead className="text-center">Others</TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
               <TableRow>
-                <TableCell className="font-medium">Object Bake</TableCell>
+                <TableCell className="font-medium">Image Decal</TableCell>
                 <TableCell className="text-center">✅</TableCell>
                 <TableCell className="text-center">✅</TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">
-                  High-to-Low Poly Bake
-                </TableCell>
-                <TableCell className="text-center">✅</TableCell>
-                <TableCell className="text-center">✅</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">
-                  Single Texture Set
+                  Quixel Megascans Decal
                 </TableCell>
                 <TableCell className="text-center">✅</TableCell>
                 <TableCell className="text-center">⚠️</TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">
-                  Multiple Texture Set
+                  Multiple Objects and Materials
                 </TableCell>
                 <TableCell className="text-center">✅</TableCell>
                 <TableCell className="text-center">⚠️</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">Auto Cage</TableCell>
+                <TableCell className="font-medium">PBR Decal</TableCell>
                 <TableCell className="text-center">✅</TableCell>
                 <TableCell className="text-center">⚠️</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">Auto UDIM Bake</TableCell>
+                <TableCell className="font-medium">Decal Layer</TableCell>
                 <TableCell className="text-center">✅</TableCell>
                 <TableCell className="text-center">⚠️</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">Channel Packing</TableCell>
+                <TableCell className="font-medium">Layer Controller</TableCell>
                 <TableCell className="text-center">✅</TableCell>
                 <TableCell className="text-center">⚠️</TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">
-                  Vertex Color for Material ID
+                  Layer Controller Type
                 </TableCell>
                 <TableCell className="text-center">✅</TableCell>
                 <TableCell className="text-center">⚠️</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">
-                  Existing Texture Bake
-                </TableCell>
+                <TableCell className="font-medium">Layer Opacity</TableCell>
                 <TableCell className="text-center">✅</TableCell>
                 <TableCell className="text-center">⚠️</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">Map Preview</TableCell>
+                <TableCell className="font-medium">Layer Wear</TableCell>
                 <TableCell className="text-center">✅</TableCell>
                 <TableCell className="text-center">⚠️</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">Material Bake</TableCell>
+                <TableCell className="font-medium">Layer Maps</TableCell>
                 <TableCell className="text-center">✅</TableCell>
                 <TableCell className="text-center">⚠️</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">Node Bake</TableCell>
+                <TableCell className="font-medium">Auto Snap</TableCell>
                 <TableCell className="text-center">✅</TableCell>
                 <TableCell className="text-center">⚠️</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">UDIM Node Bake</TableCell>
+                <TableCell className="font-medium">Auto Parent</TableCell>
                 <TableCell className="text-center">✅</TableCell>
                 <TableCell className="text-center">⚠️</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">Post Bake Options</TableCell>
-                <TableCell className="text-center">✅</TableCell>
-                <TableCell className="text-center">⚠️</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">50 Unique Maps</TableCell>
-                <TableCell className="text-center">✅</TableCell>
-                <TableCell className="text-center">⚠️</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Map Presets</TableCell>
-                <TableCell className="text-center">✅</TableCell>
-                <TableCell className="text-center">⚠️</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Bake Presets</TableCell>
+                <TableCell className="font-medium">Auto Resize</TableCell>
                 <TableCell className="text-center">✅</TableCell>
                 <TableCell className="text-center">⚠️</TableCell>
               </TableRow>
@@ -166,299 +146,239 @@ export default function QuickDecalPage() {
                 <TableCell className="text-center">✅</TableCell>
                 <TableCell className="text-center">⚠️</TableCell>
               </TableRow>
+              <TableRow>
+                <TableCell className="font-medium">
+                  Quick Baker Compatible
+                </TableCell>
+                <TableCell className="text-center">✅</TableCell>
+                <TableCell className="text-center"></TableCell>
+              </TableRow>
             </TableBody>
           </Table>
         </CardContent>
       </Card>
       <Card>
         <CardHeader>
-          <CardTitle>Object Bake</CardTitle>
-          <CardDescription>Bake single or multiple objects.</CardDescription>
+          <CardTitle>Image Decal</CardTitle>
+          <CardDescription>How to use image decals?</CardDescription>
         </CardHeader>
+        <CardContent>
+          <CardDescription>
+            You need to add the custom decal library path in the preferences,
+            under the Libraries section. Once you've added the path, the addon
+            will display the decals in the Decals panel under the{" "}
+            <span className="text-primary">Custom</span> section.
+          </CardDescription>
+        </CardContent>
         <CardContent>
           <Image
             className="rounded-lg"
-            src="./images/quick-baker/object_bake.gif"
+            src="./images/quick-decal/custom_decals.gif"
             alt=""
-            width={1024}
-            height={1024}
+            width={600}
+            height={325}
+            unoptimized
+          />
+        </CardContent>
+        <CardContent>
+          <CardDescription>
+            If you don't have any images in the specified path, you can load the
+            decals. Once the decals are loaded, they will be saved in the custom
+            decal library path for future use.
+          </CardDescription>
+        </CardContent>
+        <CardContent>
+          <Image
+            className="rounded-lg"
+            src="./images/quick-decal/quick_decal_custom_load_add.gif"
+            alt=""
+            width={600}
+            height={325}
             unoptimized
           />
         </CardContent>
       </Card>
+
       <Card>
         <CardHeader>
-          <CardTitle>High-to-Low Poly Bake</CardTitle>
+          <CardTitle>Quixel Megascans Decal</CardTitle>
+          <CardDescription>How to use Quixel Megascans decals?</CardDescription>
+        </CardHeader>
+        <CardContent>
           <CardDescription>
-            Bake high-to-low or low-to-low objects.
+            Follow the instructions to add the downloaded Megascans library path
+            in the preferences, under the Libraries section. Once you've added
+            the path, the addon will attempt to read the{" "}
+            <span className="text-primary">assetsData.json</span> file (ensure
+            it exists). Then, you can view the Megascans decals, along with
+            their categories and subcategories, in the Decals panel under the{" "}
+            <span className="text-primary">Megascans</span> section.
+          </CardDescription>
+        </CardContent>
+        <CardContent>
+          <CardDescription>
+            Download decals from{" "}
+            <Link
+              href={"https://quixel.com/bridge"}
+              className="underline text-primary"
+            >
+              Quixel Bridge
+            </Link>
+          </CardDescription>
+        </CardContent>
+        <CardContent>
+          <Image
+            className="rounded-lg"
+            src="./images/quick-decal/megascans_decals.gif"
+            alt=""
+            width={600}
+            height={325}
+            unoptimized
+          />
+        </CardContent>
+        <CardContent>
+          <Image
+            className="rounded-lg"
+            src="./images/quick-decal/megascans_decals_2.gif"
+            alt=""
+            width={600}
+            height={325}
+            unoptimized
+          />
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle>Multiple Objects and Materials</CardTitle>
+          <CardDescription>
+            The addon supports multiple objects and materials.
           </CardDescription>
         </CardHeader>
         <CardContent>
           <Image
             className="rounded-lg"
-            src="./images/quick-baker/high_to_low_bake.gif"
+            src="./images/quick-decal/multiple_obj_mat_decal.gif"
             alt=""
-            width={1024}
-            height={1024}
+            width={600}
+            height={325}
+            unoptimized
+          />
+        </CardContent>
+        <CardContent>
+          <CardDescription>
+            You can use the hotkeys{" "}
+            <span className="text-foreground">Shift</span> and{" "}
+            <span className="text-foreground">Ctrl</span> for quick access.
+          </CardDescription>
+        </CardContent>
+        <CardContent>
+          <Image
+            className="rounded-lg"
+            src="./images/quick-decal/hotkeys.png"
+            alt=""
+            width={600}
+            height={325}
             unoptimized
           />
         </CardContent>
       </Card>
+
       <Card>
         <CardHeader>
-          <CardTitle>Single Texture Set</CardTitle>
+          <CardTitle>Decal Layer</CardTitle>
           <CardDescription>
-            Bake multiple objects and materials into single texture set.
+            Layers are the decal layers of an object. They can be arranged in
+            ascending or descending order, and can also be removed.
           </CardDescription>
         </CardHeader>
         <CardContent>
           <Image
             className="rounded-lg"
-            src="./images/quick-baker/single_texture_set.gif"
+            src="./images/quick-decal/decal_layers.gif"
             alt=""
-            width={1024}
-            height={1024}
+            width={600}
+            height={325}
             unoptimized
           />
         </CardContent>
       </Card>
+
       <Card>
         <CardHeader>
-          <CardTitle>Multiple Texture Set</CardTitle>
+          <CardTitle>Layer Wear</CardTitle>
           <CardDescription>
-            Bake multiple objects and materials into separate texture set.
+            Quickly add wear and tear to the decal layer.
           </CardDescription>
         </CardHeader>
         <CardContent>
           <Image
             className="rounded-lg"
-            src="./images/quick-baker/multiple_texture_set.gif"
+            src="./images/quick-decal/decal_wear.gif"
             alt=""
-            width={1024}
-            height={1024}
+            width={600}
+            height={325}
             unoptimized
           />
         </CardContent>
       </Card>
+
       <Card>
         <CardHeader>
-          <CardTitle>Auto Cage</CardTitle>
+          <CardTitle>Quick Baker Compatible</CardTitle>
           <CardDescription>
-            Automatically create/adjust cage objects for high-to-low bake.
+            This addon is compatible with our other addon,{" "}
+            <Link
+              href={"https://blendermarket.com/products/quick-baker"}
+              className="underline text-primary"
+            >
+              Quick Baker
+            </Link>
+            .
           </CardDescription>
         </CardHeader>
         <CardContent>
           <Image
             className="rounded-lg"
-            src="./images/quick-baker/auto_cage.gif"
+            src="./images/quick-decal/quick_decal_baker.gif"
             alt=""
-            width={1024}
-            height={1024}
+            width={600}
+            height={325}
             unoptimized
           />
         </CardContent>
       </Card>
+
       <Card>
         <CardHeader>
-          <CardTitle>Auto UDIM Bake</CardTitle>
+          <CardTitle>Caution</CardTitle>
           <CardDescription>
-            Automatically bake UDIM maps based on UV layout.
+            Do not edit or remove the{" "}
+            <span className="text-foreground">QDecal Master</span> node group
+            and its child nodes.
           </CardDescription>
         </CardHeader>
         <CardContent>
           <Image
             className="rounded-lg"
-            src="./images/quick-baker/auto_udim_bake.gif"
+            src="./images/quick-decal/master_node_group.png"
             alt=""
-            width={1024}
-            height={1024}
+            width={600}
+            height={325}
             unoptimized
           />
         </CardContent>
       </Card>
-      <Card>
-        <CardHeader>
-          <CardTitle>Channel Packing</CardTitle>
-          <CardDescription>
-            Pack multiple maps into one image (ideal for game engines).
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          <Image
-            className="rounded-lg"
-            src="./images/quick-baker/channel_packing.gif"
-            alt=""
-            width={1024}
-            height={1024}
-            unoptimized
-          />
-        </CardContent>
-      </Card>
-      <Card>
-        <CardHeader>
-          <CardTitle>Vertex Color for Material ID</CardTitle>
-          <CardDescription>
-            Create vertex color for material id map.
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          <Image
-            className="rounded-lg"
-            src="./images/quick-baker/vertex_color_material_id.gif"
-            alt=""
-            width={1024}
-            height={1024}
-            unoptimized
-          />
-        </CardContent>
-      </Card>
-      <Card>
-        <CardHeader>
-          <CardTitle>Existing Texture Bake</CardTitle>
-          <CardDescription>Bake on existing texture map.</CardDescription>
-        </CardHeader>
-        <CardContent>
-          <Image
-            className="rounded-lg"
-            src="./images/quick-baker/existing_texture_bake.gif"
-            alt=""
-            width={1024}
-            height={1024}
-            unoptimized
-          />
-        </CardContent>
-      </Card>
-      <Card>
-        <CardHeader>
-          <CardTitle>Map Preview</CardTitle>
-          <CardDescription>
-            Preview maps before baking (e.g. AO, Curvature, etc).
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          <Image
-            className="rounded-lg"
-            src="./images/quick-baker/map_preview.gif"
-            alt=""
-            width={1024}
-            height={1024}
-            unoptimized
-          />
-        </CardContent>
-      </Card>
-      {/* <Card>
-        <CardHeader>
-          <CardTitle>Material Bake</CardTitle>
-          <CardDescription>Bake material onto plane.</CardDescription>
-        </CardHeader>
-        <CardContent>
-          <Image
-            className="rounded-lg"
-            src="./images/quick-baker/node_bake.gif"
-            alt=""
-            width={1024}
-            height={1024}
-            unoptimized
-          />
-        </CardContent>
-      </Card> */}
-      <Card>
-        <CardHeader>
-          <CardTitle>Node Bake</CardTitle>
-          <CardDescription>Bake shader nodes into image.</CardDescription>
-        </CardHeader>
-        <CardContent>
-          <Image
-            className="rounded-lg"
-            src="./images/quick-baker/node_bake.gif"
-            alt=""
-            width={1024}
-            height={1024}
-            unoptimized
-          />
-        </CardContent>
-      </Card>
-      <Card>
-        <CardHeader>
-          <CardTitle>UDIM Node Bake</CardTitle>
-          <CardDescription>
-            Bake shader nodes into image for UDIM object.
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          <Image
-            className="rounded-lg"
-            src="./images/quick-baker/udim_node_bake.gif"
-            alt=""
-            width={1024}
-            height={1024}
-            unoptimized
-          />
-        </CardContent>
-      </Card>
-      {/* <Card>
-        <CardHeader>
-          <CardTitle>Post Bake</CardTitle>
-          <CardDescription>Post bake options</CardDescription>
-        </CardHeader>
-        <CardContent>
-          <Image
-            className="rounded-lg"
-            src="./images/quick-baker/maps.png"
-            alt=""
-            width={1024}
-            height={1024}
-            unoptimized
-          />
-        </CardContent>
-      </Card> */}
-      <Card>
-        <CardHeader>
-          <CardTitle>50 Unique Maps</CardTitle>
-          <CardDescription>Bake 50 unique maps</CardDescription>
-        </CardHeader>
-        <CardContent>
-          <Image
-            className="rounded-lg"
-            src="./images/quick-baker/maps.png"
-            alt=""
-            width={1024}
-            height={1024}
-            unoptimized
-          />
-        </CardContent>
-      </Card>
-      <Card>
-        <CardHeader>
-          <CardTitle>Limitations</CardTitle>
-          <CardDescription></CardDescription>
-        </CardHeader>
-        <CardContent>
-          <CardDescription>
-            Only works with{" "}
-            <span className="text-foreground">Principled BSDF, Mix Shader</span>
-            , and <span className="text-foreground">Add Shader</span> nodes.
-          </CardDescription>
-        </CardContent>
-        <CardFooter>
-          <CardDescription>
-            If you encounter the{" "}
-            <span className="text-foreground">'Out of Memory'</span> error you
-            should lower the processes count to 1-2 in the Global Bake panel.
-            The higher process count is useful when baking low-resolution maps
-            (e.g. 1K).
-          </CardDescription>
-        </CardFooter>
-      </Card>
+
       <Support>
         <CardFooter className="space-x-4">
-          <Link href="https://b3dhub.github.io/quick-baker-docs/">
+          <Link href="https://blendermarket.com/products/quick-decal/docs">
             <Button variant={"secondary"}>Documentation</Button>
           </Link>
           <Link href="https://discord.gg/sdnHHZpWbT">
             <Button variant={"secondary"}>Discord</Button>
           </Link>
-          <Link href="https://discord.com/channels/959138815602229389/1013054795562614794">
+          <Link href="https://discord.com/channels/959138815602229389/1223542106539167754">
             <Button variant={"secondary"}>Changelogs</Button>
           </Link>
         </CardFooter>

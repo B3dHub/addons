@@ -13,7 +13,7 @@ export default function Support({ children }: { children: React.ReactNode }) {
       <CardHeader>
         <CardTitle>Support</CardTitle>
         <CardDescription>
-          Join our Discord server to stay updated.
+          Join our Discord server to stay updated on our latest developments.
         </CardDescription>
       </CardHeader>
       <CardContent>

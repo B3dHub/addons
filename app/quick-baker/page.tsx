@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 
 export default function QuickBakerPage() {
   return (
-    <div className="px-5 my-5 flex flex-col justify-center gap-5">
+    <div className="mx-auto px-5 my-5 flex flex-col justify-center gap-5 w-[688px]">
       <Card>
         <CardHeader>
           <CardTitle>Introduction</CardTitle>
@@ -57,7 +57,7 @@ export default function QuickBakerPage() {
         </CardHeader>
         <CardContent>
           <Table>
-            {/* <TableCaption>A list of your recent invoices.</TableCaption> */}
+            {/* <TableCaption>More features in the future based on requests.</TableCaption> */}
             <TableHeader>
               <TableRow>
                 <TableHead>Features</TableHead>
@@ -180,8 +180,8 @@ export default function QuickBakerPage() {
             className="rounded-lg"
             src="./images/quick-baker/object_bake.gif"
             alt=""
-            width={1024}
-            height={1024}
+            width={600}
+            height={325}
             unoptimized
           />
         </CardContent>
@@ -198,8 +198,8 @@ export default function QuickBakerPage() {
             className="rounded-lg"
             src="./images/quick-baker/high_to_low_bake.gif"
             alt=""
-            width={1024}
-            height={1024}
+            width={600}
+            height={325}
             unoptimized
           />
         </CardContent>
@@ -216,8 +216,8 @@ export default function QuickBakerPage() {
             className="rounded-lg"
             src="./images/quick-baker/single_texture_set.gif"
             alt=""
-            width={1024}
-            height={1024}
+            width={600}
+            height={325}
             unoptimized
           />
         </CardContent>
@@ -234,8 +234,8 @@ export default function QuickBakerPage() {
             className="rounded-lg"
             src="./images/quick-baker/multiple_texture_set.gif"
             alt=""
-            width={1024}
-            height={1024}
+            width={600}
+            height={325}
             unoptimized
           />
         </CardContent>
@@ -252,8 +252,8 @@ export default function QuickBakerPage() {
             className="rounded-lg"
             src="./images/quick-baker/auto_cage.gif"
             alt=""
-            width={1024}
-            height={1024}
+            width={600}
+            height={325}
             unoptimized
           />
         </CardContent>
@@ -270,8 +270,8 @@ export default function QuickBakerPage() {
             className="rounded-lg"
             src="./images/quick-baker/auto_udim_bake.gif"
             alt=""
-            width={1024}
-            height={1024}
+            width={600}
+            height={325}
             unoptimized
           />
         </CardContent>
@@ -288,8 +288,8 @@ export default function QuickBakerPage() {
             className="rounded-lg"
             src="./images/quick-baker/channel_packing.gif"
             alt=""
-            width={1024}
-            height={1024}
+            width={600}
+            height={325}
             unoptimized
           />
         </CardContent>
@@ -306,8 +306,8 @@ export default function QuickBakerPage() {
             className="rounded-lg"
             src="./images/quick-baker/vertex_color_material_id.gif"
             alt=""
-            width={1024}
-            height={1024}
+            width={600}
+            height={325}
             unoptimized
           />
         </CardContent>
@@ -322,8 +322,8 @@ export default function QuickBakerPage() {
             className="rounded-lg"
             src="./images/quick-baker/existing_texture_bake.gif"
             alt=""
-            width={1024}
-            height={1024}
+            width={600}
+            height={325}
             unoptimized
           />
         </CardContent>
@@ -340,8 +340,8 @@ export default function QuickBakerPage() {
             className="rounded-lg"
             src="./images/quick-baker/map_preview.gif"
             alt=""
-            width={1024}
-            height={1024}
+            width={600}
+            height={325}
             unoptimized
           />
         </CardContent>
@@ -356,8 +356,8 @@ export default function QuickBakerPage() {
             className="rounded-lg"
             src="./images/quick-baker/node_bake.gif"
             alt=""
-            width={1024}
-            height={1024}
+            width={600}
+            height={325}
             unoptimized
           />
         </CardContent>
@@ -372,8 +372,8 @@ export default function QuickBakerPage() {
             className="rounded-lg"
             src="./images/quick-baker/node_bake.gif"
             alt=""
-            width={1024}
-            height={1024}
+            width={600}
+            height={325}
             unoptimized
           />
         </CardContent>
@@ -390,8 +390,8 @@ export default function QuickBakerPage() {
             className="rounded-lg"
             src="./images/quick-baker/udim_node_bake.gif"
             alt=""
-            width={1024}
-            height={1024}
+            width={600}
+            height={325}
             unoptimized
           />
         </CardContent>
@@ -406,8 +406,8 @@ export default function QuickBakerPage() {
             className="rounded-lg"
             src="./images/quick-baker/maps.png"
             alt=""
-            width={1024}
-            height={1024}
+            width={600}
+            height={325}
             unoptimized
           />
         </CardContent>
@@ -422,8 +422,8 @@ export default function QuickBakerPage() {
             className="rounded-lg"
             src="./images/quick-baker/maps.png"
             alt=""
-            width={1024}
-            height={1024}
+            width={600}
+            height={325}
             unoptimized
           />
         </CardContent>
