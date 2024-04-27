@@ -50,6 +50,7 @@ export default function QuickBakerPage() {
           off.
         </CardContent> */}
       </Card>
+
       <Card>
         <CardHeader>
           <CardTitle>Why to choose Quick Baker?</CardTitle>
@@ -170,6 +171,7 @@ export default function QuickBakerPage() {
           </Table>
         </CardContent>
       </Card>
+
       <Card>
         <CardHeader>
           <CardTitle>Object Bake</CardTitle>
@@ -186,6 +188,7 @@ export default function QuickBakerPage() {
           />
         </CardContent>
       </Card>
+
       <Card>
         <CardHeader>
           <CardTitle>High-to-Low Poly Bake</CardTitle>
@@ -204,6 +207,7 @@ export default function QuickBakerPage() {
           />
         </CardContent>
       </Card>
+
       <Card>
         <CardHeader>
           <CardTitle>Single Texture Set</CardTitle>
@@ -222,6 +226,7 @@ export default function QuickBakerPage() {
           />
         </CardContent>
       </Card>
+
       <Card>
         <CardHeader>
           <CardTitle>Multiple Texture Set</CardTitle>
@@ -240,6 +245,7 @@ export default function QuickBakerPage() {
           />
         </CardContent>
       </Card>
+
       <Card>
         <CardHeader>
           <CardTitle>Auto Cage</CardTitle>
@@ -258,6 +264,7 @@ export default function QuickBakerPage() {
           />
         </CardContent>
       </Card>
+
       <Card>
         <CardHeader>
           <CardTitle>Auto UDIM Bake</CardTitle>
@@ -276,6 +283,7 @@ export default function QuickBakerPage() {
           />
         </CardContent>
       </Card>
+
       <Card>
         <CardHeader>
           <CardTitle>Channel Packing</CardTitle>
@@ -294,6 +302,7 @@ export default function QuickBakerPage() {
           />
         </CardContent>
       </Card>
+
       <Card>
         <CardHeader>
           <CardTitle>Vertex Color for Material ID</CardTitle>
@@ -312,6 +321,7 @@ export default function QuickBakerPage() {
           />
         </CardContent>
       </Card>
+
       <Card>
         <CardHeader>
           <CardTitle>Existing Texture Bake</CardTitle>
@@ -328,6 +338,7 @@ export default function QuickBakerPage() {
           />
         </CardContent>
       </Card>
+
       <Card>
         <CardHeader>
           <CardTitle>Map Preview</CardTitle>
@@ -346,6 +357,7 @@ export default function QuickBakerPage() {
           />
         </CardContent>
       </Card>
+
       {/* <Card>
         <CardHeader>
           <CardTitle>Material Bake</CardTitle>
@@ -362,6 +374,7 @@ export default function QuickBakerPage() {
           />
         </CardContent>
       </Card> */}
+
       <Card>
         <CardHeader>
           <CardTitle>Node Bake</CardTitle>
@@ -378,6 +391,7 @@ export default function QuickBakerPage() {
           />
         </CardContent>
       </Card>
+
       <Card>
         <CardHeader>
           <CardTitle>UDIM Node Bake</CardTitle>
@@ -396,6 +410,7 @@ export default function QuickBakerPage() {
           />
         </CardContent>
       </Card>
+
       {/* <Card>
         <CardHeader>
           <CardTitle>Post Bake</CardTitle>
@@ -412,6 +427,7 @@ export default function QuickBakerPage() {
           />
         </CardContent>
       </Card> */}
+
       <Card>
         <CardHeader>
           <CardTitle>50 Unique Maps</CardTitle>
@@ -428,6 +444,7 @@ export default function QuickBakerPage() {
           />
         </CardContent>
       </Card>
+
       <Card>
         <CardHeader>
           <CardTitle>Limitations</CardTitle>
@@ -450,25 +467,27 @@ export default function QuickBakerPage() {
           </CardDescription>
         </CardFooter>
       </Card>
+
       <Support>
         <CardFooter className="space-x-4">
           <Link
             href="https://b3dhub.github.io/quick-baker-docs/"
-            target="_parent"
+            target="_blank"
           >
             <Button variant={"secondary"}>Documentation</Button>
           </Link>
-          <Link href="https://discord.gg/sdnHHZpWbT" target="_parent">
+          <Link href="https://discord.gg/sdnHHZpWbT" target="_blank">
             <Button variant={"secondary"}>Discord</Button>
           </Link>
           <Link
             href="https://discord.com/channels/959138815602229389/1013054795562614794"
-            target="_parent"
+            target="_blank"
           >
             <Button variant={"secondary"}>Changelogs</Button>
           </Link>
         </CardFooter>
       </Support>
+
       <OtherAddons />
     </div>
   );

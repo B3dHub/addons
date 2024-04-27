@@ -4,7 +4,7 @@ export const Data = [
     imageURL: "./images/quick-baker/thumb.png",
     title: "Quick Baker",
     price: "$36 - $360",
-    info: "Material",
+    info: "Baking",
   },
   {
     productURL: "/quick-decal",

@@ -43,7 +43,7 @@ export default function QuickDecalPage() {
             by blending your existing material with the Quick Decal material.
           </CardDescription>
           <CardDescription>
-            It supports multiple objects and materials. It works in both Eevee
+            It supports multiple objects and materials. It works in both EEVEE
             and Cycles render engines.
           </CardDescription>
         </CardHeader>
@@ -52,6 +52,7 @@ export default function QuickDecalPage() {
           off.
         </CardContent> */}
       </Card>
+
       <Card>
         <CardHeader>
           <CardTitle>Why to choose Quick Decal?</CardTitle>
@@ -157,6 +158,7 @@ export default function QuickDecalPage() {
           </Table>
         </CardContent>
       </Card>
+
       <Card>
         <CardHeader>
           <CardTitle>Image Decal</CardTitle>
@@ -220,7 +222,7 @@ export default function QuickDecalPage() {
             Download decals from{" "}
             <Link
               href={"https://quixel.com/bridge"}
-              target="_parent"
+              target="_blank"
               className="underline text-primary"
             >
               Quixel Bridge
@@ -331,7 +333,7 @@ export default function QuickDecalPage() {
             This addon is compatible with our other addon,{" "}
             <Link
               href={"https://blendermarket.com/products/quick-baker"}
-              target="_parent"
+              target="_blank"
               className="underline text-primary"
             >
               Quick Baker
@@ -376,21 +378,22 @@ export default function QuickDecalPage() {
         <CardFooter className="space-x-4">
           <Link
             href="https://blendermarket.com/products/quick-decal/docs"
-            target="_parent"
+            target="_blank"
           >
             <Button variant={"secondary"}>Documentation</Button>
           </Link>
-          <Link href="https://discord.gg/sdnHHZpWbT" target="_parent">
+          <Link href="https://discord.gg/sdnHHZpWbT" target="_blank">
             <Button variant={"secondary"}>Discord</Button>
           </Link>
           <Link
             href="https://discord.com/channels/959138815602229389/1223542106539167754"
-            target="_parent"
+            target="_blank"
           >
             <Button variant={"secondary"}>Changelogs</Button>
           </Link>
         </CardFooter>
       </Support>
+
       <OtherAddons />
     </div>
   );
