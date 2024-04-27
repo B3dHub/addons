@@ -452,13 +452,19 @@ export default function QuickBakerPage() {
       </Card>
       <Support>
         <CardFooter className="space-x-4">
-          <Link href="https://b3dhub.github.io/quick-baker-docs/">
+          <Link
+            href="https://b3dhub.github.io/quick-baker-docs/"
+            target="_blank"
+          >
             <Button variant={"secondary"}>Documentation</Button>
           </Link>
-          <Link href="https://discord.gg/sdnHHZpWbT">
+          <Link href="https://discord.gg/sdnHHZpWbT" target="_blank">
             <Button variant={"secondary"}>Discord</Button>
           </Link>
-          <Link href="https://discord.com/channels/959138815602229389/1013054795562614794">
+          <Link
+            href="https://discord.com/channels/959138815602229389/1013054795562614794"
+            target="_blank"
+          >
             <Button variant={"secondary"}>Changelogs</Button>
           </Link>
         </CardFooter>

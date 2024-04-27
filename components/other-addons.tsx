@@ -23,6 +23,7 @@ export default function OtherAddons({ active }: { active?: boolean }) {
           {Data.map((item, index) => (
             <Link
               href={`https://blendermarket.com/products${item.productURL}`}
+              target="_blank"
               key={index}
             >
               <img
