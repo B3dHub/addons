@@ -220,7 +220,7 @@ export default function QuickDecalPage() {
             Download decals from{" "}
             <Link
               href={"https://quixel.com/bridge"}
-              target="_blank"
+              target="_parent"
               className="underline text-primary"
             >
               Quixel Bridge
@@ -331,7 +331,7 @@ export default function QuickDecalPage() {
             This addon is compatible with our other addon,{" "}
             <Link
               href={"https://blendermarket.com/products/quick-baker"}
-              target="_blank"
+              target="_parent"
               className="underline text-primary"
             >
               Quick Baker
@@ -376,16 +376,16 @@ export default function QuickDecalPage() {
         <CardFooter className="space-x-4">
           <Link
             href="https://blendermarket.com/products/quick-decal/docs"
-            target="_blank"
+            target="_parent"
           >
             <Button variant={"secondary"}>Documentation</Button>
           </Link>
-          <Link href="https://discord.gg/sdnHHZpWbT" target="_blank">
+          <Link href="https://discord.gg/sdnHHZpWbT" target="_parent">
             <Button variant={"secondary"}>Discord</Button>
           </Link>
           <Link
             href="https://discord.com/channels/959138815602229389/1223542106539167754"
-            target="_blank"
+            target="_parent"
           >
             <Button variant={"secondary"}>Changelogs</Button>
           </Link>

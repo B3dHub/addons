@@ -121,7 +121,7 @@ export default function QuickDecalDocPage() {
             Download decals from{" "}
             <Link
               href={"https://quixel.com/bridge"}
-              target="_blank"
+              target="_parent"
               className="underline text-primary"
             >
               Quixel Bridge
@@ -242,7 +242,7 @@ export default function QuickDecalDocPage() {
             This addon is compatible with our other addon,{" "}
             <Link
               href={"https://blendermarket.com/products/quick-baker"}
-              target="_blank"
+              target="_parent"
               className="underline text-primary"
             >
               Quick Baker
