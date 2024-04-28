@@ -7,13 +7,13 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-export default function Support({ children }: { children: React.ReactNode }) {
+export default function Support({ children }: { children?: React.ReactNode }) {
   return (
     <Card>
       <CardHeader>
         <CardTitle>Support</CardTitle>
         <CardDescription>
-          Join our Discord server to stay updated on our latest developments.
+          Join our Discord server to stay updated.
         </CardDescription>
       </CardHeader>
       <CardContent>

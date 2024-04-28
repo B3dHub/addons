@@ -14,9 +14,7 @@ export default function OtherAddons({ active }: { active?: boolean }) {
     <Card>
       <CardHeader>
         <CardTitle>Other Addons</CardTitle>
-        <CardDescription>
-          Here are some other addons you might like.
-        </CardDescription>
+        <CardDescription>Other addons you might like.</CardDescription>
       </CardHeader>
       <CardContent>
         <div className="grid grid-cols-3 gap-4">

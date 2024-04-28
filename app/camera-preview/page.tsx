@@ -37,12 +37,14 @@ export default function CameraPreviewPage() {
         <CardHeader>
           <CardTitle>Introduction</CardTitle>
           <CardDescription>
-            Camera Preview is a simple, yet powerful, addon that allows you to
-            preview your camera view in the 3D viewport. You don't need to enter
-            camera view mode to see the camera view.
-          </CardDescription>
-          <CardDescription>
-            It works similarly to Unreal Engine's camera preview.
+            Camera Preview is an indispensable addon, offering simplicity and
+            power in one package. It enables you to preview your camera view
+            directly in the 3D viewport, eliminating the need to switch to
+            camera view mode. Its functionality mirrors that of the Unreal
+            Engine's camera preview, providing a familiar and intuitive
+            experience. This addon is a game-changer for any 3D artist,
+            promising to save time and turbocharge your workflow. Don't miss out
+            on this essential tool that will revolutionize the way you work.
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -154,8 +156,7 @@ export default function CameraPreviewPage() {
         </CardHeader>
         <CardContent>
           <CardDescription>
-            Only works with <span className="text-foreground">EEVEE</span>{" "}
-            render engine.
+            Only works with <span>EEVEE</span> render engine.
           </CardDescription>
         </CardContent>
       </Card>

@@ -37,10 +37,12 @@ export default function QuickReplacePage() {
         <CardHeader>
           <CardTitle>Introduction</CardTitle>
           <CardDescription>
-            Quick Replace is a simple, yet powerful, addon that allows you to
-            replace selected objects from the object list of an active category.
-            It is useful for blocking out layouts for game level design, and
-            more.
+            Quick Replace is an exceptionally intuitive and powerful addon that
+            enables you to seamlessly replace selected objects from the object
+            list of an active category. It's an invaluable tool for blocking out
+            layouts for game level design and more. This addon is a game-changer
+            for any 3D artist or game developer, promising to make your object
+            replacement process more efficient and streamlined.
           </CardDescription>
         </CardHeader>
         {/* <CardContent>

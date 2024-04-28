@@ -178,9 +178,8 @@ export default function QuickDecalDocPage() {
         </CardContent>
         <CardContent>
           <CardDescription>
-            You can use the hotkeys{" "}
-            <span className="text-foreground">Shift</span> and{" "}
-            <span className="text-foreground">Ctrl</span> for quick access.
+            You can use the hotkeys <span>Shift</span> and <span>Ctrl</span> for
+            quick access.
           </CardDescription>
         </CardContent>
         <CardContent>
@@ -265,9 +264,8 @@ export default function QuickDecalDocPage() {
         <CardHeader>
           <CardTitle>Caution</CardTitle>
           <CardDescription>
-            Do not edit or remove the{" "}
-            <span className="text-foreground">QDecal Master</span> node group
-            and its child nodes.
+            Do not edit or remove the <span>QDecal Master</span> node group and
+            its child nodes.
           </CardDescription>
         </CardHeader>
         <CardContent>

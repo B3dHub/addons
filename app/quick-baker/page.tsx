@@ -37,12 +37,15 @@ export default function QuickBakerPage() {
         <CardHeader>
           <CardTitle>Introduction</CardTitle>
           <CardDescription>
-            Quick Baker is a PBR texture-baking addon that uses the native
-            Blender baking operator for baking PBR texture, and mask maps. The
-            addon extends the Blender baking process for multiple objects with
-            multiple maps. It can bake objects and high to low-poly objects with
-            multiple maps. It makes high to low-poly baking very simple and easy
-            with a click cage setup.
+            Quick Baker is an exceptional PBR texture-baking addon that
+            brilliantly utilizes Blender's native baking operator for baking
+            PBR, Mesh, Principled BSDF, and Cycles maps. It significantly
+            enhances the Blender baking process for multiple objects with
+            multiple materials, offering unparalleled efficiency. Capable of
+            baking both high-to-low and low-to-low poly objects, it simplifies
+            the baking process with an ingenious automatic cage setup. Designed
+            with speed and ease-of-use in mind, Quick Baker stands out as the
+            ultimate tool for your baking needs.
           </CardDescription>
         </CardHeader>
         {/* <CardContent>
@@ -452,18 +455,16 @@ export default function QuickBakerPage() {
         </CardHeader>
         <CardContent>
           <CardDescription>
-            Only works with{" "}
-            <span className="text-foreground">Principled BSDF, Mix Shader</span>
-            , and <span className="text-foreground">Add Shader</span> nodes.
+            Only works with <span>Principled BSDF, Mix Shader</span>, and{" "}
+            <span>Add Shader</span> nodes.
           </CardDescription>
         </CardContent>
         <CardFooter>
           <CardDescription>
-            If you encounter the{" "}
-            <span className="text-foreground">'Out of Memory'</span> error you
-            should lower the processes count to 1-2 in the Global Bake panel.
-            The higher process count is useful when baking low-resolution maps
-            (e.g. 1K).
+            If you encounter the <span>'Out of Memory'</span> error you should
+            lower the processes count to 1-2 in the Global Bake panel. The
+            higher process count is useful when baking low-resolution maps (e.g.
+            1K).
           </CardDescription>
         </CardFooter>
       </Card>

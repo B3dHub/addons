@@ -37,9 +37,13 @@ export default function QuickThemePage() {
         <CardHeader>
           <CardTitle>Introduction</CardTitle>
           <CardDescription>
-            Quick Theme is a simple, yet powerful, addon that allows you to
-            create blender theme quickly. It is designed to be simple and easy
-            to use. You can create a theme with just a few clicks.
+            Quick Theme is an exceptionally intuitive and powerful addon that
+            empowers you to swiftly create Blender themes. Designed with
+            simplicity and user-friendliness at its core, it enables you to
+            craft a theme with just a few clicks. This addon is a game-changer
+            for any 3D artist or designer, promising to make your theme creation
+            process more efficient and streamlined. Don't miss out on this
+            essential tool that will revolutionize the way you work.
           </CardDescription>
         </CardHeader>
         {/* <CardContent>
