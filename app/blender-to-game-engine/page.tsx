@@ -47,7 +47,7 @@ export default function BlendertoGameEnginePage() {
         <CardHeader>
           <CardTitle>Introduction</CardTitle>
           <CardDescription>
-            lender-to-Game-Engine is a Blender addon bundle. It includes two of
+            Blender-to-Game-Engine is a Blender addon bundle. It includes two of
             our popular addons: <span>Blender to Unity</span> and{" "}
             <span>Blender to Unreal</span>. These addons allow you to export
             your Blender models to Unity and Unreal Engine with just one click.

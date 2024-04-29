@@ -37,20 +37,15 @@ export default function QuickDecalPage() {
         <CardHeader>
           <CardTitle>Introduction</CardTitle>
           <CardDescription>
-            Quick Decal is a simple, yet powerful, addon that allows you to add
-            decals to your models. It uses a controller empty to add decals
-            without introducing extra geometry to your model. This is achieved
-            by blending your existing material with the Quick Decal material. It
-            supports multiple objects and materials. It works in both EEVEE and
-            Cycles render engines. Quick Decal is an incredibly intuitive yet
-            potent addon that enables you to effortlessly add decals to your
-            models. It ingeniously uses a controller empty to incorporate decals
-            without adding any extra geometry to your model. This is masterfully
-            achieved by blending your existing material with the Quick Decal
-            material. It supports multiple objects and materials and works
-            seamlessly in both <span>EEVEE</span> and <span>Cycles</span> render
-            engines. Quick Decal is an essential tool that enhances your
-            texturing process, making it more efficient and streamlined.
+            Quick Decal is an incredibly intuitive yet potent addon that enables
+            you to effortlessly add decals to your models. It ingeniously uses a
+            controller empty to incorporate decals without adding any extra
+            geometry to your model. This is masterfully achieved by blending
+            your existing material with the Quick Decal material. It supports
+            multiple objects and materials and works seamlessly in both{" "}
+            <span>EEVEE</span> and <span>Cycles</span> render engines. Quick
+            Decal is an essential tool that enhances your texturing process,
+            making it more efficient and streamlined.
           </CardDescription>
         </CardHeader>
         {/* <CardContent>
