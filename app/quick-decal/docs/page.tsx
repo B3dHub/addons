@@ -66,8 +66,8 @@ export default function QuickDecalDocPage() {
             className="rounded-lg"
             src="../images/quick-decal/custom_decals.png"
             alt=""
-            width={600}
-            height={325}
+            width={256}
+            height={256}
             unoptimized
           />
         </CardContent>
@@ -82,8 +82,8 @@ export default function QuickDecalDocPage() {
             className="rounded-lg"
             src="../images/quick-decal/load_custom_decals.png"
             alt=""
-            width={600}
-            height={325}
+            width={256}
+            height={256}
             unoptimized
           />
         </CardContent>
@@ -152,8 +152,8 @@ export default function QuickDecalDocPage() {
             className="rounded-lg"
             src="../images/quick-decal/megascans_decals.png"
             alt=""
-            width={600}
-            height={325}
+            width={256}
+            height={256}
             unoptimized
           />
         </CardContent>
