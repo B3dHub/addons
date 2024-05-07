@@ -46,6 +46,8 @@ export default function BlendertoGameEnginePage() {
       <Card>
         <CardHeader>
           <CardTitle>Introduction</CardTitle>
+        </CardHeader>
+        <CardContent>
           <CardDescription>
             Blender-to-Game-Engine is a Blender addon bundle. It includes two of
             our popular addons: <span>Blender to Unity</span> and{" "}
@@ -58,7 +60,7 @@ export default function BlendertoGameEnginePage() {
             Blender-to-Game-Engine bundle today and start exporting your models
             to Unity and Unreal Engine with ease!
           </CardDescription>
-        </CardHeader>
+        </CardContent>
         {/* <CardContent>
           Coupon code: <Badge variant={"default"}>discount10</Badge> to get 10%
           off.

@@ -36,6 +36,8 @@ export default function QuickReplacePage() {
       <Card>
         <CardHeader>
           <CardTitle>Introduction</CardTitle>
+        </CardHeader>
+        <CardContent>
           <CardDescription>
             Quick Replace is an exceptionally intuitive and powerful addon that
             enables you to seamlessly replace selected objects from the object
@@ -44,7 +46,7 @@ export default function QuickReplacePage() {
             for any 3D artist or game developer, promising to make your object
             replacement process more efficient and streamlined.
           </CardDescription>
-        </CardHeader>
+        </CardContent>
         {/* <CardContent>
           Coupon code: <Badge variant={"default"}>discount10</Badge> to get 10%
           off.

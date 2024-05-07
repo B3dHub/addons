@@ -21,6 +21,13 @@ export const Data = [
     info: "3D View",
   },
   {
+    productURL: "/quick-interface",
+    imageURL: "./images/quick-interface/thumb.png",
+    title: "Quick Interface",
+    price: "$15 - $150",
+    info: "Interface",
+  },
+  {
     productURL: "/quick-theme",
     imageURL: "./images/quick-theme/thumb.png",
     title: "Quick Theme",

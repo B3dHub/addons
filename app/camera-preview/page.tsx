@@ -36,6 +36,8 @@ export default function CameraPreviewPage() {
       <Card>
         <CardHeader>
           <CardTitle>Introduction</CardTitle>
+        </CardHeader>
+        <CardContent>
           <CardDescription>
             Camera Preview is an indispensable addon, offering simplicity and
             power in one package. It enables you to preview your camera view
@@ -46,7 +48,7 @@ export default function CameraPreviewPage() {
             promising to save time and turbocharge your workflow. Don't miss out
             on this essential tool that will revolutionize the way you work.
           </CardDescription>
-        </CardHeader>
+        </CardContent>
         <CardContent>
           <Image
             className="rounded-lg"

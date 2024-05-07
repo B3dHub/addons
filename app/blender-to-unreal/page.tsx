@@ -45,6 +45,8 @@ export default function BlendertoUnrealPage() {
       <Card>
         <CardHeader>
           <CardTitle>Introduction</CardTitle>
+        </CardHeader>
+        <CardContent>
           <CardDescription>
             Blender-to-Unreal is a Blender addon that exports objects,
             animations, collisions, sockets, and LODs to Unreal Engine. It is
@@ -54,7 +56,7 @@ export default function BlendertoUnrealPage() {
             models to Unreal Engine. Get Blender-to-Unreal today and start
             exporting your models to Unreal Engine with ease!
           </CardDescription>
-        </CardHeader>
+        </CardContent>
         {/* <CardContent>
           Coupon code: <Badge variant={"default"}>discount10</Badge> to get 10%
           off.

@@ -36,6 +36,8 @@ export default function QuickBakerPage() {
       <Card>
         <CardHeader>
           <CardTitle>Introduction</CardTitle>
+        </CardHeader>
+        <CardContent>
           <CardDescription>
             Quick Baker is an exceptional PBR texture-baking addon that
             brilliantly utilizes Blender's native baking operator for baking
@@ -47,7 +49,7 @@ export default function QuickBakerPage() {
             with speed and ease-of-use in mind, Quick Baker stands out as the
             ultimate tool for your baking needs.
           </CardDescription>
-        </CardHeader>
+        </CardContent>
         {/* <CardContent>
           Coupon code: <Badge variant={"default"}>discount10</Badge> to get 10%
           off.

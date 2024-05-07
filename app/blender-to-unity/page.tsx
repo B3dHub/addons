@@ -45,6 +45,8 @@ export default function BlendertoUnityPage() {
       <Card>
         <CardHeader>
           <CardTitle>Introduction</CardTitle>
+        </CardHeader>
+        <CardContent>
           <CardDescription>
             Blender-to-Unity is a Blender addon that exports objects,
             animations, colliders, and LODs to Unity Engine. It is designed to
@@ -54,7 +56,7 @@ export default function BlendertoUnityPage() {
             Engine. Get Blender-to-Unity today and start exporting your models
             to Unity with ease!
           </CardDescription>
-        </CardHeader>
+        </CardContent>
         {/* <CardContent>
           Coupon code: <Badge variant={"default"}>discount10</Badge> to get 10%
           off.

@@ -36,8 +36,10 @@ export default function QuickMeasurePage() {
       <Card>
         <CardHeader>
           <CardTitle>Introduction</CardTitle>
+        </CardHeader>
+        <CardContent>
           <CardDescription>
-            Quick Measure is an incredibly intuitive yet potent addon that
+            Quick Measure is an incredibly intuitive yet powerful addon that
             empowers you to measure an object's length in any mode effortlessly.
             It supports multiple measurements, both with and without snap, and
             even offers the ability to save measurements. This addon is an
@@ -45,7 +47,7 @@ export default function QuickMeasurePage() {
             promising to make your measuring process more efficient and
             streamlined.
           </CardDescription>
-        </CardHeader>
+        </CardContent>
         {/* <CardContent>
           Coupon code: <Badge variant={"default"}>discount10</Badge> to get 10%
           off.
