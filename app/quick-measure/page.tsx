@@ -48,10 +48,10 @@ export default function QuickMeasurePage() {
             streamlined.
           </CardDescription>
         </CardContent>
-        {/* <CardContent>
+        <CardContent>
           Coupon code: <Badge variant={"default"}>discount10</Badge> to get 10%
           off.
-        </CardContent> */}
+        </CardContent>
       </Card>
 
       <Card>

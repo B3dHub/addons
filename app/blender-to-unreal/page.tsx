@@ -57,10 +57,10 @@ export default function BlendertoUnrealPage() {
             exporting your models to Unreal Engine with ease!
           </CardDescription>
         </CardContent>
-        {/* <CardContent>
+        <CardContent>
           Coupon code: <Badge variant={"default"}>discount10</Badge> to get 10%
           off.
-        </CardContent> */}
+        </CardContent>
       </Card>
 
       <Card>

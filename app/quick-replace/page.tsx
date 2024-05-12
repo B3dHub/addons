@@ -47,10 +47,10 @@ export default function QuickReplacePage() {
             replacement process more efficient and streamlined.
           </CardDescription>
         </CardContent>
-        {/* <CardContent>
+        <CardContent>
           Coupon code: <Badge variant={"default"}>discount10</Badge> to get 10%
           off.
-        </CardContent> */}
+        </CardContent>
       </Card>
 
       <Card>

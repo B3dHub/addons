@@ -48,10 +48,10 @@ export default function QuickThemePage() {
             essential tool that will revolutionize the way you work.
           </CardDescription>
         </CardContent>
-        {/* <CardContent>
+        <CardContent>
           Coupon code: <Badge variant={"default"}>discount10</Badge> to get 10%
           off.
-        </CardContent> */}
+        </CardContent>
       </Card>
 
       <Card>
