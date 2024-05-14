@@ -149,7 +149,7 @@ export default function BlendertoUnityPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
+            className="rounded-lg"
             src="./images/blender-to-unity/colliders.png"
             alt=""
             width={256}
@@ -447,7 +447,7 @@ export default function BlendertoUnityPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
+            className="rounded-lg"
             src="./images/blender-to-unity/lods.png"
             alt=""
             width={256}

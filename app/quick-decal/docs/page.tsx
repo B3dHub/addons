@@ -63,7 +63,7 @@ export default function QuickDecalDocPage() {
         </CardContent>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
+            className="rounded-lg"
             src="../images/quick-decal/custom_decals.png"
             alt=""
             width={256}
@@ -79,7 +79,7 @@ export default function QuickDecalDocPage() {
         </CardContent>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
+            className="rounded-lg"
             src="../images/quick-decal/load_custom_decals.png"
             alt=""
             width={256}
@@ -149,7 +149,7 @@ export default function QuickDecalDocPage() {
         </CardContent>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
+            className="rounded-lg"
             src="../images/quick-decal/megascans_decals.png"
             alt=""
             width={256}

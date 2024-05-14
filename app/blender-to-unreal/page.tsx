@@ -162,7 +162,7 @@ export default function BlendertoUnrealPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
+            className="rounded-lg"
             src="./images/blender-to-unreal/collisions.png"
             alt=""
             width={256}
@@ -463,7 +463,7 @@ export default function BlendertoUnrealPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
+            className="rounded-lg"
             src="./images/blender-to-unreal/socket.png"
             alt=""
             width={256}
@@ -542,7 +542,7 @@ export default function BlendertoUnrealPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
+            className="rounded-lg"
             src="./images/blender-to-unreal/lods.png"
             alt=""
             width={256}
