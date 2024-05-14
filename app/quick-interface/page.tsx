@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 
 export default function QuickInterfacePage() {
   return (
-    <div className="dark flex flex-col justify-center mx-auto gap-5">
+    <div className="dark flex flex-col justify-center mx-auto gap-5 max-w-[688px]">
       <Card>
         <CardHeader>
           <CardTitle>Introduction</CardTitle>

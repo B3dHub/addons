@@ -17,7 +17,7 @@ export default function OtherAddons({ active }: { active?: boolean }) {
         <CardDescription>Other addons you might like.</CardDescription>
       </CardHeader>
       <CardContent>
-        <div className="flex flex-col sm:grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="grid sm:grid-cols-3 gap-4">
           {Data.map((item, index) => (
             <Link
               href={`https://blendermarket.com/products${item.productURL}`}
