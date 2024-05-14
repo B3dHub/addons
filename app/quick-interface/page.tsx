@@ -48,7 +48,7 @@ export default function QuickInterfacePage() {
         <CardContent>
           <Badge variant={"secondary"}>
             <CardDescription>
-              Launch Week Offer: <span>25% Off Until May 15</span>
+              Launch Offer: <span>25% Off Until May 30</span>
             </CardDescription>
           </Badge>
         </CardContent>
