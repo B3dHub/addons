@@ -33,6 +33,8 @@ import Support from "@/components/support";
 import OtherAddons from "@/components/other-addons";
 import Image from "next/image";
 import { Metadata } from "next";
+import Affiliate from "@/components/affiliate";
+import Coupon from "@/components/coupon";
 
 export const metadata: Metadata = {
   title: "Blender to Unreal - Blender Addon",
@@ -41,7 +43,7 @@ export const metadata: Metadata = {
 
 export default function BlendertoUnrealPage() {
   return (
-    <div className="mx-auto px-5 my-5 flex flex-col justify-center gap-5 w-[688px]">
+    <div className="dark flex flex-col justify-center mx-auto gap-5">
       <Card>
         <CardHeader>
           <CardTitle>Introduction</CardTitle>
@@ -58,8 +60,7 @@ export default function BlendertoUnrealPage() {
           </CardDescription>
         </CardContent>
         <CardContent>
-          Coupon code: <Badge variant={"default"}>discount10</Badge> to get 10%
-          off.
+          <Coupon />
         </CardContent>
       </Card>
 
@@ -161,7 +162,7 @@ export default function BlendertoUnrealPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg"
+            className="rounded-lg w-full"
             src="./images/blender-to-unreal/collisions.png"
             alt=""
             width={256}
@@ -191,7 +192,7 @@ export default function BlendertoUnrealPage() {
             <CarouselContent>
               <CarouselItem>
                 <Image
-                  className="rounded-lg"
+                  className="rounded-lg w-full"
                   src="./images/blender-to-unreal/box.webp"
                   alt=""
                   width={600}
@@ -201,7 +202,7 @@ export default function BlendertoUnrealPage() {
               </CarouselItem>
               <CarouselItem>
                 <Image
-                  className="rounded-lg"
+                  className="rounded-lg w-full"
                   src="./images/blender-to-unreal/box_editmode.webp"
                   alt=""
                   width={600}
@@ -211,7 +212,7 @@ export default function BlendertoUnrealPage() {
               </CarouselItem>
               <CarouselItem>
                 <Image
-                  className="rounded-lg"
+                  className="rounded-lg w-full"
                   src="./images/blender-to-unreal/box_custom.webp"
                   alt=""
                   width={600}
@@ -246,7 +247,7 @@ export default function BlendertoUnrealPage() {
             <CarouselContent>
               <CarouselItem>
                 <Image
-                  className="rounded-lg"
+                  className="rounded-lg w-full"
                   src="./images/blender-to-unreal/capsule.webp"
                   alt=""
                   width={600}
@@ -256,7 +257,7 @@ export default function BlendertoUnrealPage() {
               </CarouselItem>
               <CarouselItem>
                 <Image
-                  className="rounded-lg"
+                  className="rounded-lg w-full"
                   src="./images/blender-to-unreal/capsule_editmode.webp"
                   alt=""
                   width={600}
@@ -266,7 +267,7 @@ export default function BlendertoUnrealPage() {
               </CarouselItem>
               <CarouselItem>
                 <Image
-                  className="rounded-lg"
+                  className="rounded-lg w-full"
                   src="./images/blender-to-unreal/capsule_custom.webp"
                   alt=""
                   width={600}
@@ -301,7 +302,7 @@ export default function BlendertoUnrealPage() {
             <CarouselContent>
               <CarouselItem>
                 <Image
-                  className="rounded-lg"
+                  className="rounded-lg w-full"
                   src="./images/blender-to-unreal/sphere.webp"
                   alt=""
                   width={600}
@@ -311,7 +312,7 @@ export default function BlendertoUnrealPage() {
               </CarouselItem>
               <CarouselItem>
                 <Image
-                  className="rounded-lg"
+                  className="rounded-lg w-full"
                   src="./images/blender-to-unreal/sphere_editmode.webp"
                   alt=""
                   width={600}
@@ -321,7 +322,7 @@ export default function BlendertoUnrealPage() {
               </CarouselItem>
               <CarouselItem>
                 <Image
-                  className="rounded-lg"
+                  className="rounded-lg w-full"
                   src="./images/blender-to-unreal/sphere_custom.webp"
                   alt=""
                   width={600}
@@ -356,7 +357,7 @@ export default function BlendertoUnrealPage() {
             <CarouselContent>
               <CarouselItem>
                 <Image
-                  className="rounded-lg"
+                  className="rounded-lg w-full"
                   src="./images/blender-to-unreal/cylinder.webp"
                   alt=""
                   width={600}
@@ -366,7 +367,7 @@ export default function BlendertoUnrealPage() {
               </CarouselItem>
               <CarouselItem>
                 <Image
-                  className="rounded-lg"
+                  className="rounded-lg w-full"
                   src="./images/blender-to-unreal/cylinder_editmode.webp"
                   alt=""
                   width={600}
@@ -400,7 +401,7 @@ export default function BlendertoUnrealPage() {
             <CarouselContent>
               <CarouselItem>
                 <Image
-                  className="rounded-lg"
+                  className="rounded-lg w-full"
                   src="./images/blender-to-unreal/convex.webp"
                   alt=""
                   width={600}
@@ -410,7 +411,7 @@ export default function BlendertoUnrealPage() {
               </CarouselItem>
               <CarouselItem>
                 <Image
-                  className="rounded-lg"
+                  className="rounded-lg w-full"
                   src="./images/blender-to-unreal/convex_editmode.webp"
                   alt=""
                   width={600}
@@ -420,7 +421,7 @@ export default function BlendertoUnrealPage() {
               </CarouselItem>
               <CarouselItem>
                 <Image
-                  className="rounded-lg"
+                  className="rounded-lg w-full"
                   src="./images/blender-to-unreal/convex_custom.webp"
                   alt=""
                   width={600}
@@ -430,7 +431,7 @@ export default function BlendertoUnrealPage() {
               </CarouselItem>
               <CarouselItem>
                 <Image
-                  className="rounded-lg"
+                  className="rounded-lg w-full"
                   src="./images/blender-to-unreal/convex_vhacd.webp"
                   alt=""
                   width={600}
@@ -462,7 +463,7 @@ export default function BlendertoUnrealPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg"
+            className="rounded-lg w-full"
             src="./images/blender-to-unreal/socket.png"
             alt=""
             width={256}
@@ -491,7 +492,7 @@ export default function BlendertoUnrealPage() {
             <CarouselContent>
               <CarouselItem>
                 <Image
-                  className="rounded-lg"
+                  className="rounded-lg w-full"
                   src="./images/blender-to-unreal/socket.webp"
                   alt=""
                   width={600}
@@ -501,7 +502,7 @@ export default function BlendertoUnrealPage() {
               </CarouselItem>
               <CarouselItem>
                 <Image
-                  className="rounded-lg"
+                  className="rounded-lg w-full"
                   src="./images/blender-to-unreal/socket_editmode.webp"
                   alt=""
                   width={600}
@@ -511,7 +512,7 @@ export default function BlendertoUnrealPage() {
               </CarouselItem>
               <CarouselItem>
                 <Image
-                  className="rounded-lg"
+                  className="rounded-lg w-full"
                   src="./images/blender-to-unreal/socket_custom.webp"
                   alt=""
                   width={600}
@@ -541,7 +542,7 @@ export default function BlendertoUnrealPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg"
+            className="rounded-lg w-full"
             src="./images/blender-to-unreal/lods.png"
             alt=""
             width={256}
@@ -567,7 +568,7 @@ export default function BlendertoUnrealPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg"
+            className="rounded-lg w-full"
             src="./images/blender-to-unreal/lod_create.gif"
             alt=""
             width={600}
@@ -593,7 +594,7 @@ export default function BlendertoUnrealPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg"
+            className="rounded-lg w-full"
             src="./images/blender-to-unreal/lod_update.gif"
             alt=""
             width={600}
@@ -617,7 +618,7 @@ export default function BlendertoUnrealPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg"
+            className="rounded-lg w-full"
             src="./images/blender-to-unreal/lod_preset.gif"
             alt=""
             width={600}
@@ -644,7 +645,7 @@ export default function BlendertoUnrealPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg"
+            className="rounded-lg w-full"
             src="./images/blender-to-unreal/rename.gif"
             alt=""
             width={600}
@@ -673,7 +674,7 @@ export default function BlendertoUnrealPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg"
+            className="rounded-lg w-full"
             src="./images/blender-to-unreal/export.gif"
             alt=""
             width={600}
@@ -704,6 +705,7 @@ export default function BlendertoUnrealPage() {
       </Support>
 
       <OtherAddons />
+      <Affiliate />
     </div>
   );
 }

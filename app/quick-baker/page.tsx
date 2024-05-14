@@ -24,6 +24,8 @@ import Support from "@/components/support";
 import OtherAddons from "@/components/other-addons";
 import Image from "next/image";
 import { Metadata } from "next";
+import Affiliate from "@/components/affiliate";
+import Coupon from "@/components/coupon";
 
 export const metadata: Metadata = {
   title: "Quick Baker - Blender Addon",
@@ -32,7 +34,7 @@ export const metadata: Metadata = {
 
 export default function QuickBakerPage() {
   return (
-    <div className="mx-auto px-5 my-5 flex flex-col justify-center gap-5 w-[688px]">
+    <div className="dark flex flex-col justify-center mx-auto gap-5">
       <Card>
         <CardHeader>
           <CardTitle>Introduction</CardTitle>
@@ -40,19 +42,19 @@ export default function QuickBakerPage() {
         <CardContent>
           <CardDescription>
             Quick Baker is an exceptional PBR texture-baking addon that
-            brilliantly utilizes Blender's native baking operator for baking
-            PBR, Mesh, Principled BSDF, and Cycles maps. It significantly
-            enhances the Blender baking process for multiple objects with
-            multiple materials, offering unparalleled efficiency. Capable of
-            baking both high-to-low and low-to-low poly objects, it simplifies
-            the baking process with an ingenious automatic cage setup. Designed
-            with speed and ease-of-use in mind, Quick Baker stands out as the
-            ultimate tool for your baking needs.
+            brilliantly utilizes Blender's native baking operator for baking{" "}
+            <span>PBR</span>, <span>Mesh</span>, <span>Principled BSDF</span>,
+            and <span>Cycles</span> maps. It significantly enhances the Blender
+            baking process for multiple objects with multiple materials,
+            offering unparalleled efficiency. Capable of baking both high-to-low
+            and low-to-low poly objects. It simplifies the baking process with
+            an ingenious automatic cage setup. Designed with speed and
+            ease-of-use in mind, Quick Baker stands out as the ultimate tool for
+            your baking needs.
           </CardDescription>
         </CardContent>
         <CardContent>
-          Coupon code: <Badge variant={"default"}>discount10</Badge> to get 10%
-          off.
+          <Coupon />
         </CardContent>
       </Card>
 
@@ -184,7 +186,7 @@ export default function QuickBakerPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg"
+            className="rounded-lg w-full"
             src="./images/quick-baker/object_bake.gif"
             alt=""
             width={600}
@@ -203,7 +205,7 @@ export default function QuickBakerPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg"
+            className="rounded-lg w-full"
             src="./images/quick-baker/high_to_low_bake.gif"
             alt=""
             width={600}
@@ -222,7 +224,7 @@ export default function QuickBakerPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg"
+            className="rounded-lg w-full"
             src="./images/quick-baker/single_texture_set.gif"
             alt=""
             width={600}
@@ -241,7 +243,7 @@ export default function QuickBakerPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg"
+            className="rounded-lg w-full"
             src="./images/quick-baker/multiple_texture_set.gif"
             alt=""
             width={600}
@@ -260,7 +262,7 @@ export default function QuickBakerPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg"
+            className="rounded-lg w-full"
             src="./images/quick-baker/auto_cage.gif"
             alt=""
             width={600}
@@ -279,7 +281,7 @@ export default function QuickBakerPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg"
+            className="rounded-lg w-full"
             src="./images/quick-baker/auto_udim_bake.gif"
             alt=""
             width={600}
@@ -298,7 +300,7 @@ export default function QuickBakerPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg"
+            className="rounded-lg w-full"
             src="./images/quick-baker/channel_packing.gif"
             alt=""
             width={600}
@@ -317,7 +319,7 @@ export default function QuickBakerPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg"
+            className="rounded-lg w-full"
             src="./images/quick-baker/vertex_color_material_id.gif"
             alt=""
             width={600}
@@ -334,7 +336,7 @@ export default function QuickBakerPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg"
+            className="rounded-lg w-full"
             src="./images/quick-baker/existing_texture_bake.gif"
             alt=""
             width={600}
@@ -353,7 +355,7 @@ export default function QuickBakerPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg"
+            className="rounded-lg w-full"
             src="./images/quick-baker/map_preview.gif"
             alt=""
             width={600}
@@ -370,7 +372,7 @@ export default function QuickBakerPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg"
+            className="rounded-lg w-full"
             src="./images/quick-baker/node_bake.gif"
             alt=""
             width={600}
@@ -387,7 +389,7 @@ export default function QuickBakerPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg"
+            className="rounded-lg w-full"
             src="./images/quick-baker/node_bake.gif"
             alt=""
             width={600}
@@ -406,7 +408,7 @@ export default function QuickBakerPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg"
+            className="rounded-lg w-full"
             src="./images/quick-baker/udim_node_bake.gif"
             alt=""
             width={600}
@@ -423,7 +425,7 @@ export default function QuickBakerPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg"
+            className="rounded-lg w-full"
             src="./images/quick-baker/maps.png"
             alt=""
             width={600}
@@ -440,7 +442,7 @@ export default function QuickBakerPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg"
+            className="rounded-lg w-full"
             src="./images/quick-baker/maps.png"
             alt=""
             width={600}
@@ -490,8 +492,8 @@ export default function QuickBakerPage() {
           </Link>
         </CardFooter>
       </Support>
-
       <OtherAddons />
+      <Affiliate />
     </div>
   );
 }

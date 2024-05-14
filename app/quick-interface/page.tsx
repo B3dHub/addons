@@ -24,6 +24,7 @@ import Support from "@/components/support";
 import OtherAddons from "@/components/other-addons";
 import Image from "next/image";
 import { Metadata } from "next";
+import Affiliate from "@/components/affiliate";
 
 export const metadata: Metadata = {
   title: "Quick Interface - Blender Addon",
@@ -32,7 +33,7 @@ export const metadata: Metadata = {
 
 export default function QuickInterfacePage() {
   return (
-    <div className="mx-auto px-5 my-5 flex flex-col justify-center gap-5 w-[688px]">
+    <div className="dark flex flex-col justify-center mx-auto gap-5">
       <Card>
         <CardHeader>
           <CardTitle>Introduction</CardTitle>
@@ -45,8 +46,10 @@ export default function QuickInterfacePage() {
           </CardDescription>
         </CardContent>
         <CardContent>
-          <Badge variant={"default"}>
-            Launch Week Offer: 25% Off Until May 15
+          <Badge variant={"secondary"}>
+            <CardDescription>
+              Launch Week Offer: <span>25% Off Until May 15</span>
+            </CardDescription>
           </Badge>
         </CardContent>
       </Card>
@@ -58,13 +61,13 @@ export default function QuickInterfacePage() {
         </CardHeader>
         <CardContent>
           <Table>
-            <TableCaption>
+            {/* <TableCaption>
               More features will be added in the future based on requests.
-            </TableCaption>
+            </TableCaption> */}
             <TableHeader>
               {/* <TableRow>
                 <TableHead>Features</TableHead>
-                <TableHead className="text-center">Quick Decal</TableHead>
+                <TableHead className="text-center">Quick Interface</TableHead>
                 <TableHead className="text-center">Others</TableHead>
               </TableRow> */}
             </TableHeader>
@@ -147,7 +150,7 @@ export default function QuickInterfacePage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg"
+            className="rounded-lg w-full"
             src="./images/quick-interface/area_switch.gif"
             alt=""
             width={600}
@@ -168,7 +171,7 @@ export default function QuickInterfacePage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg"
+            className="rounded-lg w-full"
             src="./images/quick-interface/area_duplicate.gif"
             alt=""
             width={600}
@@ -195,7 +198,7 @@ export default function QuickInterfacePage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg"
+            className="rounded-lg w-full"
             src="./images/quick-interface/area_split.gif"
             alt=""
             width={600}
@@ -214,7 +217,7 @@ export default function QuickInterfacePage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg"
+            className="rounded-lg w-full"
             src="./images/quick-interface/area_join.gif"
             alt=""
             width={600}
@@ -233,7 +236,7 @@ export default function QuickInterfacePage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg"
+            className="rounded-lg w-full"
             src="./images/quick-interface/area_swap.gif"
             alt=""
             width={600}
@@ -257,6 +260,7 @@ export default function QuickInterfacePage() {
         </CardFooter> */}
       </Support>
       <OtherAddons />
+      <Affiliate />
     </div>
   );
 }

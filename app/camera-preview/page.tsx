@@ -24,6 +24,8 @@ import Support from "@/components/support";
 import OtherAddons from "@/components/other-addons";
 import Image from "next/image";
 import { Metadata } from "next";
+import Affiliate from "@/components/affiliate";
+import Coupon from "@/components/coupon";
 
 export const metadata: Metadata = {
   title: "Camera Preview - Blender Addon",
@@ -32,7 +34,7 @@ export const metadata: Metadata = {
 
 export default function CameraPreviewPage() {
   return (
-    <div className="mx-auto px-5 my-5 flex flex-col justify-center gap-5 w-[688px]">
+    <div className="dark flex flex-col justify-center mx-auto gap-5">
       <Card>
         <CardHeader>
           <CardTitle>Introduction</CardTitle>
@@ -51,7 +53,7 @@ export default function CameraPreviewPage() {
         </CardContent>
         <CardContent>
           <Image
-            className="rounded-lg"
+            className="rounded-lg w-full"
             src="./images/camera-preview/demo_full.gif"
             alt=""
             width={600}
@@ -60,8 +62,7 @@ export default function CameraPreviewPage() {
           />
         </CardContent>
         <CardContent>
-          Coupon code: <Badge variant={"default"}>discount10</Badge> to get 10%
-          off.
+          <Coupon />
         </CardContent>
       </Card>
 
@@ -107,7 +108,7 @@ export default function CameraPreviewPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg"
+            className="rounded-lg w-full"
             src="./images/camera-preview/position.gif"
             alt=""
             width={600}
@@ -124,7 +125,7 @@ export default function CameraPreviewPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg"
+            className="rounded-lg w-full"
             src="./images/camera-preview/offset.gif"
             alt=""
             width={600}
@@ -141,7 +142,7 @@ export default function CameraPreviewPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg"
+            className="rounded-lg w-full"
             src="./images/camera-preview/size.gif"
             alt=""
             width={600}
@@ -176,8 +177,8 @@ export default function CameraPreviewPage() {
           </Link>
         </CardFooter>
       </Support>
-
       <OtherAddons />
+      <Affiliate />
     </div>
   );
 }

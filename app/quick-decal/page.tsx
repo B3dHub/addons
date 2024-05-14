@@ -24,6 +24,8 @@ import Support from "@/components/support";
 import OtherAddons from "@/components/other-addons";
 import Image from "next/image";
 import { Metadata } from "next";
+import Affiliate from "@/components/affiliate";
+import Coupon from "@/components/coupon";
 
 export const metadata: Metadata = {
   title: "Quick Decal - Blender Addon",
@@ -32,7 +34,7 @@ export const metadata: Metadata = {
 
 export default function QuickDecalPage() {
   return (
-    <div className="mx-auto px-5 my-5 flex flex-col justify-center gap-5 w-[688px]">
+    <div className="dark flex flex-col justify-center mx-auto gap-5">
       <Card>
         <CardHeader>
           <CardTitle>Introduction</CardTitle>
@@ -51,8 +53,7 @@ export default function QuickDecalPage() {
           </CardDescription>
         </CardContent>
         <CardContent>
-          Coupon code: <Badge variant={"default"}>discount10</Badge> to get 10%
-          off.
+          <Coupon />
         </CardContent>
       </Card>
 
@@ -177,7 +178,7 @@ export default function QuickDecalPage() {
         </CardContent>
         <CardContent>
           <Image
-            className="rounded-lg"
+            className="rounded-lg w-full"
             src="./images/quick-decal/custom_decals.gif"
             alt=""
             width={600}
@@ -194,7 +195,7 @@ export default function QuickDecalPage() {
         </CardContent>
         <CardContent>
           <Image
-            className="rounded-lg"
+            className="rounded-lg w-full"
             src="./images/quick-decal/quick_decal_custom_load_add.gif"
             alt=""
             width={600}
@@ -234,7 +235,7 @@ export default function QuickDecalPage() {
         </CardContent>
         <CardContent>
           <Image
-            className="rounded-lg"
+            className="rounded-lg w-full"
             src="./images/quick-decal/megascans_decals.gif"
             alt=""
             width={600}
@@ -244,7 +245,7 @@ export default function QuickDecalPage() {
         </CardContent>
         <CardContent>
           <Image
-            className="rounded-lg"
+            className="rounded-lg w-full"
             src="./images/quick-decal/megascans_decals_2.gif"
             alt=""
             width={600}
@@ -263,7 +264,7 @@ export default function QuickDecalPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg"
+            className="rounded-lg w-full"
             src="./images/quick-decal/multiple_obj_mat_decal.gif"
             alt=""
             width={600}
@@ -280,7 +281,7 @@ export default function QuickDecalPage() {
         </CardContent>
         <CardContent>
           <Image
-            className="rounded-lg"
+            className="rounded-lg w-full"
             src="./images/quick-decal/hotkeys.png"
             alt=""
             width={600}
@@ -300,7 +301,7 @@ export default function QuickDecalPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg"
+            className="rounded-lg w-full"
             src="./images/quick-decal/decal_layers.gif"
             alt=""
             width={600}
@@ -319,7 +320,7 @@ export default function QuickDecalPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg"
+            className="rounded-lg w-full"
             src="./images/quick-decal/decal_wear.gif"
             alt=""
             width={600}
@@ -346,7 +347,7 @@ export default function QuickDecalPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg"
+            className="rounded-lg w-full"
             src="./images/quick-decal/quick_decal_baker.gif"
             alt=""
             width={600}
@@ -366,7 +367,7 @@ export default function QuickDecalPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg"
+            className="rounded-lg w-full"
             src="./images/quick-decal/master_node_group.png"
             alt=""
             width={600}
@@ -395,8 +396,8 @@ export default function QuickDecalPage() {
           </Link>
         </CardFooter>
       </Support>
-
       <OtherAddons />
+      <Affiliate />
     </div>
   );
 }

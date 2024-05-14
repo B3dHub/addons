@@ -24,6 +24,8 @@ import Support from "@/components/support";
 import OtherAddons from "@/components/other-addons";
 import Image from "next/image";
 import { Metadata } from "next";
+import Affiliate from "@/components/affiliate";
+import Coupon from "@/components/coupon";
 
 export const metadata: Metadata = {
   title: "Quick Replace - Blender Addon",
@@ -32,7 +34,7 @@ export const metadata: Metadata = {
 
 export default function QuickReplacePage() {
   return (
-    <div className="mx-auto px-5 my-5 flex flex-col justify-center gap-5 w-[688px]">
+    <div className="dark flex flex-col justify-center mx-auto gap-5">
       <Card>
         <CardHeader>
           <CardTitle>Introduction</CardTitle>
@@ -48,8 +50,7 @@ export default function QuickReplacePage() {
           </CardDescription>
         </CardContent>
         <CardContent>
-          Coupon code: <Badge variant={"default"}>discount10</Badge> to get 10%
-          off.
+          <Coupon />
         </CardContent>
       </Card>
 
@@ -149,7 +150,7 @@ export default function QuickReplacePage() {
         </CardContent>
         <CardContent>
           <Image
-            className="rounded-lg"
+            className="rounded-lg w-full"
             src="./images/quick-replace/categories.gif"
             alt=""
             width={600}
@@ -184,7 +185,7 @@ export default function QuickReplacePage() {
         </CardContent>
         <CardContent>
           <Image
-            className="rounded-lg"
+            className="rounded-lg w-full"
             src="./images/quick-replace/objects.gif"
             alt=""
             width={600}
@@ -219,6 +220,7 @@ export default function QuickReplacePage() {
         </CardFooter>
       </Support>
       <OtherAddons />
+      <Affiliate />
     </div>
   );
 }

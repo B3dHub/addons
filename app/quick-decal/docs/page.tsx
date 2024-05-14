@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 
 export default function QuickDecalDocPage() {
   return (
-    <div className="mx-auto px-5 my-5 flex flex-col justify-center gap-5 w-[688px]">
+    <div className="dark flex flex-col justify-center mx-auto gap-5">
       <Card>
         <CardHeader>
           <CardTitle>Image Decal</CardTitle>
@@ -46,7 +46,7 @@ export default function QuickDecalDocPage() {
         </CardContent>
         <CardContent>
           <Image
-            className="rounded-lg"
+            className="rounded-lg w-full"
             src="../images/quick-decal/custom_library.png"
             alt=""
             width={600}
@@ -63,7 +63,7 @@ export default function QuickDecalDocPage() {
         </CardContent>
         <CardContent>
           <Image
-            className="rounded-lg"
+            className="rounded-lg w-full"
             src="../images/quick-decal/custom_decals.png"
             alt=""
             width={256}
@@ -79,7 +79,7 @@ export default function QuickDecalDocPage() {
         </CardContent>
         <CardContent>
           <Image
-            className="rounded-lg"
+            className="rounded-lg w-full"
             src="../images/quick-decal/load_custom_decals.png"
             alt=""
             width={256}
@@ -95,7 +95,7 @@ export default function QuickDecalDocPage() {
         </CardContent>
         <CardContent>
           <Image
-            className="rounded-lg"
+            className="rounded-lg w-full"
             src="../images/quick-decal/quick_decal_custom_load_add.gif"
             alt=""
             width={600}
@@ -130,7 +130,7 @@ export default function QuickDecalDocPage() {
         </CardContent>
         <CardContent>
           <Image
-            className="rounded-lg"
+            className="rounded-lg w-full"
             src="../images/quick-decal/preferenes.png"
             alt=""
             width={600}
@@ -149,7 +149,7 @@ export default function QuickDecalDocPage() {
         </CardContent>
         <CardContent>
           <Image
-            className="rounded-lg"
+            className="rounded-lg w-full"
             src="../images/quick-decal/megascans_decals.png"
             alt=""
             width={256}
@@ -168,7 +168,7 @@ export default function QuickDecalDocPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg"
+            className="rounded-lg w-full"
             src="../images/quick-decal/multiple_obj_mat_decal.gif"
             alt=""
             width={600}
@@ -184,7 +184,7 @@ export default function QuickDecalDocPage() {
         </CardContent>
         <CardContent>
           <Image
-            className="rounded-lg"
+            className="rounded-lg w-full"
             src="../images/quick-decal/hotkeys.png"
             alt=""
             width={600}
@@ -204,7 +204,7 @@ export default function QuickDecalDocPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg"
+            className="rounded-lg w-full"
             src="../images/quick-decal/decal_layers.gif"
             alt=""
             width={600}
@@ -223,7 +223,7 @@ export default function QuickDecalDocPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg"
+            className="rounded-lg w-full"
             src="../images/quick-decal/decal_wear.gif"
             alt=""
             width={600}
@@ -250,7 +250,7 @@ export default function QuickDecalDocPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg"
+            className="rounded-lg w-full"
             src="../images/quick-decal/quick_decal_baker.gif"
             alt=""
             width={600}
@@ -270,7 +270,7 @@ export default function QuickDecalDocPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg"
+            className="rounded-lg w-full"
             src="../images/quick-decal/master_node_group.png"
             alt=""
             width={600}
