@@ -385,9 +385,9 @@ export default function QuickDecalPage() {
           >
             <Button variant={"secondary"}>Documentation</Button>
           </Link>
-          <Link href="https://discord.gg/sdnHHZpWbT" target="_blank">
+          {/* <Link href="https://discord.gg/sdnHHZpWbT" target="_blank">
             <Button variant={"secondary"}>Discord</Button>
-          </Link>
+          </Link> */}
           <Link
             href="https://discord.com/channels/959138815602229389/1223542106539167754"
             target="_blank"

@@ -166,9 +166,9 @@ export default function CameraPreviewPage() {
 
       <Support>
         <CardFooter className="space-x-4">
-          <Link href="https://discord.gg/sdnHHZpWbT" target="_blank">
+          {/* <Link href="https://discord.gg/sdnHHZpWbT" target="_blank">
             <Button variant={"secondary"}>Discord</Button>
-          </Link>
+          </Link> */}
           <Link
             href="https://discord.com/channels/959138815602229389/1001092033559142463"
             target="_blank"

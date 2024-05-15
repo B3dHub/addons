@@ -247,17 +247,17 @@ export default function QuickInterfacePage() {
       </Card>
 
       <Support>
-        {/* <CardFooter className="space-x-4">
-          <Link href="https://discord.gg/sdnHHZpWbT" target="_blank">
+        <CardFooter className="space-x-4">
+          {/* <Link href="https://discord.gg/sdnHHZpWbT" target="_blank">
             <Button variant={"secondary"}>Discord</Button>
-          </Link>
+          </Link> */}
           <Link
-            href="https://discord.com/channels/959138815602229389/1090214367049560135"
+            href="https://discord.com/channels/959138815602229389/1237576375179939871"
             target="_blank"
           >
             <Button variant={"secondary"}>Changelogs</Button>
           </Link>
-        </CardFooter> */}
+        </CardFooter>
       </Support>
       <OtherAddons />
       <Affiliate />
