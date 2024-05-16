@@ -45,10 +45,15 @@ export default function QuickInterfacePage() {
             You can switch, duplicate, split, join, and swap area with hotkeys.
           </CardDescription>
         </CardContent>
-        <CardContent>
+        <CardContent className="flex gap-2 flex-col sm:flex-row">
           <Badge variant={"secondary"}>
             <CardDescription>
               Launch Offer: <span>25% Off Until May 30</span>
+            </CardDescription>
+          </Badge>
+          <Badge variant={"secondary"}>
+            <CardDescription>
+              Add to Wishlist: <span>Spring Sale (May, 21 - 26)</span>
             </CardDescription>
           </Badge>
         </CardContent>

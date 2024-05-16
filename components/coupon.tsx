@@ -4,10 +4,17 @@ import { Badge } from "./ui/badge";
 
 export default function Coupon() {
   return (
-    <Badge variant={"secondary"}>
-      <CardDescription>
-        Coupon code: <span>discount10</span> to get 10% off.
-      </CardDescription>
-    </Badge>
+    <div className="flex gap-2 flex-col sm:flex-row">
+      <Badge variant={"secondary"}>
+        <CardDescription>
+          Coupon code: <span>discount10</span> to get 10% off.
+        </CardDescription>
+      </Badge>
+      <Badge variant={"secondary"}>
+        <CardDescription>
+          Add to Wishlist: <span>Spring Sale (May, 21 - 26)</span>
+        </CardDescription>
+      </Badge>
+    </div>
   );
 }
