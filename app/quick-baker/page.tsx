@@ -459,13 +459,13 @@ export default function QuickBakerPage() {
         </CardHeader>
         <CardContent>
           <CardDescription>
-            Only works with <span>Principled BSDF, Mix Shader</span>, and{" "}
-            <span>Add Shader</span> nodes.
+            Only works with <span>Principled BSDF</span>,{" "}
+            <span>Mix Shader</span>, and <span>Add Shader</span> nodes.
           </CardDescription>
         </CardContent>
         <CardFooter>
           <CardDescription>
-            If you encounter the <span>'Out of Memory'</span> error you should
+            If you encounter the <span>Out of Memory</span> error you should
             lower the processes count to 1-2 in the Global Bake panel. The
             higher process count is useful when baking low-resolution maps (e.g.
             1K).

@@ -42,7 +42,7 @@ export default function QuickInterfacePage() {
           <CardDescription>
             Quick Interface is a simple yet powerful addon that enables you to
             manage work areas with ease. It's a must-have for any Blender user.
-            You can switch, duplicate, split, join, and swap areas with hotkeys.
+            You can switch, duplicate, split, join, and swap area with hotkeys.
           </CardDescription>
         </CardContent>
         <CardContent>
@@ -73,19 +73,19 @@ export default function QuickInterfacePage() {
             </TableHeader>
             <TableBody>
               <TableRow>
-                <TableCell className="font-medium">Switch Areas</TableCell>
+                <TableCell className="font-medium">Switch Area</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">Duplicate Areas</TableCell>
+                <TableCell className="font-medium">Split Area</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">Split Areas</TableCell>
+                <TableCell className="font-medium">Duplicate Area</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">Join Areas</TableCell>
+                <TableCell className="font-medium">Join Area</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">Swap Areas</TableCell>
+                <TableCell className="font-medium">Swap Area</TableCell>
               </TableRow>
             </TableBody>
           </Table>
@@ -111,29 +111,29 @@ export default function QuickInterfacePage() {
             <TableBody>
               <TableRow>
                 <TableCell className="font-medium">Shift + Space</TableCell>
-                <TableCell>Switch Areas</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Alt + Space</TableCell>
-                <TableCell>Duplicate Areas</TableCell>
+                <TableCell>Switch Area</TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">
                   Shift + Ctrl + Space
                 </TableCell>
-                <TableCell>Split Areas</TableCell>
+                <TableCell>Split Area</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium">Alt + Space</TableCell>
+                <TableCell>Duplicate Area</TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">
                   Shift + Alt + Space
                 </TableCell>
-                <TableCell>Join Areas</TableCell>
+                <TableCell>Join Area</TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">
                   Shift + Ctrl + Alt + Space
                 </TableCell>
-                <TableCell>Swap Areas</TableCell>
+                <TableCell>Swap Area</TableCell>
               </TableRow>
             </TableBody>
           </Table>
@@ -142,9 +142,9 @@ export default function QuickInterfacePage() {
 
       <Card>
         <CardHeader>
-          <CardTitle>Switch Areas</CardTitle>
+          <CardTitle>Switch Area</CardTitle>
           <CardDescription>
-            Switch areas using the hotkey <span>Shift + Space</span>. Select an
+            Switch area using the hotkey <span>Shift + Space</span>. Select an
             area from the pie menu.
           </CardDescription>
         </CardHeader>
@@ -162,9 +162,39 @@ export default function QuickInterfacePage() {
 
       <Card>
         <CardHeader>
-          <CardTitle>Duplicate Areas</CardTitle>
+          <CardTitle>Split Area</CardTitle>
           <CardDescription>
-            Duplicate areas using the hotkey <span>Alt + Space</span>. Select an
+            Split area using the hotkey <span>Shift + Ctrl + Space</span>.
+            Select an area from the pie menu. You can split the area vertically
+            or horizontally with the mouse wheel.
+          </CardDescription>
+          <CardDescription>
+            <span>Mouse Wheel Up</span> : Split Vertically
+          </CardDescription>
+          <CardDescription>
+            <span>Mouse Wheel Down</span> : Split Horizontally
+          </CardDescription>
+          <CardDescription>
+            <span>Ctrl</span> : Split Snap
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          <Image
+            className="rounded-lg w-full"
+            src="./images/quick-interface/area_split.gif"
+            alt=""
+            width={600}
+            height={325}
+            unoptimized
+          />
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle>Duplicate Area</CardTitle>
+          <CardDescription>
+            Duplicate area using the hotkey <span>Alt + Space</span>. Select an
             area from the pie menu. This will open a new window with the
             selected area.
           </CardDescription>
@@ -183,36 +213,9 @@ export default function QuickInterfacePage() {
 
       <Card>
         <CardHeader>
-          <CardTitle>Split Areas</CardTitle>
+          <CardTitle>Join Area</CardTitle>
           <CardDescription>
-            Split areas using the hotkey <span>Shift + Ctrl + Space</span>.
-            Select an area from the pie menu. You can also split the area
-            vertically or horizontally with the mouse wheel.
-          </CardDescription>
-          <CardDescription>
-            <span>Mouse Wheel Up</span>: Split Vertically
-          </CardDescription>
-          <CardDescription>
-            <span>Mouse Wheel Down</span>: Split Horizontally
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          <Image
-            className="rounded-lg w-full"
-            src="./images/quick-interface/area_split.gif"
-            alt=""
-            width={600}
-            height={325}
-            unoptimized
-          />
-        </CardContent>
-      </Card>
-
-      <Card>
-        <CardHeader>
-          <CardTitle>Join Areas</CardTitle>
-          <CardDescription>
-            Join areas using the hotkey <span>Shift + Alt + Space</span>.
+            Join area using the hotkey <span>Shift + Alt + Space</span>.
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -229,9 +232,9 @@ export default function QuickInterfacePage() {
 
       <Card>
         <CardHeader>
-          <CardTitle>Swap Areas</CardTitle>
+          <CardTitle>Swap Area</CardTitle>
           <CardDescription>
-            Swap areas using the hotkey <span>Shift + Ctrl + Alt + Space</span>.
+            Swap area using the hotkey <span>Shift + Ctrl + Alt + Space</span>.
           </CardDescription>
         </CardHeader>
         <CardContent>

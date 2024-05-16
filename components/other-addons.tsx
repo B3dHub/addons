@@ -26,7 +26,7 @@ export default function OtherAddons({ active }: { active?: boolean }) {
               aria-label={item.title}
             >
               <img
-                className={`rounded-lg ${
+                className={`rounded-lg transition-all hover:scale-105 ${
                   active ? "border-4 border-primary" : ""
                 }`}
                 src={item.imageURL}

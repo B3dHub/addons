@@ -179,9 +179,9 @@ export default function QuickMeasurePage() {
         </CardHeader>
         <CardContent>
           <CardDescription>
-            You can measure the length of an object by holding Alt and dragging
-            the Left Mouse Button (LMB), but this action won't save the
-            measurement.
+            You can measure the length of an object by holding <span>Alt</span>{" "}
+            and dragging the <span>Left Mouse Button (LMB)</span>, but this
+            action won't save the measurement.
           </CardDescription>
         </CardContent>
         <CardContent>
@@ -196,8 +196,8 @@ export default function QuickMeasurePage() {
         </CardContent>
         <CardContent>
           <CardDescription>
-            To make multiple measurements without saving them, hold Alt and
-            click the Left Mouse Button (LMB).
+            To make multiple measurements without saving them, hold{" "}
+            <span>Alt</span> and click the <span>Left Mouse Button (LMB)</span>.
           </CardDescription>
         </CardContent>
         <CardContent>
@@ -218,8 +218,9 @@ export default function QuickMeasurePage() {
         </CardHeader>
         <CardContent>
           <CardDescription>
-            You can measure the length of an object by holding Shift and Alt,
-            then dragging the Left Mouse Button (LMB). This action will save the
+            You can measure the length of an object by holding{" "}
+            <span>Shift</span> and <span>Alt</span>, then dragging the{" "}
+            <span>Left Mouse Button (LMB)</span>. This action will save the
             measurement.
           </CardDescription>
         </CardContent>
@@ -235,8 +236,9 @@ export default function QuickMeasurePage() {
         </CardContent>
         <CardContent>
           <CardDescription>
-            To make multiple measurements and save them, hold Shift and Alt,
-            then click the Left Mouse Button (LMB).
+            To make multiple measurements and save them, hold <span>Shift</span>{" "}
+            and <span>Alt</span>, then click the{" "}
+            <span>Left Mouse Button (LMB)</span>.
           </CardDescription>
         </CardContent>
         <CardContent>
@@ -255,8 +257,8 @@ export default function QuickMeasurePage() {
         <CardHeader>
           <CardTitle>Object Snap</CardTitle>
           <CardDescription>
-            You can snap measurements by holding Ctrl while dragging the Left
-            Mouse Button (LMB).
+            You can snap measurements by holding <span>Ctrl</span> while
+            dragging the <span>Left Mouse Button (LMB)</span>.
           </CardDescription>
         </CardHeader>
         <CardContent>

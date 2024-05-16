@@ -35,6 +35,13 @@ export const Data = [
     info: "Interface",
   },
   {
+    productURL: "/camera-preview",
+    imageURL: "./images/camera-preview/thumb.png",
+    title: "Camera Preview",
+    price: "$10",
+    info: "3D View",
+  },
+  {
     productURL: "/blender-to-unity",
     imageURL: "./images/blender-to-unity/thumb.png",
     title: "Blender to Unity",
@@ -54,13 +61,6 @@ export const Data = [
     title: "Blender to Game Engine (Unity & Unreal) Bundle",
     price: "$50 - $500",
     info: "Export",
-  },
-  {
-    productURL: "/camera-preview",
-    imageURL: "./images/camera-preview/thumb.png",
-    title: "Camera Preview",
-    price: "$10",
-    info: "3D View",
   },
   {
     productURL: "/quick-replace",
