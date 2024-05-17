@@ -54,11 +54,11 @@ export default function QuickInterfacePage() {
               Launch Offer: <span>25% Off Until May 30</span>
             </CardDescription>
           </Badge>
-          <Badge variant={"secondary"}>
+          {/* <Badge variant={"secondary"}>
             <CardDescription>
               Add to Wishlist: <span>Spring Sale (May 21 - 26)</span>
             </CardDescription>
-          </Badge>
+          </Badge> */}
         </CardContent>
       </Card>
 

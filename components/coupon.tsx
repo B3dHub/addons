@@ -10,11 +10,11 @@ export default function Coupon() {
           Coupon code: <span>discount10</span> to get 10% off
         </CardDescription>
       </Badge>
-      <Badge variant={"secondary"}>
+      {/* <Badge variant={"secondary"}>
         <CardDescription>
           Add to Wishlist: <span>Spring Sale (May 21 - 26)</span>
         </CardDescription>
-      </Badge>
+      </Badge> */}
     </div>
   );
 }
