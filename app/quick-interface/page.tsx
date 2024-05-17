@@ -40,9 +40,12 @@ export default function QuickInterfacePage() {
         </CardHeader>
         <CardContent>
           <CardDescription>
-            Quick Interface is a simple yet powerful addon that enables you to
-            manage work areas with ease. It's a must-have for any Blender user.
-            You can switch, duplicate, split, join, and swap area with hotkeys.
+            Quick Interface is a user-friendly addon that greatly simplifies the
+            management of workspace areas in Blender. It's an indispensable tool
+            for all Blender users. With Quick Interface, you can effortlessly
+            switch, split, duplicate, join, and swap areas using convenient
+            hotkeys. This addon enhances your workflow, making it more efficient
+            and saving you time and effort.
           </CardDescription>
         </CardContent>
         <CardContent className="flex gap-2 flex-col sm:flex-row">
@@ -53,7 +56,7 @@ export default function QuickInterfacePage() {
           </Badge>
           <Badge variant={"secondary"}>
             <CardDescription>
-              Add to Wishlist: <span>Spring Sale (May, 21 - 26)</span>
+              Add to Wishlist: <span>Spring Sale (May 21 - 26)</span>
             </CardDescription>
           </Badge>
         </CardContent>

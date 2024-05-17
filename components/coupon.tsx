@@ -7,12 +7,12 @@ export default function Coupon() {
     <div className="flex gap-2 flex-col sm:flex-row">
       <Badge variant={"secondary"}>
         <CardDescription>
-          Coupon code: <span>discount10</span> to get 10% off.
+          Coupon code: <span>discount10</span> to get 10% off
         </CardDescription>
       </Badge>
       <Badge variant={"secondary"}>
         <CardDescription>
-          Add to Wishlist: <span>Spring Sale (May, 21 - 26)</span>
+          Add to Wishlist: <span>Spring Sale (May 21 - 26)</span>
         </CardDescription>
       </Badge>
     </div>

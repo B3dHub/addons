@@ -38,16 +38,20 @@ export default function QuickThemePage() {
       <Card>
         <CardHeader>
           <CardTitle>Introduction</CardTitle>
+          <CardDescription>
+            Are you tired of the default Blender theme?
+          </CardDescription>
         </CardHeader>
         <CardContent>
           <CardDescription>
-            Quick Theme is an exceptionally intuitive and powerful addon that
-            empowers you to swiftly create Blender themes. Designed with
-            simplicity and user-friendliness at its core, it enables you to
-            craft a theme with just a few clicks. This addon is a game-changer
-            for any 3D artist or designer, promising to make your theme creation
-            process more efficient and streamlined. Don't miss out on this
-            essential tool that will revolutionize the way you work.
+            Quick Theme consolidates all theme settings into one panel. Now, you
+            can create a theme that suits your taste in seconds. There's no need
+            to change multiple color settings to create a theme. Simply use the
+            single color slider to craft a theme you like. You can also use the{" "}
+            <span>Auto Theme</span> feature to change the theme automatically
+            whenever you restart or load a blend file. Additionally, you can
+            change the <span>Viewport</span> and <span>Outliner</span> theme
+            colors using a single color slider.
           </CardDescription>
         </CardContent>
         <CardContent>
