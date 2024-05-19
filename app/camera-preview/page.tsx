@@ -96,6 +96,11 @@ export default function CameraPreviewPage() {
               <TableRow>
                 <TableCell className="font-medium">Preview Size</TableCell>
               </TableRow>
+              <TableRow>
+                <TableCell className="font-medium">
+                  Object Hide/Unhide
+                </TableCell>
+              </TableRow>
             </TableBody>
           </Table>
         </CardContent>
@@ -150,6 +155,28 @@ export default function CameraPreviewPage() {
             unoptimized
           />
         </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle>Object Hide/Unhide</CardTitle>
+          <CardDescription>
+            Hide or unhide objects from the camera preview using the operator in
+            the object context menu.
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          <Image
+            className="rounded-lg w-full"
+            src="./images/camera-preview/view_layer_hide.gif"
+            alt=""
+            width={600}
+            height={325}
+            unoptimized
+          />
+        </CardContent>
+        {/* <CardFooter>
+        </CardFooter> */}
       </Card>
 
       <Card>
