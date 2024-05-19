@@ -52,16 +52,6 @@ export default function CameraPreviewPage() {
           </CardDescription>
         </CardContent>
         <CardContent>
-          <Image
-            className="rounded-lg w-full"
-            src="./images/camera-preview/demo_full.gif"
-            alt=""
-            width={600}
-            height={325}
-            unoptimized
-          />
-        </CardContent>
-        <CardContent>
           <Coupon />
         </CardContent>
       </Card>
@@ -85,7 +75,9 @@ export default function CameraPreviewPage() {
             </TableHeader>
             <TableBody>
               <TableRow>
-                <TableCell className="font-medium">Multiple Camera</TableCell>
+                <TableCell className="font-medium">
+                  Multiple Camera Preview
+                </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">Preview Position</TableCell>
@@ -108,8 +100,27 @@ export default function CameraPreviewPage() {
 
       <Card>
         <CardHeader>
-          <CardTitle>Position</CardTitle>
-          <CardDescription>Preview position</CardDescription>
+          <CardTitle>Multiple Camera Preview</CardTitle>
+          <CardDescription>Supports multiple camera previews.</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <Image
+            className="rounded-lg w-full"
+            src="./images/camera-preview/demo_full.gif"
+            alt=""
+            width={600}
+            height={325}
+            unoptimized
+          />
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle>Preview Position</CardTitle>
+          <CardDescription>
+            Change the position of the camera preview.
+          </CardDescription>
         </CardHeader>
         <CardContent>
           <Image
@@ -125,8 +136,10 @@ export default function CameraPreviewPage() {
 
       <Card>
         <CardHeader>
-          <CardTitle>Offset</CardTitle>
-          <CardDescription>Preview offset</CardDescription>
+          <CardTitle>Preview Offset</CardTitle>
+          <CardDescription>
+            Adjust the offset of the camera preview.
+          </CardDescription>
         </CardHeader>
         <CardContent>
           <Image
@@ -142,8 +155,10 @@ export default function CameraPreviewPage() {
 
       <Card>
         <CardHeader>
-          <CardTitle>Size</CardTitle>
-          <CardDescription>Preview size</CardDescription>
+          <CardTitle>Preview Size</CardTitle>
+          <CardDescription>
+            Change the size of the camera preview.
+          </CardDescription>
         </CardHeader>
         <CardContent>
           <Image
