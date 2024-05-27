@@ -201,7 +201,10 @@ export default function CameraPreviewPage() {
         </CardHeader>
         <CardContent>
           <CardDescription>
-            Only works with <span>EEVEE</span> render engine.
+            <span>Rendered</span> mode in <span>Cycles</span> is not supported.
+          </CardDescription>
+          <CardDescription>
+            Background images in the camera is not supported.
           </CardDescription>
         </CardContent>
       </Card>
