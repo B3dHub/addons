@@ -25,6 +25,7 @@ import OtherAddons from "@/components/other-addons";
 import Image from "next/image";
 import { Metadata } from "next";
 import Affiliate from "@/components/affiliate";
+import Coupon from "@/components/coupon";
 
 export const metadata: Metadata = {
   title: "Quick Interface - Blender Addon",
@@ -48,17 +49,8 @@ export default function QuickInterfacePage() {
             and saving you time and effort.
           </CardDescription>
         </CardContent>
-        <CardContent className="flex gap-2 flex-col sm:flex-row">
-          <Badge variant={"secondary"}>
-            <CardDescription>
-              Launch Offer: <span>25% Off Until May 30</span>
-            </CardDescription>
-          </Badge>
-          {/* <Badge variant={"secondary"}>
-            <CardDescription>
-              Add to Wishlist: <span>Spring Sale (May 21 - 26)</span>
-            </CardDescription>
-          </Badge> */}
+        <CardContent>
+          <Coupon />
         </CardContent>
       </Card>
 
