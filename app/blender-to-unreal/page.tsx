@@ -34,7 +34,7 @@ import OtherAddons from "@/components/other-addons";
 import Image from "next/image";
 import { Metadata } from "next";
 import Affiliate from "@/components/affiliate";
-import Coupon from "@/components/coupon";
+import { Coupon, showCoupon } from "@/components/coupon";
 
 export const metadata: Metadata = {
   title: "Blender to Unreal - Blender Addon",
@@ -59,9 +59,11 @@ export default function BlendertoUnrealPage() {
             exporting your models to Unreal Engine with ease!
           </CardDescription>
         </CardContent>
-        <CardContent>
-          <Coupon />
-        </CardContent>
+        {showCoupon && (
+          <CardContent>
+            <Coupon />
+          </CardContent>
+        )}
       </Card>
 
       <Card>

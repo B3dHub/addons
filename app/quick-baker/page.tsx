@@ -25,7 +25,7 @@ import OtherAddons from "@/components/other-addons";
 import Image from "next/image";
 import { Metadata } from "next";
 import Affiliate from "@/components/affiliate";
-import Coupon from "@/components/coupon";
+import { Coupon, showCoupon } from "@/components/coupon";
 
 export const metadata: Metadata = {
   title: "Quick Baker - Blender Addon",
@@ -53,9 +53,11 @@ export default function QuickBakerPage() {
             your baking needs.
           </CardDescription>
         </CardContent>
-        <CardContent>
-          <Coupon />
-        </CardContent>
+        {showCoupon && (
+          <CardContent>
+            <Coupon />
+          </CardContent>
+        )}
       </Card>
 
       <Card>
@@ -465,7 +467,7 @@ export default function QuickBakerPage() {
         </CardContent>
         <CardFooter>
           <CardDescription>
-            If you encounter the <span>Out of Memory</span> error you should
+            If you encounter the <span>Out of Memory</span> error, you should
             lower the processes count to 1-2 in the Global Bake panel. The
             higher process count is useful when baking low-resolution maps (e.g.
             1K).

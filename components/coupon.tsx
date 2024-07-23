@@ -2,7 +2,7 @@ import React from "react";
 import { CardContent, CardDescription } from "./ui/card";
 import { Badge } from "./ui/badge";
 
-export default function Coupon() {
+export function Coupon() {
   return (
     <div className="flex gap-2 flex-col sm:flex-row">
       <Badge variant={"secondary"}>
@@ -18,3 +18,5 @@ export default function Coupon() {
     </div>
   );
 }
+
+export const showCoupon = false;

@@ -24,21 +24,21 @@ export const Data = [
     productURL: "/quick-interface",
     imageURL: "./images/quick-interface/thumb.png",
     title: "Quick Interface",
-    price: "$15 - $150",
+    price: "$10 - $100",
     info: "Interface",
   },
   {
     productURL: "/quick-theme",
     imageURL: "./images/quick-theme/thumb.png",
     title: "Quick Theme",
-    price: "$10",
+    price: "$10 - $100",
     info: "Interface",
   },
   {
     productURL: "/camera-preview",
     imageURL: "./images/camera-preview/thumb.png",
     title: "Camera Preview",
-    price: "$10",
+    price: "$10 - $100",
     info: "3D View",
   },
   {
@@ -66,7 +66,7 @@ export const Data = [
     productURL: "/quick-replace",
     imageURL: "./images/quick-replace/thumb.png",
     title: "Quick Replace",
-    price: "$10",
+    price: "$10 - $100",
     info: "Object",
   },
 ];
