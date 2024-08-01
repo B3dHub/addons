@@ -659,6 +659,32 @@ export default function BlendertoUnrealPage() {
 
       <Card>
         <CardHeader>
+          <CardTitle>Vehicle Rigging</CardTitle>
+          <CardDescription>
+            You need a vehicle body and wheels named '<span>Wheel</span>'
+            parented to it. You can load them manually if the names don't match,
+            or use the <span>Load Vehicle Wheels</span> operator. Once loaded,
+            just press the <span>Rig</span> operator. The bones will be added to
+            the object's origin.
+          </CardDescription>
+          <CardDescription>
+            Note: The vehicle body needs to be facing in the +X axis.
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          <Image
+            className="rounded-lg w-full"
+            src="./images/blender-to-unreal/vehicle_rigging.gif"
+            alt=""
+            width={600}
+            height={325}
+            unoptimized
+          />
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
           <CardTitle>
             <Link
               href={
