@@ -28,7 +28,7 @@ export default function Support({ children }: { children?: React.ReactNode }) {
         ></iframe>
       </CardContent>
       {children}
-      <CardContent>
+      {/* <CardContent>
         <CardDescription>Support the future development.</CardDescription>
       </CardContent>
       <CardFooter className="space-x-4">
@@ -38,7 +38,7 @@ export default function Support({ children }: { children?: React.ReactNode }) {
         <Link href="https://paypal.me/B3dHub" target="_blank">
           <Button variant={"secondary"}>Paypal</Button>
         </Link>
-      </CardFooter>
+      </CardFooter> */}
     </Card>
   );
 }
