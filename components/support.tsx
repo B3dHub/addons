@@ -28,17 +28,17 @@ export default function Support({ children }: { children?: React.ReactNode }) {
         ></iframe>
       </CardContent>
       {children}
-      {/* <CardContent>
+      <CardContent>
         <CardDescription>Support the future development.</CardDescription>
       </CardContent>
       <CardFooter className="space-x-4">
         <Link href="https://patreon.com/B3dHub" target="_blank">
-          <Button variant={"secondary"}>Patreon</Button>
+          <Button variant={"secondary"}>Join Patreon</Button>
         </Link>
-        <Link href="https://paypal.me/B3dHub" target="_blank">
+        {/* <Link href="https://paypal.me/B3dHub" target="_blank">
           <Button variant={"secondary"}>Paypal</Button>
-        </Link>
-      </CardFooter> */}
+        </Link> */}
+      </CardFooter>
     </Card>
   );
 }
