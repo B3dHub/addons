@@ -19,4 +19,4 @@ export function Coupon() {
   );
 }
 
-export const showCoupon = false;
+export const showCoupon = true;
