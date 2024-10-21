@@ -578,6 +578,10 @@ export default function BlendertoUnityPage() {
           <CardDescription>
             Export objects and collections to Unity or Disk.
           </CardDescription>
+          <CardDescription>
+            - Add a folder path.<br></br>- Select the objects or collections.
+            <br></br>- Hit export.
+          </CardDescription>
         </CardHeader>
         <CardContent>
           <Image

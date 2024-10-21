@@ -56,6 +56,13 @@ export const Data = [
     info: "Export",
   },
   {
+    productURL: "/blender-to-godot",
+    imageURL: "./images/blender-to-godot/thumb.png",
+    title: "Blender to Godot",
+    price: "$15 - $150",
+    info: "Export",
+  },
+  {
     productURL: "/blender-to-game-engine",
     imageURL: "./images/blender-to-game-engine/thumb.png",
     title: "Blender to Game Engine (Unity & Unreal) Bundle",

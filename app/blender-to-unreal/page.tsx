@@ -699,6 +699,10 @@ export default function BlendertoUnrealPage() {
           <CardDescription>
             Export objects and collections to Unreal or Disk.
           </CardDescription>
+          <CardDescription>
+            - Add a folder path.<br></br>- Select the objects or collections.
+            <br></br>- Hit export.
+          </CardDescription>
         </CardHeader>
         <CardContent>
           <Image
