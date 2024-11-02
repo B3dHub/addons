@@ -68,7 +68,7 @@ export default function BlendertoGodotPage() {
           <div className="flex gap-2 flex-col sm:flex-row">
             <Badge variant={"secondary"}>
               <CardDescription>
-                Launch Offer: <span>50% Off Until October 31</span>
+                Launch Offer: <span>50% Off Until November 15</span>
               </CardDescription>
             </Badge>
           </div>
