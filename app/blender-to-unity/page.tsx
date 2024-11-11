@@ -593,6 +593,48 @@ export default function BlendertoUnityPage() {
             unoptimized
           />
         </CardContent>
+        <CardContent>
+          <CardDescription>
+            If you want to have colliders and create shader types in Unity
+            automatically.
+          </CardDescription>
+          <CardDescription>
+            - Import the <span>BUImporter_v3</span> script while the Unity
+            project is open(drag-n-drop), it should compile the script.
+          </CardDescription>
+          <CardDescription>
+            - Install the <span>Newtonsoft.Json</span> unity package (required
+            for BUImporter_v3).
+          </CardDescription>
+        </CardContent>
+        <CardContent>
+          <CardDescription>
+            To install the <span>Newtonsoft.Json</span> package in Unity:
+          </CardDescription>
+          <CardDescription>
+            Step 1: Open Unity Package Manager, go to{" "}
+            <span>Window {`>`} Package Manager</span> in the Unity Editor.
+          </CardDescription>
+          <CardDescription>
+            Step 2: Add Package from Git URL, click the + button in the top left
+            corner of the Package Manager window.
+          </CardDescription>
+          <CardDescription>- Select Add package from git URL.</CardDescription>
+          <CardDescription>
+            - Enter the following URL:
+            <Link
+              href={
+                "https://github.com/jilleJr/Newtonsoft.Json-for-Unity.git#upm"
+              }
+              target="_blank"
+              className="underline hover:text-secondary-foreground"
+            >
+              {" "}
+              https://github.com/jilleJr/Newtonsoft.Json-for-Unity.git#upm
+            </Link>
+          </CardDescription>
+          <CardDescription>- Click Add.</CardDescription>
+        </CardContent>
       </Card>
 
       <Support>
