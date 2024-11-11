@@ -115,12 +115,23 @@ export default function BlendertoUnityPage() {
                 <TableCell className="text-center">⚠️</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">Export to Unity</TableCell>
+                <TableCell className="font-medium">
+                  Export to Unity & Disk
+                </TableCell>
                 <TableCell className="text-center">✅</TableCell>
                 <TableCell className="text-center">⚠️</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">Export to Disk</TableCell>
+                <TableCell className="font-medium">
+                  Auto Extract Materials & Textures
+                </TableCell>
+                <TableCell className="text-center">✅</TableCell>
+                <TableCell className="text-center">⚠️</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium">
+                  Auto Create Shader Types
+                </TableCell>
                 <TableCell className="text-center">✅</TableCell>
                 <TableCell className="text-center">⚠️</TableCell>
               </TableRow>
