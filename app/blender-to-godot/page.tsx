@@ -64,7 +64,7 @@ export default function BlendertoGodotPage() {
             <Coupon />
           </CardContent>
         )}
-        <CardContent>
+        {/* <CardContent>
           <div className="flex gap-2 flex-col sm:flex-row">
             <Badge variant={"secondary"}>
               <CardDescription>
@@ -72,7 +72,7 @@ export default function BlendertoGodotPage() {
               </CardDescription>
             </Badge>
           </div>
-        </CardContent>
+        </CardContent> */}
       </Card>
 
       <Card>
