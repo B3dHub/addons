@@ -7,7 +7,8 @@ export function Coupon() {
     <div className="flex gap-2 flex-col sm:flex-row">
       <Badge variant={"secondary"}>
         <CardDescription>
-          Coupon code: <span>discount10</span> to get 10% off
+          Coupon code: <span>christmas25</span> to get 25% off, valid until Dec
+          31, 2024
         </CardDescription>
       </Badge>
       {/* <Badge variant={"secondary"}>
@@ -19,4 +20,4 @@ export function Coupon() {
   );
 }
 
-export const showCoupon = false;
+export const showCoupon = true;
