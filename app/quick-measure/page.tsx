@@ -448,6 +448,16 @@ export default function QuickMeasurePage() {
         </CardContent>
       </Card>
 
+      <Card>
+        <CardHeader>
+          <CardTitle>Limitations</CardTitle>
+          <CardDescription>
+            You need to toggle the measurements with <span>Alt + Shift + X</span> whenever you switch to different workspaces, e.g., Modeling, Shading, etc.
+          </CardDescription>
+        </CardHeader>
+        
+      </Card>
+
       <Support>
         <CardFooter className="space-x-4">
           {/* <Link href="https://discord.gg/sdnHHZpWbT" target="_blank">
