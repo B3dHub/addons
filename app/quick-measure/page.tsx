@@ -70,7 +70,7 @@ export default function QuickMeasurePage() {
             <TableHeader>
               {/* <TableRow>
                 <TableHead>Features</TableHead>
-                <TableHead className="text-center">Quick Decal</TableHead>
+                <TableHead className="text-center">Quick Measure</TableHead>
                 <TableHead className="text-center">Others</TableHead>
               </TableRow> */}
             </TableHeader>
@@ -83,6 +83,39 @@ export default function QuickMeasurePage() {
               <TableRow>
                 <TableCell className="font-medium">
                   Saved Measurements
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium">
+                  Select Measurements
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium">
+                  Remove Measurements
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium">
+                  Separate Measurements
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium">Join Measurements</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium">Axis Restriction</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium">Measure Angle</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium">Lock to Vertices</TableCell>
+              </TableRow>
+
+              <TableRow>
+                <TableCell className="font-medium">
+                  Blender Units Compatible
                 </TableCell>
               </TableRow>
               <TableRow>
@@ -167,6 +200,10 @@ export default function QuickMeasurePage() {
                 <TableCell>Toggle the display of saved measurements.</TableCell>
               </TableRow>
               <TableRow>
+                <TableCell className="font-medium">Alt + X</TableCell>
+                <TableCell>Remove the selected measurement.</TableCell>
+              </TableRow>
+              <TableRow>
                 <TableCell className="font-medium">Ctrl + Alt + X</TableCell>
                 <TableCell>Remove all measurements.</TableCell>
               </TableRow>
@@ -177,7 +214,7 @@ export default function QuickMeasurePage() {
 
       <Card>
         <CardHeader>
-          <CardTitle>Quick Measurement</CardTitle>
+          <CardTitle>Quick Measurements</CardTitle>
         </CardHeader>
         <CardContent>
           <CardDescription>
@@ -189,7 +226,7 @@ export default function QuickMeasurePage() {
         <CardContent>
           <Image
             className="rounded-lg w-full"
-            src="./images/quick-measure/alt_click_drag.gif"
+            src="./images/quick-measure/v2/quick_measurements.gif"
             alt=""
             width={600}
             height={325}
@@ -205,7 +242,7 @@ export default function QuickMeasurePage() {
         <CardContent>
           <Image
             className="rounded-lg w-full"
-            src="./images/quick-measure/alt_click.gif"
+            src="./images/quick-measure/v2/quick_multiple_measurements.gif"
             alt=""
             width={600}
             height={325}
@@ -216,7 +253,7 @@ export default function QuickMeasurePage() {
 
       <Card>
         <CardHeader>
-          <CardTitle>Saved Measurement</CardTitle>
+          <CardTitle>Saved Measurements</CardTitle>
         </CardHeader>
         <CardContent>
           <CardDescription>
@@ -229,7 +266,7 @@ export default function QuickMeasurePage() {
         <CardContent>
           <Image
             className="rounded-lg w-full"
-            src="./images/quick-measure/shift_alt_click_drag.gif"
+            src="./images/quick-measure/v2/saved_measurements.gif"
             alt=""
             width={600}
             height={325}
@@ -246,7 +283,7 @@ export default function QuickMeasurePage() {
         <CardContent>
           <Image
             className="rounded-lg w-full"
-            src="./images/quick-measure/shift_alt_click.gif"
+            src="./images/quick-measure/v2/saved_multiple_measurements.gif"
             alt=""
             width={600}
             height={325}
@@ -257,26 +294,15 @@ export default function QuickMeasurePage() {
 
       <Card>
         <CardHeader>
-          <CardTitle>Object Snap</CardTitle>
+          <CardTitle>Select Measurements</CardTitle>
           <CardDescription>
-            You can snap measurements by holding <span>Ctrl</span> while
-            dragging the <span>Left Mouse Button (LMB)</span>.
+            You can select the measurements in the viewport.
           </CardDescription>
         </CardHeader>
         <CardContent>
           <Image
             className="rounded-lg w-full"
-            src="./images/quick-measure/ctrl_alt_click_drag.gif"
-            alt=""
-            width={600}
-            height={325}
-            unoptimized
-          />
-        </CardContent>
-        <CardContent>
-          <Image
-            className="rounded-lg w-full"
-            src="./images/quick-measure/ctrl_alt_click.gif"
+            src="./images/quick-measure/v2/select_measurements.gif"
             alt=""
             width={600}
             height={325}
@@ -287,15 +313,15 @@ export default function QuickMeasurePage() {
 
       <Card>
         <CardHeader>
-          <CardTitle>Grid Snap</CardTitle>
+          <CardTitle>Remove Measurements</CardTitle>
           <CardDescription>
-            This works the same as Object Snap, but it snaps to the grid.
+            You can remove the selected measurements with <span>Alt + X</span>.
           </CardDescription>
         </CardHeader>
         <CardContent>
           <Image
             className="rounded-lg w-full"
-            src="./images/quick-measure/grid_snap.gif"
+            src="./images/quick-measure/v2/remove_measurements.gif"
             alt=""
             width={600}
             height={325}
@@ -306,15 +332,114 @@ export default function QuickMeasurePage() {
 
       <Card>
         <CardHeader>
-          <CardTitle>Preference Override</CardTitle>
+          <CardTitle>Separate Measurements</CardTitle>
           <CardDescription>
-            Override measurement settings in the preferences.
+            You can separate the joined measurement points by holding{" "}
+            <span>Alt</span>.
           </CardDescription>
         </CardHeader>
         <CardContent>
           <Image
             className="rounded-lg w-full"
-            src="./images/quick-measure/preference_override.gif"
+            src="./images/quick-measure/v2/separate_measurements.gif"
+            alt=""
+            width={600}
+            height={325}
+            unoptimized
+          />
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle>Join Measurements</CardTitle>
+          <CardDescription>
+            You can join the separate measurement points only when both
+            measurement points are in the same position.
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          <Image
+            className="rounded-lg w-full"
+            src="./images/quick-measure/v2/join_measurements.gif"
+            alt=""
+            width={600}
+            height={325}
+            unoptimized
+          />
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle>Axis Restriction</CardTitle>
+          <CardDescription>
+            You can restrict the axis while moving the measurement points using{" "}
+            <span>X, Y, Z</span>.
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          <Image
+            className="rounded-lg w-full"
+            src="./images/quick-measure/v2/axis_restriction.gif"
+            alt=""
+            width={600}
+            height={325}
+            unoptimized
+          />
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle>Measure Angle</CardTitle>
+          <CardDescription>
+            You can measure the angle similar to default Blender.
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          <Image
+            className="rounded-lg w-full"
+            src="./images/quick-measure/v2/measure_angle.gif"
+            alt=""
+            width={600}
+            height={325}
+            unoptimized
+          />
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle>Lock to Vertices</CardTitle>
+          <CardDescription>
+            You can lock the measurement points to object vertices.
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          <Image
+            className="rounded-lg w-full"
+            src="./images/quick-measure/v2/lock_to_vertex.gif"
+            alt=""
+            width={600}
+            height={325}
+            unoptimized
+          />
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle>Blender Units Compatible</CardTitle>
+          <CardDescription>
+            It's compatible with Blender units by default. You can override this
+            in the preferences.
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          <Image
+            className="rounded-lg w-full"
+            src="./images/quick-measure/v2/measurement_units.gif"
             alt=""
             width={600}
             height={325}
