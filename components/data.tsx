@@ -21,16 +21,16 @@ export const Data = [
     info: "3D View",
   },
   {
+    productURL: "/megascans-bridge",
+    imageURL: "./images/megascans-bridge/thumb.png",
+    title: "Megascans Bridge",
+    price: "$20 - $200",
+    info: "Object",
+  },
+  {
     productURL: "/quick-interface",
     imageURL: "./images/quick-interface/thumb.png",
     title: "Quick Interface",
-    price: "$10 - $100",
-    info: "Interface",
-  },
-  {
-    productURL: "/quick-theme",
-    imageURL: "./images/quick-theme/thumb.png",
-    title: "Quick Theme",
     price: "$10 - $100",
     info: "Interface",
   },
@@ -68,6 +68,13 @@ export const Data = [
     title: "Blender to Game Engine (Unity & Unreal) Bundle",
     price: "$50 - $500",
     info: "Export",
+  },
+  {
+    productURL: "/quick-theme",
+    imageURL: "./images/quick-theme/thumb.png",
+    title: "Quick Theme",
+    price: "$10 - $100",
+    info: "Interface",
   },
   {
     productURL: "/quick-replace",
