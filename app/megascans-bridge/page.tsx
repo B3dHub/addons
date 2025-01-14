@@ -250,12 +250,12 @@ export default function MegascansBridgePage() {
           {/* <Link href="https://discord.gg/sdnHHZpWbT" target="_blank">
             <Button variant={"secondary"}>Discord</Button>
           </Link> */}
-          {/* <Link
+          <Link
             href="https://discord.com/channels/959138815602229389/1327353624644288604"
             target="_blank"
           >
             <Button variant={"secondary"}>Changelogs</Button>
-          </Link> */}
+          </Link>
         </CardFooter>
       </Support>
       <OtherAddons />
