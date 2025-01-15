@@ -63,7 +63,7 @@ export default function MegascansBridgePage() {
           <div className="flex gap-2 flex-col sm:flex-row">
             <Badge variant={"secondary"}>
               <CardDescription>
-                Coupon code: <span>launch-25</span> to get 25% off, valid until Jan 20
+                Disclaimer: Users who have <span>claimed</span> or <span>purchased</span> Megascans assets through Quixel <span>Bridge</span> can use this add-on.
               </CardDescription>
             </Badge>
           </div>
