@@ -51,16 +51,16 @@ export default function BlendertoGameEnginePage() {
         </CardHeader>
         <CardContent>
           <CardDescription>
-            Blender-to-Game-Engine is a Blender addon bundle. It includes two of
-            our popular addons: <span>Blender to Unity</span> and{" "}
-            <span>Blender to Unreal</span>. These addons allow you to export
-            your Blender models to Unity and Unreal Engine with just one click.
+            Blender-to-Game-Engine is a Blender add-on bundle. It includes two of
+            our popular add-ons: <span>Blender to Unity</span>, <span>Blender to Unreal</span> and{" "}
+            <span>Blender to Godot</span>. These add-ons allow you to export
+            your Blender models to Unity, Unreal and Godot engine with just one click.
             This bundle is perfect for game developers, architects, and 3D
-            artists who want to export their models to Unity and Unreal Engine.
+            artists who want to export their models to Unity, Unreal and Godot engine.
             The bundle is available at a discounted price, so you can save up to
-            16% when you buy both addons together. Get the
+            33.33%. Get the
             Blender-to-Game-Engine bundle today and start exporting your models
-            to Unity and Unreal Engine with ease!
+            to Unity, Unreal and Godot engine with ease!
           </CardDescription>
         </CardContent>
         {showCoupon && (
@@ -79,7 +79,6 @@ export default function BlendertoGameEnginePage() {
             <TableHeader>
               <TableRow>
                 <TableHead>Addons</TableHead>
-                <TableHead className="text-center">Worth</TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
@@ -93,7 +92,6 @@ export default function BlendertoGameEnginePage() {
                     Blender to Unity
                   </Link>
                 </TableCell>
-                <TableCell className="text-center">$30</TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">
@@ -107,10 +105,22 @@ export default function BlendertoGameEnginePage() {
                     Blender to Unreal
                   </Link>
                 </TableCell>
-                <TableCell className="text-center">$30</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium">
+                  <Link
+                    href={
+                      "https://blendermarket.com/products/blender-to-godot"
+                    }
+                    target="_blank"
+                    className="hover:underline"
+                  >
+                    Blender to Godot
+                  </Link>
+                </TableCell>
               </TableRow>
             </TableBody>
-            <TableCaption>Save upto 16%</TableCaption>
+            <TableCaption>Save upto 33.33%</TableCaption>
           </Table>
         </CardContent>
       </Card>
