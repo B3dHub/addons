@@ -63,7 +63,9 @@ export default function MegascansBridgePage() {
           <div className="flex gap-2 flex-col sm:flex-row">
             <Badge variant={"secondary"}>
               <CardDescription>
-                Disclaimer: Users who have <span>claimed</span> or <span>purchased</span> Megascans assets through Quixel <span>Bridge</span> can use this add-on.
+                Disclaimer: Users who have <span>claimed</span> or{" "}
+                <span>purchased</span> Megascans assets through Quixel{" "}
+                <span>Bridge</span> can use this add-on.
               </CardDescription>
             </Badge>
           </div>
@@ -242,6 +244,30 @@ export default function MegascansBridgePage() {
             height={325}
             unoptimized
           />
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle>Copyright Disclaimer</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <CardDescription className="space-y-2">
+            <p>
+              This add-on is an independent tool and is not affiliated with, 
+              authorized, sponsored, or otherwise approved by Epic Games, Inc.
+              or Quixel.
+            </p>
+            <p>
+              All Megascans assets and content remain the property of Epic Games, Inc. Quixel,
+              and are subject to their terms of use and licensing agreements.
+            </p>
+            <p>
+              © 2025, Epic Games, Inc. Quixel, Megascans, and Unreal Engine are
+              trademarks or registered trademarks of Epic Games, Inc. in the USA
+              and elsewhere.
+            </p>
+          </CardDescription>
         </CardContent>
       </Card>
 
