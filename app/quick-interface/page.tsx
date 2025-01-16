@@ -253,9 +253,6 @@ export default function QuickInterfacePage() {
 
       <Support>
         <CardFooter className="space-x-4">
-          {/* <Link href="https://discord.gg/sdnHHZpWbT" target="_blank">
-            <Button variant={"secondary"}>Discord</Button>
-          </Link> */}
           <Link
             href="https://discord.com/channels/959138815602229389/1237576375179939871"
             target="_blank"

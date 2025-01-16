@@ -141,9 +141,6 @@ export default function QuickMeasurePage() {
         </CardHeader>
         <CardContent>
           <Table>
-            {/* <TableCaption>
-              More features in the future based on requests.
-            </TableCaption> */}
             <TableHeader>
               <TableRow>
                 <TableHead>Hotkeys</TableHead>
@@ -208,6 +205,10 @@ export default function QuickMeasurePage() {
                 <TableCell>Remove all measurements.</TableCell>
               </TableRow>
             </TableBody>
+            <TableCaption>
+              <span>Left</span> and <span>Right</span> mouse operations are swapped in <span>Edit Mode</span> to
+              prevent keymap conflicts.
+            </TableCaption>
           </Table>
         </CardContent>
       </Card>
@@ -419,7 +420,22 @@ export default function QuickMeasurePage() {
         <CardContent>
           <Image
             className="rounded-lg w-full"
-            src="./images/quick-measure/v2/lock_to_vertex.gif"
+            src="./images/quick-measure/v2/object_mode_vertex_lock.gif"
+            alt=""
+            width={600}
+            height={325}
+            unoptimized
+          />
+        </CardContent>
+        <CardContent>
+          <CardDescription>
+            Works in the <span>Edit Mode</span> as well.
+          </CardDescription>
+        </CardContent>
+        <CardContent>
+          <Image
+            className="rounded-lg w-full"
+            src="./images/quick-measure/v2/edit_mode_vertex_lock.gif"
             alt=""
             width={600}
             height={325}
@@ -452,17 +468,15 @@ export default function QuickMeasurePage() {
         <CardHeader>
           <CardTitle>Limitations</CardTitle>
           <CardDescription>
-            You need to toggle the measurements with <span>Alt + Shift + X</span> whenever you switch to different workspaces, e.g., Modeling, Shading, etc.
+            You need to toggle the measurements with{" "}
+            <span>Alt + Shift + X</span> whenever you switch to different
+            workspaces, e.g., Modeling, Shading, etc.
           </CardDescription>
         </CardHeader>
-        
       </Card>
 
       <Support>
         <CardFooter className="space-x-4">
-          {/* <Link href="https://discord.gg/sdnHHZpWbT" target="_blank">
-            <Button variant={"secondary"}>Discord</Button>
-          </Link> */}
           <Link
             href="https://discord.com/channels/959138815602229389/1090214367049560135"
             target="_blank"

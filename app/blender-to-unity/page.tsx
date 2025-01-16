@@ -656,9 +656,6 @@ export default function BlendertoUnityPage() {
           >
             <Button variant={"secondary"}>Documentation</Button>
           </Link>
-          {/* <Link href="https://discord.gg/sdnHHZpWbT" target="_blank">
-            <Button variant={"secondary"}>Discord</Button>
-          </Link> */}
           <Link
             href="https://discord.com/channels/959138815602229389/965691425557721159"
             target="_blank"

@@ -483,9 +483,6 @@ export default function QuickBakerPage() {
           >
             <Button variant={"secondary"}>Documentation</Button>
           </Link>
-          {/* <Link href="https://discord.gg/sdnHHZpWbT" target="_blank">
-            <Button variant={"secondary"}>Discord</Button>
-          </Link> */}
           <Link
             href="https://discord.com/channels/959138815602229389/1013054795562614794"
             target="_blank"
