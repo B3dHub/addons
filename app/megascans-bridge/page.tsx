@@ -54,11 +54,6 @@ export default function MegascansBridgePage() {
             sorted by type, category and subcategory.
           </CardDescription>
         </CardContent>
-        {showCoupon && (
-          <CardContent>
-            <Coupon />
-          </CardContent>
-        )}
         <CardContent>
           <div className="flex gap-2 flex-col sm:flex-row">
             <Badge variant={"secondary"}>
@@ -70,6 +65,11 @@ export default function MegascansBridgePage() {
             </Badge>
           </div>
         </CardContent>
+        {showCoupon && (
+          <CardContent>
+            <Coupon />
+          </CardContent>
+        )}
       </Card>
 
       <Card>
