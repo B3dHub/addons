@@ -54,11 +54,7 @@ export default function QuickThemePage() {
             colors using a single color slider.
           </CardDescription>
         </CardContent>
-        {showCoupon && (
-          <CardContent>
-            <Coupon />
-          </CardContent>
-        )}
+        {showCoupon && <Coupon />}
       </Card>
 
       <Card>

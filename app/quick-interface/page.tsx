@@ -49,11 +49,7 @@ export default function QuickInterfacePage() {
             and saving you time and effort.
           </CardDescription>
         </CardContent>
-        {showCoupon && (
-          <CardContent>
-            <Coupon />
-          </CardContent>
-        )}
+        {showCoupon && <Coupon />}
       </Card>
 
       <Card>

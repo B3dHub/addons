@@ -52,11 +52,7 @@ export default function QuickDecalPage() {
             texturing process, making it more efficient and streamlined.
           </CardDescription>
         </CardContent>
-        {showCoupon && (
-          <CardContent>
-            <Coupon />
-          </CardContent>
-        )}
+        {showCoupon && <Coupon />}
       </Card>
 
       <Card>

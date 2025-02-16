@@ -59,11 +59,7 @@ export default function BlendertoUnityPage() {
             to Unity with ease!
           </CardDescription>
         </CardContent>
-        {showCoupon && (
-          <CardContent>
-            <Coupon />
-          </CardContent>
-        )}
+        {showCoupon && <Coupon />}
       </Card>
 
       <Card>

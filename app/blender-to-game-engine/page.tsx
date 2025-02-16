@@ -63,11 +63,7 @@ export default function BlendertoGameEnginePage() {
             to Unity, Unreal and Godot engine with ease!
           </CardDescription>
         </CardContent>
-        {showCoupon && (
-          <CardContent>
-            <Coupon />
-          </CardContent>
-        )}
+        {showCoupon && <Coupon />}
       </Card>
 
       <Card>

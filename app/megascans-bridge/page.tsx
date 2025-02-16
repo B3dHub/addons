@@ -65,11 +65,7 @@ export default function MegascansBridgePage() {
             </Badge>
           </div>
         </CardContent>
-        {showCoupon && (
-          <CardContent>
-            <Coupon />
-          </CardContent>
-        )}
+        {showCoupon && <Coupon />}
       </Card>
 
       <Card>

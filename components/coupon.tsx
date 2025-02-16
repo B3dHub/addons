@@ -3,26 +3,72 @@ import { CardContent, CardDescription } from "./ui/card";
 import { Badge } from "./ui/badge";
 
 export function Coupon() {
+  const monthNames = [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+  ];
+
+  const today = new Date();
+  const day: number = today.getDate();
+  const month: number = today.getMonth();
+  const year: number = today.getFullYear();
+
+  const coupons = [
+    {
+      month: 1,
+      startDay: 7,
+      endDay: 15,
+      code: "valentine14",
+      discount: 14,
+    },
+    {
+      month: 11,
+      startDay: 20,
+      endDay: 31,
+      code: "christmas25",
+      discount: 25,
+    },
+    {
+      month: -1, // represents any month except February
+      startDay: 1,
+      endDay: 15,
+      code: "discount10",
+      discount: 10,
+    },
+  ];
+
+  const activeCoupon = coupons.find(
+    (coupon) =>
+      (coupon.month === month || (coupon.month === -1 && month !== 1)) &&
+      day >= coupon.startDay &&
+      day <= coupon.endDay
+  );
+
+  if (!activeCoupon) return null;
+
   return (
-    <div className="flex gap-2 flex-col sm:flex-row">
-        {/* <Badge variant={"secondary"}>
+    <CardContent>
+      <div className="flex gap-2 flex-col sm:flex-row">
+        <Badge variant="secondary">
           <CardDescription>
-            Add to Wishlist: <span>Spring Sale (May 21 - 26)</span>
+            Coupon code: <span>{activeCoupon.code}</span> to get{" "}
+            {activeCoupon.discount}% off, valid until{" "}
+            {monthNames[activeCoupon.month === -1 ? month : activeCoupon.month]}{" "}
+            {activeCoupon.endDay}, {year}
           </CardDescription>
-        </Badge> */}
-      {/* <Badge variant={"secondary"}>
-        <CardDescription>
-          Coupon code: <span>christmas25</span> to get 25% off, valid until Dec
-          31, 2024
-        </CardDescription>
-      </Badge> */}
-      <Badge variant={"secondary"}>
-        <CardDescription>
-          Coupon code: <span>valentine14</span> to get 14% off, valid until Feb
-          15, 2025
-        </CardDescription>
-      </Badge>
-    </div>
+        </Badge>
+      </div>
+    </CardContent>
   );
 }
 

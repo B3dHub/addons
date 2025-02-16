@@ -59,11 +59,7 @@ export default function BlendertoGodotPage() {
             exporting your models to Godot Engine with ease!
           </CardDescription>
         </CardContent>
-        {showCoupon && (
-          <CardContent>
-            <Coupon />
-          </CardContent>
-        )}
+        {showCoupon && <Coupon />}
       </Card>
 
       <Card>

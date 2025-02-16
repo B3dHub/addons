@@ -51,11 +51,7 @@ export default function CameraPreviewPage() {
             on this essential tool that will transform the way you work.
           </CardDescription>
         </CardContent>
-        {showCoupon && (
-          <CardContent>
-            <Coupon />
-          </CardContent>
-        )}
+        {showCoupon && <Coupon />}
       </Card>
 
       <Card>

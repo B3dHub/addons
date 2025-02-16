@@ -59,11 +59,7 @@ export default function BlendertoUnrealPage() {
             exporting your models to Unreal Engine with ease!
           </CardDescription>
         </CardContent>
-        {showCoupon && (
-          <CardContent>
-            <Coupon />
-          </CardContent>
-        )}
+        {showCoupon && <Coupon />}
       </Card>
 
       <Card>

@@ -49,11 +49,7 @@ export default function QuickReplacePage() {
             replacement process more efficient and streamlined.
           </CardDescription>
         </CardContent>
-        {showCoupon && (
-          <CardContent>
-            <Coupon />
-          </CardContent>
-        )}
+        {showCoupon && <Coupon />}
       </Card>
 
       <Card>
