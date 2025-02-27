@@ -72,4 +72,4 @@ export function Coupon() {
   );
 }
 
-export const showCoupon = true;
+export const showCoupon = false;
