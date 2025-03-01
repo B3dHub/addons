@@ -59,7 +59,7 @@ export const Data = [
     productURL: "/blender-to-godot",
     imageURL: "./images/blender-to-godot/thumb.png",
     title: "Blender to Godot",
-    price: "$15 - $150",
+    price: "$20 - $200",
     info: "Export",
   },
   {
