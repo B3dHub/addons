@@ -23,6 +23,9 @@ export function Coupon() {
   const month: number = today.getMonth();
   const year: number = today.getFullYear();
 
+  // Convert to CDT for comparison (UTC-5)
+  const currentCDT = new Date(today.getTime() - 5 * 60 * 60 * 1000);
+
   const coupons = [
     {
       month: 1,
@@ -47,12 +50,15 @@ export function Coupon() {
     },
   ];
 
-  const activeCoupon = coupons.find(
-    (coupon) =>
-      (coupon.month === month || (coupon.month === -1 && month !== 1)) &&
-      day >= coupon.startDay &&
-      day <= coupon.endDay
-  );
+  const activeCoupon = coupons.find((coupon) => {
+    // Create end date at 23:59 CDT
+    const endDate = new Date(year, coupon.month === -1 ? month : coupon.month, coupon.endDay, 23, 59, 0);
+    
+    // Check if current date is before end date and after or on start date
+    return (coupon.month === month || (coupon.month === -1 && month !== 1)) &&
+      day >= coupon.startDay && 
+      currentCDT <= endDate;
+  });
 
   if (!activeCoupon) return null;
 
