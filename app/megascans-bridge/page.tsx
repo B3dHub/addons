@@ -84,19 +84,31 @@ export default function MegascansBridgePage() {
             </TableHeader>
             <TableBody>
               <TableRow>
-                <TableCell className="font-medium">Import 3D Assets</TableCell>
+                <TableCell className="font-medium">Grid View</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">Import 3D Plants</TableCell>
+                <TableCell className="font-medium">Asset Search</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium">Asset Details</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium">Pagination</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium">Import Assets</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium">Import Plants</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium">Import Surfaces</TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">Import LODs</TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">Create Lod Group</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Import Textures</TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">
@@ -169,17 +181,81 @@ export default function MegascansBridgePage() {
 
       <Card>
         <CardHeader>
-          <CardTitle>Import 3D Assets</CardTitle>
+          <CardTitle>Grid View</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <Image
+            className="rounded-lg w-full"
+            src="./images/megascans-bridge/v2/grid_view.gif"
+            alt=""
+            width={600}
+            height={325}
+            unoptimized
+          />
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle>Asset Search</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <Image
+            className="rounded-lg w-full"
+            src="./images/megascans-bridge/v2/asset_search.gif"
+            alt=""
+            width={600}
+            height={325}
+            unoptimized
+          />
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle>Asset Details</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <Image
+            className="rounded-lg w-full"
+            src="./images/megascans-bridge/v2/asset_details.gif"
+            alt=""
+            width={600}
+            height={325}
+            unoptimized
+          />
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle>Pagination</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <Image
+            className="rounded-lg w-full"
+            src="./images/megascans-bridge/v2/pagination.gif"
+            alt=""
+            width={600}
+            height={325}
+            unoptimized
+          />
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle>Import Assets</CardTitle>
         </CardHeader>
         <CardContent>
           <CardDescription>
-            You can import 3D assets with LODs and create LOD Groups.
+            You can import 3D assets with LODs and create LOD groups.
           </CardDescription>
         </CardContent>
         <CardContent>
           <Image
             className="rounded-lg w-full"
-            src="./images/megascans-bridge/import_assets.gif"
+            src="./images/megascans-bridge/v2/import_assets.gif"
             alt=""
             width={600}
             height={325}
@@ -194,7 +270,7 @@ export default function MegascansBridgePage() {
         <CardContent>
           <Image
             className="rounded-lg w-full"
-            src="./images/megascans-bridge/lod_group.gif"
+            src="./images/megascans-bridge/v2/lod_group.gif"
             alt=""
             width={600}
             height={325}
@@ -205,17 +281,17 @@ export default function MegascansBridgePage() {
 
       <Card>
         <CardHeader>
-          <CardTitle>Import 3D Plants</CardTitle>
+          <CardTitle>Import Plants</CardTitle>
         </CardHeader>
         <CardContent>
           <CardDescription>
-            You can import 3D plants with LODs and create LOD Groups.
+            You can import 3D plants with LODs and create LOD groups.
           </CardDescription>
         </CardContent>
         <CardContent>
           <Image
             className="rounded-lg w-full"
-            src="./images/megascans-bridge/import_plants.gif"
+            src="./images/megascans-bridge/v2/import_plants.gif"
             alt=""
             width={600}
             height={325}
@@ -226,15 +302,25 @@ export default function MegascansBridgePage() {
 
       <Card>
         <CardHeader>
-          <CardTitle>Import Textures</CardTitle>
+          <CardTitle>Import Surfaces</CardTitle>
           <CardDescription>
-            You can import textures as materials and node groups.
+            You can import surface textures as materials and node groups.
           </CardDescription>
         </CardHeader>
         <CardContent>
           <Image
             className="rounded-lg w-full"
-            src="./images/megascans-bridge/material_nodegroup.gif"
+            src="./images/megascans-bridge/v2/import_surfaces.gif"
+            alt=""
+            width={600}
+            height={325}
+            unoptimized
+          />
+        </CardContent>
+        <CardContent>
+          <Image
+            className="rounded-lg w-full"
+            src="./images/megascans-bridge/v2/import_node_group.gif"
             alt=""
             width={600}
             height={325}

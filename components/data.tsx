@@ -16,14 +16,14 @@ export const Data = [
   {
     productURL: "/quick-measure",
     imageURL: "./images/quick-measure/thumb.png",
-    title: "Quick Measure",
+    title: "Quick Measure v2",
     price: "$20 - $200",
     info: "3D View",
   },
   {
     productURL: "/megascans-bridge",
     imageURL: "./images/megascans-bridge/thumb.png",
-    title: "Megascans Bridge",
+    title: "Megascans Bridge v2",
     price: "$20 - $200",
     info: "Object",
   },
