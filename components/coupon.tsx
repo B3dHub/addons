@@ -18,13 +18,32 @@ export function Coupon() {
     "Dec",
   ];
 
-  const today = new Date();
-  const day: number = today.getDate();
-  const month: number = today.getMonth();
-  const year: number = today.getFullYear();
+  // Get the current date in UTC
+  const now = new Date();
+  const utcDay = now.getUTCDate();
+  const utcMonth = now.getUTCMonth();
+  const utcYear = now.getUTCFullYear();
 
-  // Convert to CDT for comparison (UTC-5)
-  const currentCDT = new Date(today.getTime() - 5 * 60 * 60 * 1000);
+  // Create a proper CDT date (accounting for possible production environment differences)
+  // CDT is UTC-5 hours, CST is UTC-6 hours
+  // This calculates whether we are in DST (Daylight Saving Time)
+  const stdTimezoneOffset = () => {
+    const jan = new Date(now.getFullYear(), 0, 1);
+    const jul = new Date(now.getFullYear(), 6, 1);
+    return Math.max(jan.getTimezoneOffset(), jul.getTimezoneOffset());
+  };
+  
+  const isDST = () => {
+    return now.getTimezoneOffset() < stdTimezoneOffset();
+  };
+  
+  // Apply the right offset (CDT = -5, CST = -6)
+  const hourOffset = isDST() ? 5 : 6;
+  const currentCDT = new Date(now.getTime() + (now.getTimezoneOffset() * 60000) - (hourOffset * 3600000));
+  
+  const day = currentCDT.getDate();
+  const month = currentCDT.getMonth();
+  const year = currentCDT.getFullYear();
 
   const coupons = [
     {
@@ -51,13 +70,24 @@ export function Coupon() {
   ];
 
   const activeCoupon = coupons.find((coupon) => {
-    // Create end date at 23:59 CDT
-    const endDate = new Date(year, coupon.month === -1 ? month : coupon.month, coupon.endDay, 23, 59, 0);
+    // For target month: use current month for generic coupons, or the specified month
+    const targetMonth = coupon.month === -1 ? month : coupon.month;
     
-    // Check if current date is before end date and after or on start date
-    return (coupon.month === month || (coupon.month === -1 && month !== 1)) &&
-      day >= coupon.startDay && 
-      currentCDT <= endDate;
+    // Create start date for comparison (at 00:00:00 in CDT)
+    const startDate = new Date(Date.UTC(year, targetMonth, coupon.startDay));
+    startDate.setHours(0, 0, 0, 0);
+    
+    // Create end date for comparison (at 23:59:59 in CDT)
+    const endDate = new Date(Date.UTC(year, targetMonth, coupon.endDay));
+    endDate.setHours(23, 59, 59, 999);
+    
+    // Handle the special case for "any month except February"
+    if (coupon.month === -1 && month === 1) {
+      return false;  // Skip if current month is February and coupon is for "any month except February"
+    }
+    
+    // Check if current date is within the valid range
+    return currentCDT >= startDate && currentCDT <= endDate;
   });
 
   if (!activeCoupon) return null;
