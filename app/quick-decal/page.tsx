@@ -52,6 +52,17 @@ export default function QuickDecalPage() {
             texturing process, making it more efficient and streamlined.
           </CardDescription>
         </CardContent>
+        <CardContent>
+          <div className="flex gap-2 flex-col sm:flex-row">
+            <Badge variant={"secondary"}>
+              <CardDescription>
+                Disclaimer: Users who have <span>claimed</span> or{" "}
+                <span>purchased</span> Megascans assets through Quixel{" "}
+                <span>Bridge</span> can use this add-on.
+              </CardDescription>
+            </Badge>
+          </div>
+        </CardContent>
         {showCoupon && <Coupon />}
       </Card>
 
