@@ -1,23 +1,5 @@
-import React from "react";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-
-import {
-  Table,
-  TableBody,
-  TableCaption,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table";
-import { Badge } from "@/components/ui/badge";
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Button, buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
 import Support from "@/components/support";
@@ -26,6 +8,7 @@ import Image from "next/image";
 import { Metadata } from "next";
 import Affiliate from "@/components/affiliate";
 import { Coupon, showCoupon } from "@/components/coupon";
+import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "Quick Interface - Blender Addon",
@@ -41,12 +24,10 @@ export default function QuickInterfacePage() {
         </CardHeader>
         <CardContent>
           <CardDescription>
-            Quick Interface is a user-friendly addon that greatly simplifies the
-            management of workspace areas in Blender. It's an indispensable tool
-            for all Blender users. With Quick Interface, you can effortlessly
-            switch, split, duplicate, join, and swap areas using convenient
-            hotkeys. This addon enhances your workflow, making it more efficient
-            and saving you time and effort.
+            Quick Interface is a user-friendly addon that greatly simplifies the management of workspace areas in
+            Blender. It's an indispensable tool for all Blender users. With Quick Interface, you can effortlessly
+            switch, split, duplicate, join, and swap areas using convenient hotkeys. This addon enhances your workflow,
+            making it more efficient and saving you time and effort.
           </CardDescription>
         </CardContent>
         {showCoupon && <Coupon />}
@@ -112,9 +93,7 @@ export default function QuickInterfacePage() {
                 <TableCell>Switch Area</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">
-                  Shift + Ctrl + Space
-                </TableCell>
+                <TableCell className="font-medium">Shift + Ctrl + Space</TableCell>
                 <TableCell>Split Area</TableCell>
               </TableRow>
               <TableRow>
@@ -122,15 +101,11 @@ export default function QuickInterfacePage() {
                 <TableCell>Duplicate Area</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">
-                  Shift + Alt + Space
-                </TableCell>
+                <TableCell className="font-medium">Shift + Alt + Space</TableCell>
                 <TableCell>Join Area</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">
-                  Shift + Ctrl + Alt + Space
-                </TableCell>
+                <TableCell className="font-medium">Shift + Ctrl + Alt + Space</TableCell>
                 <TableCell>Swap Area</TableCell>
               </TableRow>
             </TableBody>
@@ -142,18 +117,16 @@ export default function QuickInterfacePage() {
         <CardHeader>
           <CardTitle>Switch Area</CardTitle>
           <CardDescription>
-            Switch area using the hotkey <span>Shift + Space</span>. Select an
-            area from the pie menu.
+            Switch area using the hotkey <span>Shift + Space</span>. Select an area from the pie menu.
           </CardDescription>
         </CardHeader>
         <CardContent>
           <Image
             className="rounded-lg w-full"
-            src="./images/quick-interface/area_switch.gif"
+            src="/addons/images/quick-interface/area_switch.gif"
             alt=""
             width={600}
             height={325}
-            unoptimized
           />
         </CardContent>
       </Card>
@@ -162,9 +135,8 @@ export default function QuickInterfacePage() {
         <CardHeader>
           <CardTitle>Split Area</CardTitle>
           <CardDescription>
-            Split area using the hotkey <span>Shift + Ctrl + Space</span>.
-            Select an area from the pie menu. You can split the area vertically
-            or horizontally with the mouse wheel.
+            Split area using the hotkey <span>Shift + Ctrl + Space</span>. Select an area from the pie menu. You can
+            split the area vertically or horizontally with the mouse wheel.
           </CardDescription>
           <CardDescription>
             <span>Mouse Wheel Up</span> : Split Vertically
@@ -179,11 +151,10 @@ export default function QuickInterfacePage() {
         <CardContent>
           <Image
             className="rounded-lg w-full"
-            src="./images/quick-interface/area_split.gif"
+            src="/addons/images/quick-interface/area_split.gif"
             alt=""
             width={600}
             height={325}
-            unoptimized
           />
         </CardContent>
       </Card>
@@ -192,15 +163,14 @@ export default function QuickInterfacePage() {
         <CardHeader>
           <CardTitle>Duplicate Area</CardTitle>
           <CardDescription>
-            Duplicate area using the hotkey <span>Alt + Space</span>. Select an
-            area from the pie menu. This will open a new window with the
-            selected area.
+            Duplicate area using the hotkey <span>Alt + Space</span>. Select an area from the pie menu. This will open a
+            new window with the selected area.
           </CardDescription>
         </CardHeader>
         <CardContent>
           <Image
             className="rounded-lg w-full"
-            src="./images/quick-interface/area_duplicate.gif"
+            src="/addons/images/quick-interface/area_duplicate.gif"
             alt=""
             width={600}
             height={325}
@@ -219,7 +189,7 @@ export default function QuickInterfacePage() {
         <CardContent>
           <Image
             className="rounded-lg w-full"
-            src="./images/quick-interface/area_join.gif"
+            src="/addons/images/quick-interface/area_join.gif"
             alt=""
             width={600}
             height={325}
@@ -238,7 +208,7 @@ export default function QuickInterfacePage() {
         <CardContent>
           <Image
             className="rounded-lg w-full"
-            src="./images/quick-interface/area_swap.gif"
+            src="/addons/images/quick-interface/area_swap.gif"
             alt=""
             width={600}
             height={325}
@@ -251,9 +221,10 @@ export default function QuickInterfacePage() {
         <CardFooter className="space-x-4">
           <Link
             href="https://discord.com/channels/959138815602229389/1237576375179939871"
+            className={cn(buttonVariants({ variant: "secondary" }))}
             target="_blank"
           >
-            <Button variant={"secondary"}>Changelogs</Button>
+            Changelogs
           </Link>
         </CardFooter>
       </Support>

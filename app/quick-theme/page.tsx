@@ -1,23 +1,5 @@
-import React from "react";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-
-import {
-  Table,
-  TableBody,
-  TableCaption,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table";
-import { Badge } from "@/components/ui/badge";
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Table, TableBody, TableCell, TableHeader, TableRow } from "@/components/ui/table";
 import { Button, buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
 import Support from "@/components/support";
@@ -26,6 +8,7 @@ import Image from "next/image";
 import { Metadata } from "next";
 import Affiliate from "@/components/affiliate";
 import { Coupon, showCoupon } from "@/components/coupon";
+import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "Quick Theme - Blender Addon",
@@ -38,20 +21,15 @@ export default function QuickThemePage() {
       <Card>
         <CardHeader>
           <CardTitle>Introduction</CardTitle>
-          <CardDescription>
-            Are you tired of the default Blender theme?
-          </CardDescription>
+          <CardDescription>Are you tired of the default Blender theme?</CardDescription>
         </CardHeader>
         <CardContent>
           <CardDescription>
-            Quick Theme consolidates all theme settings into one panel. Now, you
-            can create a theme that suits your taste in seconds. There's no need
-            to change multiple color settings to create a theme. Simply use the
-            single color slider to craft a theme you like. You can also use the{" "}
-            <span>Auto Theme</span> feature to change the theme automatically
-            whenever you restart or load a blend file. Additionally, you can
-            change the <span>Viewport</span> and <span>Outliner</span> theme
-            colors using a single color slider.
+            Quick Theme consolidates all theme settings into one panel. Now, you can create a theme that suits your
+            taste in seconds. There's no need to change multiple color settings to create a theme. Simply use the single
+            color slider to craft a theme you like. You can also use the <span>Auto Theme</span> feature to change the
+            theme automatically whenever you restart or load a blend file. Additionally, you can change the{" "}
+            <span>Viewport</span> and <span>Outliner</span> theme colors using a single color slider.
           </CardDescription>
         </CardContent>
         {showCoupon && <Coupon />}
@@ -98,34 +76,29 @@ export default function QuickThemePage() {
         </CardHeader>
         <CardContent>
           <CardDescription>
-            You can toggle the auto theme feature by clicking the{" "}
-            <span className="text-primary">Auto Theme</span> button in the Quick
-            Theme panel.
+            You can toggle the auto theme feature by clicking the <span className="text-primary">Auto Theme</span>{" "}
+            button in the Quick Theme panel.
           </CardDescription>
         </CardContent>
         <CardContent>
           <Image
             className="rounded-lg w-full"
-            src="./images/quick-theme/auto_theme_toggle.gif"
+            src="/addons/images/quick-theme/auto_theme_toggle.gif"
             alt=""
             width={600}
             height={325}
-            unoptimized
           />
         </CardContent>
         <CardContent>
-          <CardDescription>
-            The theme will change whenever you restart or load a blend file.
-          </CardDescription>
+          <CardDescription>The theme will change whenever you restart or load a blend file.</CardDescription>
         </CardContent>
         <CardContent>
           <Image
             className="rounded-lg w-full"
-            src="./images/quick-theme/auto_theme.gif"
+            src="/addons/images/quick-theme/auto_theme.gif"
             alt=""
             width={600}
             height={325}
-            unoptimized
           />
         </CardContent>
       </Card>
@@ -134,20 +107,17 @@ export default function QuickThemePage() {
         <CardHeader>
           <CardTitle>Interface Theme</CardTitle>
           <CardDescription>
-            You can change the color of the{" "}
-            <span className="text-primary">Interface</span> using a single color
-            slider. This feature also includes a roundness slider to adjust the
-            roundness of the interface.
+            You can change the color of the <span className="text-primary">Interface</span> using a single color slider.
+            This feature also includes a roundness slider to adjust the roundness of the interface.
           </CardDescription>
         </CardHeader>
         <CardContent>
           <Image
             className="rounded-lg w-full"
-            src="./images/quick-theme/interface_theme.gif"
+            src="/addons/images/quick-theme/interface_theme.gif"
             alt=""
             width={600}
             height={325}
-            unoptimized
           />
         </CardContent>
       </Card>
@@ -156,18 +126,15 @@ export default function QuickThemePage() {
         <CardHeader>
           <CardTitle>Viewport Theme</CardTitle>
           <CardDescription>
-            You can change the color of the{" "}
-            <span className="text-primary">Viewport</span> using a single color
-            slider. By default, the{" "}
-            <span className="text-primary">Viewport</span> colors are linked to
-            the <span className="text-primary">Interface</span> color, but you
-            can unlink them by clicking the link icon.
+            You can change the color of the <span className="text-primary">Viewport</span> using a single color slider.
+            By default, the <span className="text-primary">Viewport</span> colors are linked to the{" "}
+            <span className="text-primary">Interface</span> color, but you can unlink them by clicking the link icon.
           </CardDescription>
         </CardHeader>
         <CardContent>
           <Image
             className="rounded-lg w-full"
-            src="./images/quick-theme/viewport_theme.gif"
+            src="/addons/images/quick-theme/viewport_theme.gif"
             alt=""
             width={600}
             height={325}
@@ -180,18 +147,15 @@ export default function QuickThemePage() {
         <CardHeader>
           <CardTitle>Outliner Theme</CardTitle>
           <CardDescription>
-            You can change the color of the{" "}
-            <span className="text-primary">Outliner</span> using a single color
-            slider. By default, the{" "}
-            <span className="text-primary">Outliner</span> colors are linked to
-            the <span className="text-primary">Interface</span> color, but you
-            can unlink them by clicking the link icon.
+            You can change the color of the <span className="text-primary">Outliner</span> using a single color slider.
+            By default, the <span className="text-primary">Outliner</span> colors are linked to the{" "}
+            <span className="text-primary">Interface</span> color, but you can unlink them by clicking the link icon.
           </CardDescription>
         </CardHeader>
         <CardContent>
           <Image
             className="rounded-lg w-full"
-            src="./images/quick-theme/outliner_theme.gif"
+            src="/addons/images/quick-theme/outliner_theme.gif"
             alt=""
             width={600}
             height={325}
@@ -202,14 +166,12 @@ export default function QuickThemePage() {
 
       <Support>
         <CardFooter className="space-x-4">
-          {/* <Link href="https://discord.gg/sdnHHZpWbT" target="_blank">
-            <Button variant={"secondary"}>Discord</Button>
-          </Link> */}
           <Link
             href="https://discord.com/channels/959138815602229389/1169021672846803027"
+            className={cn(buttonVariants({ variant: "secondary" }))}
             target="_blank"
           >
-            <Button variant={"secondary"}>Changelogs</Button>
+            Changelogs
           </Link>
         </CardFooter>
       </Support>

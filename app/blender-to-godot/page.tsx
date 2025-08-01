@@ -1,32 +1,6 @@
-import React from "react";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-
-import {
-  Table,
-  TableBody,
-  TableCaption,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table";
-
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
-
-import { Badge } from "@/components/ui/badge";
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Button, buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
 import Support from "@/components/support";
@@ -35,6 +9,7 @@ import Image from "next/image";
 import { Metadata } from "next";
 import Affiliate from "@/components/affiliate";
 import { Coupon, showCoupon } from "@/components/coupon";
+import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "Blender to Godot - Blender Addon",
@@ -50,13 +25,11 @@ export default function BlendertoGodotPage() {
         </CardHeader>
         <CardContent>
           <CardDescription>
-            Blender-to-Godot is a Blender addon that exports objects,
-            animations, collisions and components to Godot Engine. It is
-            designed to be simple and easy to use. You can export your models to
-            Godot Engine with just a few clicks. This addon is perfect for game
-            developers, architects, and 3D artists who want to export their
-            models to Godot Engine. Get Blender-to-Godot today and start
-            exporting your models to Godot Engine with ease!
+            Blender-to-Godot is a Blender addon that exports objects, animations, collisions and components to Godot
+            Engine. It is designed to be simple and easy to use. You can export your models to Godot Engine with just a
+            few clicks. This addon is perfect for game developers, architects, and 3D artists who want to export their
+            models to Godot Engine. Get Blender-to-Godot today and start exporting your models to Godot Engine with
+            ease!
           </CardDescription>
         </CardContent>
         {showCoupon && <Coupon />}
@@ -132,9 +105,7 @@ export default function BlendertoGodotPage() {
         <CardHeader>
           <CardTitle>
             <Link
-              href={
-                "https://b3dhub.github.io/blender-to-godot-docs/collision.html"
-              }
+              href={"https://b3dhub.github.io/blender-to-godot-docs/collision.html"}
               target="_blank"
               className="hover:underline"
             >
@@ -146,29 +117,23 @@ export default function BlendertoGodotPage() {
         <CardContent>
           <Image
             className="rounded-lg"
-            src="./images/blender-to-godot/ui_collision.png"
+            src="/addons/images/blender-to-godot/ui_collision.png"
             alt=""
             width={256}
             height={256}
-            unoptimized
           />
         </CardContent>
         <CardHeader>
           <CardTitle>
             <Link
-              href={
-                "https://b3dhub.github.io/blender-to-godot-docs/collision.html#box"
-              }
+              href={"https://b3dhub.github.io/blender-to-godot-docs/collision.html#box"}
               target="_blank"
               className="hover:underline"
             >
               Box
             </Link>
           </CardTitle>
-          <CardDescription>
-            Box collision will create based on the bounding box of the
-            selection.
-          </CardDescription>
+          <CardDescription>Box collision will create based on the bounding box of the selection.</CardDescription>
         </CardHeader>
         <CardContent>
           <Carousel>
@@ -176,7 +141,7 @@ export default function BlendertoGodotPage() {
               <CarouselItem>
                 <Image
                   className="rounded-lg w-full"
-                  src="./images/blender-to-godot/box.gif"
+                  src="/addons/images/blender-to-godot/box.gif"
                   alt=""
                   width={600}
                   height={325}
@@ -186,7 +151,7 @@ export default function BlendertoGodotPage() {
               <CarouselItem>
                 <Image
                   className="rounded-lg w-full"
-                  src="./images/blender-to-godot/box_editmode.gif"
+                  src="/addons/images/blender-to-godot/box_editmode.gif"
                   alt=""
                   width={600}
                   height={325}
@@ -196,7 +161,7 @@ export default function BlendertoGodotPage() {
               <CarouselItem>
                 <Image
                   className="rounded-lg w-full"
-                  src="./images/blender-to-godot/box_custom.gif"
+                  src="/addons/images/blender-to-godot/box_custom.gif"
                   alt=""
                   width={600}
                   height={325}
@@ -211,9 +176,7 @@ export default function BlendertoGodotPage() {
         <CardHeader>
           <CardTitle>
             <Link
-              href={
-                "https://b3dhub.github.io/blender-to-godot-docs/collision.html#capsule"
-              }
+              href={"https://b3dhub.github.io/blender-to-godot-docs/collision.html#capsule"}
               target="_blank"
               className="hover:underline"
             >
@@ -221,8 +184,7 @@ export default function BlendertoGodotPage() {
             </Link>
           </CardTitle>
           <CardDescription>
-            Capsule collision will create based on the bounding box and the
-            depth of the selection.
+            Capsule collision will create based on the bounding box and the depth of the selection.
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -231,7 +193,7 @@ export default function BlendertoGodotPage() {
               <CarouselItem>
                 <Image
                   className="rounded-lg w-full"
-                  src="./images/blender-to-godot/capsule.gif"
+                  src="/addons/images/blender-to-godot/capsule.gif"
                   alt=""
                   width={600}
                   height={325}
@@ -241,7 +203,7 @@ export default function BlendertoGodotPage() {
               <CarouselItem>
                 <Image
                   className="rounded-lg w-full"
-                  src="./images/blender-to-godot/capsule_editmode.gif"
+                  src="/addons/images/blender-to-godot/capsule_editmode.gif"
                   alt=""
                   width={600}
                   height={325}
@@ -251,7 +213,7 @@ export default function BlendertoGodotPage() {
               <CarouselItem>
                 <Image
                   className="rounded-lg w-full"
-                  src="./images/blender-to-godot/capsule_custom.gif"
+                  src="/addons/images/blender-to-godot/capsule_custom.gif"
                   alt=""
                   width={600}
                   height={325}
@@ -266,19 +228,14 @@ export default function BlendertoGodotPage() {
         <CardHeader>
           <CardTitle>
             <Link
-              href={
-                "https://b3dhub.github.io/blender-to-godot-docs/collision.html#sphere"
-              }
+              href={"https://b3dhub.github.io/blender-to-godot-docs/collision.html#sphere"}
               target="_blank"
               className="hover:underline"
             >
               Sphere
             </Link>
           </CardTitle>
-          <CardDescription>
-            Sphere collision will create based on the bounding box of the
-            selection.
-          </CardDescription>
+          <CardDescription>Sphere collision will create based on the bounding box of the selection.</CardDescription>
         </CardHeader>
         <CardContent>
           <Carousel>
@@ -286,7 +243,7 @@ export default function BlendertoGodotPage() {
               <CarouselItem>
                 <Image
                   className="rounded-lg w-full"
-                  src="./images/blender-to-godot/sphere.gif"
+                  src="/addons/images/blender-to-godot/sphere.gif"
                   alt=""
                   width={600}
                   height={325}
@@ -296,7 +253,7 @@ export default function BlendertoGodotPage() {
               <CarouselItem>
                 <Image
                   className="rounded-lg w-full"
-                  src="./images/blender-to-godot/sphere_editmode.gif"
+                  src="/addons/images/blender-to-godot/sphere_editmode.gif"
                   alt=""
                   width={600}
                   height={325}
@@ -306,7 +263,7 @@ export default function BlendertoGodotPage() {
               <CarouselItem>
                 <Image
                   className="rounded-lg w-full"
-                  src="./images/blender-to-godot/sphere_custom.gif"
+                  src="/addons/images/blender-to-godot/sphere_custom.gif"
                   alt=""
                   width={600}
                   height={325}
@@ -321,9 +278,7 @@ export default function BlendertoGodotPage() {
         <CardHeader>
           <CardTitle>
             <Link
-              href={
-                "https://b3dhub.github.io/blender-to-godot-docs/collision.html#cylinder"
-              }
+              href={"https://b3dhub.github.io/blender-to-godot-docs/collision.html#cylinder"}
               target="_blank"
               className="hover:underline"
             >
@@ -331,8 +286,7 @@ export default function BlendertoGodotPage() {
             </Link>
           </CardTitle>
           <CardDescription>
-            Cylinder collision will create based on the bounding box and the
-            depth of the selection.
+            Cylinder collision will create based on the bounding box and the depth of the selection.
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -341,7 +295,7 @@ export default function BlendertoGodotPage() {
               <CarouselItem>
                 <Image
                   className="rounded-lg w-full"
-                  src="./images/blender-to-godot/cylinder.gif"
+                  src="/addons/images/blender-to-godot/cylinder.gif"
                   alt=""
                   width={600}
                   height={325}
@@ -351,7 +305,7 @@ export default function BlendertoGodotPage() {
               <CarouselItem>
                 <Image
                   className="rounded-lg w-full"
-                  src="./images/blender-to-godot/cylinder_editmode.gif"
+                  src="/addons/images/blender-to-godot/cylinder_editmode.gif"
                   alt=""
                   width={600}
                   height={325}
@@ -361,7 +315,7 @@ export default function BlendertoGodotPage() {
               <CarouselItem>
                 <Image
                   className="rounded-lg w-full"
-                  src="./images/blender-to-godot/cylinder_custom.gif"
+                  src="/addons/images/blender-to-godot/cylinder_custom.gif"
                   alt=""
                   width={600}
                   height={325}
@@ -376,18 +330,14 @@ export default function BlendertoGodotPage() {
         <CardHeader>
           <CardTitle>
             <Link
-              href={
-                "https://b3dhub.github.io/blender-to-godot-docs/collision.html#convex"
-              }
+              href={"https://b3dhub.github.io/blender-to-godot-docs/collision.html#convex"}
               target="_blank"
               className="hover:underline"
             >
               Convex
             </Link>
           </CardTitle>
-          <CardDescription>
-            Convex collision will create based on the selection.
-          </CardDescription>
+          <CardDescription>Convex collision will create based on the selection.</CardDescription>
         </CardHeader>
         <CardContent>
           <Carousel>
@@ -395,7 +345,7 @@ export default function BlendertoGodotPage() {
               <CarouselItem>
                 <Image
                   className="rounded-lg w-full"
-                  src="./images/blender-to-godot/convex.gif"
+                  src="/addons/images/blender-to-godot/convex.gif"
                   alt=""
                   width={600}
                   height={325}
@@ -405,7 +355,7 @@ export default function BlendertoGodotPage() {
               <CarouselItem>
                 <Image
                   className="rounded-lg w-full"
-                  src="./images/blender-to-godot/convex_editmode.gif"
+                  src="/addons/images/blender-to-godot/convex_editmode.gif"
                   alt=""
                   width={600}
                   height={325}
@@ -415,7 +365,7 @@ export default function BlendertoGodotPage() {
               <CarouselItem>
                 <Image
                   className="rounded-lg w-full"
-                  src="./images/blender-to-godot/convex_custom.gif"
+                  src="/addons/images/blender-to-godot/convex_custom.gif"
                   alt=""
                   width={600}
                   height={325}
@@ -425,7 +375,7 @@ export default function BlendertoGodotPage() {
               <CarouselItem>
                 <Image
                   className="rounded-lg w-full"
-                  src="./images/blender-to-godot/convex_vhacd.gif"
+                  src="/addons/images/blender-to-godot/convex_vhacd.gif"
                   alt=""
                   width={600}
                   height={325}
@@ -443,35 +393,28 @@ export default function BlendertoGodotPage() {
         <CardHeader>
           <CardTitle>
             <Link
-              href={
-                "https://b3dhub.github.io/blender-to-godot-docs/component.html"
-              }
+              href={"https://b3dhub.github.io/blender-to-godot-docs/component.html"}
               target="_blank"
               className="hover:underline"
             >
               Component
             </Link>
           </CardTitle>
-          <CardDescription>
-            Create component such as Navmesh, Rigid body etc.
-          </CardDescription>
+          <CardDescription>Create component such as Navmesh, Rigid body etc.</CardDescription>
         </CardHeader>
         <CardContent>
           <Image
             className="rounded-lg"
-            src="./images/blender-to-godot/ui_component.png"
+            src="/addons/images/blender-to-godot/ui_component.png"
             alt=""
             width={256}
             height={256}
-            unoptimized
           />
         </CardContent>
         <CardHeader>
           <CardTitle>
             <Link
-              href={
-                "https://b3dhub.github.io/blender-to-godot-docs/component.html#navmesh"
-              }
+              href={"https://b3dhub.github.io/blender-to-godot-docs/component.html#navmesh"}
               target="_blank"
               className="hover:underline"
             >
@@ -480,17 +423,14 @@ export default function BlendertoGodotPage() {
           </CardTitle>
           <CardDescription>Create navigation (-navmesh)</CardDescription>
           <CardDescription>
-            A mesh node with the <span>-navmesh</span> suffix will be converted
-            to a navigation mesh. The original Mesh object will be removed at
-            import-time.
+            A mesh node with the <span>-navmesh</span> suffix will be converted to a navigation mesh. The original Mesh
+            object will be removed at import-time.
           </CardDescription>
         </CardHeader>
         <CardHeader>
           <CardTitle>
             <Link
-              href={
-                "https://b3dhub.github.io/blender-to-godot-docs/component.html#occluder"
-              }
+              href={"https://b3dhub.github.io/blender-to-godot-docs/component.html#occluder"}
               target="_blank"
               className="hover:underline"
             >
@@ -509,9 +449,8 @@ export default function BlendertoGodotPage() {
             >
               Occluder3D
             </Link>{" "}
-            node will be created based on the geometry of the mesh, it does not
-            replace the mesh. A mesh node with the <span>-occonly</span> suffix
-            will be converted to an{" "}
+            node will be created based on the geometry of the mesh, it does not replace the mesh. A mesh node with the{" "}
+            <span>-occonly</span> suffix will be converted to an{" "}
             <Link
               href={
                 "https://docs.godotengine.org/en/stable/tutorials/assets_pipeline/importing_3d_scenes/node_type_customization.html#create-navigation-navmesh"
@@ -527,9 +466,7 @@ export default function BlendertoGodotPage() {
         <CardHeader>
           <CardTitle>
             <Link
-              href={
-                "https://b3dhub.github.io/blender-to-godot-docs/component.html#rigid-body"
-              }
+              href={"https://b3dhub.github.io/blender-to-godot-docs/component.html#rigid-body"}
               target="_blank"
               className="hover:underline"
             >
@@ -538,8 +475,7 @@ export default function BlendertoGodotPage() {
           </CardTitle>
           <CardDescription>Rigid Body (-rigid)</CardDescription>
           <CardDescription>
-            A mesh node with the <span>-rigid</span> suffix will be imported as
-            a{" "}
+            A mesh node with the <span>-rigid</span> suffix will be imported as a{" "}
             <Link
               href={
                 "https://docs.godotengine.org/en/stable/tutorials/assets_pipeline/importing_3d_scenes/node_type_customization.html#create-navigation-navmesh"
@@ -555,9 +491,7 @@ export default function BlendertoGodotPage() {
         <CardHeader>
           <CardTitle>
             <Link
-              href={
-                "https://b3dhub.github.io/blender-to-godot-docs/component.html#vehicle-body"
-              }
+              href={"https://b3dhub.github.io/blender-to-godot-docs/component.html#vehicle-body"}
               target="_blank"
               className="hover:underline"
             >
@@ -566,8 +500,7 @@ export default function BlendertoGodotPage() {
           </CardTitle>
           <CardDescription>Create a VehicleBody (-vehicle)</CardDescription>
           <CardDescription>
-            A mesh node with the <span>-vehicle</span> suffix will be imported
-            as a child to a{" "}
+            A mesh node with the <span>-vehicle</span> suffix will be imported as a child to a{" "}
             <Link
               href={
                 "https://docs.godotengine.org/en/stable/tutorials/assets_pipeline/importing_3d_scenes/node_type_customization.html#create-navigation-navmesh"
@@ -583,9 +516,7 @@ export default function BlendertoGodotPage() {
         <CardHeader>
           <CardTitle>
             <Link
-              href={
-                "https://b3dhub.github.io/blender-to-godot-docs/component.html#vehicle-wheel"
-              }
+              href={"https://b3dhub.github.io/blender-to-godot-docs/component.html#vehicle-wheel"}
               target="_blank"
               className="hover:underline"
             >
@@ -594,8 +525,7 @@ export default function BlendertoGodotPage() {
           </CardTitle>
           <CardDescription>Create a VehicleWheel (-wheel)</CardDescription>
           <CardDescription>
-            A mesh node with the <span>-wheel</span> suffix will be imported as
-            a child to a{" "}
+            A mesh node with the <span>-wheel</span> suffix will be imported as a child to a{" "}
             <Link
               href={
                 "https://docs.godotengine.org/en/stable/tutorials/assets_pipeline/importing_3d_scenes/node_type_customization.html#create-navigation-navmesh"
@@ -626,7 +556,7 @@ export default function BlendertoGodotPage() {
         <CardContent>
           <Image
             className="rounded-lg w-full"
-            src="./images/blender-to-godot/rename.gif"
+            src="/addons/images/blender-to-godot/rename.gif"
             alt=""
             width={600}
             height={325}
@@ -639,18 +569,14 @@ export default function BlendertoGodotPage() {
         <CardHeader>
           <CardTitle>
             <Link
-              href={
-                "https://b3dhub.github.io/blender-to-godot-docs/export.html"
-              }
+              href={"https://b3dhub.github.io/blender-to-godot-docs/export.html"}
               target="_blank"
               className="hover:underline"
             >
               Export
             </Link>
           </CardTitle>
-          <CardDescription>
-            Export objects and collections to Godot or Disk.
-          </CardDescription>
+          <CardDescription>Export objects and collections to Godot or Disk.</CardDescription>
           <CardDescription>
             - Add a folder path.<br></br>- Select the objects or collections.
             <br></br>- Hit export.
@@ -659,7 +585,7 @@ export default function BlendertoGodotPage() {
         <CardContent>
           <Image
             className="rounded-lg w-full"
-            src="./images/blender-to-godot/export.gif"
+            src="/addons/images/blender-to-godot/export.gif"
             alt=""
             width={600}
             height={325}
@@ -672,9 +598,10 @@ export default function BlendertoGodotPage() {
         <CardFooter className="space-x-4">
           <Link
             href="https://b3dhub.github.io/blender-to-godot-docs/"
+            className={cn(buttonVariants({ variant: "secondary" }))}
             target="_blank"
           >
-            <Button variant={"secondary"}>Documentation</Button>
+            Documentation
           </Link>
           {/* <Link
             href="https://discord.com/channels/959138815602229389/959152281058697216"

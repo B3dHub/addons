@@ -1,22 +1,11 @@
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import Link from "next/link";
-import { Button } from "./ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function Support({ children }: { children?: React.ReactNode }) {
   return (
     <Card>
       <CardHeader>
         <CardTitle>Support</CardTitle>
-        <CardDescription>
-          Join our Discord server to stay updated.
-        </CardDescription>
+        <CardDescription>Join our Discord server to stay updated.</CardDescription>
       </CardHeader>
       <CardContent>
         <iframe

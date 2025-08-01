@@ -18,9 +18,7 @@ export default function ProductCatalog({
       {title || description ? (
         <>
           {title && <h1>{title}</h1>}
-          {description && (
-            <p className="text-sm text-muted-foreground">{description}</p>
-          )}
+          {description && <p className="text-sm text-muted-foreground">{description}</p>}
         </>
       ) : null}
       <div className={classname}>{children}</div>

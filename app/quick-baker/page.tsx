@@ -1,24 +1,6 @@
-import React from "react";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-
-import {
-  Table,
-  TableBody,
-  TableCaption,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import { Button, buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
 import Support from "@/components/support";
 import OtherAddons from "@/components/other-addons";
@@ -26,6 +8,7 @@ import Image from "next/image";
 import { Metadata } from "next";
 import Affiliate from "@/components/affiliate";
 import { Coupon, showCoupon } from "@/components/coupon";
+import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "Quick Baker - Blender Addon",
@@ -41,16 +24,12 @@ export default function QuickBakerPage() {
         </CardHeader>
         <CardContent>
           <CardDescription>
-            Quick Baker is an exceptional PBR texture-baking addon that
-            brilliantly utilizes Blender's native baking operator for baking{" "}
-            <span>PBR</span>, <span>Mesh</span>, <span>Principled BSDF</span>,
-            and <span>Cycles</span> maps. It significantly enhances the Blender
-            baking process for multiple objects with multiple materials,
-            offering unparalleled efficiency. Capable of baking both high-to-low
-            and low-to-low poly objects. It simplifies the baking process with
-            an ingenious automatic cage setup. Designed with speed and
-            ease-of-use in mind, Quick Baker stands out as the ultimate tool for
-            your baking needs.
+            Quick Baker is an exceptional PBR texture-baking addon that brilliantly utilizes Blender's native baking
+            operator for baking <span>PBR</span>, <span>Mesh</span>, <span>Principled BSDF</span>, and{" "}
+            <span>Cycles</span> maps. It significantly enhances the Blender baking process for multiple objects with
+            multiple materials, offering unparalleled efficiency. Capable of baking both high-to-low and low-to-low poly
+            objects. It simplifies the baking process with an ingenious automatic cage setup. Designed with speed and
+            ease-of-use in mind, Quick Baker stands out as the ultimate tool for your baking needs.
           </CardDescription>
         </CardContent>
         {showCoupon && <Coupon />}
@@ -78,23 +57,17 @@ export default function QuickBakerPage() {
                 <TableCell className="text-center">✅</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">
-                  High-to-Low Poly Bake
-                </TableCell>
+                <TableCell className="font-medium">High-to-Low Poly Bake</TableCell>
                 <TableCell className="text-center">✅</TableCell>
                 <TableCell className="text-center">✅</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">
-                  Single Texture Set
-                </TableCell>
+                <TableCell className="font-medium">Single Texture Set</TableCell>
                 <TableCell className="text-center">✅</TableCell>
                 <TableCell className="text-center">⚠️</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">
-                  Multiple Texture Set
-                </TableCell>
+                <TableCell className="font-medium">Multiple Texture Set</TableCell>
                 <TableCell className="text-center">✅</TableCell>
                 <TableCell className="text-center">⚠️</TableCell>
               </TableRow>
@@ -114,16 +87,12 @@ export default function QuickBakerPage() {
                 <TableCell className="text-center">⚠️</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">
-                  Vertex Color for Material ID
-                </TableCell>
+                <TableCell className="font-medium">Vertex Color for Material ID</TableCell>
                 <TableCell className="text-center">✅</TableCell>
                 <TableCell className="text-center">⚠️</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">
-                  Existing Texture Bake
-                </TableCell>
+                <TableCell className="font-medium">Existing Texture Bake</TableCell>
                 <TableCell className="text-center">✅</TableCell>
                 <TableCell className="text-center">⚠️</TableCell>
               </TableRow>
@@ -185,11 +154,10 @@ export default function QuickBakerPage() {
         <CardContent>
           <Image
             className="rounded-lg w-full"
-            src="./images/quick-baker/object_bake.gif"
+            src="/addons/images/quick-baker/object_bake.gif"
             alt=""
             width={600}
             height={325}
-            unoptimized
           />
         </CardContent>
       </Card>
@@ -197,133 +165,119 @@ export default function QuickBakerPage() {
       <Card>
         <CardHeader>
           <CardTitle>High-to-Low Poly Bake</CardTitle>
-          <CardDescription>
-            Bake high-to-low or low-to-low objects.
-          </CardDescription>
+          <CardDescription>Bake high-to-low or low-to-low objects.</CardDescription>
         </CardHeader>
         <CardContent>
           <Image
             className="rounded-lg w-full"
-            src="./images/quick-baker/high_to_low_bake.gif"
+            src="/addons/images/quick-baker/high_to_low_bake.gif"
             alt=""
             width={600}
             height={325}
             unoptimized
-          />
+            />
         </CardContent>
       </Card>
 
       <Card>
         <CardHeader>
           <CardTitle>Single Texture Set</CardTitle>
-          <CardDescription>
-            Bake multiple objects and materials into single texture set.
-          </CardDescription>
+          <CardDescription>Bake multiple objects and materials into single texture set.</CardDescription>
         </CardHeader>
         <CardContent>
           <Image
             className="rounded-lg w-full"
-            src="./images/quick-baker/single_texture_set.gif"
+            src="/addons/images/quick-baker/single_texture_set.gif"
             alt=""
             width={600}
             height={325}
             unoptimized
-          />
+            />
         </CardContent>
       </Card>
 
       <Card>
         <CardHeader>
           <CardTitle>Multiple Texture Set</CardTitle>
-          <CardDescription>
-            Bake multiple objects and materials into separate texture set.
-          </CardDescription>
+          <CardDescription>Bake multiple objects and materials into separate texture set.</CardDescription>
         </CardHeader>
         <CardContent>
           <Image
             className="rounded-lg w-full"
-            src="./images/quick-baker/multiple_texture_set.gif"
+            src="/addons/images/quick-baker/multiple_texture_set.gif"
             alt=""
             width={600}
             height={325}
             unoptimized
-          />
+            />
         </CardContent>
       </Card>
 
       <Card>
         <CardHeader>
           <CardTitle>Auto Cage</CardTitle>
-          <CardDescription>
-            Automatically create/adjust cage objects for high-to-low bake.
-          </CardDescription>
+          <CardDescription>Automatically create/adjust cage objects for high-to-low bake.</CardDescription>
         </CardHeader>
         <CardContent>
           <Image
             className="rounded-lg w-full"
-            src="./images/quick-baker/auto_cage.gif"
+            src="/addons/images/quick-baker/auto_cage.gif"
             alt=""
             width={600}
             height={325}
             unoptimized
-          />
+            />
         </CardContent>
       </Card>
 
       <Card>
         <CardHeader>
           <CardTitle>Auto UDIM Bake</CardTitle>
-          <CardDescription>
-            Automatically bake UDIM maps based on UV layout.
-          </CardDescription>
+          <CardDescription>Automatically bake UDIM maps based on UV layout.</CardDescription>
         </CardHeader>
         <CardContent>
           <Image
             className="rounded-lg w-full"
-            src="./images/quick-baker/auto_udim_bake.gif"
+            src="/addons/images/quick-baker/auto_udim_bake.gif"
             alt=""
             width={600}
             height={325}
             unoptimized
-          />
+            />
         </CardContent>
       </Card>
 
       <Card>
         <CardHeader>
           <CardTitle>Channel Packing</CardTitle>
-          <CardDescription>
-            Pack multiple maps into one image (ideal for game engines).
-          </CardDescription>
+          <CardDescription>Pack multiple maps into one image (ideal for game engines).</CardDescription>
         </CardHeader>
         <CardContent>
           <Image
             className="rounded-lg w-full"
-            src="./images/quick-baker/channel_packing.gif"
+            src="/addons/images/quick-baker/channel_packing.gif"
             alt=""
             width={600}
             height={325}
             unoptimized
-          />
+            />
         </CardContent>
       </Card>
 
       <Card>
         <CardHeader>
           <CardTitle>Vertex Color for Material ID</CardTitle>
-          <CardDescription>
-            Create vertex color for material id map.
-          </CardDescription>
+          <CardDescription>Create vertex color for material id map.</CardDescription>
         </CardHeader>
         <CardContent>
           <Image
             className="rounded-lg w-full"
-            src="./images/quick-baker/vertex_color_material_id.gif"
+            src="/addons/images/quick-baker/vertex_color_material_id.gif"
             alt=""
             width={600}
             height={325}
             unoptimized
-          />
+            />
         </CardContent>
       </Card>
 
@@ -335,31 +289,29 @@ export default function QuickBakerPage() {
         <CardContent>
           <Image
             className="rounded-lg w-full"
-            src="./images/quick-baker/existing_texture_bake.gif"
+            src="/addons/images/quick-baker/existing_texture_bake.gif"
             alt=""
             width={600}
             height={325}
             unoptimized
-          />
+            />
         </CardContent>
       </Card>
 
       <Card>
         <CardHeader>
           <CardTitle>Map Preview</CardTitle>
-          <CardDescription>
-            Preview maps before baking (e.g. AO, Curvature, etc).
-          </CardDescription>
+          <CardDescription>Preview maps before baking (e.g. AO, Curvature, etc).</CardDescription>
         </CardHeader>
         <CardContent>
           <Image
             className="rounded-lg w-full"
-            src="./images/quick-baker/map_preview.gif"
+            src="/addons/images/quick-baker/map_preview.gif"
             alt=""
             width={600}
             height={325}
             unoptimized
-          />
+            />
         </CardContent>
       </Card>
 
@@ -371,11 +323,11 @@ export default function QuickBakerPage() {
         <CardContent>
           <Image
             className="rounded-lg w-full"
-            src="./images/quick-baker/node_bake.gif"
+            src="/addons/images/quick-baker/node_bake.gif"
             alt=""
             width={600}
             height={325}
-            unoptimized
+            
           />
         </CardContent>
       </Card> */}
@@ -388,31 +340,29 @@ export default function QuickBakerPage() {
         <CardContent>
           <Image
             className="rounded-lg w-full"
-            src="./images/quick-baker/node_bake.gif"
+            src="/addons/images/quick-baker/node_bake.gif"
             alt=""
             width={600}
             height={325}
             unoptimized
-          />
+            />
         </CardContent>
       </Card>
 
       <Card>
         <CardHeader>
           <CardTitle>UDIM Node Bake</CardTitle>
-          <CardDescription>
-            Bake shader nodes into image for UDIM object.
-          </CardDescription>
+          <CardDescription>Bake shader nodes into image for UDIM object.</CardDescription>
         </CardHeader>
         <CardContent>
           <Image
             className="rounded-lg w-full"
-            src="./images/quick-baker/udim_node_bake.gif"
+            src="/addons/images/quick-baker/udim_node_bake.gif"
             alt=""
             width={600}
             height={325}
             unoptimized
-          />
+            />
         </CardContent>
       </Card>
 
@@ -424,11 +374,11 @@ export default function QuickBakerPage() {
         <CardContent>
           <Image
             className="rounded-lg w-full"
-            src="./images/quick-baker/maps.png"
+            src="/addons/images/quick-baker/maps.png"
             alt=""
             width={600}
             height={325}
-            unoptimized
+            
           />
         </CardContent>
       </Card> */}
@@ -439,14 +389,7 @@ export default function QuickBakerPage() {
           <CardDescription>Bake 50 unique maps</CardDescription>
         </CardHeader>
         <CardContent>
-          <Image
-            className="rounded-lg w-full"
-            src="./images/quick-baker/maps.png"
-            alt=""
-            width={600}
-            height={325}
-            unoptimized
-          />
+          <Image className="rounded-lg w-full" src="/addons/images/quick-baker/maps.png" alt="" width={600} height={325} />
         </CardContent>
       </Card>
 
@@ -457,16 +400,13 @@ export default function QuickBakerPage() {
         </CardHeader>
         <CardContent>
           <CardDescription>
-            Only works with <span>Principled BSDF</span>,{" "}
-            <span>Mix Shader</span>, and <span>Add Shader</span> nodes.
+            Only works with <span>Principled BSDF</span>, <span>Mix Shader</span>, and <span>Add Shader</span> nodes.
           </CardDescription>
         </CardContent>
         <CardFooter>
           <CardDescription>
-            If you encounter the <span>Out of Memory</span> error, you should
-            lower the processes count to 1-2 in the Global Bake panel. The
-            higher process count is useful when baking low-resolution maps (e.g.
-            1K).
+            If you encounter the <span>Out of Memory</span> error, you should lower the processes count to 1-2 in the
+            Global Bake panel. The higher process count is useful when baking low-resolution maps (e.g. 1K).
           </CardDescription>
         </CardFooter>
       </Card>
@@ -475,15 +415,17 @@ export default function QuickBakerPage() {
         <CardFooter className="space-x-4">
           <Link
             href="https://b3dhub.github.io/quick-baker-docs/"
+            className={cn(buttonVariants({ variant: "secondary" }))}
             target="_blank"
           >
-            <Button variant={"secondary"}>Documentation</Button>
+            Documentation
           </Link>
           <Link
             href="https://discord.com/channels/959138815602229389/1013054795562614794"
+            className={cn(buttonVariants({ variant: "secondary" }))}
             target="_blank"
           >
-            <Button variant={"secondary"}>Changelogs</Button>
+            Changelogs
           </Link>
         </CardFooter>
       </Support>

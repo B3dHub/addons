@@ -7,9 +7,6 @@ export function Coupon() {
 
   // Get the current date in UTC
   const now = new Date();
-  const utcDay = now.getUTCDate();
-  const utcMonth = now.getUTCMonth();
-  const utcYear = now.getUTCFullYear();
 
   // Create a proper CDT date (accounting for possible production environment differences)
   // CDT is UTC-5 hours, CST is UTC-6 hours
@@ -93,4 +90,4 @@ export function Coupon() {
   );
 }
 
-export const showCoupon = false;
+export const showCoupon = true;

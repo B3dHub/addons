@@ -2,6 +2,7 @@ import React from "react";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 import Link from "next/link";
 import { Badge } from "../ui/badge";
+import Image from "next/image";
 
 export default function ProductCard({
   productURL = "/quick-baker",
@@ -29,18 +30,18 @@ export default function ProductCard({
   info?: string;
 }) {
   return (
-    <div className="relative border rounded-xl shadow-xl hover:bg-secondary">
+    <div className="relative border rounded-xl shadow-xl hover:bg-muted">
       <Link href={productURL} passHref={true}>
         <div className="relative overflow-hidden rounded-t-xl h-[200px]">
-          <img
-            className="h-full w-full object-cover transition-all hover:scale-105"
+          <Image
             src={imageURL}
+            alt=""
+            width={400}
+            height={200}
+            className="h-full w-full object-cover transition-all hover:scale-105"
           />
           {isSale && (
-            <Badge
-              variant="default"
-              className="absolute top-1 -right-1 shadow-md"
-            >
+            <Badge variant="default" className="absolute top-1 -right-1 shadow-md">
               Sale {salePercentage}%
             </Badge>
           )}
@@ -56,9 +57,7 @@ export default function ProductCard({
             <div className="flex items-center space-x-2">
               {isSale ? (
                 <>
-                  <h3 className="text-muted-foreground line-through">
-                    {price}
-                  </h3>
+                  <h3 className="text-muted-foreground line-through">{price}</h3>
                   <h3>{salePrice}</h3>
                 </>
               ) : (
@@ -71,7 +70,7 @@ export default function ProductCard({
       <Link
         href={creatorURL}
         passHref={true}
-        className="absolute left-4 bottom-4 text-xs text-muted-foreground hover:underline hover:text-primary"
+        className="absolute left-4 bottom-4 text-xs hover:underline hover:text-primary"
       >
         <div className="flex items-center space-x-2">
           <Avatar className="h-7 w-7">

@@ -1,13 +1,7 @@
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Data } from "./data";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function OtherAddons({ active }: { active?: boolean }) {
   return (
@@ -25,12 +19,12 @@ export default function OtherAddons({ active }: { active?: boolean }) {
               key={index}
               aria-label={item.title}
             >
-              <img
-                className={`rounded-lg transition-all hover:scale-105 ${
-                  active ? "border-4 border-primary" : ""
-                }`}
+              <Image
                 src={item.imageURL}
                 alt=""
+                width={250}
+                height={150}
+                className={`rounded-lg transition-all hover:scale-105 ${active ? "border-4 border-primary" : ""}`}
               />
             </Link>
           ))}

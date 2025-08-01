@@ -1,22 +1,5 @@
-import React from "react";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-
-import {
-  Table,
-  TableBody,
-  TableCaption,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table";
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Table, TableBody, TableCell, TableHeader, TableRow } from "@/components/ui/table";
 import { Badge } from "@/components/ui/badge";
 import { Button, buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
@@ -26,6 +9,7 @@ import Image from "next/image";
 import { Metadata } from "next";
 import Affiliate from "@/components/affiliate";
 import { Coupon, showCoupon } from "@/components/coupon";
+import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "Megascans Bridge - Blender Addon",
@@ -41,26 +25,19 @@ export default function MegascansBridgePage() {
         </CardHeader>
         <CardContent>
           <CardDescription>
-            Megascans Bridge is a Blender add-on that imports Quixel Megascans
-            assets downloaded via{" "}
-            <Link
-              className="text-foreground hover:underline"
-              href={"https://quixel.com/bridge"}
-              target="_blank"
-            >
+            Megascans Bridge is a Blender add-on that imports Quixel Megascans assets downloaded via{" "}
+            <Link className="text-foreground hover:underline" href={"https://quixel.com/bridge"} target="_blank">
               Quixel Bridge
             </Link>{" "}
-            directly from the Blender interface. The downloaded assets will be
-            sorted by type, category and subcategory.
+            directly from the Blender interface. The downloaded assets will be sorted by type, category and subcategory.
           </CardDescription>
         </CardContent>
         <CardContent>
           <div className="flex gap-2 flex-col sm:flex-row">
             <Badge variant={"secondary"}>
               <CardDescription>
-                Disclaimer: Users who have <span>claimed</span> or{" "}
-                <span>purchased</span> Megascans assets through Quixel{" "}
-                <span>Bridge</span> can use this add-on.
+                Disclaimer: Users who have <span>claimed</span> or <span>purchased</span> Megascans assets through
+                Quixel <span>Bridge</span> can use this add-on.
               </CardDescription>
             </Badge>
           </div>
@@ -111,9 +88,7 @@ export default function MegascansBridgePage() {
                 <TableCell className="font-medium">Create Lod Group</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">
-                  Apply Imported Materials
-                </TableCell>
+                <TableCell className="font-medium">Apply Imported Materials</TableCell>
               </TableRow>
             </TableBody>
             {/* <TableCaption>
@@ -134,11 +109,7 @@ export default function MegascansBridgePage() {
               <TableRow>
                 <TableCell className="font-medium">
                   Download{" "}
-                  <Link
-                    className="hover:text-foreground underline"
-                    href={"https://quixel.com/bridge"}
-                    target="_blank"
-                  >
+                  <Link className="hover:text-foreground underline" href={"https://quixel.com/bridge"} target="_blank">
                     Quixel Bridge
                   </Link>{" "}
                   and download the Megascans assets through it.
@@ -147,31 +118,27 @@ export default function MegascansBridgePage() {
 
               <TableRow>
                 <TableCell className="font-medium">
-                  Once you download the Megascans assets, they will be saved in
-                  the default path{" "}
+                  Once you download the Megascans assets, they will be saved in the default path{" "}
                   <pre>"/Documents/Megascans Library/Downloaded/"</pre>
                 </TableCell>
               </TableRow>
 
               <TableRow>
                 <TableCell className="font-medium">
-                  Add the path in the add-on preferences under the{" "}
-                  <span>Library</span> tab.
+                  Add the path in the add-on preferences under the <span>Library</span> tab.
                 </TableCell>
               </TableRow>
 
               <TableRow>
                 <TableCell className="font-medium">
-                  After adding the path, the assets will appear in the{" "}
-                  <span>Sidebar(n-panel)</span> under the <span>M-Bridge</span>{" "}
-                  tab.
+                  After adding the path, the assets will appear in the <span>Sidebar(n-panel)</span> under the{" "}
+                  <span>M-Bridge</span> tab.
                 </TableCell>
               </TableRow>
 
               <TableRow>
                 <TableCell className="font-medium">
-                  Now you can import the assets directly from the Blender
-                  interface.
+                  Now you can import the assets directly from the Blender interface.
                 </TableCell>
               </TableRow>
             </Table>
@@ -186,7 +153,7 @@ export default function MegascansBridgePage() {
         <CardContent>
           <Image
             className="rounded-lg w-full"
-            src="./images/megascans-bridge/v2/grid_view.gif"
+            src="/addons/images/megascans-bridge/v2/grid_view.gif"
             alt=""
             width={600}
             height={325}
@@ -202,7 +169,7 @@ export default function MegascansBridgePage() {
         <CardContent>
           <Image
             className="rounded-lg w-full"
-            src="./images/megascans-bridge/v2/asset_search.gif"
+            src="/addons/images/megascans-bridge/v2/asset_search.gif"
             alt=""
             width={600}
             height={325}
@@ -218,7 +185,7 @@ export default function MegascansBridgePage() {
         <CardContent>
           <Image
             className="rounded-lg w-full"
-            src="./images/megascans-bridge/v2/asset_details.gif"
+            src="/addons/images/megascans-bridge/v2/asset_details.gif"
             alt=""
             width={600}
             height={325}
@@ -234,7 +201,7 @@ export default function MegascansBridgePage() {
         <CardContent>
           <Image
             className="rounded-lg w-full"
-            src="./images/megascans-bridge/v2/pagination.gif"
+            src="/addons/images/megascans-bridge/v2/pagination.gif"
             alt=""
             width={600}
             height={325}
@@ -248,14 +215,12 @@ export default function MegascansBridgePage() {
           <CardTitle>Import Assets</CardTitle>
         </CardHeader>
         <CardContent>
-          <CardDescription>
-            You can import 3D assets with LODs and create LOD groups.
-          </CardDescription>
+          <CardDescription>You can import 3D assets with LODs and create LOD groups.</CardDescription>
         </CardContent>
         <CardContent>
           <Image
             className="rounded-lg w-full"
-            src="./images/megascans-bridge/v2/import_assets.gif"
+            src="/addons/images/megascans-bridge/v2/import_assets.gif"
             alt=""
             width={600}
             height={325}
@@ -263,14 +228,12 @@ export default function MegascansBridgePage() {
           />
         </CardContent>
         <CardContent>
-          <CardDescription>
-            LOD Groups are based on Geometry Nodes.
-          </CardDescription>
+          <CardDescription>LOD Groups are based on Geometry Nodes.</CardDescription>
         </CardContent>
         <CardContent>
           <Image
             className="rounded-lg w-full"
-            src="./images/megascans-bridge/v2/lod_group.gif"
+            src="/addons/images/megascans-bridge/v2/lod_group.gif"
             alt=""
             width={600}
             height={325}
@@ -284,14 +247,12 @@ export default function MegascansBridgePage() {
           <CardTitle>Import Plants</CardTitle>
         </CardHeader>
         <CardContent>
-          <CardDescription>
-            You can import 3D plants with LODs and create LOD groups.
-          </CardDescription>
+          <CardDescription>You can import 3D plants with LODs and create LOD groups.</CardDescription>
         </CardContent>
         <CardContent>
           <Image
             className="rounded-lg w-full"
-            src="./images/megascans-bridge/v2/import_plants.gif"
+            src="/addons/images/megascans-bridge/v2/import_plants.gif"
             alt=""
             width={600}
             height={325}
@@ -303,14 +264,12 @@ export default function MegascansBridgePage() {
       <Card>
         <CardHeader>
           <CardTitle>Import Surfaces</CardTitle>
-          <CardDescription>
-            You can import surface textures as materials and node groups.
-          </CardDescription>
+          <CardDescription>You can import surface textures as materials and node groups.</CardDescription>
         </CardHeader>
         <CardContent>
           <Image
             className="rounded-lg w-full"
-            src="./images/megascans-bridge/v2/import_surfaces.gif"
+            src="/addons/images/megascans-bridge/v2/import_surfaces.gif"
             alt=""
             width={600}
             height={325}
@@ -320,7 +279,7 @@ export default function MegascansBridgePage() {
         <CardContent>
           <Image
             className="rounded-lg w-full"
-            src="./images/megascans-bridge/v2/import_node_group.gif"
+            src="/addons/images/megascans-bridge/v2/import_node_group.gif"
             alt=""
             width={600}
             height={325}
@@ -336,18 +295,16 @@ export default function MegascansBridgePage() {
         <CardContent>
           <CardDescription className="space-y-2">
             <p>
-              This add-on is an independent tool and is not affiliated with, 
-              authorized, sponsored, or otherwise approved by Epic Games, Inc.
-              or Quixel.
+              This add-on is an independent tool and is not affiliated with, authorized, sponsored, or otherwise
+              approved by Epic Games, Inc. or Quixel.
             </p>
             <p>
-              All Megascans assets and content remain the property of Epic Games, Inc. Quixel,
-              and are subject to their terms of use and licensing agreements.
+              All Megascans assets and content remain the property of Epic Games, Inc. Quixel, and are subject to their
+              terms of use and licensing agreements.
             </p>
             <p>
-              © 2025, Epic Games, Inc. Quixel, Megascans, and Unreal Engine are
-              trademarks or registered trademarks of Epic Games, Inc. in the USA
-              and elsewhere.
+              © 2025, Epic Games, Inc. Quixel, Megascans, and Unreal Engine are trademarks or registered trademarks of
+              Epic Games, Inc. in the USA and elsewhere.
             </p>
           </CardDescription>
         </CardContent>
@@ -357,9 +314,10 @@ export default function MegascansBridgePage() {
         <CardFooter className="space-x-4">
           <Link
             href="https://discord.com/channels/959138815602229389/1327353624644288604"
+            className={cn(buttonVariants({ variant: "secondary" }))}
             target="_blank"
           >
-            <Button variant={"secondary"}>Changelogs</Button>
+            Changelogs
           </Link>
         </CardFooter>
       </Support>

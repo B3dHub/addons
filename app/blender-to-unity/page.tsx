@@ -1,32 +1,6 @@
-import React from "react";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-
-import {
-  Table,
-  TableBody,
-  TableCaption,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table";
-
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
-
-import { Badge } from "@/components/ui/badge";
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Button, buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
 import Support from "@/components/support";
@@ -35,6 +9,7 @@ import Image from "next/image";
 import { Metadata } from "next";
 import Affiliate from "@/components/affiliate";
 import { Coupon, showCoupon } from "@/components/coupon";
+import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "Blender to Unity - Blender Addon",
@@ -50,13 +25,10 @@ export default function BlendertoUnityPage() {
         </CardHeader>
         <CardContent>
           <CardDescription>
-            Blender-to-Unity is a Blender addon that exports objects,
-            animations, colliders, and LODs to Unity Engine. It is designed to
-            be simple and easy to use. You can export your models to Unity with
-            just a few clicks. This addon is perfect for game developers,
-            architects, and 3D artists who want to export their models to Unity
-            Engine. Get Blender-to-Unity today and start exporting your models
-            to Unity with ease!
+            Blender-to-Unity is a Blender addon that exports objects, animations, colliders, and LODs to Unity Engine.
+            It is designed to be simple and easy to use. You can export your models to Unity with just a few clicks.
+            This addon is perfect for game developers, architects, and 3D artists who want to export their models to
+            Unity Engine. Get Blender-to-Unity today and start exporting your models to Unity with ease!
           </CardDescription>
         </CardContent>
         {showCoupon && <Coupon />}
@@ -84,9 +56,7 @@ export default function BlendertoUnityPage() {
                 <TableCell className="text-center">✅</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">
-                  Collections Export
-                </TableCell>
+                <TableCell className="font-medium">Collections Export</TableCell>
                 <TableCell className="text-center">✅</TableCell>
                 <TableCell className="text-center">⚠️</TableCell>
               </TableRow>
@@ -111,23 +81,17 @@ export default function BlendertoUnityPage() {
                 <TableCell className="text-center">⚠️</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">
-                  Export to Unity & Disk
-                </TableCell>
+                <TableCell className="font-medium">Export to Unity & Disk</TableCell>
                 <TableCell className="text-center">✅</TableCell>
                 <TableCell className="text-center">⚠️</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">
-                  Auto Extract Materials & Textures
-                </TableCell>
+                <TableCell className="font-medium">Auto Extract Materials & Textures</TableCell>
                 <TableCell className="text-center">✅</TableCell>
                 <TableCell className="text-center">⚠️</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">
-                  Auto Create Shader Types
-                </TableCell>
+                <TableCell className="font-medium">Auto Create Shader Types</TableCell>
                 <TableCell className="text-center">✅</TableCell>
                 <TableCell className="text-center">⚠️</TableCell>
               </TableRow>
@@ -145,9 +109,7 @@ export default function BlendertoUnityPage() {
         <CardHeader>
           <CardTitle>
             <Link
-              href={
-                "https://b3dhub.github.io/blender-to-unity-docs/collider.html"
-              }
+              href={"https://b3dhub.github.io/blender-to-unity-docs/collider.html"}
               target="_blank"
               className="hover:underline"
             >
@@ -157,30 +119,19 @@ export default function BlendertoUnityPage() {
           <CardDescription>Add auto and custom collider.</CardDescription>
         </CardHeader>
         <CardContent>
-          <Image
-            className="rounded-lg"
-            src="./images/blender-to-unity/colliders.png"
-            alt=""
-            width={256}
-            height={256}
-            unoptimized
-          />
+          <Image className="rounded-lg" src="/addons/images/blender-to-unity/colliders.png" alt="" width={256} height={256} />
         </CardContent>
         <CardHeader>
           <CardTitle>
             <Link
-              href={
-                "https://b3dhub.github.io/blender-to-unity-docs/collider.html#box"
-              }
+              href={"https://b3dhub.github.io/blender-to-unity-docs/collider.html#box"}
               target="_blank"
               className="hover:underline"
             >
               Box
             </Link>
           </CardTitle>
-          <CardDescription>
-            Box collider will create based on the bounding box of the selection.
-          </CardDescription>
+          <CardDescription>Box collider will create based on the bounding box of the selection.</CardDescription>
         </CardHeader>
         <CardContent>
           <Carousel>
@@ -188,31 +139,28 @@ export default function BlendertoUnityPage() {
               <CarouselItem>
                 <Image
                   className="rounded-lg w-full"
-                  src="./images/blender-to-unity/box.webp"
+                  src="/addons/images/blender-to-unity/box.webp"
                   alt=""
                   width={600}
                   height={325}
-                  unoptimized
                 />
               </CarouselItem>
               <CarouselItem>
                 <Image
                   className="rounded-lg w-full"
-                  src="./images/blender-to-unity/box_editmode.webp"
+                  src="/addons/images/blender-to-unity/box_editmode.webp"
                   alt=""
                   width={600}
                   height={325}
-                  unoptimized
                 />
               </CarouselItem>
               <CarouselItem>
                 <Image
                   className="rounded-lg w-full"
-                  src="./images/blender-to-unity/box_custom.webp"
+                  src="/addons/images/blender-to-unity/box_custom.webp"
                   alt=""
                   width={600}
                   height={325}
-                  unoptimized
                 />
               </CarouselItem>
             </CarouselContent>
@@ -223,9 +171,7 @@ export default function BlendertoUnityPage() {
         <CardHeader>
           <CardTitle>
             <Link
-              href={
-                "https://b3dhub.github.io/blender-to-unity-docs/collider.html#capsule"
-              }
+              href={"https://b3dhub.github.io/blender-to-unity-docs/collider.html#capsule"}
               target="_blank"
               className="hover:underline"
             >
@@ -233,8 +179,7 @@ export default function BlendertoUnityPage() {
             </Link>
           </CardTitle>
           <CardDescription>
-            Capsule collider will create based on the bounding box and the depth
-            of the selection.
+            Capsule collider will create based on the bounding box and the depth of the selection.
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -243,31 +188,28 @@ export default function BlendertoUnityPage() {
               <CarouselItem>
                 <Image
                   className="rounded-lg w-full"
-                  src="./images/blender-to-unity/capsule.webp"
+                  src="/addons/images/blender-to-unity/capsule.webp"
                   alt=""
                   width={600}
                   height={325}
-                  unoptimized
                 />
               </CarouselItem>
               <CarouselItem>
                 <Image
                   className="rounded-lg w-full"
-                  src="./images/blender-to-unity/capsule_editmode.webp"
+                  src="/addons/images/blender-to-unity/capsule_editmode.webp"
                   alt=""
                   width={600}
                   height={325}
-                  unoptimized
                 />
               </CarouselItem>
               <CarouselItem>
                 <Image
                   className="rounded-lg w-full"
-                  src="./images/blender-to-unity/capsule_custom.webp"
+                  src="/addons/images/blender-to-unity/capsule_custom.webp"
                   alt=""
                   width={600}
                   height={325}
-                  unoptimized
                 />
               </CarouselItem>
             </CarouselContent>
@@ -278,19 +220,14 @@ export default function BlendertoUnityPage() {
         <CardHeader>
           <CardTitle>
             <Link
-              href={
-                "https://b3dhub.github.io/blender-to-unity-docs/collider.html#sphere"
-              }
+              href={"https://b3dhub.github.io/blender-to-unity-docs/collider.html#sphere"}
               target="_blank"
               className="hover:underline"
             >
               Sphere
             </Link>
           </CardTitle>
-          <CardDescription>
-            Sphere collider will create based on the bounding box of the
-            selection.
-          </CardDescription>
+          <CardDescription>Sphere collider will create based on the bounding box of the selection.</CardDescription>
         </CardHeader>
         <CardContent>
           <Carousel>
@@ -298,31 +235,28 @@ export default function BlendertoUnityPage() {
               <CarouselItem>
                 <Image
                   className="rounded-lg w-full"
-                  src="./images/blender-to-unity/sphere.webp"
+                  src="/addons/images/blender-to-unity/sphere.webp"
                   alt=""
                   width={600}
                   height={325}
-                  unoptimized
                 />
               </CarouselItem>
               <CarouselItem>
                 <Image
                   className="rounded-lg w-full"
-                  src="./images/blender-to-unity/sphere_editmode.webp"
+                  src="/addons/images/blender-to-unity/sphere_editmode.webp"
                   alt=""
                   width={600}
                   height={325}
-                  unoptimized
                 />
               </CarouselItem>
               <CarouselItem>
                 <Image
                   className="rounded-lg w-full"
-                  src="./images/blender-to-unity/sphere_custom.webp"
+                  src="/addons/images/blender-to-unity/sphere_custom.webp"
                   alt=""
                   width={600}
                   height={325}
-                  unoptimized
                 />
               </CarouselItem>
             </CarouselContent>
@@ -333,9 +267,7 @@ export default function BlendertoUnityPage() {
         <CardHeader>
           <CardTitle>
             <Link
-              href={
-                "https://b3dhub.github.io/blender-to-unity-docs/collider.html#cylinder"
-              }
+              href={"https://b3dhub.github.io/blender-to-unity-docs/collider.html#cylinder"}
               target="_blank"
               className="hover:underline"
             >
@@ -343,8 +275,7 @@ export default function BlendertoUnityPage() {
             </Link>
           </CardTitle>
           <CardDescription>
-            Cylinder collider will create based on the bounding box and the
-            depth of the selection.
+            Cylinder collider will create based on the bounding box and the depth of the selection.
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -353,7 +284,7 @@ export default function BlendertoUnityPage() {
               <CarouselItem>
                 <Image
                   className="rounded-lg w-full"
-                  src="./images/blender-to-unity/cylinder.gif"
+                  src="/addons/images/blender-to-unity/cylinder.gif"
                   alt=""
                   width={600}
                   height={325}
@@ -363,11 +294,10 @@ export default function BlendertoUnityPage() {
               <CarouselItem>
                 <Image
                   className="rounded-lg w-full"
-                  src="./images/blender-to-unity/cylinder_editmode.webp"
+                  src="/addons/images/blender-to-unity/cylinder_editmode.webp"
                   alt=""
                   width={600}
                   height={325}
-                  unoptimized
                 />
               </CarouselItem>
             </CarouselContent>
@@ -378,18 +308,14 @@ export default function BlendertoUnityPage() {
         <CardHeader>
           <CardTitle>
             <Link
-              href={
-                "https://b3dhub.github.io/blender-to-unity-docs/collider.html#convex"
-              }
+              href={"https://b3dhub.github.io/blender-to-unity-docs/collider.html#convex"}
               target="_blank"
               className="hover:underline"
             >
               Convex
             </Link>
           </CardTitle>
-          <CardDescription>
-            Convex collider will create based on the selection.
-          </CardDescription>
+          <CardDescription>Convex collider will create based on the selection.</CardDescription>
         </CardHeader>
         <CardContent>
           <Carousel>
@@ -397,41 +323,37 @@ export default function BlendertoUnityPage() {
               <CarouselItem>
                 <Image
                   className="rounded-lg w-full"
-                  src="./images/blender-to-unity/convex.webp"
+                  src="/addons/images/blender-to-unity/convex.webp"
                   alt=""
                   width={600}
                   height={325}
-                  unoptimized
                 />
               </CarouselItem>
               <CarouselItem>
                 <Image
                   className="rounded-lg w-full"
-                  src="./images/blender-to-unity/convex_editmode.webp"
+                  src="/addons/images/blender-to-unity/convex_editmode.webp"
                   alt=""
                   width={600}
                   height={325}
-                  unoptimized
                 />
               </CarouselItem>
               <CarouselItem>
                 <Image
                   className="rounded-lg w-full"
-                  src="./images/blender-to-unity/convex_custom.webp"
+                  src="/addons/images/blender-to-unity/convex_custom.webp"
                   alt=""
                   width={600}
                   height={325}
-                  unoptimized
                 />
               </CarouselItem>
               <CarouselItem>
                 <Image
                   className="rounded-lg w-full"
-                  src="./images/blender-to-unity/convex_vhacd.webp"
+                  src="/addons/images/blender-to-unity/convex_vhacd.webp"
                   alt=""
                   width={600}
                   height={325}
-                  unoptimized
                 />
               </CarouselItem>
             </CarouselContent>
@@ -455,35 +377,24 @@ export default function BlendertoUnityPage() {
           <CardDescription>Create, Update, and Preset LODs.</CardDescription>
         </CardHeader>
         <CardContent>
-          <Image
-            className="rounded-lg"
-            src="./images/blender-to-unity/lods.png"
-            alt=""
-            width={256}
-            height={256}
-            unoptimized
-          />
+          <Image className="rounded-lg" src="/addons/images/blender-to-unity/lods.png" alt="" width={256} height={256} />
         </CardContent>
         <CardHeader>
           <CardTitle>
             <Link
-              href={
-                "https://b3dhub.github.io/blender-to-unity-docs/lod.html#create"
-              }
+              href={"https://b3dhub.github.io/blender-to-unity-docs/lod.html#create"}
               target="_blank"
               className="hover:underline"
             >
               Create
             </Link>
           </CardTitle>
-          <CardDescription>
-            Create LODs for the selected objects.
-          </CardDescription>
+          <CardDescription>Create LODs for the selected objects.</CardDescription>
         </CardHeader>
         <CardContent>
           <Image
             className="rounded-lg w-full"
-            src="./images/blender-to-unity/lod_create.gif"
+            src="/addons/images/blender-to-unity/lod_create.gif"
             alt=""
             width={600}
             height={325}
@@ -493,23 +404,19 @@ export default function BlendertoUnityPage() {
         <CardHeader>
           <CardTitle>
             <Link
-              href={
-                "https://b3dhub.github.io/blender-to-unity-docs/lod.html#update"
-              }
+              href={"https://b3dhub.github.io/blender-to-unity-docs/lod.html#update"}
               target="_blank"
               className="hover:underline"
             >
               Update
             </Link>
           </CardTitle>
-          <CardDescription>
-            Update LODs for the selected objects.
-          </CardDescription>
+          <CardDescription>Update LODs for the selected objects.</CardDescription>
         </CardHeader>
         <CardContent>
           <Image
             className="rounded-lg w-full"
-            src="./images/blender-to-unity/lod_update.gif"
+            src="/addons/images/blender-to-unity/lod_update.gif"
             alt=""
             width={600}
             height={325}
@@ -519,9 +426,7 @@ export default function BlendertoUnityPage() {
         <CardHeader>
           <CardTitle>
             <Link
-              href={
-                "https://b3dhub.github.io/blender-to-unity-docs/lod.html#preset"
-              }
+              href={"https://b3dhub.github.io/blender-to-unity-docs/lod.html#preset"}
               target="_blank"
               className="hover:underline"
             >
@@ -533,7 +438,7 @@ export default function BlendertoUnityPage() {
         <CardContent>
           <Image
             className="rounded-lg w-full"
-            src="./images/blender-to-unity/lod_preset.gif"
+            src="/addons/images/blender-to-unity/lod_preset.gif"
             alt=""
             width={600}
             height={325}
@@ -553,14 +458,12 @@ export default function BlendertoUnityPage() {
               Rename Tool
             </Link>
           </CardTitle>
-          <CardDescription>
-            Rename objects and its Colliders and LODs.
-          </CardDescription>
+          <CardDescription>Rename objects and its Colliders and LODs.</CardDescription>
         </CardHeader>
         <CardContent>
           <Image
             className="rounded-lg w-full"
-            src="./images/blender-to-unity/rename.gif"
+            src="/addons/images/blender-to-unity/rename.gif"
             alt=""
             width={600}
             height={325}
@@ -573,18 +476,14 @@ export default function BlendertoUnityPage() {
         <CardHeader>
           <CardTitle>
             <Link
-              href={
-                "https://b3dhub.github.io/blender-to-unity-docs/export.html"
-              }
+              href={"https://b3dhub.github.io/blender-to-unity-docs/export.html"}
               target="_blank"
               className="hover:underline"
             >
               Export
             </Link>
           </CardTitle>
-          <CardDescription>
-            Export objects and collections to Unity or Disk.
-          </CardDescription>
+          <CardDescription>Export objects and collections to Unity or Disk.</CardDescription>
           <CardDescription>
             - Add a folder path.<br></br>- Select the objects or collections.
             <br></br>- Hit export.
@@ -593,54 +492,51 @@ export default function BlendertoUnityPage() {
         <CardContent>
           <Image
             className="rounded-lg w-full"
-            src="./images/blender-to-unity/export.gif"
+            src="/addons/images/blender-to-unity/export.gif"
             alt=""
             width={600}
             height={325}
             unoptimized
           />
         </CardContent>
-        <CardContent>
+        <CardContent className="space-y-2">
           <CardDescription>
-            If you want to have colliders and create shader types in Unity
-            automatically.
+            If you want to have colliders and create shader types in Unity automatically.
           </CardDescription>
           <CardDescription>
-            - Import the <span>BUImporter_v3</span> script while the Unity
-            project is open(drag-n-drop), it should compile the script.
+            - Import the <span>BUImporter_v3</span> script while the Unity project is open(drag-n-drop), it should
+            compile the script.
           </CardDescription>
           <CardDescription>
-            - Install the <span>Newtonsoft.Json</span> unity package (required
-            for BUImporter_v3).
+            - Install the <span>com.unity.nuget.newtonsoft-json</span> unity package (required for BUImporter_v3).
           </CardDescription>
         </CardContent>
-        <CardContent>
+        <CardContent className="space-y-2">
           <CardDescription>
-            To install the <span>Newtonsoft.Json</span> package in Unity:
+            To install the <span>com.unity.nuget.newtonsoft-json</span> package in Unity:
           </CardDescription>
           <CardDescription>
-            Step 1: Open Unity Package Manager, go to{" "}
-            <span>Window {`>`} Package Manager</span> in the Unity Editor.
+            Step 1: Open Unity Package Manager, go to <span>Window {`>`} Package Manager</span> in the Unity Editor.
           </CardDescription>
           <CardDescription>
-            Step 2: Add Package from Git URL, click the + button in the top left
-            corner of the Package Manager window.
+            Step 2: Add Package by name, click the + button in the top left corner of the Package Manager window.
           </CardDescription>
-          <CardDescription>- Select Add package from git URL.</CardDescription>
           <CardDescription>
-            - Enter the following URL:
+            Step 3: Enter <span>com.unity.nuget.newtonsoft-json</span> as package name.
+          </CardDescription>
+          <CardDescription>
+            - learn more:
             <Link
               href={
-                "https://github.com/jilleJr/Newtonsoft.Json-for-Unity.git#upm"
+                "https://github.com/applejag/Newtonsoft.Json-for-Unity/wiki/Install-official-via-UPM#installing-the-package-via-upm-window"
               }
               target="_blank"
-              className="underline hover:text-secondary-foreground"
+              className="underline hover:text-primary"
             >
               {" "}
-              https://github.com/jilleJr/Newtonsoft.Json-for-Unity.git#upm
+              https://github.com/applejag/Newtonsoft.Json-for-Unity/wiki/Install-official-via-UPM#installing-the-package-via-upm-window
             </Link>
           </CardDescription>
-          <CardDescription>- Click Add.</CardDescription>
         </CardContent>
       </Card>
 
@@ -648,15 +544,17 @@ export default function BlendertoUnityPage() {
         <CardFooter className="space-x-4">
           <Link
             href="https://b3dhub.github.io/blender-to-unity-docs/"
+            className={cn(buttonVariants({ variant: "secondary" }))}
             target="_blank"
           >
-            <Button variant={"secondary"}>Documentation</Button>
+            Documentation
           </Link>
           <Link
             href="https://discord.com/channels/959138815602229389/965691425557721159"
+            className={cn(buttonVariants({ variant: "secondary" }))}
             target="_blank"
           >
-            <Button variant={"secondary"}>Changelogs</Button>
+            Changelogs
           </Link>
         </CardFooter>
       </Support>
