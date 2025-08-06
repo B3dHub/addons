@@ -87,6 +87,7 @@ export default function QuickThemePage() {
             alt=""
             width={600}
             height={325}
+            unoptimized
           />
         </CardContent>
         <CardContent>
@@ -99,6 +100,7 @@ export default function QuickThemePage() {
             alt=""
             width={600}
             height={325}
+            unoptimized
           />
         </CardContent>
       </Card>
@@ -118,6 +120,7 @@ export default function QuickThemePage() {
             alt=""
             width={600}
             height={325}
+            unoptimized
           />
         </CardContent>
       </Card>

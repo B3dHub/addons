@@ -129,7 +129,14 @@ export default function CameraPreviewPage() {
           <CardDescription>Change the size of the camera preview.</CardDescription>
         </CardHeader>
         <CardContent>
-          <Image className="rounded-lg w-full" src="/addons/images/camera-preview/size.gif" alt="" width={600} height={325} unoptimized />
+          <Image
+            className="rounded-lg w-full"
+            src="/addons/images/camera-preview/size.gif"
+            alt=""
+            width={600}
+            height={325}
+            unoptimized
+          />
         </CardContent>
       </Card>
 

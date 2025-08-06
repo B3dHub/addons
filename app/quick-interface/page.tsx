@@ -127,6 +127,7 @@ export default function QuickInterfacePage() {
             alt=""
             width={600}
             height={325}
+            unoptimized
           />
         </CardContent>
       </Card>
@@ -155,6 +156,7 @@ export default function QuickInterfacePage() {
             alt=""
             width={600}
             height={325}
+            unoptimized
           />
         </CardContent>
       </Card>

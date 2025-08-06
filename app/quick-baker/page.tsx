@@ -158,6 +158,7 @@ export default function QuickBakerPage() {
             alt=""
             width={600}
             height={325}
+            unoptimized
           />
         </CardContent>
       </Card>

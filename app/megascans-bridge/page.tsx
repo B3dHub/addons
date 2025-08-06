@@ -36,8 +36,8 @@ export default function MegascansBridgePage() {
           <div className="flex gap-2 flex-col sm:flex-row">
             <Badge variant={"secondary"}>
               <CardDescription>
-                Disclaimer: Users who have <span>claimed</span> or <span>purchased</span> Megascans assets through
-                Quixel <span>Bridge</span> can use this add-on.
+                Disclaimer: Users who have <span>claimed</span> or <span>purchased</span> Megascans assets through{" "}
+                <span>Quixel Bridge</span> can use this add-on.
               </CardDescription>
             </Badge>
           </div>
@@ -104,12 +104,12 @@ export default function MegascansBridgePage() {
           <CardDescription>How to use Megascans Bridge?</CardDescription>
         </CardHeader>
         <CardContent>
-          <CardDescription>
-            <Table>
+          <Table>
+            <TableBody>
               <TableRow>
-                <TableCell className="font-medium">
+                <TableCell className="text-muted-foreground">
                   Download{" "}
-                  <Link className="hover:text-foreground underline" href={"https://quixel.com/bridge"} target="_blank">
+                  <Link className="text-foreground underline" href={"https://quixel.com/bridge"} target="_blank">
                     Quixel Bridge
                   </Link>{" "}
                   and download the Megascans assets through it.
@@ -117,32 +117,32 @@ export default function MegascansBridgePage() {
               </TableRow>
 
               <TableRow>
-                <TableCell className="font-medium">
+                <TableCell className="text-muted-foreground">
                   Once you download the Megascans assets, they will be saved in the default path{" "}
-                  <pre>"/Documents/Megascans Library/Downloaded/"</pre>
+                  <pre className="text-foreground">"/Documents/Megascans Library/Downloaded/"</pre>
                 </TableCell>
               </TableRow>
 
               <TableRow>
-                <TableCell className="font-medium">
+                <TableCell className="text-muted-foreground">
                   Add the path in the add-on preferences under the <span>Library</span> tab.
                 </TableCell>
               </TableRow>
 
               <TableRow>
-                <TableCell className="font-medium">
+                <TableCell className="text-muted-foreground">
                   After adding the path, the assets will appear in the <span>Sidebar(n-panel)</span> under the{" "}
                   <span>M-Bridge</span> tab.
                 </TableCell>
               </TableRow>
 
               <TableRow>
-                <TableCell className="font-medium">
+                <TableCell className="text-muted-foreground">
                   Now you can import the assets directly from the Blender interface.
                 </TableCell>
               </TableRow>
-            </Table>
-          </CardDescription>
+            </TableBody>
+          </Table>
         </CardContent>
       </Card>
 
@@ -292,20 +292,18 @@ export default function MegascansBridgePage() {
         <CardHeader>
           <CardTitle>Copyright Disclaimer</CardTitle>
         </CardHeader>
-        <CardContent>
-          <CardDescription className="space-y-2">
-            <p>
-              This add-on is an independent tool and is not affiliated with, authorized, sponsored, or otherwise
-              approved by Epic Games, Inc. or Quixel.
-            </p>
-            <p>
-              All Megascans assets and content remain the property of Epic Games, Inc. Quixel, and are subject to their
-              terms of use and licensing agreements.
-            </p>
-            <p>
-              © 2025, Epic Games, Inc. Quixel, Megascans, and Unreal Engine are trademarks or registered trademarks of
-              Epic Games, Inc. in the USA and elsewhere.
-            </p>
+        <CardContent className="flex flex-col gap-2">
+          <CardDescription>
+            This add-on is an independent tool and is not affiliated with, authorized, sponsored, or otherwise approved
+            by Epic Games, Inc. or Quixel.
+          </CardDescription>
+          <CardDescription>
+            All Megascans assets and content remain the property of Epic Games, Inc. Quixel, and are subject to their
+            terms of use and licensing agreements.
+          </CardDescription>
+          <CardDescription>
+            © 2025, Epic Games, Inc. Quixel, Megascans, and Unreal Engine are trademarks or registered trademarks of
+            Epic Games, Inc. in the USA and elsewhere.
           </CardDescription>
         </CardContent>
       </Card>
