@@ -37,8 +37,8 @@ export default function QuickDecalPage() {
           <div className="flex gap-2 flex-col sm:flex-row">
             <Badge variant={"secondary"}>
               <CardDescription>
-                Disclaimer: Users who have <span>claimed</span> or <span>purchased</span> Megascans assets through
-                Quixel <span>Bridge</span> can use this add-on.
+                Disclaimer: Users who have <span>claimed</span> or <span>purchased</span> Megascans assets through{" "}
+                <span>Quixel Bridge</span> can use the megascans decals feature.
               </CardDescription>
             </Badge>
           </div>
@@ -250,7 +250,13 @@ export default function QuickDecalPage() {
           </CardDescription>
         </CardContent>
         <CardContent>
-          <Image className="rounded-lg w-full" src="/addons/images/quick-decal/hotkeys.png" alt="" width={600} height={325} />
+          <Image
+            className="rounded-lg w-full"
+            src="/addons/images/quick-decal/hotkeys.png"
+            alt=""
+            width={600}
+            height={325}
+          />
         </CardContent>
       </Card>
 
