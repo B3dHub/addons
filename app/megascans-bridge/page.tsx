@@ -149,6 +149,7 @@ export default function MegascansBridgePage() {
       <Card>
         <CardHeader>
           <CardTitle>Grid View</CardTitle>
+          <CardDescription>View assets in a grid view.</CardDescription>
         </CardHeader>
         <CardContent>
           <Image
@@ -165,6 +166,7 @@ export default function MegascansBridgePage() {
       <Card>
         <CardHeader>
           <CardTitle>Asset Search</CardTitle>
+          <CardDescription>Search assets by name.</CardDescription>
         </CardHeader>
         <CardContent>
           <Image
@@ -181,6 +183,7 @@ export default function MegascansBridgePage() {
       <Card>
         <CardHeader>
           <CardTitle>Asset Details</CardTitle>
+          <CardDescription>View asset details like name, polycount, resolution, etc.</CardDescription>
         </CardHeader>
         <CardContent>
           <Image
@@ -197,6 +200,7 @@ export default function MegascansBridgePage() {
       <Card>
         <CardHeader>
           <CardTitle>Pagination</CardTitle>
+          <CardDescription>Navigate through pages of assets.</CardDescription>
         </CardHeader>
         <CardContent>
           <Image
@@ -213,10 +217,8 @@ export default function MegascansBridgePage() {
       <Card>
         <CardHeader>
           <CardTitle>Import Assets</CardTitle>
-        </CardHeader>
-        <CardContent>
           <CardDescription>You can import 3D assets with LODs and create LOD groups.</CardDescription>
-        </CardContent>
+        </CardHeader>
         <CardContent>
           <Image
             className="rounded-lg w-full"
@@ -245,10 +247,8 @@ export default function MegascansBridgePage() {
       <Card>
         <CardHeader>
           <CardTitle>Import Plants</CardTitle>
-        </CardHeader>
-        <CardContent>
           <CardDescription>You can import 3D plants with LODs and create LOD groups.</CardDescription>
-        </CardContent>
+        </CardHeader>
         <CardContent>
           <Image
             className="rounded-lg w-full"

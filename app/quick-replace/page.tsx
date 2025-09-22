@@ -80,23 +80,39 @@ export default function QuickReplacePage() {
             </TableHeader>
             <TableBody>
               <TableRow>
-                <TableCell className="font-medium">Shift + Scroll</TableCell>
+                <TableCell className="font-medium">
+                  <code className="mr-1">SHIFT</code>
+                  <code className="mr-1">SCROLL</code>
+                </TableCell>
                 <TableCell>Loop from the top of the object list.</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">Ctrl + Scroll</TableCell>
+                <TableCell className="font-medium">
+                  <code className="mr-1">CTRL</code>
+                  <code className="mr-1">SCROLL</code>
+                </TableCell>
                 <TableCell>Loop from the active object in the object list.</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">Shift + Ctrl + Scroll</TableCell>
+                <TableCell className="font-medium">
+                  <code className="mr-1">SHIFT</code>
+                  <code className="mr-1">CTRL</code>
+                  <code className="mr-1">SCROLL</code>
+                </TableCell>
                 <TableCell>Switch the active category of the categories list.</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">{"Alt + ["}</TableCell>
+                <TableCell className="font-medium">
+                  <code className="mr-1">ALT</code>
+                  <code className="mr-1">{"["}</code>
+                </TableCell>
                 <TableCell>Rotate the selected objects -90 degrees along the Z-axis.</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">{"Alt + ]"}</TableCell>
+                <TableCell className="font-medium">
+                  <code className="mr-1">ALT</code>
+                  <code className="mr-1">{"]"}</code>
+                </TableCell>
                 <TableCell>Rotate the selected objects +90 degrees along the Z-axis.</TableCell>
               </TableRow>
             </TableBody>
@@ -110,7 +126,7 @@ export default function QuickReplacePage() {
         </CardHeader>
         <CardContent>
           <CardDescription>
-            Create a new category by clicking the <span className="text-primary">+</span> button.
+            Create a new category by clicking the <code className="mr-1">+</code> button.
           </CardDescription>
           <CardDescription>Rename the active category by double clicking on it.</CardDescription>
         </CardContent>
@@ -126,11 +142,11 @@ export default function QuickReplacePage() {
         </CardContent>
         <CardContent>
           <CardDescription>
-            Remove the active category by clicking the <span className="text-primary">-</span> button.
+            Remove the active category by clicking the <code className="mr-1">-</code> button.
           </CardDescription>
           <CardDescription>
-            Remove all the categories by holding <span className="text-primary">Shift</span> and clicking the{" "}
-            <span className="text-primary">x</span> button.
+            Remove all the categories by holding <code className="mr-1">SHIFT</code> and clicking the{" "}
+            <code className="mr-1">X</code> button.
           </CardDescription>
         </CardContent>
       </Card>
@@ -155,11 +171,11 @@ export default function QuickReplacePage() {
         </CardContent>
         <CardContent>
           <CardDescription>
-            Remove the active object by clicking the <span className="text-primary">X</span> button.
+            Remove the active object by clicking the <code className="mr-1">X</code> button.
           </CardDescription>
           <CardDescription>
-            Remove all objects by holding <span className="text-primary">Shift</span> and clicking the{" "}
-            <span className="text-primary">X</span> button.
+            Remove all objects by holding <code className="mr-1">SHIFT</code> and clicking the{" "}
+            <code className="mr-1">X</code> button.
           </CardDescription>
         </CardContent>
       </Card>

@@ -111,48 +111,91 @@ export default function QuickMeasurePage() {
             </TableHeader>
             <TableBody>
               <TableRow>
-                <TableCell className="font-medium">Alt + LMB Drag</TableCell>
+                <TableCell className="font-medium">
+                  <code className="mr-1">ALT</code>
+                  <code className="mr-1">CLICK-DRAG</code>
+                </TableCell>
                 <TableCell>Measurement without saving.</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">Alt + LMB</TableCell>
+                <TableCell className="font-medium">
+                  <code className="mr-1">ALT</code>
+                  <code className="mr-1">CLICK-CLICK</code>
+                </TableCell>
                 <TableCell>Multiple measurements without saving.</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">Ctrl + Alt + LMB Drag</TableCell>
+                <TableCell className="font-medium">
+                  <code className="mr-1">ALT</code>
+                  <code className="mr-1">CTRL</code>
+                  <code className="mr-1">CLICK-DRAG</code>
+                </TableCell>
                 <TableCell>Measurement with snap and without saving.</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">Ctrl + Alt + LMB</TableCell>
+                <TableCell className="font-medium">
+                  <code className="mr-1">ALT</code>
+                  <code className="mr-1">CTRL</code>
+                  <code className="mr-1">CLICK-CLICK</code>
+                </TableCell>
                 <TableCell>Multiple measurements with snap and without saving.</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">Shift + Alt + LMB Drag</TableCell>
+                <TableCell className="font-medium">
+                  <code className="mr-1">ALT</code>
+                  <code className="mr-1">SHIFT</code>
+                  <code className="mr-1">CLICK-DRAG</code>
+                </TableCell>
                 <TableCell>Measurement with saving.</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">Shift + Alt + LMB</TableCell>
+                <TableCell className="font-medium">
+                  <code className="mr-1">ALT</code>
+                  <code className="mr-1">SHIFT</code>
+                  <code className="mr-1">CLICK-CLICK</code>
+                </TableCell>
                 <TableCell>Multiple measurements with saving.</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">Shift + Ctrl + Alt + LMB Drag</TableCell>
+                <TableCell className="font-medium">
+                  <code className="mr-1">ALT</code>
+                  <code className="mr-1">SHIFT</code>
+                  <code className="mr-1">CTRL</code>
+                  <code className="mr-1">CLICK-DRAG</code>
+                </TableCell>
                 <TableCell>Measurement with snap and saving.</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">Shift + Ctrl + Alt + LMB</TableCell>
+                <TableCell className="font-medium">
+                  <code className="mr-1">ALT</code>
+                  <code className="mr-1">SHIFT</code>
+                  <code className="mr-1">CTRL</code>
+                  <code className="mr-1">CLICK-CLICK</code>
+                </TableCell>
                 <TableCell>Multiple measurements with snap and saving.</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">Shift + Alt + X</TableCell>
-                <TableCell>Toggle the display of saved measurements.</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Alt + X</TableCell>
+                <TableCell className="font-medium">
+                  <code className="mr-1">ALT</code>
+                  <code className="mr-1">X</code>
+                </TableCell>
                 <TableCell>Remove the selected measurement.</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">Ctrl + Alt + X</TableCell>
+                <TableCell className="font-medium">
+                  <code className="mr-1">ALT</code>
+                  <code className="mr-1">CTRL</code>
+                  <code className="mr-1">X</code>
+                </TableCell>
                 <TableCell>Remove all measurements.</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium">
+                  <code className="mr-1">ALT</code>
+                  <code className="mr-1">SHIFT</code>
+                  <code className="mr-1">X</code>
+                </TableCell>
+                <TableCell>Toggle the display of saved measurements.</TableCell>
               </TableRow>
             </TableBody>
             <TableCaption>
@@ -166,13 +209,11 @@ export default function QuickMeasurePage() {
       <Card>
         <CardHeader>
           <CardTitle>Quick Measurements</CardTitle>
-        </CardHeader>
-        <CardContent>
           <CardDescription>
-            You can measure the length of an object by holding <span>Alt</span> and dragging the{" "}
-            <span>Left Mouse Button (LMB)</span>, but this action won't save the measurement.
+            You can measure the length of an object by holding <code className="mr-1">ALT</code> and dragging the{" "}
+            <code className="mr-1">LEFT MOUSE BUTTON (LMB)</code>, but this action won't save the measurement.
           </CardDescription>
-        </CardContent>
+        </CardHeader>
         <CardContent>
           <Image
             className="rounded-lg w-full"
@@ -185,8 +226,8 @@ export default function QuickMeasurePage() {
         </CardContent>
         <CardContent>
           <CardDescription>
-            To make multiple measurements without saving them, hold <span>Alt</span> and click the{" "}
-            <span>Left Mouse Button (LMB)</span>.
+            To make multiple measurements without saving them, hold <code className="mr-1">ALT</code> and click the{" "}
+            <code className="mr-1">LEFT MOUSE BUTTON (LMB)</code>.
           </CardDescription>
         </CardContent>
         <CardContent>
@@ -204,13 +245,12 @@ export default function QuickMeasurePage() {
       <Card>
         <CardHeader>
           <CardTitle>Saved Measurements</CardTitle>
-        </CardHeader>
-        <CardContent>
           <CardDescription>
-            You can measure the length of an object by holding <span>Shift</span> and <span>Alt</span>, then dragging
-            the <span>Left Mouse Button (LMB)</span>. This action will save the measurement.
+            You can measure the length of an object by holding <code className="mr-1">SHIFT</code>
+            <code className="mr-1">ALT</code>, then dragging the <code className="mr-1">LEFT MOUSE BUTTON (LMB)</code>{" "}
+            This action will save the measurement.
           </CardDescription>
-        </CardContent>
+        </CardHeader>
         <CardContent>
           <Image
             className="rounded-lg w-full"
@@ -223,8 +263,8 @@ export default function QuickMeasurePage() {
         </CardContent>
         <CardContent>
           <CardDescription>
-            To make multiple measurements and save them, hold <span>Shift</span> and <span>Alt</span>, then click the{" "}
-            <span>Left Mouse Button (LMB)</span>.
+            To make multiple measurements and save them, hold <code className="mr-1">SHIFT</code>
+            <code className="mr-1">ALT</code>, then click the <code className="mr-1">LEFT MOUSE BUTTON (LMB)</code>
           </CardDescription>
         </CardContent>
         <CardContent>
@@ -260,7 +300,8 @@ export default function QuickMeasurePage() {
         <CardHeader>
           <CardTitle>Remove Measurements</CardTitle>
           <CardDescription>
-            You can remove the selected measurements with <span>Alt + X</span>.
+            You can remove the selected measurements with <code className="mr-1">ALT</code>
+            <code className="mr-1">X</code>
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -279,7 +320,7 @@ export default function QuickMeasurePage() {
         <CardHeader>
           <CardTitle>Separate Measurements</CardTitle>
           <CardDescription>
-            You can separate the joined measurement points by holding <span>Alt</span>.
+            You can separate the joined measurement points by holding <code className="mr-1">ALT</code>.
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -317,7 +358,9 @@ export default function QuickMeasurePage() {
         <CardHeader>
           <CardTitle>Axis Restriction</CardTitle>
           <CardDescription>
-            You can restrict the axis while moving the measurement points using <span>X, Y, Z</span>.
+            You can restrict the axis while moving the measurement points using <code className="mr-1">X</code>
+            <code className="mr-1">Y</code>
+            <code className="mr-1">Z</code>
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -404,8 +447,9 @@ export default function QuickMeasurePage() {
         <CardHeader>
           <CardTitle>Limitations</CardTitle>
           <CardDescription>
-            You need to toggle the measurements with <span>Alt + Shift + X</span> whenever you switch to different
-            workspaces, e.g., Modeling, Shading, etc.
+            You need to toggle the measurements with <code className="mr-1">ALT</code>
+            <code className="mr-1">SHIFT</code>
+            <code className="mr-1">X</code> whenever you switch to different workspaces, e.g., Modeling, Shading, etc.
           </CardDescription>
         </CardHeader>
       </Card>

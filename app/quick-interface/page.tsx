@@ -89,23 +89,42 @@ export default function QuickInterfacePage() {
             </TableHeader>
             <TableBody>
               <TableRow>
-                <TableCell className="font-medium">Shift + Space</TableCell>
+                <TableCell className="font-medium">
+                  <code className="mr-1">SHIFT</code>
+                  <code className="mr-1">SPACE</code>
+                </TableCell>
                 <TableCell>Switch Area</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">Shift + Ctrl + Space</TableCell>
+                <TableCell className="font-medium">
+                  <code className="mr-1">SHIFT</code>
+                  <code className="mr-1">CTRL</code>
+                  <code className="mr-1">SPACE</code>
+                </TableCell>
                 <TableCell>Split Area</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">Alt + Space</TableCell>
+                <TableCell className="font-medium">
+                  <code className="mr-1">ALT</code>
+                  <code className="mr-1">SPACE</code>
+                </TableCell>
                 <TableCell>Duplicate Area</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">Shift + Alt + Space</TableCell>
+                <TableCell className="font-medium">
+                  <code className="mr-1">SHIFT</code>
+                  <code className="mr-1">ALT</code>
+                  <code className="mr-1">SPACE</code>
+                </TableCell>
                 <TableCell>Join Area</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">Shift + Ctrl + Alt + Space</TableCell>
+                <TableCell className="font-medium">
+                  <code className="mr-1">SHIFT</code>
+                  <code className="mr-1">CTRL</code>
+                  <code className="mr-1">ALT</code>
+                  <code className="mr-1">SPACE</code>
+                </TableCell>
                 <TableCell>Swap Area</TableCell>
               </TableRow>
             </TableBody>
@@ -117,7 +136,8 @@ export default function QuickInterfacePage() {
         <CardHeader>
           <CardTitle>Switch Area</CardTitle>
           <CardDescription>
-            Switch area using the hotkey <span>Shift + Space</span>. Select an area from the pie menu.
+            Switch area using the hotkey <code className="mr-1">SHIFT</code>
+            <code className="mr-1">SPACE</code>. Select an area from the pie menu.
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -136,17 +156,19 @@ export default function QuickInterfacePage() {
         <CardHeader>
           <CardTitle>Split Area</CardTitle>
           <CardDescription>
-            Split area using the hotkey <span>Shift + Ctrl + Space</span>. Select an area from the pie menu. You can
-            split the area vertically or horizontally with the mouse wheel.
+            Split area using the hotkey <code className="mr-1">SHIFT</code>
+            <code className="mr-1">CTRL</code>
+            <code className="mr-1">SPACE</code>. Select an area from the pie menu. You can split the area vertically or
+            horizontally with the mouse wheel.
           </CardDescription>
           <CardDescription>
-            <span>Mouse Wheel Up</span> : Split Vertically
+            <code className="mr-1">MOUSE WHEEL UP</code> Split Vertically
           </CardDescription>
           <CardDescription>
-            <span>Mouse Wheel Down</span> : Split Horizontally
+            <code className="mr-1">MOUSE WHEEL DOWN</code> Split Horizontally
           </CardDescription>
           <CardDescription>
-            <span>Ctrl</span> : Split Snap
+            <code className="mr-1">CTRL</code> Split Snap
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -165,8 +187,9 @@ export default function QuickInterfacePage() {
         <CardHeader>
           <CardTitle>Duplicate Area</CardTitle>
           <CardDescription>
-            Duplicate area using the hotkey <span>Alt + Space</span>. Select an area from the pie menu. This will open a
-            new window with the selected area.
+            Duplicate area using the hotkey <code className="mr-1">ALT</code>
+            <code className="mr-1">SPACE</code>. Select an area from the pie menu. This will open a new window with the
+            selected area.
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -185,7 +208,9 @@ export default function QuickInterfacePage() {
         <CardHeader>
           <CardTitle>Join Area</CardTitle>
           <CardDescription>
-            Join area using the hotkey <span>Shift + Alt + Space</span>.
+            Join area using the hotkey <code className="mr-1">SHIFT</code>
+            <code className="mr-1">ALT</code>
+            <code className="mr-1">SPACE</code>.
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -204,7 +229,10 @@ export default function QuickInterfacePage() {
         <CardHeader>
           <CardTitle>Swap Area</CardTitle>
           <CardDescription>
-            Swap area using the hotkey <span>Shift + Ctrl + Alt + Space</span>.
+            Swap area using the hotkey <code className="mr-1">SHIFT</code>
+            <code className="mr-1">CTRL</code>
+            <code className="mr-1">ALT</code>
+            <code className="mr-1">SPACE</code>.
           </CardDescription>
         </CardHeader>
         <CardContent>

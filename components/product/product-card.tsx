@@ -4,6 +4,20 @@ import Link from "next/link";
 import { Badge } from "../ui/badge";
 import Image from "next/image";
 
+type ProductCardProps = {
+  productURL?: string;
+  imageURL?: string;
+  title?: string;
+  creatorURL?: string;
+  creatorName?: string;
+  creatorAvatarURL?: string;
+  price?: string;
+  isSale?: boolean;
+  salePercentage?: number;
+  salePrice?: string;
+  info?: string;
+};
+
 export default function ProductCard({
   productURL = "/quick-baker",
   imageURL = "https://d1231c29xbpffx.cloudfront.net/store/product/182049/image/ab1b141694124c4a634571c382546e52.png?Expires=1706486632&Signature=LLg2C85A6xfub6iUneDl0hYfhvcOZcoSxYvFA7IMrAn9VmdTdsmItLYtKcjJ--zdy9bW2CkaANLBs8j8-bjZot6cwRXdXCfYQ-h8fHbOeA3hjF5b-EFsfy5t0aC54-wy6QCOcOeka8axx5AIu8cOW21kuD7tuguG4SGLH8cl~5zC7xbvvMFMkHrnnk~52kJvw3UVtlrP~6h5tR1lgfucAMGcWL97CkxhG-gY~KYSVIfYrI-DWrLWmFC~g~drqTj6rXn87UhSG7BT2faV943RWUB3v6kagD6DaHaQBC5NBQ2A3AYAKjIRb0kyqr9S066hkaAauQzuAKMZewYIKbnZmQ__&Key-Pair-Id=APKAIN6COYBF3ZQW7OQQ",
@@ -16,19 +30,7 @@ export default function ProductCard({
   salePercentage = 10,
   salePrice = "$9",
   info,
-}: {
-  productURL?: string;
-  imageURL?: string;
-  title?: string;
-  creatorURL?: string;
-  creatorName?: string;
-  creatorAvatarURL?: string;
-  price?: string;
-  isSale?: boolean;
-  salePercentage?: number;
-  salePrice?: string;
-  info?: string;
-}) {
+}: ProductCardProps) {
   return (
     <div className="relative border rounded-xl shadow-xl hover:bg-muted">
       <Link href={productURL} passHref={true}>

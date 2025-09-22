@@ -4,7 +4,7 @@ import ProductCatalog from "@/components/product/product-catelog";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 gap-8">
+    <main className="container min-h-dvh mx-auto flex items-center justify-center p-2 lg:p-3 xl:p-4">
       <ProductCatalog>
         {Data.map((item, index) => (
           <ProductCard

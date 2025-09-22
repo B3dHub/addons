@@ -73,13 +73,11 @@ export default function QuickThemePage() {
       <Card>
         <CardHeader>
           <CardTitle>Auto Theme</CardTitle>
-        </CardHeader>
-        <CardContent>
           <CardDescription>
             You can toggle the auto theme feature by clicking the <span className="text-primary">Auto Theme</span>{" "}
             button in the Quick Theme panel.
           </CardDescription>
-        </CardContent>
+        </CardHeader>
         <CardContent>
           <Image
             className="rounded-lg w-full"
