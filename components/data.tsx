@@ -22,7 +22,7 @@ export const Data = [
   },
   {
     productURL: "/knife-circle",
-    imageURL: "/addons/images/quick-decal/thumb.png",
+    imageURL: "/addons/images/knife-circle/thumb.png",
     title: "Knife Circle",
     price: "$20 - $200",
     info: "Mesh",
