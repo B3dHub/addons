@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 
 export default function MegascansBridgePage() {
   return (
-    <div className="dark flex flex-col justify-center mx-auto gap-5 max-w-[832px]">
+    <div className="flex flex-col justify-center mx-auto gap-5 max-w-[832px]">
       <Card>
         <CardHeader>
           <CardTitle>Introduction</CardTitle>
@@ -33,14 +33,12 @@ export default function MegascansBridgePage() {
           </CardDescription>
         </CardContent>
         <CardContent>
-          <div className="flex gap-2 flex-col sm:flex-row">
-            <Badge variant={"secondary"}>
-              <CardDescription>
-                Disclaimer: Users who have <span>claimed</span> or <span>purchased</span> Megascans assets through{" "}
-                <span>Quixel Bridge</span> can use this add-on.
-              </CardDescription>
-            </Badge>
-          </div>
+          <Badge variant="secondary">
+            <CardDescription>
+              Disclaimer: Users who have <span>claimed</span> or <span>purchased</span> Megascans assets through{" "}
+              <span>Quixel Bridge</span> can use this add-on.
+            </CardDescription>
+          </Badge>
         </CardContent>
         {showCoupon && <Coupon />}
       </Card>

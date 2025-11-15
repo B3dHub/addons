@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 export default function BlendertoGameEnginePage() {
   return (
-    <div className="dark flex flex-col justify-center mx-auto gap-5 max-w-[832px]">
+    <div className="flex flex-col justify-center mx-auto gap-5 max-w-[832px]">
       <Card>
         <CardHeader>
           <CardTitle>Introduction</CardTitle>
@@ -48,7 +48,7 @@ export default function BlendertoGameEnginePage() {
               <TableRow>
                 <TableCell className="font-medium">
                   <Link
-                    href={"https://blendermarket.com/products/blender-to-unity"}
+                    href={"https://superhivemarket.com/products/blender-to-unity"}
                     target="_blank"
                     className="hover:underline"
                   >
@@ -59,7 +59,7 @@ export default function BlendertoGameEnginePage() {
               <TableRow>
                 <TableCell className="font-medium">
                   <Link
-                    href={"https://blendermarket.com/products/blender-to-unreal"}
+                    href={"https://superhivemarket.com/products/blender-to-unreal"}
                     target="_blank"
                     className="hover:underline"
                   >
@@ -70,7 +70,7 @@ export default function BlendertoGameEnginePage() {
               <TableRow>
                 <TableCell className="font-medium">
                   <Link
-                    href={"https://blendermarket.com/products/blender-to-godot"}
+                    href={"https://superhivemarket.com/products/blender-to-godot"}
                     target="_blank"
                     className="hover:underline"
                   >

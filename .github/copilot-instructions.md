@@ -28,7 +28,7 @@ Every addon page follows this exact structure:
 export const metadata: Metadata = { title: "...", description: "..." };
 export default function AddonPage() {
   return (
-    <div className="dark flex flex-col justify-center mx-auto gap-5 max-w-[832px]">
+    <div className="flex flex-col justify-center mx-auto gap-5 max-w-[832px]">
       <Card>Introduction</Card>
       <Card>Feature Comparison Table</Card>
       {/* Feature demonstration cards with GIFs */}

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 
 export default function QuickDecalPage() {
   return (
-    <div className="dark flex flex-col justify-center mx-auto gap-5 max-w-[832px]">
+    <div className="flex flex-col justify-center mx-auto gap-5 max-w-[832px]">
       <Card>
         <CardHeader>
           <CardTitle>Introduction</CardTitle>
@@ -35,7 +35,7 @@ export default function QuickDecalPage() {
         </CardContent>
         <CardContent>
           <div className="flex gap-2 flex-col sm:flex-row">
-            <Badge variant={"secondary"}>
+            <Badge variant="secondary">
               <CardDescription>
                 Disclaimer: Users who have <span>claimed</span> or <span>purchased</span> Megascans assets through{" "}
                 <span>Quixel Bridge</span> can use the megascans decals feature.
@@ -303,7 +303,7 @@ export default function QuickDecalPage() {
           <CardDescription>
             This addon is compatible with our other addon,{" "}
             <Link
-              href={"https://blendermarket.com/products/quick-baker"}
+              href={"https://superhivemarket.com/products/quick-baker"}
               target="_blank"
               className="underline text-primary"
             >
@@ -345,7 +345,7 @@ export default function QuickDecalPage() {
       <Support>
         <CardFooter className="space-x-4">
           <Link
-            href="https://blendermarket.com/products/quick-decal/docs"
+            href="https://superhivemarket.com/products/quick-decal/docs"
             className={cn(buttonVariants({ variant: "secondary" }))}
             target="_blank"
           >

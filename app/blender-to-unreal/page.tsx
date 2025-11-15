@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 
 export default function BlendertoUnrealPage() {
   return (
-    <div className="dark flex flex-col justify-center mx-auto gap-5 max-w-[832px]">
+    <div className="flex flex-col justify-center mx-auto gap-5 max-w-[832px]">
       <Card>
         <CardHeader>
           <CardTitle>Introduction</CardTitle>

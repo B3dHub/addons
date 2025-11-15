@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function QuickDecalDocPage() {
   return (
-    <div className="dark flex flex-col justify-center mx-auto gap-5 max-w-[832px]">
+    <div className="flex flex-col justify-center mx-auto gap-5 max-w-[832px]">
       <Card>
         <CardHeader>
           <CardTitle>Image Decal</CardTitle>
@@ -185,7 +185,7 @@ export default function QuickDecalDocPage() {
           <CardDescription>
             This addon is compatible with our other addon,{" "}
             <Link
-              href={"https://blendermarket.com/products/quick-baker"}
+              href={"https://superhivemarket.com/products/quick-baker"}
               target="_blank"
               className="underline text-primary"
             >

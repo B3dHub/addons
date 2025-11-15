@@ -7,11 +7,11 @@ export const Data = [
     info: "Baking",
   },
   {
-    productURL: "/quick-decal",
-    imageURL: "/addons/images/quick-decal/thumb.png",
-    title: "Quick Decal",
+    productURL: "/megascans-bridge",
+    imageURL: "/addons/images/megascans-bridge/thumb.png",
+    title: "Megascans Bridge v2",
     price: "$20 - $200",
-    info: "Material",
+    info: "Object",
   },
   {
     productURL: "/quick-measure",
@@ -21,11 +21,18 @@ export const Data = [
     info: "3D View",
   },
   {
-    productURL: "/megascans-bridge",
-    imageURL: "/addons/images/megascans-bridge/thumb.png",
-    title: "Megascans Bridge v2",
+    productURL: "/knife-circle",
+    imageURL: "/addons/images/quick-decal/thumb.png",
+    title: "Knife Circle",
     price: "$20 - $200",
-    info: "Object",
+    info: "Mesh",
+  },
+  {
+    productURL: "/quick-decal",
+    imageURL: "/addons/images/quick-decal/thumb.png",
+    title: "Quick Decal",
+    price: "$20 - $200",
+    info: "Material",
   },
   {
     productURL: "/quick-interface",
@@ -40,6 +47,20 @@ export const Data = [
     title: "Camera Preview",
     price: "$10 - $100",
     info: "3D View",
+  },
+  {
+    productURL: "/quick-theme",
+    imageURL: "/addons/images/quick-theme/thumb.png",
+    title: "Quick Theme",
+    price: "$10 - $100",
+    info: "Interface",
+  },
+  {
+    productURL: "/quick-replace",
+    imageURL: "/addons/images/quick-replace/thumb.png",
+    title: "Quick Replace",
+    price: "$10 - $100",
+    info: "Object",
   },
   {
     productURL: "/blender-to-unity",
@@ -65,22 +86,8 @@ export const Data = [
   {
     productURL: "/blender-to-game-engine",
     imageURL: "/addons/images/blender-to-game-engine/thumb.png",
-    title: "Blender to Game Engine (Unity & Unreal) Bundle",
+    title: "Blender to Game Engine (Unity, Unreal & Godot) Bundle",
     price: "$50 - $500",
     info: "Export",
-  },
-  {
-    productURL: "/quick-theme",
-    imageURL: "/addons/images/quick-theme/thumb.png",
-    title: "Quick Theme",
-    price: "$10 - $100",
-    info: "Interface",
-  },
-  {
-    productURL: "/quick-replace",
-    imageURL: "/addons/images/quick-replace/thumb.png",
-    title: "Quick Replace",
-    price: "$10 - $100",
-    info: "Object",
   },
 ];

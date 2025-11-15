@@ -22,7 +22,7 @@ export default function ProductCard({
   productURL = "/quick-baker",
   imageURL = "https://d1231c29xbpffx.cloudfront.net/store/product/182049/image/ab1b141694124c4a634571c382546e52.png?Expires=1706486632&Signature=LLg2C85A6xfub6iUneDl0hYfhvcOZcoSxYvFA7IMrAn9VmdTdsmItLYtKcjJ--zdy9bW2CkaANLBs8j8-bjZot6cwRXdXCfYQ-h8fHbOeA3hjF5b-EFsfy5t0aC54-wy6QCOcOeka8axx5AIu8cOW21kuD7tuguG4SGLH8cl~5zC7xbvvMFMkHrnnk~52kJvw3UVtlrP~6h5tR1lgfucAMGcWL97CkxhG-gY~KYSVIfYrI-DWrLWmFC~g~drqTj6rXn87UhSG7BT2faV943RWUB3v6kagD6DaHaQBC5NBQ2A3AYAKjIRb0kyqr9S066hkaAauQzuAKMZewYIKbnZmQ__&Key-Pair-Id=APKAIN6COYBF3ZQW7OQQ",
   title = "Product Name",
-  creatorURL = "https://blendermarket.com/creators/b3dhub",
+  creatorURL = "https://superhivemarket.com/creators/b3dhub",
   creatorName = "B3dHub",
   creatorAvatarURL = "https://d1231c29xbpffx.cloudfront.net/store/user/5896990/avatar/c189f1ef1d127a0a107f540650908ee2.png?Expires=1714153528&Signature=VBl3XI~bOX1dqREsN58tMgLgjBJUEFw0ez-98OqrfzDc0BHWT8j1ex-Y3fBTkNnnkYXwumn2U-Eo4eoGvjGQze6JzBVZO-mPt7S4EV67tspIjuIEzL9dRVwXNx-GMg4X~BxSsnSNVhV-EkN-SN4IMZfEjfH1dutDiyvANmQ15tYnhSLXpzRAstCrhjgC2ka7b9sWDksbHrkK59RRO0XXCCK-pndD3xz8xf9Ng70-V8jTMIurxnedRzeZwstsexPtG~aUql3aBR1IqR7ZbFEmH2aZIS2YCGT6GpGoY6t7ikalOH5XOlVAoJBfU3z3EulKLZffUZfaViDHIBGoFJvQZg__&Key-Pair-Id=APKAIN6COYBF3ZQW7OQQ",
   price = "$10",

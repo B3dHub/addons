@@ -1,0 +1,187 @@
+/* shadcn Typography Utilities and Components */
+
+/* Individual @utility classes using @apply directive */
+@utility shadcn-h1 {
+  @apply scroll-mt-20 text-4xl font-bold tracking-tight;
+  text-wrap: balance;
+}
+
+@utility shadcn-h2 {
+  @apply scroll-mt-20 pb-2 text-3xl font-semibold tracking-tight;
+
+  &:first-child {
+    @apply mt-0;
+  }
+}
+
+@utility shadcn-h3 {
+  @apply scroll-mt-20 text-2xl font-semibold tracking-tight;
+}
+
+@utility shadcn-h4 {
+  @apply scroll-mt-20 text-xl font-semibold tracking-tight;
+}
+
+@utility shadcn-p {
+  @apply leading-7;
+
+  &:not(:first-child) {
+    @apply mt-6;
+  }
+}
+
+@utility shadcn-blockquote {
+  @apply mt-6 border-l-2 pl-6 italic;
+}
+
+@utility shadcn-code {
+  @apply relative rounded-md bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold;
+}
+
+@utility shadcn-table {
+  @apply my-6 w-full overflow-y-auto;
+  caption-side: bottom;
+}
+
+@utility shadcn-tr {
+  @apply m-0 border-t p-0 even:bg-muted;
+}
+
+@utility shadcn-th {
+  @apply border px-4 py-2 text-left font-bold;
+
+  &[align="center"] {
+    @apply text-center;
+  }
+
+  &[align="right"] {
+    @apply text-right;
+  }
+}
+
+@utility shadcn-td {
+  @apply border px-4 py-2 text-left;
+
+  &[align="center"] {
+    @apply text-center;
+  }
+
+  &[align="right"] {
+    @apply text-right;
+  }
+}
+
+@utility shadcn-ul {
+  @apply my-6 ml-6 list-disc [&>li]:mt-2;
+}
+
+@utility shadcn-ol {
+  @apply my-6 ml-6 list-decimal [&>li]:mt-2;
+}
+
+/* Main .shadcn component using @apply */
+.shadcn {
+  h1 {
+    @apply shadcn-h1;
+  }
+
+  h2 {
+    @apply shadcn-h2;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  h3 {
+    @apply shadcn-h3;
+  }
+
+  h4 {
+    @apply shadcn-h4;
+  }
+
+  p {
+    @apply shadcn-p;
+  }
+
+  blockquote {
+    @apply shadcn-blockquote;
+  }
+
+  code {
+    @apply shadcn-code;
+  }
+
+  table {
+    @apply shadcn-table;
+  }
+
+  tr {
+    @apply shadcn-tr;
+  }
+
+  th {
+    @apply shadcn-th;
+  }
+
+  td {
+    @apply shadcn-td;
+  }
+
+  ul {
+    @apply shadcn-ul;
+  }
+
+  ol {
+    @apply shadcn-ol;
+  }
+}
+
+/* Additional typography variants */
+.shadcn-prose {
+  @extend .shadcn;
+
+  max-width: 65ch;
+  color: hsl(var(--foreground));
+
+  &-sm {
+    @extend .shadcn-prose;
+    font-size: 0.875rem;
+    line-height: 1.7142857;
+  }
+
+  &-lg {
+    @extend .shadcn-prose;
+    font-size: 1.125rem;
+    line-height: 1.7777778;
+  }
+
+  &-xl {
+    @extend .shadcn-prose;
+    font-size: 1.25rem;
+    line-height: 1.8;
+  }
+}
+
+/* Dark mode adjustments */
+@variant dark {
+  .shadcn {
+    blockquote {
+      border-left-color: hsl(var(--border));
+    }
+
+    code {
+      @apply bg-muted;
+    }
+
+    tr:nth-child(even) {
+      @apply bg-muted;
+    }
+
+    th,
+    td {
+      @apply border-border;
+    }
+  }
+}

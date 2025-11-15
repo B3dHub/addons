@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@import "./shadcn-typography.scss";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -121,7 +123,7 @@
     @apply scroll-smooth;
   }
   body {
-    @apply antialiased;
+    @apply bg-background antialiased;
   }
   ::selection {
     @apply bg-primary text-muted;
