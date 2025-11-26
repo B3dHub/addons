@@ -118,7 +118,7 @@ export default function BlendertoGodotPage() {
           <Image
             className="rounded-lg"
             src="/addons/images/blender-to-godot/ui_collision.png"
-            alt=""
+            alt="Collision types panel in addon interface"
             width={256}
             height={256}
           />
@@ -140,31 +140,31 @@ export default function BlendertoGodotPage() {
             <CarouselContent>
               <CarouselItem>
                 <Image
-                  className="rounded-lg w-full"
                   src="/addons/images/blender-to-godot/box.gif"
-                  alt=""
+                  alt="Creating box collision from object bounds"
                   width={600}
                   height={325}
+                  className="rounded w-full"
                   unoptimized
                 />
               </CarouselItem>
               <CarouselItem>
                 <Image
-                  className="rounded-lg w-full"
                   src="/addons/images/blender-to-godot/box_editmode.gif"
-                  alt=""
+                  alt="Editing box collision in edit mode"
                   width={600}
                   height={325}
+                  className="rounded w-full"
                   unoptimized
                 />
               </CarouselItem>
               <CarouselItem>
                 <Image
-                  className="rounded-lg w-full"
                   src="/addons/images/blender-to-godot/box_custom.gif"
-                  alt=""
+                  alt="Custom box collision from selected faces"
                   width={600}
                   height={325}
+                  className="rounded w-full"
                   unoptimized
                 />
               </CarouselItem>
@@ -192,31 +192,31 @@ export default function BlendertoGodotPage() {
             <CarouselContent>
               <CarouselItem>
                 <Image
-                  className="rounded-lg w-full"
                   src="/addons/images/blender-to-godot/capsule.gif"
-                  alt=""
+                  alt="Creating capsule collision from object bounds"
                   width={600}
                   height={325}
+                  className="rounded w-full"
                   unoptimized
                 />
               </CarouselItem>
               <CarouselItem>
                 <Image
-                  className="rounded-lg w-full"
                   src="/addons/images/blender-to-godot/capsule_editmode.gif"
-                  alt=""
+                  alt="Editing capsule collision in edit mode"
                   width={600}
                   height={325}
+                  className="rounded w-full"
                   unoptimized
                 />
               </CarouselItem>
               <CarouselItem>
                 <Image
-                  className="rounded-lg w-full"
                   src="/addons/images/blender-to-godot/capsule_custom.gif"
-                  alt=""
+                  alt="Custom capsule collision from selected faces"
                   width={600}
                   height={325}
+                  className="rounded w-full"
                   unoptimized
                 />
               </CarouselItem>
@@ -242,31 +242,31 @@ export default function BlendertoGodotPage() {
             <CarouselContent>
               <CarouselItem>
                 <Image
-                  className="rounded-lg w-full"
                   src="/addons/images/blender-to-godot/sphere.gif"
-                  alt=""
+                  alt="Creating sphere collision from object bounds"
                   width={600}
                   height={325}
+                  className="rounded w-full"
                   unoptimized
                 />
               </CarouselItem>
               <CarouselItem>
                 <Image
-                  className="rounded-lg w-full"
                   src="/addons/images/blender-to-godot/sphere_editmode.gif"
-                  alt=""
+                  alt="Editing sphere collision in edit mode"
                   width={600}
                   height={325}
+                  className="rounded w-full"
                   unoptimized
                 />
               </CarouselItem>
               <CarouselItem>
                 <Image
-                  className="rounded-lg w-full"
                   src="/addons/images/blender-to-godot/sphere_custom.gif"
-                  alt=""
+                  alt="Custom sphere collision from selected faces"
                   width={600}
                   height={325}
+                  className="rounded w-full"
                   unoptimized
                 />
               </CarouselItem>
@@ -294,31 +294,31 @@ export default function BlendertoGodotPage() {
             <CarouselContent>
               <CarouselItem>
                 <Image
-                  className="rounded-lg w-full"
                   src="/addons/images/blender-to-godot/cylinder.gif"
-                  alt=""
+                  alt="Creating cylinder collision from object bounds"
                   width={600}
                   height={325}
+                  className="rounded w-full"
                   unoptimized
                 />
               </CarouselItem>
               <CarouselItem>
                 <Image
-                  className="rounded-lg w-full"
                   src="/addons/images/blender-to-godot/cylinder_editmode.gif"
-                  alt=""
+                  alt="Editing cylinder collision in edit mode"
                   width={600}
                   height={325}
+                  className="rounded w-full"
                   unoptimized
                 />
               </CarouselItem>
               <CarouselItem>
                 <Image
-                  className="rounded-lg w-full"
                   src="/addons/images/blender-to-godot/cylinder_custom.gif"
-                  alt=""
+                  alt="Custom cylinder collision from selected faces"
                   width={600}
                   height={325}
+                  className="rounded w-full"
                   unoptimized
                 />
               </CarouselItem>
@@ -344,41 +344,41 @@ export default function BlendertoGodotPage() {
             <CarouselContent>
               <CarouselItem>
                 <Image
-                  className="rounded-lg w-full"
                   src="/addons/images/blender-to-godot/convex.gif"
-                  alt=""
+                  alt="Creating convex collision from object mesh"
                   width={600}
                   height={325}
+                  className="rounded w-full"
                   unoptimized
                 />
               </CarouselItem>
               <CarouselItem>
                 <Image
-                  className="rounded-lg w-full"
                   src="/addons/images/blender-to-godot/convex_editmode.gif"
-                  alt=""
+                  alt="Editing convex collision in edit mode"
                   width={600}
                   height={325}
+                  className="rounded w-full"
                   unoptimized
                 />
               </CarouselItem>
               <CarouselItem>
                 <Image
-                  className="rounded-lg w-full"
                   src="/addons/images/blender-to-godot/convex_custom.gif"
-                  alt=""
+                  alt="Custom convex collision from selected geometry"
                   width={600}
                   height={325}
+                  className="rounded w-full"
                   unoptimized
                 />
               </CarouselItem>
               <CarouselItem>
                 <Image
-                  className="rounded-lg w-full"
                   src="/addons/images/blender-to-godot/convex_vhacd.gif"
-                  alt=""
+                  alt="Automatic convex decomposition using V-HACD"
                   width={600}
                   height={325}
+                  className="rounded w-full"
                   unoptimized
                 />
               </CarouselItem>
@@ -406,7 +406,7 @@ export default function BlendertoGodotPage() {
           <Image
             className="rounded-lg"
             src="/addons/images/blender-to-godot/ui_component.png"
-            alt=""
+            alt="Component types panel in addon interface"
             width={256}
             height={256}
           />
@@ -555,11 +555,11 @@ export default function BlendertoGodotPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/blender-to-godot/rename.gif"
-            alt=""
+            alt="Renaming objects with collisions automatically"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -584,11 +584,11 @@ export default function BlendertoGodotPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/blender-to-godot/export.gif"
-            alt=""
+            alt="Exporting objects to Godot Engine with collisions and components"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -598,7 +598,7 @@ export default function BlendertoGodotPage() {
         <CardFooter className="space-x-4">
           <Link
             href="https://b3dhub.github.io/blender-to-godot-docs/"
-            className={cn(buttonVariants({ variant: "secondary" }))}
+            className={cn(buttonVariants({ variant: "outline" }))}
             target="_blank"
           >
             Documentation

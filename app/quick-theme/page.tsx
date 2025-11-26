@@ -80,11 +80,11 @@ export default function QuickThemePage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/quick-theme/auto_theme_toggle.gif"
-            alt=""
+            alt="Toggling the Auto Theme feature on and off in the Quick Theme panel"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -93,11 +93,11 @@ export default function QuickThemePage() {
         </CardContent>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/quick-theme/auto_theme.gif"
-            alt=""
+            alt="Auto Theme automatically changing Blender's color scheme on restart"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -113,11 +113,11 @@ export default function QuickThemePage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/quick-theme/interface_theme.gif"
-            alt=""
+            alt="Adjusting interface colors and roundness using a single color slider"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -134,11 +134,11 @@ export default function QuickThemePage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/quick-theme/viewport_theme.gif"
-            alt=""
+            alt="Changing viewport colors independently or linked to interface colors"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -155,11 +155,11 @@ export default function QuickThemePage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/quick-theme/outliner_theme.gif"
-            alt=""
+            alt="Customizing outliner colors using color slider with link/unlink option"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -169,7 +169,7 @@ export default function QuickThemePage() {
         <CardFooter className="space-x-4">
           <Link
             href="https://discord.com/channels/959138815602229389/1169021672846803027"
-            className={cn(buttonVariants({ variant: "secondary" }))}
+            className={cn(buttonVariants({ variant: "outline" }))}
             target="_blank"
           >
             Changelogs

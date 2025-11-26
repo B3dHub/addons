@@ -24,7 +24,7 @@ export const Data = [
     productURL: "/knife-circle",
     imageURL: "/addons/images/knife-circle/thumb.png",
     title: "Knife Circle",
-    price: "$20 - $200",
+    price: "$15 - $180",
     info: "Mesh",
   },
   {

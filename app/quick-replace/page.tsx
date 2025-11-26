@@ -132,11 +132,11 @@ export default function QuickReplacePage() {
         </CardContent>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/quick-replace/categories.gif"
-            alt=""
+            alt="Creating, renaming, and managing categories for object organization"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -161,11 +161,11 @@ export default function QuickReplacePage() {
         </CardContent>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/quick-replace/objects.gif"
-            alt=""
+            alt="Adding and managing objects in the replacement list"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -184,7 +184,7 @@ export default function QuickReplacePage() {
         <CardFooter className="space-x-4">
           <Link
             href="https://discord.com/channels/959138815602229389/1078669616622096394"
-            className={cn(buttonVariants({ variant: "secondary" }))}
+            className={cn(buttonVariants({ variant: "outline" }))}
             target="_blank"
           >
             Changelogs

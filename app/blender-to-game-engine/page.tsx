@@ -21,13 +21,12 @@ export default function BlendertoGameEnginePage() {
         </CardHeader>
         <CardContent>
           <CardDescription>
-            Blender-to-Game-Engine is a Blender add-on bundle. It includes two of our popular add-ons:{" "}
-            <span>Blender to Unity</span>, <span>Blender to Unreal</span> and <span>Blender to Godot</span>. These
-            add-ons allow you to export your Blender models to Unity, Unreal and Godot engine with just one click. This
-            bundle is perfect for game developers, architects, and 3D artists who want to export their models to Unity,
-            Unreal and Godot engine. The bundle is available at a discounted price, so you can save up to 33.33%. Get
-            the Blender-to-Game-Engine bundle today and start exporting your models to Unity, Unreal and Godot engine
-            with ease!
+            Blender-to-Game-Engine is a Blender add-on bundle that includes three of our popular add-ons:{" "}
+            <span>Blender to Unity</span>, <span>Blender to Unreal</span>, and <span>Blender to Godot</span>. These
+            add-ons allow you to export your Blender models to Unity, Unreal, and Godot engines with just one click.
+            This bundle is perfect for game developers, architects, and 3D artists who want to streamline their export
+            workflow. Available at a discounted price, you can save up to 35%. Get the Blender-to-Game-Engine bundle
+            today and start exporting your models to Unity, Unreal, and Godot engines with ease!
           </CardDescription>
         </CardContent>
         {showCoupon && <Coupon />}
@@ -79,7 +78,7 @@ export default function BlendertoGameEnginePage() {
                 </TableCell>
               </TableRow>
             </TableBody>
-            <TableCaption>Save upto 33.33%</TableCaption>
+            <TableCaption>Save up to 35%</TableCaption>
           </Table>
         </CardContent>
       </Card>

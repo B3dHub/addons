@@ -133,7 +133,7 @@ export default function BlendertoUnrealPage() {
           <Image
             className="rounded-lg"
             src="/addons/images/blender-to-unreal/collisions.png"
-            alt=""
+            alt="Collision types panel in addon interface"
             width={256}
             height={256}
           />
@@ -155,31 +155,31 @@ export default function BlendertoUnrealPage() {
             <CarouselContent>
               <CarouselItem>
                 <Image
-                  className="rounded-lg w-full"
                   src="/addons/images/blender-to-unreal/box.webp"
-                  alt=""
+                  alt="Creating box collision from object bounds"
                   width={600}
                   height={325}
+                  className="rounded w-full"
                   unoptimized
                 />
               </CarouselItem>
               <CarouselItem>
                 <Image
-                  className="rounded-lg w-full"
                   src="/addons/images/blender-to-unreal/box_editmode.webp"
-                  alt=""
+                  alt="Editing box collision in edit mode"
                   width={600}
                   height={325}
+                  className="rounded w-full"
                   unoptimized
                 />
               </CarouselItem>
               <CarouselItem>
                 <Image
-                  className="rounded-lg w-full"
                   src="/addons/images/blender-to-unreal/box_custom.webp"
-                  alt=""
+                  alt="Custom box collision from selected faces"
                   width={600}
                   height={325}
+                  className="rounded w-full"
                   unoptimized
                 />
               </CarouselItem>
@@ -207,31 +207,31 @@ export default function BlendertoUnrealPage() {
             <CarouselContent>
               <CarouselItem>
                 <Image
-                  className="rounded-lg w-full"
                   src="/addons/images/blender-to-unreal/capsule.webp"
-                  alt=""
+                  alt="Creating capsule collision from object bounds"
                   width={600}
                   height={325}
+                  className="rounded w-full"
                   unoptimized
                 />
               </CarouselItem>
               <CarouselItem>
                 <Image
-                  className="rounded-lg w-full"
                   src="/addons/images/blender-to-unreal/capsule_editmode.webp"
-                  alt=""
+                  alt="Editing capsule collision in edit mode"
                   width={600}
                   height={325}
+                  className="rounded w-full"
                   unoptimized
                 />
               </CarouselItem>
               <CarouselItem>
                 <Image
-                  className="rounded-lg w-full"
                   src="/addons/images/blender-to-unreal/capsule_custom.webp"
-                  alt=""
+                  alt="Custom capsule collision from selected faces"
                   width={600}
                   height={325}
+                  className="rounded w-full"
                   unoptimized
                 />
               </CarouselItem>
@@ -257,31 +257,31 @@ export default function BlendertoUnrealPage() {
             <CarouselContent>
               <CarouselItem>
                 <Image
-                  className="rounded-lg w-full"
                   src="/addons/images/blender-to-unreal/sphere.webp"
-                  alt=""
+                  alt="Creating sphere collision from object bounds"
                   width={600}
                   height={325}
+                  className="rounded w-full"
                   unoptimized
                 />
               </CarouselItem>
               <CarouselItem>
                 <Image
-                  className="rounded-lg w-full"
                   src="/addons/images/blender-to-unreal/sphere_editmode.webp"
-                  alt=""
+                  alt="Editing sphere collision in edit mode"
                   width={600}
                   height={325}
+                  className="rounded w-full"
                   unoptimized
                 />
               </CarouselItem>
               <CarouselItem>
                 <Image
-                  className="rounded-lg w-full"
                   src="/addons/images/blender-to-unreal/sphere_custom.webp"
-                  alt=""
+                  alt="Custom sphere collision from selected faces"
                   width={600}
                   height={325}
+                  className="rounded w-full"
                   unoptimized
                 />
               </CarouselItem>
@@ -309,21 +309,21 @@ export default function BlendertoUnrealPage() {
             <CarouselContent>
               <CarouselItem>
                 <Image
-                  className="rounded-lg w-full"
                   src="/addons/images/blender-to-unreal/cylinder.webp"
-                  alt=""
+                  alt="Creating cylinder collision from object bounds"
                   width={600}
                   height={325}
+                  className="rounded w-full"
                   unoptimized
                 />
               </CarouselItem>
               <CarouselItem>
                 <Image
-                  className="rounded-lg w-full"
                   src="/addons/images/blender-to-unreal/cylinder_editmode.webp"
-                  alt=""
+                  alt="Editing cylinder collision in edit mode"
                   width={600}
                   height={325}
+                  className="rounded w-full"
                   unoptimized
                 />
               </CarouselItem>
@@ -349,41 +349,41 @@ export default function BlendertoUnrealPage() {
             <CarouselContent>
               <CarouselItem>
                 <Image
-                  className="rounded-lg w-full"
                   src="/addons/images/blender-to-unreal/convex.webp"
-                  alt=""
+                  alt="Creating convex collision from object mesh"
                   width={600}
                   height={325}
+                  className="rounded w-full"
                   unoptimized
                 />
               </CarouselItem>
               <CarouselItem>
                 <Image
-                  className="rounded-lg w-full"
                   src="/addons/images/blender-to-unreal/convex_editmode.webp"
-                  alt=""
+                  alt="Editing convex collision in edit mode"
                   width={600}
                   height={325}
+                  className="rounded w-full"
                   unoptimized
                 />
               </CarouselItem>
               <CarouselItem>
                 <Image
-                  className="rounded-lg w-full"
                   src="/addons/images/blender-to-unreal/convex_custom.webp"
-                  alt=""
+                  alt="Custom convex collision from selected geometry"
                   width={600}
                   height={325}
+                  className="rounded w-full"
                   unoptimized
                 />
               </CarouselItem>
               <CarouselItem>
                 <Image
-                  className="rounded-lg w-full"
                   src="/addons/images/blender-to-unreal/convex_vhacd.webp"
-                  alt=""
+                  alt="Automatic convex decomposition using V-HACD"
                   width={600}
                   height={325}
+                  className="rounded w-full"
                   unoptimized
                 />
               </CarouselItem>
@@ -411,7 +411,7 @@ export default function BlendertoUnrealPage() {
           <Image
             className="rounded-lg"
             src="/addons/images/blender-to-unreal/socket.png"
-            alt=""
+            alt="Socket creation panel in addon interface"
             width={256}
             height={256}
           />
@@ -433,31 +433,31 @@ export default function BlendertoUnrealPage() {
             <CarouselContent>
               <CarouselItem>
                 <Image
-                  className="rounded-lg w-full"
                   src="/addons/images/blender-to-unreal/socket.webp"
-                  alt=""
+                  alt="Creating mesh socket at cursor location"
                   width={600}
                   height={325}
+                  className="rounded w-full"
                   unoptimized
                 />
               </CarouselItem>
               <CarouselItem>
                 <Image
-                  className="rounded-lg w-full"
                   src="/addons/images/blender-to-unreal/socket_editmode.webp"
-                  alt=""
+                  alt="Positioning socket in edit mode"
                   width={600}
                   height={325}
+                  className="rounded w-full"
                   unoptimized
                 />
               </CarouselItem>
               <CarouselItem>
                 <Image
-                  className="rounded-lg w-full"
                   src="/addons/images/blender-to-unreal/socket_custom.webp"
-                  alt=""
+                  alt="Custom socket attached to mesh surface"
                   width={600}
                   height={325}
+                  className="rounded w-full"
                   unoptimized
                 />
               </CarouselItem>
@@ -485,7 +485,7 @@ export default function BlendertoUnrealPage() {
           <Image
             className="rounded-lg"
             src="/addons/images/blender-to-unreal/lods.png"
-            alt=""
+            alt="LOD management panel in addon interface"
             width={256}
             height={256}
           />
@@ -504,11 +504,11 @@ export default function BlendertoUnrealPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/blender-to-unreal/lod_create.gif"
-            alt=""
+            alt="Creating LOD levels for selected objects"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -526,11 +526,11 @@ export default function BlendertoUnrealPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/blender-to-unreal/lod_update.gif"
-            alt=""
+            alt="Updating existing LOD levels with new settings"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -548,11 +548,11 @@ export default function BlendertoUnrealPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/blender-to-unreal/lod_preset.gif"
-            alt=""
+            alt="Saving and loading LOD presets for reuse"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -573,11 +573,11 @@ export default function BlendertoUnrealPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/blender-to-unreal/rename.gif"
-            alt=""
+            alt="Renaming objects with collisions and LODs automatically"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -595,11 +595,11 @@ export default function BlendertoUnrealPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/blender-to-unreal/vehicle_rigging.gif"
-            alt=""
+            alt="Automatically rigging vehicle with wheel bones"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -624,11 +624,11 @@ export default function BlendertoUnrealPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/blender-to-unreal/export.gif"
-            alt=""
+            alt="Exporting objects to Unreal Engine with collisions and LODs"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -638,14 +638,14 @@ export default function BlendertoUnrealPage() {
         <CardFooter className="space-x-4">
           <Link
             href="https://b3dhub.github.io/blender-to-unreal-docs/"
-            className={cn(buttonVariants({ variant: "secondary" }))}
+            className={cn(buttonVariants({ variant: "outline" }))}
             target="_blank"
           >
             Documentation
           </Link>
           <Link
             href="https://discord.com/channels/959138815602229389/959152281058697216"
-            className={cn(buttonVariants({ variant: "secondary" }))}
+            className={cn(buttonVariants({ variant: "outline" }))}
             target="_blank"
           >
             Changelogs

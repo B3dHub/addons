@@ -142,11 +142,11 @@ export default function QuickInterfacePage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/quick-interface/area_switch.gif"
-            alt=""
+            alt="Switching workspace area using pie menu"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -173,11 +173,11 @@ export default function QuickInterfacePage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/quick-interface/area_split.gif"
-            alt=""
+            alt="Splitting workspace area vertically and horizontally"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -194,11 +194,11 @@ export default function QuickInterfacePage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/quick-interface/area_duplicate.gif"
-            alt=""
+            alt="Duplicating workspace area into new window"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -215,11 +215,11 @@ export default function QuickInterfacePage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/quick-interface/area_join.gif"
-            alt=""
+            alt="Joining adjacent workspace areas together"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -237,11 +237,11 @@ export default function QuickInterfacePage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/quick-interface/area_swap.gif"
-            alt=""
+            alt="Swapping content between workspace areas"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -251,7 +251,7 @@ export default function QuickInterfacePage() {
         <CardFooter className="space-x-4">
           <Link
             href="https://discord.com/channels/959138815602229389/1237576375179939871"
-            className={cn(buttonVariants({ variant: "secondary" }))}
+            className={cn(buttonVariants({ variant: "outline" }))}
             target="_blank"
           >
             Changelogs

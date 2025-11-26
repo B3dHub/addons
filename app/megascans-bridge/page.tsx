@@ -151,11 +151,11 @@ export default function MegascansBridgePage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/megascans-bridge/v2/grid_view.gif"
-            alt=""
+            alt="Grid view displaying Megascans assets in a thumbnail grid layout"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -168,11 +168,11 @@ export default function MegascansBridgePage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/megascans-bridge/v2/asset_search.gif"
-            alt=""
+            alt="Searching for Megascans assets by name using the search bar"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -185,11 +185,11 @@ export default function MegascansBridgePage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/megascans-bridge/v2/asset_details.gif"
-            alt=""
+            alt="Viewing detailed asset information including name, polycount, and resolution"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -202,11 +202,11 @@ export default function MegascansBridgePage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/megascans-bridge/v2/pagination.gif"
-            alt=""
+            alt="Navigating through multiple pages of Megascans assets"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -219,11 +219,11 @@ export default function MegascansBridgePage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/megascans-bridge/v2/import_assets.gif"
-            alt=""
+            alt="Importing 3D Megascans assets with LODs into Blender"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -232,11 +232,11 @@ export default function MegascansBridgePage() {
         </CardContent>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/megascans-bridge/v2/lod_group.gif"
-            alt=""
+            alt="LOD groups created using Geometry Nodes showing different detail levels"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -249,11 +249,11 @@ export default function MegascansBridgePage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/megascans-bridge/v2/import_plants.gif"
-            alt=""
+            alt="Importing 3D plant assets with LODs from Megascans library"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -266,21 +266,21 @@ export default function MegascansBridgePage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/megascans-bridge/v2/import_surfaces.gif"
-            alt=""
+            alt="Importing Megascans surface textures as materials"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/megascans-bridge/v2/import_node_group.gif"
-            alt=""
+            alt="Importing surface textures as shader node groups in Blender"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -310,7 +310,7 @@ export default function MegascansBridgePage() {
         <CardFooter className="space-x-4">
           <Link
             href="https://discord.com/channels/959138815602229389/1327353624644288604"
-            className={cn(buttonVariants({ variant: "secondary" }))}
+            className={cn(buttonVariants({ variant: "outline" }))}
             target="_blank"
           >
             Changelogs

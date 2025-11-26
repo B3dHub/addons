@@ -216,11 +216,11 @@ export default function QuickMeasurePage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/quick-measure/v2/quick_measurements.gif"
-            alt=""
+            alt="Making quick measurements by dragging with ALT key without saving"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -232,11 +232,11 @@ export default function QuickMeasurePage() {
         </CardContent>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/quick-measure/v2/quick_multiple_measurements.gif"
-            alt=""
+            alt="Creating multiple temporary measurements with click-click method"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -253,11 +253,11 @@ export default function QuickMeasurePage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/quick-measure/v2/saved_measurements.gif"
-            alt=""
+            alt="Saving measurements by holding SHIFT+ALT while dragging"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -269,11 +269,11 @@ export default function QuickMeasurePage() {
         </CardContent>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/quick-measure/v2/saved_multiple_measurements.gif"
-            alt=""
+            alt="Creating and saving multiple measurements with SHIFT+ALT clicks"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -286,11 +286,11 @@ export default function QuickMeasurePage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/quick-measure/v2/select_measurements.gif"
-            alt=""
+            alt="Selecting measurements in the viewport for editing or removal"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -306,11 +306,11 @@ export default function QuickMeasurePage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/quick-measure/v2/remove_measurements.gif"
-            alt=""
+            alt="Removing selected measurements using ALT+X shortcut"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -325,11 +325,11 @@ export default function QuickMeasurePage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/quick-measure/v2/separate_measurements.gif"
-            alt=""
+            alt="Separating joined measurement points by holding ALT"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -344,11 +344,11 @@ export default function QuickMeasurePage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/quick-measure/v2/join_measurements.gif"
-            alt=""
+            alt="Joining separate measurement points at the same position"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -365,11 +365,11 @@ export default function QuickMeasurePage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/quick-measure/v2/axis_restriction.gif"
-            alt=""
+            alt="Restricting measurement movement to X, Y, or Z axis"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -382,11 +382,11 @@ export default function QuickMeasurePage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/quick-measure/v2/measure_angle.gif"
-            alt=""
+            alt="Measuring angles between measurement points"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -399,11 +399,11 @@ export default function QuickMeasurePage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/quick-measure/v2/object_mode_vertex_lock.gif"
-            alt=""
+            alt="Locking measurement points to object vertices in Object Mode"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -414,11 +414,11 @@ export default function QuickMeasurePage() {
         </CardContent>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/quick-measure/v2/edit_mode_vertex_lock.gif"
-            alt=""
+            alt="Locking measurement points to vertices in Edit Mode"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -433,11 +433,11 @@ export default function QuickMeasurePage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/quick-measure/v2/measurement_units.gif"
-            alt=""
+            alt="Displaying measurements in Blender units with preference override option"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -458,7 +458,7 @@ export default function QuickMeasurePage() {
         <CardFooter className="space-x-4">
           <Link
             href="https://discord.com/channels/959138815602229389/1090214367049560135"
-            className={cn(buttonVariants({ variant: "secondary" }))}
+            className={cn(buttonVariants({ variant: "outline" }))}
             target="_blank"
           >
             Changelogs

@@ -153,11 +153,11 @@ export default function QuickBakerPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/quick-baker/object_bake.gif"
-            alt=""
+            alt="Baking PBR textures for single and multiple objects"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -170,11 +170,11 @@ export default function QuickBakerPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/quick-baker/high_to_low_bake.gif"
-            alt=""
+            alt="Baking high-poly detail onto low-poly model"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
             />
         </CardContent>
@@ -187,11 +187,11 @@ export default function QuickBakerPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/quick-baker/single_texture_set.gif"
-            alt=""
+            alt="Baking multiple objects into single texture set"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
             />
         </CardContent>
@@ -204,11 +204,11 @@ export default function QuickBakerPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/quick-baker/multiple_texture_set.gif"
-            alt=""
+            alt="Baking multiple objects into separate texture sets"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
             />
         </CardContent>
@@ -221,11 +221,11 @@ export default function QuickBakerPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/quick-baker/auto_cage.gif"
-            alt=""
+            alt="Automatically creating and adjusting cage for baking"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
             />
         </CardContent>
@@ -238,11 +238,11 @@ export default function QuickBakerPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/quick-baker/auto_udim_bake.gif"
-            alt=""
+            alt="Automatically baking UDIM tiles based on UV layout"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
             />
         </CardContent>
@@ -255,11 +255,11 @@ export default function QuickBakerPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/quick-baker/channel_packing.gif"
-            alt=""
+            alt="Packing multiple texture maps into RGB channels"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
             />
         </CardContent>
@@ -272,11 +272,11 @@ export default function QuickBakerPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/quick-baker/vertex_color_material_id.gif"
-            alt=""
+            alt="Creating vertex color for material ID map"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
             />
         </CardContent>
@@ -289,13 +289,13 @@ export default function QuickBakerPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/quick-baker/existing_texture_bake.gif"
-            alt=""
+            alt="Baking onto existing texture map"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
-            />
+          />
         </CardContent>
       </Card>
 
@@ -306,11 +306,11 @@ export default function QuickBakerPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/quick-baker/map_preview.gif"
-            alt=""
+            alt="Previewing ambient occlusion and curvature maps"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
             />
         </CardContent>
@@ -323,11 +323,11 @@ export default function QuickBakerPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
-            src="/addons/images/quick-baker/node_bake.gif"
-            alt=""
-            width={600}
-            height={325}
+          src="/addons/images/quick-baker/node_bake.gif"
+          alt=""
+          width={600}
+          height={325}
+          className="rounded w-full"
             
           />
         </CardContent>
@@ -340,11 +340,11 @@ export default function QuickBakerPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/quick-baker/node_bake.gif"
-            alt=""
+            alt="Baking shader nodes into texture image"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
             />
         </CardContent>
@@ -357,11 +357,11 @@ export default function QuickBakerPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/quick-baker/udim_node_bake.gif"
-            alt=""
+            alt="Baking shader nodes for UDIM object"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
             />
         </CardContent>
@@ -374,11 +374,11 @@ export default function QuickBakerPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
-            src="/addons/images/quick-baker/maps.png"
-            alt=""
-            width={600}
-            height={325}
+          src="/addons/images/quick-baker/maps.png"
+          alt=""
+          width={600}
+          height={325}
+          className="rounded w-full"
             
           />
         </CardContent>
@@ -390,11 +390,11 @@ export default function QuickBakerPage() {
           <CardDescription>Bake 50 unique maps</CardDescription>
         </CardHeader>
         <CardContent>
-          <Image className="rounded-lg w-full" src="/addons/images/quick-baker/maps.png" alt="" width={600} height={325} />
         </CardContent>
       </Card>
 
       <Card>
+          <Image className="rounded w-full" src="/addons/images/quick-baker/maps.png" alt="Collection of 50 unique bake map types available" width={600} height={325} />
         <CardHeader>
           <CardTitle>Limitations</CardTitle>
           <CardDescription></CardDescription>
@@ -416,14 +416,14 @@ export default function QuickBakerPage() {
         <CardFooter className="space-x-4">
           <Link
             href="https://b3dhub.github.io/quick-baker-docs/"
-            className={cn(buttonVariants({ variant: "secondary" }))}
+            className={cn(buttonVariants({ variant: "outline" }))}
             target="_blank"
           >
             Documentation
           </Link>
           <Link
             href="https://discord.com/channels/959138815602229389/1013054795562614794"
-            className={cn(buttonVariants({ variant: "secondary" }))}
+            className={cn(buttonVariants({ variant: "outline" }))}
             target="_blank"
           >
             Changelogs

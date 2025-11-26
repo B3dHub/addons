@@ -119,7 +119,7 @@ export default function BlendertoUnityPage() {
           <CardDescription>Add auto and custom collider.</CardDescription>
         </CardHeader>
         <CardContent>
-          <Image className="rounded-lg" src="/addons/images/blender-to-unity/colliders.png" alt="" width={256} height={256} />
+          <Image className="rounded-lg" src="/addons/images/blender-to-unity/colliders.png" alt="Collider types panel in addon interface" width={256} height={256} />
         </CardContent>
         <CardHeader>
           <CardTitle>
@@ -138,31 +138,31 @@ export default function BlendertoUnityPage() {
             <CarouselContent>
               <CarouselItem>
                 <Image
-                  className="rounded-lg w-full"
                   src="/addons/images/blender-to-unity/box.webp"
-                  alt=""
+                  alt="Creating box collider from object bounds"
                   width={600}
                   height={325}
+                  className="rounded w-full"
                   unoptimized
                 />
               </CarouselItem>
               <CarouselItem>
                 <Image
-                  className="rounded-lg w-full"
                   src="/addons/images/blender-to-unity/box_editmode.webp"
-                  alt=""
+                  alt="Editing box collider in edit mode"
                   width={600}
                   height={325}
+                  className="rounded w-full"
                   unoptimized
                 />
               </CarouselItem>
               <CarouselItem>
                 <Image
-                  className="rounded-lg w-full"
                   src="/addons/images/blender-to-unity/box_custom.webp"
-                  alt=""
+                  alt="Custom box collider from selected faces"
                   width={600}
                   height={325}
+                  className="rounded w-full"
                   unoptimized
                 />
               </CarouselItem>
@@ -190,31 +190,31 @@ export default function BlendertoUnityPage() {
             <CarouselContent>
               <CarouselItem>
                 <Image
-                  className="rounded-lg w-full"
                   src="/addons/images/blender-to-unity/capsule.webp"
-                  alt=""
+                  alt="Creating capsule collider from object bounds"
                   width={600}
                   height={325}
+                  className="rounded w-full"
                   unoptimized
                 />
               </CarouselItem>
               <CarouselItem>
                 <Image
-                  className="rounded-lg w-full"
                   src="/addons/images/blender-to-unity/capsule_editmode.webp"
-                  alt=""
+                  alt="Editing capsule collider in edit mode"
                   width={600}
                   height={325}
+                  className="rounded w-full"
                   unoptimized
                 />
               </CarouselItem>
               <CarouselItem>
                 <Image
-                  className="rounded-lg w-full"
                   src="/addons/images/blender-to-unity/capsule_custom.webp"
-                  alt=""
+                  alt="Custom capsule collider from selected faces"
                   width={600}
                   height={325}
+                  className="rounded w-full"
                   unoptimized
                 />
               </CarouselItem>
@@ -240,31 +240,31 @@ export default function BlendertoUnityPage() {
             <CarouselContent>
               <CarouselItem>
                 <Image
-                  className="rounded-lg w-full"
                   src="/addons/images/blender-to-unity/sphere.webp"
-                  alt=""
+                  alt="Creating sphere collider from object bounds"
                   width={600}
                   height={325}
+                  className="rounded w-full"
                   unoptimized
                 />
               </CarouselItem>
               <CarouselItem>
                 <Image
-                  className="rounded-lg w-full"
                   src="/addons/images/blender-to-unity/sphere_editmode.webp"
-                  alt=""
+                  alt="Editing sphere collider in edit mode"
                   width={600}
                   height={325}
+                  className="rounded w-full"
                   unoptimized
                 />
               </CarouselItem>
               <CarouselItem>
                 <Image
-                  className="rounded-lg w-full"
                   src="/addons/images/blender-to-unity/sphere_custom.webp"
-                  alt=""
+                  alt="Custom sphere collider from selected faces"
                   width={600}
                   height={325}
+                  className="rounded w-full"
                   unoptimized
                 />
               </CarouselItem>
@@ -292,21 +292,21 @@ export default function BlendertoUnityPage() {
             <CarouselContent>
               <CarouselItem>
                 <Image
-                  className="rounded-lg w-full"
                   src="/addons/images/blender-to-unity/cylinder.gif"
-                  alt=""
+                  alt="Creating cylinder collider from object bounds"
                   width={600}
                   height={325}
+                  className="rounded w-full"
                   unoptimized
                 />
               </CarouselItem>
               <CarouselItem>
                 <Image
-                  className="rounded-lg w-full"
                   src="/addons/images/blender-to-unity/cylinder_editmode.webp"
-                  alt=""
+                  alt="Editing cylinder collider in edit mode"
                   width={600}
                   height={325}
+                  className="rounded w-full"
                   unoptimized
                 />
               </CarouselItem>
@@ -332,41 +332,41 @@ export default function BlendertoUnityPage() {
             <CarouselContent>
               <CarouselItem>
                 <Image
-                  className="rounded-lg w-full"
                   src="/addons/images/blender-to-unity/convex.webp"
-                  alt=""
+                  alt="Creating convex mesh collider from object"
                   width={600}
                   height={325}
+                  className="rounded w-full"
                   unoptimized
                 />
               </CarouselItem>
               <CarouselItem>
                 <Image
-                  className="rounded-lg w-full"
                   src="/addons/images/blender-to-unity/convex_editmode.webp"
-                  alt=""
+                  alt="Editing convex mesh collider in edit mode"
                   width={600}
                   height={325}
+                  className="rounded w-full"
                   unoptimized
                 />
               </CarouselItem>
               <CarouselItem>
                 <Image
-                  className="rounded-lg w-full"
                   src="/addons/images/blender-to-unity/convex_custom.webp"
-                  alt=""
+                  alt="Custom convex mesh collider from selected geometry"
                   width={600}
                   height={325}
+                  className="rounded w-full"
                   unoptimized
                 />
               </CarouselItem>
               <CarouselItem>
                 <Image
-                  className="rounded-lg w-full"
                   src="/addons/images/blender-to-unity/convex_vhacd.webp"
-                  alt=""
+                  alt="Automatic convex decomposition using V-HACD"
                   width={600}
                   height={325}
+                  className="rounded w-full"
                   unoptimized
                 />
               </CarouselItem>
@@ -391,7 +391,7 @@ export default function BlendertoUnityPage() {
           <CardDescription>Create, Update, and Preset LODs.</CardDescription>
         </CardHeader>
         <CardContent>
-          <Image className="rounded-lg" src="/addons/images/blender-to-unity/lods.png" alt="" width={256} height={256} />
+          <Image className="rounded-lg" src="/addons/images/blender-to-unity/lods.png" alt="LOD management panel in addon interface" width={256} height={256} />
         </CardContent>
         <CardHeader>
           <CardTitle>
@@ -407,11 +407,11 @@ export default function BlendertoUnityPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/blender-to-unity/lod_create.gif"
-            alt=""
+            alt="Creating LOD levels for selected objects"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -429,11 +429,11 @@ export default function BlendertoUnityPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/blender-to-unity/lod_update.gif"
-            alt=""
+            alt="Updating existing LOD levels with new settings"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -451,11 +451,11 @@ export default function BlendertoUnityPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/blender-to-unity/lod_preset.gif"
-            alt=""
+            alt="Saving and loading LOD presets for reuse"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -476,11 +476,11 @@ export default function BlendertoUnityPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/blender-to-unity/rename.gif"
-            alt=""
+            alt="Renaming objects with colliders and LODs automatically"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -505,11 +505,11 @@ export default function BlendertoUnityPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/blender-to-unity/export.gif"
-            alt=""
+            alt="Exporting objects to Unity with colliders and LODs"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -558,14 +558,14 @@ export default function BlendertoUnityPage() {
         <CardFooter className="space-x-4">
           <Link
             href="https://b3dhub.github.io/blender-to-unity-docs/"
-            className={cn(buttonVariants({ variant: "secondary" }))}
+            className={cn(buttonVariants({ variant: "outline" }))}
             target="_blank"
           >
             Documentation
           </Link>
           <Link
             href="https://discord.com/channels/959138815602229389/965691425557721159"
-            className={cn(buttonVariants({ variant: "secondary" }))}
+            className={cn(buttonVariants({ variant: "outline" }))}
             target="_blank"
           >
             Changelogs

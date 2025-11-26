@@ -158,11 +158,11 @@ export default function QuickDecalPage() {
         </CardContent>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/quick-decal/custom_decals.gif"
-            alt=""
+            alt="Browsing and selecting custom decals from library"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -174,11 +174,11 @@ export default function QuickDecalPage() {
         </CardContent>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/quick-decal/quick_decal_custom_load_add.gif"
-            alt=""
+            alt="Loading and adding custom image decals to object"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -208,21 +208,21 @@ export default function QuickDecalPage() {
         </CardContent>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/quick-decal/megascans_decals.gif"
-            alt=""
+            alt="Browsing Quixel Megascans decal library with categories"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/quick-decal/megascans_decals_2.gif"
-            alt=""
+            alt="Applying Megascans decal to 3D model surface"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -235,11 +235,11 @@ export default function QuickDecalPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/quick-decal/multiple_obj_mat_decal.gif"
-            alt=""
+            alt="Applying decals to multiple objects and materials simultaneously"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -251,11 +251,11 @@ export default function QuickDecalPage() {
         </CardContent>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/quick-decal/hotkeys.png"
-            alt=""
+            alt="Hotkey reference chart for Quick Decal operations"
             width={600}
             height={325}
+            className="rounded w-full"
           />
         </CardContent>
       </Card>
@@ -270,11 +270,11 @@ export default function QuickDecalPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/quick-decal/decal_layers.gif"
-            alt=""
+            alt="Organizing and reordering decal layers on object"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -287,11 +287,11 @@ export default function QuickDecalPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/quick-decal/decal_wear.gif"
-            alt=""
+            alt="Adjusting wear and tear effect on decal layer"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -314,11 +314,11 @@ export default function QuickDecalPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/quick-decal/quick_decal_baker.gif"
-            alt=""
+            alt="Baking decals with Quick Baker addon integration"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -333,11 +333,11 @@ export default function QuickDecalPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/quick-decal/master_node_group.png"
-            alt=""
+            alt="QDecal Master node group in Blender shader editor"
             width={600}
             height={325}
+            className="rounded w-full"
           />
         </CardContent>
       </Card>
@@ -346,14 +346,14 @@ export default function QuickDecalPage() {
         <CardFooter className="space-x-4">
           <Link
             href="https://superhivemarket.com/products/quick-decal/docs"
-            className={cn(buttonVariants({ variant: "secondary" }))}
+            className={cn(buttonVariants({ variant: "outline" }))}
             target="_blank"
           >
             Documentation
           </Link>
           <Link
             href="https://discord.com/channels/959138815602229389/1223542106539167754"
-            className={cn(buttonVariants({ variant: "secondary" }))}
+            className={cn(buttonVariants({ variant: "outline" }))}
             target="_blank"
           >
             Changelogs

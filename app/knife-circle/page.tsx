@@ -30,13 +30,13 @@ export default function KnifeCirclePage() {
             in both Object and Edit modes. Perfect for creating clean geometric cuts with accuracy and speed.
           </CardDescription>
         </CardContent>
-        <CardContent>
+        {/* <CardContent>
           <Badge variant="secondary">
             <CardDescription>
               Launch Offer: Get the add-on for <span>25%</span> off, valid till Nov 28, 2025
             </CardDescription>
           </Badge>
-        </CardContent>
+        </CardContent> */}
         {showCoupon && <Coupon />}
       </Card>
 
@@ -51,6 +51,9 @@ export default function KnifeCirclePage() {
             <TableBody>
               <TableRow>
                 <TableCell className="font-medium">Interactive Control</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium">Fixed / Freeform Modes</TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">Adjustable Segments</TableCell>
@@ -171,9 +174,16 @@ export default function KnifeCirclePage() {
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">
+                  <code>F</code>
+                </TableCell>
+                <TableCell>Fixed / Freeform Mode</TableCell>
+                <TableCell>Switch between fixed/freeform modes</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium">
                   <code>X</code>
                 </TableCell>
-                <TableCell>Toggle Cut Through</TableCell>
+                <TableCell>Cut Through Mode</TableCell>
                 <TableCell>Switch between surface/through modes</TableCell>
               </TableRow>
               <TableRow>
@@ -232,11 +242,31 @@ export default function KnifeCirclePage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/knife-circle/interactive-controls.gif"
             alt="Interactive control demonstration"
             width={600}
             height={325}
+            className="rounded w-full"
+            unoptimized
+          />
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle>Fixed / Freeform Mode</CardTitle>
+          <CardDescription>
+            Toggle between Fixed mode (click to set center, move to adjust radius) and Freeform mode (click and drag to
+            define both center and radius simultaneously) using the <code>F</code> key.
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          <Image
+            src="/addons/images/knife-circle/freeform.gif"
+            alt="Freeform mode demonstration showing click-and-drag to define center and radius"
+            width={600}
+            height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -249,11 +279,11 @@ export default function KnifeCirclePage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/knife-circle/adjustable-segments.gif"
             alt="Adjustable segments demonstration"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -269,11 +299,11 @@ export default function KnifeCirclePage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/knife-circle/numeric-input.gif"
             alt="Numeric input demonstration"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -289,11 +319,11 @@ export default function KnifeCirclePage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/knife-circle/quick-shapes.gif"
             alt="Quick shape shortcuts demonstration"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -309,17 +339,28 @@ export default function KnifeCirclePage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/knife-circle/cut-through.gif"
             alt="Cut through mode demonstration"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
       </Card>
 
-      <Support />
+      <Support>
+        <CardFooter className="space-x-4">
+          <Link
+            href="https://discord.com/channels/959138815602229389/1439518778001199156"
+            className={cn(buttonVariants({ variant: "outline" }))}
+            target="_blank"
+          >
+            Changelogs
+          </Link>
+        </CardFooter>
+      </Support>
+
       <OtherAddons />
       <Affiliate />
     </div>

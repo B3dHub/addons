@@ -79,11 +79,11 @@ export default function CameraPreviewPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/camera-preview/demo_full.gif"
-            alt=""
+            alt="Multiple camera preview windows displayed in viewport"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -96,11 +96,11 @@ export default function CameraPreviewPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/camera-preview/position.gif"
-            alt=""
+            alt="Adjusting camera preview position in viewport"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -113,11 +113,11 @@ export default function CameraPreviewPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/camera-preview/offset.gif"
-            alt=""
+            alt="Adjusting camera preview offset from edge"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -130,11 +130,11 @@ export default function CameraPreviewPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/camera-preview/size.gif"
-            alt=""
+            alt="Resizing camera preview window"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -149,11 +149,11 @@ export default function CameraPreviewPage() {
         </CardHeader>
         <CardContent>
           <Image
-            className="rounded-lg w-full"
             src="/addons/images/camera-preview/view_layer_hide.gif"
-            alt=""
+            alt="Hiding and unhiding objects from camera preview"
             width={600}
             height={325}
+            className="rounded w-full"
             unoptimized
           />
         </CardContent>
@@ -178,7 +178,7 @@ export default function CameraPreviewPage() {
         <CardFooter className="space-x-4">
           <Link
             href="https://discord.com/channels/959138815602229389/1001092033559142463"
-            className={cn(buttonVariants({ variant: "secondary" }))}
+            className={cn(buttonVariants({ variant: "outline" }))}
             target="_blank"
           >
             Changelogs
