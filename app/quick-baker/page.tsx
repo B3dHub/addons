@@ -512,39 +512,23 @@ export default function QuickBakerPage() {
         </CardContent>
       </Card>
 
-      {/* <Card>
-        <CardHeader>
-          <CardTitle>Post Bake</CardTitle>
-          <CardDescription>Post bake options</CardDescription>
-        </CardHeader>
-        <CardContent>
-          <Image
-          src="/addons/images/quick-baker/maps.png"
-          alt=""
-          width={600}
-          height={325}
-          className="rounded w-full"
-            
-          />
-        </CardContent>
-      </Card> */}
-
       <Card>
         <CardHeader>
           <CardTitle>50 Unique Maps</CardTitle>
           <CardDescription>Bake 50 unique maps</CardDescription>
         </CardHeader>
-        <CardContent></CardContent>
+        <CardContent>
+          <Image
+            src="/addons/images/quick-baker/maps.png"
+            alt="Collection of 50 unique bake map types available"
+            width={600}
+            height={325}
+            className="rounded w-full"
+          />
+        </CardContent>
       </Card>
 
       <Card>
-        <Image
-          className="rounded w-full"
-          src="/addons/images/quick-baker/maps.png"
-          alt="Collection of 50 unique bake map types available"
-          width={600}
-          height={325}
-        />
         <CardHeader>
           <CardTitle>Limitations</CardTitle>
           <CardDescription></CardDescription>

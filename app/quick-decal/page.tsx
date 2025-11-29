@@ -318,7 +318,7 @@ export default function QuickDecalPage() {
         <CardContent>
           <CardDescription>
             Download decals from{" "}
-            <Link href={"https://quixel.com/bridge"} target="_blank" className="underline text-primary">
+            <Link href={"https://d2shgxa8i058x8.cloudfront.net/bridge/win/Bridge.exe"} target="_blank" className="underline text-primary">
               Quixel Bridge
             </Link>
           </CardDescription>
