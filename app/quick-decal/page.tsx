@@ -10,6 +10,7 @@ import { Metadata } from "next";
 import Affiliate from "@/components/affiliate";
 import { Coupon, showCoupon } from "@/components/coupon";
 import { cn } from "@/lib/utils";
+import { CheckIcon, XIcon } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Quick Decal - Blender Addon",
@@ -66,78 +67,194 @@ export default function QuickDecalPage() {
             <TableBody>
               <TableRow>
                 <TableCell className="font-medium">Image Decal</TableCell>
-                <TableCell className="text-center">✅</TableCell>
-                <TableCell className="text-center">✅</TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <CheckIcon className="size-4" />
+                  </div>
+                </TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <CheckIcon className="size-4" />
+                  </div>
+                </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">Quixel Megascans Decal</TableCell>
-                <TableCell className="text-center">✅</TableCell>
-                <TableCell className="text-center">⚠️</TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <CheckIcon className="size-4" />
+                  </div>
+                </TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <XIcon className="size-4" />
+                  </div>
+                </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">Multiple Objects and Materials</TableCell>
-                <TableCell className="text-center">✅</TableCell>
-                <TableCell className="text-center">⚠️</TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <CheckIcon className="size-4" />
+                  </div>
+                </TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <XIcon className="size-4" />
+                  </div>
+                </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">PBR Decal</TableCell>
-                <TableCell className="text-center">✅</TableCell>
-                <TableCell className="text-center">⚠️</TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <CheckIcon className="size-4" />
+                  </div>
+                </TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <XIcon className="size-4" />
+                  </div>
+                </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">Decal Layer</TableCell>
-                <TableCell className="text-center">✅</TableCell>
-                <TableCell className="text-center">⚠️</TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <CheckIcon className="size-4" />
+                  </div>
+                </TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <XIcon className="size-4" />
+                  </div>
+                </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">Layer Controller</TableCell>
-                <TableCell className="text-center">✅</TableCell>
-                <TableCell className="text-center">⚠️</TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <CheckIcon className="size-4" />
+                  </div>
+                </TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <XIcon className="size-4" />
+                  </div>
+                </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">Layer Controller Type</TableCell>
-                <TableCell className="text-center">✅</TableCell>
-                <TableCell className="text-center">⚠️</TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <CheckIcon className="size-4" />
+                  </div>
+                </TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <XIcon className="size-4" />
+                  </div>
+                </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">Layer Opacity</TableCell>
-                <TableCell className="text-center">✅</TableCell>
-                <TableCell className="text-center">⚠️</TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <CheckIcon className="size-4" />
+                  </div>
+                </TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <XIcon className="size-4" />
+                  </div>
+                </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">Layer Wear</TableCell>
-                <TableCell className="text-center">✅</TableCell>
-                <TableCell className="text-center">⚠️</TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <CheckIcon className="size-4" />
+                  </div>
+                </TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <XIcon className="size-4" />
+                  </div>
+                </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">Layer Maps</TableCell>
-                <TableCell className="text-center">✅</TableCell>
-                <TableCell className="text-center">⚠️</TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <CheckIcon className="size-4" />
+                  </div>
+                </TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <XIcon className="size-4" />
+                  </div>
+                </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">Auto Snap</TableCell>
-                <TableCell className="text-center">✅</TableCell>
-                <TableCell className="text-center">⚠️</TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <CheckIcon className="size-4" />
+                  </div>
+                </TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <XIcon className="size-4" />
+                  </div>
+                </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">Auto Parent</TableCell>
-                <TableCell className="text-center">✅</TableCell>
-                <TableCell className="text-center">⚠️</TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <CheckIcon className="size-4" />
+                  </div>
+                </TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <XIcon className="size-4" />
+                  </div>
+                </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">Auto Resize</TableCell>
-                <TableCell className="text-center">✅</TableCell>
-                <TableCell className="text-center">⚠️</TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <CheckIcon className="size-4" />
+                  </div>
+                </TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <XIcon className="size-4" />
+                  </div>
+                </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">Clean UI/UX</TableCell>
-                <TableCell className="text-center">✅</TableCell>
-                <TableCell className="text-center">⚠️</TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <CheckIcon className="size-4" />
+                  </div>
+                </TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <XIcon className="size-4" />
+                  </div>
+                </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">Quick Baker Compatible</TableCell>
-                <TableCell className="text-center">✅</TableCell>
-                <TableCell className="text-center"></TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <CheckIcon className="size-4" />
+                  </div>
+                </TableCell>
+                <TableCell></TableCell>
               </TableRow>
             </TableBody>
           </Table>

@@ -10,6 +10,7 @@ import { Metadata } from "next";
 import Affiliate from "@/components/affiliate";
 import { Coupon, showCoupon } from "@/components/coupon";
 import { cn } from "@/lib/utils";
+import { CheckIcon, XIcon } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Blender to Godot - Blender Addon",
@@ -53,48 +54,120 @@ export default function BlendertoGodotPage() {
             <TableBody>
               <TableRow>
                 <TableCell className="font-medium">Object Export</TableCell>
-                <TableCell className="text-center">✅</TableCell>
-                <TableCell className="text-center">✅</TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <CheckIcon className="size-4" />
+                  </div>
+                </TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <CheckIcon className="size-4" />
+                  </div>
+                </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">Collection Export</TableCell>
-                <TableCell className="text-center">✅</TableCell>
-                <TableCell className="text-center">⚠️</TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <CheckIcon className="size-4" />
+                  </div>
+                </TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <XIcon className="size-4" />
+                  </div>
+                </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">Collision Export</TableCell>
-                <TableCell className="text-center">✅</TableCell>
-                <TableCell className="text-center">⚠️</TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <CheckIcon className="size-4" />
+                  </div>
+                </TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <XIcon className="size-4" />
+                  </div>
+                </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">Component Export</TableCell>
-                <TableCell className="text-center">✅</TableCell>
-                <TableCell className="text-center">⚠️</TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <CheckIcon className="size-4" />
+                  </div>
+                </TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <XIcon className="size-4" />
+                  </div>
+                </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">Animation Export</TableCell>
-                <TableCell className="text-center">✅</TableCell>
-                <TableCell className="text-center">⚠️</TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <CheckIcon className="size-4" />
+                  </div>
+                </TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <XIcon className="size-4" />
+                  </div>
+                </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">Rename Tool</TableCell>
-                <TableCell className="text-center">✅</TableCell>
-                <TableCell className="text-center">⚠️</TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <CheckIcon className="size-4" />
+                  </div>
+                </TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <XIcon className="size-4" />
+                  </div>
+                </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">Export to Godot</TableCell>
-                <TableCell className="text-center">✅</TableCell>
-                <TableCell className="text-center">⚠️</TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <CheckIcon className="size-4" />
+                  </div>
+                </TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <XIcon className="size-4" />
+                  </div>
+                </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">Export to Disk</TableCell>
-                <TableCell className="text-center">✅</TableCell>
-                <TableCell className="text-center">⚠️</TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <CheckIcon className="size-4" />
+                  </div>
+                </TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <XIcon className="size-4" />
+                  </div>
+                </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">Clean UI/UX</TableCell>
-                <TableCell className="text-center">✅</TableCell>
-                <TableCell className="text-center">⚠️</TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <CheckIcon className="size-4" />
+                  </div>
+                </TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <XIcon className="size-4" />
+                  </div>
+                </TableCell>
               </TableRow>
             </TableBody>
           </Table>

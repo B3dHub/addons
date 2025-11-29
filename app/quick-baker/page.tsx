@@ -9,6 +9,7 @@ import { Metadata } from "next";
 import Affiliate from "@/components/affiliate";
 import { Coupon, showCoupon } from "@/components/coupon";
 import { cn } from "@/lib/utils";
+import { CheckIcon, XIcon } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Quick Baker - Blender Addon",
@@ -53,93 +54,237 @@ export default function QuickBakerPage() {
             <TableBody>
               <TableRow>
                 <TableCell className="font-medium">Object Bake</TableCell>
-                <TableCell className="text-center">✅</TableCell>
-                <TableCell className="text-center">✅</TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <CheckIcon className="size-4" />
+                  </div>
+                </TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <CheckIcon className="size-4" />
+                  </div>
+                </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">High-to-Low Poly Bake</TableCell>
-                <TableCell className="text-center">✅</TableCell>
-                <TableCell className="text-center">✅</TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <CheckIcon className="size-4" />
+                  </div>
+                </TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <CheckIcon className="size-4" />
+                  </div>
+                </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">Single Texture Set</TableCell>
-                <TableCell className="text-center">✅</TableCell>
-                <TableCell className="text-center">⚠️</TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <CheckIcon className="size-4" />
+                  </div>
+                </TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <XIcon className="size-4" />
+                  </div>
+                </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">Multiple Texture Set</TableCell>
-                <TableCell className="text-center">✅</TableCell>
-                <TableCell className="text-center">⚠️</TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <CheckIcon className="size-4" />
+                  </div>
+                </TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <XIcon className="size-4" />
+                  </div>
+                </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">Auto Cage</TableCell>
-                <TableCell className="text-center">✅</TableCell>
-                <TableCell className="text-center">⚠️</TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <CheckIcon className="size-4" />
+                  </div>
+                </TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <XIcon className="size-4" />
+                  </div>
+                </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">Auto UDIM Bake</TableCell>
-                <TableCell className="text-center">✅</TableCell>
-                <TableCell className="text-center">⚠️</TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <CheckIcon className="size-4" />
+                  </div>
+                </TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <XIcon className="size-4" />
+                  </div>
+                </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">Channel Packing</TableCell>
-                <TableCell className="text-center">✅</TableCell>
-                <TableCell className="text-center">⚠️</TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <CheckIcon className="size-4" />
+                  </div>
+                </TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <XIcon className="size-4" />
+                  </div>
+                </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">Vertex Color for Material ID</TableCell>
-                <TableCell className="text-center">✅</TableCell>
-                <TableCell className="text-center">⚠️</TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <CheckIcon className="size-4" />
+                  </div>
+                </TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <XIcon className="size-4" />
+                  </div>
+                </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">Existing Texture Bake</TableCell>
-                <TableCell className="text-center">✅</TableCell>
-                <TableCell className="text-center">⚠️</TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <CheckIcon className="size-4" />
+                  </div>
+                </TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <XIcon className="size-4" />
+                  </div>
+                </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">Map Preview</TableCell>
-                <TableCell className="text-center">✅</TableCell>
-                <TableCell className="text-center">⚠️</TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <CheckIcon className="size-4" />
+                  </div>
+                </TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <XIcon className="size-4" />
+                  </div>
+                </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">Material Bake</TableCell>
-                <TableCell className="text-center">✅</TableCell>
-                <TableCell className="text-center">⚠️</TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <CheckIcon className="size-4" />
+                  </div>
+                </TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <XIcon className="size-4" />
+                  </div>
+                </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">Node Bake</TableCell>
-                <TableCell className="text-center">✅</TableCell>
-                <TableCell className="text-center">⚠️</TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <CheckIcon className="size-4" />
+                  </div>
+                </TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <XIcon className="size-4" />
+                  </div>
+                </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">UDIM Node Bake</TableCell>
-                <TableCell className="text-center">✅</TableCell>
-                <TableCell className="text-center">⚠️</TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <CheckIcon className="size-4" />
+                  </div>
+                </TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <XIcon className="size-4" />
+                  </div>
+                </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">Post Bake Options</TableCell>
-                <TableCell className="text-center">✅</TableCell>
-                <TableCell className="text-center">⚠️</TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <CheckIcon className="size-4" />
+                  </div>
+                </TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <XIcon className="size-4" />
+                  </div>
+                </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">50 Unique Maps</TableCell>
-                <TableCell className="text-center">✅</TableCell>
-                <TableCell className="text-center">⚠️</TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <CheckIcon className="size-4" />
+                  </div>
+                </TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <XIcon className="size-4" />
+                  </div>
+                </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">Map Presets</TableCell>
-                <TableCell className="text-center">✅</TableCell>
-                <TableCell className="text-center">⚠️</TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <CheckIcon className="size-4" />
+                  </div>
+                </TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <XIcon className="size-4" />
+                  </div>
+                </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">Bake Presets</TableCell>
-                <TableCell className="text-center">✅</TableCell>
-                <TableCell className="text-center">⚠️</TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <CheckIcon className="size-4" />
+                  </div>
+                </TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <XIcon className="size-4" />
+                  </div>
+                </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">Clean UI/UX</TableCell>
-                <TableCell className="text-center">✅</TableCell>
-                <TableCell className="text-center">⚠️</TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <CheckIcon className="size-4" />
+                  </div>
+                </TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <XIcon className="size-4" />
+                  </div>
+                </TableCell>
               </TableRow>
             </TableBody>
           </Table>
@@ -176,7 +321,7 @@ export default function QuickBakerPage() {
             height={325}
             className="rounded w-full"
             unoptimized
-            />
+          />
         </CardContent>
       </Card>
 
@@ -193,7 +338,7 @@ export default function QuickBakerPage() {
             height={325}
             className="rounded w-full"
             unoptimized
-            />
+          />
         </CardContent>
       </Card>
 
@@ -210,7 +355,7 @@ export default function QuickBakerPage() {
             height={325}
             className="rounded w-full"
             unoptimized
-            />
+          />
         </CardContent>
       </Card>
 
@@ -227,7 +372,7 @@ export default function QuickBakerPage() {
             height={325}
             className="rounded w-full"
             unoptimized
-            />
+          />
         </CardContent>
       </Card>
 
@@ -244,7 +389,7 @@ export default function QuickBakerPage() {
             height={325}
             className="rounded w-full"
             unoptimized
-            />
+          />
         </CardContent>
       </Card>
 
@@ -261,7 +406,7 @@ export default function QuickBakerPage() {
             height={325}
             className="rounded w-full"
             unoptimized
-            />
+          />
         </CardContent>
       </Card>
 
@@ -278,7 +423,7 @@ export default function QuickBakerPage() {
             height={325}
             className="rounded w-full"
             unoptimized
-            />
+          />
         </CardContent>
       </Card>
 
@@ -312,7 +457,7 @@ export default function QuickBakerPage() {
             height={325}
             className="rounded w-full"
             unoptimized
-            />
+          />
         </CardContent>
       </Card>
 
@@ -346,7 +491,7 @@ export default function QuickBakerPage() {
             height={325}
             className="rounded w-full"
             unoptimized
-            />
+          />
         </CardContent>
       </Card>
 
@@ -363,7 +508,7 @@ export default function QuickBakerPage() {
             height={325}
             className="rounded w-full"
             unoptimized
-            />
+          />
         </CardContent>
       </Card>
 
@@ -389,12 +534,17 @@ export default function QuickBakerPage() {
           <CardTitle>50 Unique Maps</CardTitle>
           <CardDescription>Bake 50 unique maps</CardDescription>
         </CardHeader>
-        <CardContent>
-        </CardContent>
+        <CardContent></CardContent>
       </Card>
 
       <Card>
-          <Image className="rounded w-full" src="/addons/images/quick-baker/maps.png" alt="Collection of 50 unique bake map types available" width={600} height={325} />
+        <Image
+          className="rounded w-full"
+          src="/addons/images/quick-baker/maps.png"
+          alt="Collection of 50 unique bake map types available"
+          width={600}
+          height={325}
+        />
         <CardHeader>
           <CardTitle>Limitations</CardTitle>
           <CardDescription></CardDescription>
