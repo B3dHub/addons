@@ -26,7 +26,11 @@ export default function MegascansBridgePage() {
         <CardContent>
           <CardDescription>
             Megascans Bridge is a Blender add-on that imports Quixel Megascans assets downloaded via{" "}
-            <Link className="text-foreground hover:underline" href={"https://d2shgxa8i058x8.cloudfront.net/bridge/win/Bridge.exe"} target="_blank">
+            <Link
+              className="text-foreground hover:underline"
+              href={"https://d2shgxa8i058x8.cloudfront.net/bridge/win/Bridge.exe"}
+              target="_blank"
+            >
               Quixel Bridge
             </Link>{" "}
             directly from the Blender interface. The downloaded assets will be sorted by type, category and subcategory.
@@ -88,6 +92,12 @@ export default function MegascansBridgePage() {
               <TableRow>
                 <TableCell className="font-medium">Apply Imported Materials</TableCell>
               </TableRow>
+              <TableRow>
+                <TableCell className="font-medium">Import Other Asset Types from Shader Editor</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium">Import Brushes from Texture Paint Mode</TableCell>
+              </TableRow>
             </TableBody>
             {/* <TableCaption>
               More features in the future based on requests.
@@ -107,7 +117,11 @@ export default function MegascansBridgePage() {
               <TableRow>
                 <TableCell className="text-muted-foreground">
                   Download{" "}
-                  <Link className="text-foreground underline" href={"https://d2shgxa8i058x8.cloudfront.net/bridge/win/Bridge.exe"} target="_blank">
+                  <Link
+                    className="text-foreground underline"
+                    href={"https://d2shgxa8i058x8.cloudfront.net/bridge/win/Bridge.exe"}
+                    target="_blank"
+                  >
                     Quixel Bridge
                   </Link>{" "}
                   and download the Megascans assets through it.
