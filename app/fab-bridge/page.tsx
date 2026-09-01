@@ -12,12 +12,12 @@ import { Coupon, showCoupon } from "@/components/coupon";
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: "Megascans Bridge - Blender Addon",
+  title: "Fab Bridge - Blender Addon",
   description:
-    "Import Quixel Megascans assets downloaded via Quixel Bridge directly into Blender. Browse with thumbnails, search, and filters, import 3D assets, plants, surfaces, decals, atlases, and brushes with automatic PBR materials and LOD groups. The add-on does not support online downloading and works only with assets already downloaded to your local library.",
+    "Import Fab.com assets downloaded through the Epic Games Launcher directly into Blender. Browse, preview, and import 3D assets, materials, plants, decals, and brushes from your downloaded Fab library. The add-on does not support online downloading.",
 };
 
-export default function MegascansBridgePage() {
+export default function FabBridgePage() {
   return (
     <div className="flex flex-col justify-center mx-auto gap-5 max-w-[832px]">
       <Card>
@@ -26,13 +26,13 @@ export default function MegascansBridgePage() {
         </CardHeader>
         <CardContent>
           <CardDescription>
-            Megascans Bridge is a Blender add-on that imports Quixel Megascans assets downloaded via{" "}
+            Fab Bridge is a Blender add-on that imports Quixel Megascans Fab assets downloaded through the{" "}
             <Link
               className="text-foreground hover:underline"
-              href={"https://d2shgxa8i058x8.cloudfront.net/bridge/win/Bridge.exe"}
+              href={"https://www.fab.com/sellers/Quixel%20Megascans"}
               target="_blank"
             >
-              Quixel Bridge
+              Epic Games Launcher
             </Link>{" "}
             directly from the Blender interface. The downloaded assets will be sorted by type, category and subcategory.
           </CardDescription>
@@ -40,16 +40,16 @@ export default function MegascansBridgePage() {
         <CardContent>
           <Badge variant="secondary">
             <CardDescription>
-              Disclaimer: Users who have <span>claimed</span> or <span>purchased</span> Megascans assets through{" "}
-              <span>Quixel Bridge</span> and downloaded them locally can use this add-on.
+              Disclaimer: Users who have <span>claimed</span> or <span>purchased</span> Quixel Megascans Fab assets
+              through the <span>Epic Games Launcher</span> and downloaded them locally can use this add-on.
             </CardDescription>
           </Badge>
         </CardContent>
         <CardContent>
           <Badge variant="secondary">
             <CardDescription>
-              Note: The add-on does not download assets from the internet. It only imports Quixel Megascans assets that
-              have already been downloaded to your local library.
+              Note: The add-on does not download assets from the internet. It only imports Quixel Megascans Fab assets
+              that have already been downloaded to your local library.
             </CardDescription>
           </Badge>
         </CardContent>
@@ -82,7 +82,10 @@ export default function MegascansBridgePage() {
                 <TableCell className="font-medium">Import Plants</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">Import Surfaces</TableCell>
+                <TableCell className="font-medium">Import Materials</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium">Import Decals</TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">Import LODs</TableCell>
@@ -107,29 +110,29 @@ export default function MegascansBridgePage() {
       <Card>
         <CardHeader>
           <CardTitle>Workflow</CardTitle>
-          <CardDescription>How to use Megascans Bridge?</CardDescription>
+          <CardDescription>How to use Fab Bridge?</CardDescription>
         </CardHeader>
         <CardContent>
           <Table>
             <TableBody>
               <TableRow>
                 <TableCell className="text-muted-foreground">
-                  Download{" "}
+                  Download the Fab assets through the{" "}
                   <Link
                     className="text-foreground underline"
-                    href={"https://d2shgxa8i058x8.cloudfront.net/bridge/win/Bridge.exe"}
+                    href={"https://store.epicgames.com/en-US/download"}
                     target="_blank"
                   >
-                    Quixel Bridge
-                  </Link>{" "}
-                  and download the Megascans assets through it.
+                    Epic Games Launcher
+                  </Link>
+                  .
                 </TableCell>
               </TableRow>
 
               <TableRow>
                 <TableCell className="text-muted-foreground">
-                  Once you download the Megascans assets, they will be saved in the default path{" "}
-                  <pre className="text-foreground">"/Documents/Megascans Library/Downloaded/"</pre>
+                  Once you download the Fab assets, they will be saved in the default path{" "}
+                  <pre className="text-foreground">"C:\ProgramData\Epic\EpicGamesLauncher\VaultCache\FabLibrary"</pre>
                 </TableCell>
               </TableRow>
 
@@ -142,7 +145,7 @@ export default function MegascansBridgePage() {
               <TableRow>
                 <TableCell className="text-muted-foreground">
                   After adding the path, the assets will appear in the <span>Sidebar(n-panel)</span> under the{" "}
-                  <span>M-Bridge</span> tab.
+                  <span>Fab Bridge</span> tab.
                 </TableCell>
               </TableRow>
 
@@ -163,8 +166,8 @@ export default function MegascansBridgePage() {
         </CardHeader>
         <CardContent>
           <Image
-            src="/addons/images/megascans-bridge/v2/grid_view.gif"
-            alt="Grid view displaying Megascans assets in a thumbnail grid layout"
+            src="/addons/images/fab-bridge/grid_view.gif"
+            alt="Grid view displaying Fab assets in a thumbnail grid layout"
             width={600}
             height={325}
             className="rounded w-full"
@@ -180,8 +183,8 @@ export default function MegascansBridgePage() {
         </CardHeader>
         <CardContent>
           <Image
-            src="/addons/images/megascans-bridge/v2/asset_search.gif"
-            alt="Searching for Megascans assets by name using the search bar"
+            src="/addons/images/fab-bridge/asset_search.gif"
+            alt="Searching for Fab assets by name using the search bar"
             width={600}
             height={325}
             className="rounded w-full"
@@ -197,7 +200,7 @@ export default function MegascansBridgePage() {
         </CardHeader>
         <CardContent>
           <Image
-            src="/addons/images/megascans-bridge/v2/asset_details.gif"
+            src="/addons/images/fab-bridge/asset_details.gif"
             alt="Viewing detailed asset information including name, polycount, and resolution"
             width={600}
             height={325}
@@ -214,8 +217,8 @@ export default function MegascansBridgePage() {
         </CardHeader>
         <CardContent>
           <Image
-            src="/addons/images/megascans-bridge/v2/pagination.gif"
-            alt="Navigating through multiple pages of Megascans assets"
+            src="/addons/images/fab-bridge/pagination.gif"
+            alt="Navigating through multiple pages of Fab assets"
             width={600}
             height={325}
             className="rounded w-full"
@@ -231,21 +234,8 @@ export default function MegascansBridgePage() {
         </CardHeader>
         <CardContent>
           <Image
-            src="/addons/images/megascans-bridge/v2/import_assets.gif"
-            alt="Importing 3D Megascans assets with LODs into Blender"
-            width={600}
-            height={325}
-            className="rounded w-full"
-            unoptimized
-          />
-        </CardContent>
-        <CardContent>
-          <CardDescription>LOD Groups are based on Geometry Nodes.</CardDescription>
-        </CardContent>
-        <CardContent>
-          <Image
-            src="/addons/images/megascans-bridge/v2/lod_group.gif"
-            alt="LOD groups created using Geometry Nodes showing different detail levels"
+            src="/addons/images/fab-bridge/import_assets.gif"
+            alt="Importing 3D Fab assets with LODs into Blender"
             width={600}
             height={325}
             className="rounded w-full"
@@ -261,8 +251,21 @@ export default function MegascansBridgePage() {
         </CardHeader>
         <CardContent>
           <Image
-            src="/addons/images/megascans-bridge/v2/import_plants.gif"
-            alt="Importing 3D plant assets with LODs from Megascans library"
+            src="/addons/images/fab-bridge/import_plants.gif"
+            alt="Importing 3D plant assets with LODs from the Fab library"
+            width={600}
+            height={325}
+            className="rounded w-full"
+            unoptimized
+          />
+        </CardContent>
+        <CardContent>
+          <CardDescription>LOD Groups are based on Geometry Nodes.</CardDescription>
+        </CardContent>
+        <CardContent>
+          <Image
+            src="/addons/images/fab-bridge/import_assets_lods.gif"
+            alt="Importing Fab assets with LODs and creating LOD groups"
             width={600}
             height={325}
             className="rounded w-full"
@@ -273,13 +276,13 @@ export default function MegascansBridgePage() {
 
       <Card>
         <CardHeader>
-          <CardTitle>Import Surfaces</CardTitle>
-          <CardDescription>You can import surface textures as materials and node groups.</CardDescription>
+          <CardTitle>Import Materials</CardTitle>
+          <CardDescription>You can import textures as materials and node groups.</CardDescription>
         </CardHeader>
         <CardContent>
           <Image
-            src="/addons/images/megascans-bridge/v2/import_surfaces.gif"
-            alt="Importing Megascans surface textures as materials"
+            src="/addons/images/fab-bridge/import_materials.gif"
+            alt="Importing Fab materials into Blender"
             width={600}
             height={325}
             className="rounded w-full"
@@ -288,7 +291,7 @@ export default function MegascansBridgePage() {
         </CardContent>
         <CardContent>
           <Image
-            src="/addons/images/megascans-bridge/v2/import_node_group.gif"
+            src="/addons/images/fab-bridge/import_node_group.gif"
             alt="Importing surface textures as shader node groups in Blender"
             width={600}
             height={325}
@@ -305,15 +308,15 @@ export default function MegascansBridgePage() {
         <CardContent className="flex flex-col gap-2">
           <CardDescription>
             This add-on is an independent tool and is not affiliated with, authorized, sponsored, or otherwise approved
-            by Epic Games, Inc. or Quixel.
+            by Epic Games, Inc. or Fab.
           </CardDescription>
           <CardDescription>
-            All Megascans assets and content remain the property of Epic Games, Inc. Quixel, and are subject to their
-            terms of use and licensing agreements.
+            All Fab assets and content remain the property of Epic Games, Inc. and are subject to their terms of use and
+            licensing agreements.
           </CardDescription>
           <CardDescription>
-            © 2025, Epic Games, Inc. Quixel, Megascans, and Unreal Engine are trademarks or registered trademarks of
-            Epic Games, Inc. in the USA and elsewhere.
+            © 2025, Epic Games, Inc. Fab, Unreal Engine, and Fortnite are trademarks or registered trademarks of Epic
+            Games, Inc. in the USA and elsewhere.
           </CardDescription>
         </CardContent>
       </Card>
@@ -321,7 +324,7 @@ export default function MegascansBridgePage() {
       <Support>
         <CardFooter className="space-x-4">
           <Link
-            href="https://discord.com/channels/959138815602229389/1327353624644288604"
+            href="https://discord.com/channels/959138815602229389/1543765958475255869"
             className={cn(buttonVariants({ variant: "outline" }))}
             target="_blank"
           >

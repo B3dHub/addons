@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { Button, buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
 import Support from "@/components/support";
 import OtherAddons from "@/components/other-addons";
@@ -13,7 +13,8 @@ import { CheckIcon, XIcon } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Quick Baker - Blender Addon",
-  description: "Quick Baker - Blender Addon",
+  description:
+    "PBR texture baking addon for Blender. Bake multiple objects and materials into single or multiple texture sets with auto cage, auto UDIM, node bake, and realtime map preview.",
 };
 
 export default function QuickBakerPage() {
@@ -43,7 +44,6 @@ export default function QuickBakerPage() {
         </CardHeader>
         <CardContent>
           <Table>
-            {/* <TableCaption>More features in the future based on requests.</TableCaption> */}
             <TableHeader>
               <TableRow>
                 <TableHead>Features</TableHead>
@@ -461,23 +461,6 @@ export default function QuickBakerPage() {
         </CardContent>
       </Card>
 
-      {/* <Card>
-        <CardHeader>
-          <CardTitle>Material Bake</CardTitle>
-          <CardDescription>Bake material onto plane.</CardDescription>
-        </CardHeader>
-        <CardContent>
-          <Image
-          src="/addons/images/quick-baker/node_bake.gif"
-          alt=""
-          width={600}
-          height={325}
-          className="rounded w-full"
-            
-          />
-        </CardContent>
-      </Card> */}
-
       <Card>
         <CardHeader>
           <CardTitle>Node Bake</CardTitle>
@@ -548,13 +531,6 @@ export default function QuickBakerPage() {
 
       <Support>
         <CardFooter className="space-x-4">
-          <Link
-            href="https://b3dhub.github.io/quick-baker-docs/"
-            className={cn(buttonVariants({ variant: "outline" }))}
-            target="_blank"
-          >
-            Documentation
-          </Link>
           <Link
             href="https://discord.com/channels/959138815602229389/1013054795562614794"
             className={cn(buttonVariants({ variant: "outline" }))}

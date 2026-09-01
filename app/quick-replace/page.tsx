@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { Button, buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
 import Support from "@/components/support";
 import OtherAddons from "@/components/other-addons";
@@ -12,7 +12,8 @@ import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "Quick Replace - Blender Addon",
-  description: "Quick Replace - Blender Addon",
+  description:
+    "Replace the mesh of selected objects with a particular object mesh. Organize objects into categories and cycle through them with hotkeys.",
 };
 
 export default function QuickReplacePage() {
@@ -24,10 +25,9 @@ export default function QuickReplacePage() {
         </CardHeader>
         <CardContent>
           <CardDescription>
-            Quick Replace is an exceptionally intuitive and powerful addon that enables you to seamlessly replace
-            selected objects from the object list of an active category. It's an invaluable tool for blocking out
-            layouts for game level design and more. This addon is a game-changer for any 3D artist or game developer,
-            promising to make your object replacement process more efficient and streamlined.
+            Quick Replace is a Blender addon that replaces the mesh of selected objects with a particular object
+            mesh. Objects are organized into categories and lists, and you can cycle through them with convenient
+            hotkeys. It's an invaluable tool for blocking out layouts for game level design and more.
           </CardDescription>
         </CardContent>
         {showCoupon && <Coupon />}
@@ -36,20 +36,9 @@ export default function QuickReplacePage() {
       <Card>
         <CardHeader>
           <CardTitle>Features</CardTitle>
-          {/* <CardDescription>Quick Replace vs Others</CardDescription> */}
         </CardHeader>
         <CardContent>
           <Table>
-            {/* <TableCaption>
-              More features in the future based on requests.
-            </TableCaption> */}
-            <TableHeader>
-              {/* <TableRow>
-                <TableHead>Features</TableHead>
-                <TableHead className="text-center">Quick Replace</TableHead>
-                <TableHead className="text-center">Others</TableHead>
-              </TableRow> */}
-            </TableHeader>
             <TableBody>
               <TableRow>
                 <TableCell className="font-medium">Categories List</TableCell>
@@ -69,9 +58,6 @@ export default function QuickReplacePage() {
         </CardHeader>
         <CardContent>
           <Table>
-            {/* <TableCaption>
-              More features in the future based on requests.
-            </TableCaption> */}
             <TableHeader>
               <TableRow>
                 <TableHead>Hotkeys</TableHead>

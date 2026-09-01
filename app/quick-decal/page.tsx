@@ -1,7 +1,7 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Badge } from "@/components/ui/badge";
-import { Button, buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
 import Support from "@/components/support";
 import OtherAddons from "@/components/other-addons";
@@ -14,7 +14,8 @@ import { CheckIcon, XIcon } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Quick Decal - Blender Addon",
-  description: "Quick Decal - Blender Addon",
+  description:
+    "Add decals to your models without extra geometry using a controller empty that blends with your existing material. Supports image and PBR decals, Quixel Megascans decals, layers, and multiple objects in EEVEE and Cycles.",
 };
 
 export default function QuickDecalPage() {
@@ -54,9 +55,6 @@ export default function QuickDecalPage() {
         </CardHeader>
         <CardContent>
           <Table>
-            {/* <TableCaption>
-              More features in the future based on requests.
-            </TableCaption> */}
             <TableHeader>
               <TableRow>
                 <TableHead>Features</TableHead>
@@ -461,13 +459,6 @@ export default function QuickDecalPage() {
 
       <Support>
         <CardFooter className="space-x-4">
-          <Link
-            href="https://superhivemarket.com/products/quick-decal/docs"
-            className={cn(buttonVariants({ variant: "outline" }))}
-            target="_blank"
-          >
-            Documentation
-          </Link>
           <Link
             href="https://discord.com/channels/959138815602229389/1223542106539167754"
             className={cn(buttonVariants({ variant: "outline" }))}

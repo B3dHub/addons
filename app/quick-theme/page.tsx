@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHeader, TableRow } from "@/components/ui/table";
-import { Button, buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
 import Support from "@/components/support";
 import OtherAddons from "@/components/other-addons";
@@ -12,7 +12,8 @@ import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "Quick Theme - Blender Addon",
-  description: "Quick Theme - Blender Addon",
+  description:
+    "Consolidate all Blender theme settings into one panel. Craft a theme with a single color slider, theme the Interface, Viewport, Outliner, and Annotations, or change the theme automatically with Auto Theme.",
 };
 
 export default function QuickThemePage() {
@@ -38,20 +39,9 @@ export default function QuickThemePage() {
       <Card>
         <CardHeader>
           <CardTitle>Features</CardTitle>
-          {/* <CardDescription>Quick Theme vs Others</CardDescription> */}
         </CardHeader>
         <CardContent>
           <Table>
-            {/* <TableCaption>
-              More features in the future based on requests.
-            </TableCaption> */}
-            <TableHeader>
-              {/* <TableRow>
-                <TableHead>Features</TableHead>
-                <TableHead className="text-center">Quick Theme</TableHead>
-                <TableHead className="text-center">Others</TableHead>
-              </TableRow> */}
-            </TableHeader>
             <TableBody>
               <TableRow>
                 <TableCell className="font-medium">Auto Theme</TableCell>
@@ -64,6 +54,9 @@ export default function QuickThemePage() {
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">Outliner Theme</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium">Annotations Color</TableCell>
               </TableRow>
             </TableBody>
           </Table>

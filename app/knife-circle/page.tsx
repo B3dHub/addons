@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { Button, buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
 import Support from "@/components/support";
 import OtherAddons from "@/components/other-addons";
@@ -9,7 +9,6 @@ import { Metadata } from "next";
 import Affiliate from "@/components/affiliate";
 import { Coupon, showCoupon } from "@/components/coupon";
 import { cn } from "@/lib/utils";
-import { Badge } from "@/components/ui/badge";
 
 export const metadata: Metadata = {
   title: "Knife Circle - Blender Addon",
@@ -30,13 +29,6 @@ export default function KnifeCirclePage() {
             in both Object and Edit modes. Perfect for creating clean geometric cuts with accuracy and speed.
           </CardDescription>
         </CardContent>
-        {/* <CardContent>
-          <Badge variant="secondary">
-            <CardDescription>
-              Launch Offer: Get the add-on for <span>25%</span> off, valid till Nov 28, 2025
-            </CardDescription>
-          </Badge>
-        </CardContent> */}
         {showCoupon && <Coupon />}
       </Card>
 

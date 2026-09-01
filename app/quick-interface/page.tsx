@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { Button, buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
 import Support from "@/components/support";
 import OtherAddons from "@/components/other-addons";
@@ -12,7 +12,8 @@ import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "Quick Interface - Blender Addon",
-  description: "Quick Interface - Blender Addon",
+  description:
+    "Manage Blender workspace areas with hotkeys: switch, split, duplicate, join, and swap areas using convenient pie menus.",
 };
 
 export default function QuickInterfacePage() {
@@ -36,20 +37,9 @@ export default function QuickInterfacePage() {
       <Card>
         <CardHeader>
           <CardTitle>Features</CardTitle>
-          {/* <CardDescription>Quick Interface vs Others</CardDescription> */}
         </CardHeader>
         <CardContent>
           <Table>
-            {/* <TableCaption>
-              More features will be added in the future based on requests.
-            </TableCaption> */}
-            <TableHeader>
-              {/* <TableRow>
-                <TableHead>Features</TableHead>
-                <TableHead className="text-center">Quick Interface</TableHead>
-                <TableHead className="text-center">Others</TableHead>
-              </TableRow> */}
-            </TableHeader>
             <TableBody>
               <TableRow>
                 <TableCell className="font-medium">Switch Area</TableCell>
@@ -78,9 +68,6 @@ export default function QuickInterfacePage() {
         </CardHeader>
         <CardContent>
           <Table>
-            {/* <TableCaption>
-              More features in the future based on requests.
-            </TableCaption> */}
             <TableHeader>
               <TableRow>
                 <TableHead>Hotkeys</TableHead>

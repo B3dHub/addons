@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { Button, buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
 import Support from "@/components/support";
 import OtherAddons from "@/components/other-addons";
@@ -12,7 +12,8 @@ import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "Quick Measure - Blender Addon",
-  description: "Quick Measure - Blender Addon",
+  description:
+    "Measure an object's length in any mode with multiple measurements, snapping, saving, axis restriction, and vertex locking — all from convenient ALT-based hotkeys.",
 };
 
 export default function QuickMeasurePage() {
@@ -36,20 +37,9 @@ export default function QuickMeasurePage() {
       <Card>
         <CardHeader>
           <CardTitle>Features</CardTitle>
-          {/* <CardDescription>Quick Measure vs Others</CardDescription> */}
         </CardHeader>
         <CardContent>
           <Table>
-            {/* <TableCaption>
-              More features in the future based on requests.
-            </TableCaption> */}
-            <TableHeader>
-              {/* <TableRow>
-                <TableHead>Features</TableHead>
-                <TableHead className="text-center">Quick Measure</TableHead>
-                <TableHead className="text-center">Others</TableHead>
-              </TableRow> */}
-            </TableHeader>
             <TableBody>
               <TableRow>
                 <TableCell className="font-medium">Quick Measurements</TableCell>

@@ -1,7 +1,6 @@
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import { Button, buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
 import Support from "@/components/support";
 import OtherAddons from "@/components/other-addons";
@@ -9,12 +8,12 @@ import Image from "next/image";
 import { Metadata } from "next";
 import Affiliate from "@/components/affiliate";
 import { Coupon, showCoupon } from "@/components/coupon";
-import { cn } from "@/lib/utils";
 import { CheckIcon, XIcon } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Blender to Godot - Blender Addon",
-  description: "Blender to Godot - Blender Addon",
+  description:
+    "Export objects, animations, collisions, and components to Godot Engine with just a few clicks. Includes auto and custom collisions, NavMesh, Occluder, RigidBody, and Vehicle components, and a rename tool.",
 };
 
 export default function BlendertoGodotPage() {
@@ -43,7 +42,6 @@ export default function BlendertoGodotPage() {
         </CardHeader>
         <CardContent>
           <Table>
-            {/* <TableCaption>More features in the future based on requests.</TableCaption> */}
             <TableHeader>
               <TableRow>
                 <TableHead>Features</TableHead>
@@ -242,8 +240,8 @@ export default function BlendertoGodotPage() {
                 />
               </CarouselItem>
             </CarouselContent>
-            <CarouselPrevious className="left-[-16px]" />
-            <CarouselNext className="right-[-16px]" />
+            <CarouselPrevious className="-left-4" />
+            <CarouselNext className="-right-4" />
           </Carousel>
         </CardContent>
         <CardHeader>
@@ -294,8 +292,8 @@ export default function BlendertoGodotPage() {
                 />
               </CarouselItem>
             </CarouselContent>
-            <CarouselPrevious className="left-[-16px]" />
-            <CarouselNext className="right-[-16px]" />
+            <CarouselPrevious className="-left-4" />
+            <CarouselNext className="-right-4" />
           </Carousel>
         </CardContent>
         <CardHeader>
@@ -344,8 +342,8 @@ export default function BlendertoGodotPage() {
                 />
               </CarouselItem>
             </CarouselContent>
-            <CarouselPrevious className="left-[-16px]" />
-            <CarouselNext className="right-[-16px]" />
+            <CarouselPrevious className="-left-4" />
+            <CarouselNext className="-right-4" />
           </Carousel>
         </CardContent>
         <CardHeader>
@@ -396,8 +394,8 @@ export default function BlendertoGodotPage() {
                 />
               </CarouselItem>
             </CarouselContent>
-            <CarouselPrevious className="left-[-16px]" />
-            <CarouselNext className="right-[-16px]" />
+            <CarouselPrevious className="-left-4" />
+            <CarouselNext className="-right-4" />
           </Carousel>
         </CardContent>
         <CardHeader>
@@ -456,8 +454,8 @@ export default function BlendertoGodotPage() {
                 />
               </CarouselItem>
             </CarouselContent>
-            <CarouselPrevious className="left-[-16px]" />
-            <CarouselNext className="right-[-16px]" />
+            <CarouselPrevious className="-left-4" />
+            <CarouselNext className="-right-4" />
           </Carousel>
         </CardContent>
       </Card>
@@ -667,23 +665,7 @@ export default function BlendertoGodotPage() {
         </CardContent>
       </Card>
 
-      <Support>
-        <CardFooter className="space-x-4">
-          <Link
-            href="https://b3dhub.github.io/blender-to-godot-docs/"
-            className={cn(buttonVariants({ variant: "outline" }))}
-            target="_blank"
-          >
-            Documentation
-          </Link>
-          {/* <Link
-            href="https://discord.com/channels/959138815602229389/959152281058697216"
-            target="_blank"
-          >
-            <Button variant={"secondary"}>Changelogs</Button>
-          </Link> */}
-        </CardFooter>
-      </Support>
+      <Support />
 
       <OtherAddons />
       <Affiliate />

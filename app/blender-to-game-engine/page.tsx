@@ -9,7 +9,8 @@ import { Coupon, showCoupon } from "@/components/coupon";
 
 export const metadata: Metadata = {
   title: "Blender to Game Engine - Blender Addon",
-  description: "Blender To Game Engine (Unity & Unreal) Bundle - Blender Addons",
+  description:
+    "Blender to Game Engine bundle: get Blender to Unity, Blender to Unreal, and Blender to Godot together and export your models to Unity, Unreal, and Godot with one click.",
 };
 
 export default function BlendertoGameEnginePage() {

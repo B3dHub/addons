@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHeader, TableRow } from "@/components/ui/table";
-import { Button, buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
 import Support from "@/components/support";
 import OtherAddons from "@/components/other-addons";
@@ -12,7 +12,8 @@ import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "Camera Preview - Blender Addon",
-  description: "Camera Preview - Blender Addon",
+  description:
+    "Preview your camera view directly in the 3D viewport, similar to Unreal Engine. Supports multiple cameras with adjustable position, offset, and size, plus camera properties in the preview header.",
 };
 
 export default function CameraPreviewPage() {
@@ -37,20 +38,9 @@ export default function CameraPreviewPage() {
       <Card>
         <CardHeader>
           <CardTitle>Features</CardTitle>
-          {/* <CardDescription>Camera Preview vs Others</CardDescription> */}
         </CardHeader>
         <CardContent>
           <Table>
-            {/* <TableCaption>
-              More features in the future based on requests.
-            </TableCaption> */}
-            <TableHeader>
-              {/* <TableRow>
-                <TableHead>Features</TableHead>
-                <TableHead className="text-center">Camera Preview</TableHead>
-                <TableHead className="text-center">Others</TableHead>
-              </TableRow> */}
-            </TableHeader>
             <TableBody>
               <TableRow>
                 <TableCell className="font-medium">Multiple Camera Preview</TableCell>
@@ -63,6 +53,9 @@ export default function CameraPreviewPage() {
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">Preview Size</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium">Camera Properties in Preview Header</TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">Object Hide/Unhide</TableCell>
@@ -157,8 +150,6 @@ export default function CameraPreviewPage() {
             unoptimized
           />
         </CardContent>
-        {/* <CardFooter>
-        </CardFooter> */}
       </Card>
 
       <Card>

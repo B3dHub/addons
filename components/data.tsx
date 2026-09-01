@@ -9,14 +9,21 @@ export const Data = [
   {
     productURL: "/megascans-bridge",
     imageURL: "/addons/images/megascans-bridge/thumb.png",
-    title: "Megascans Bridge v2",
+    title: "Megascans Bridge",
+    price: "$20 - $200",
+    info: "Object",
+  },
+  {
+    productURL: "/fab-bridge",
+    imageURL: "/addons/images/fab-bridge/thumb.png",
+    title: "Fab Bridge",
     price: "$20 - $200",
     info: "Object",
   },
   {
     productURL: "/quick-measure",
     imageURL: "/addons/images/quick-measure/thumb.png",
-    title: "Quick Measure v2",
+    title: "Quick Measure",
     price: "$20 - $200",
     info: "3D View",
   },

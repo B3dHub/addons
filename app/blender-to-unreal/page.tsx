@@ -1,7 +1,7 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import { Button, buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
 import Support from "@/components/support";
 import OtherAddons from "@/components/other-addons";
@@ -14,7 +14,8 @@ import { CheckIcon, XIcon } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Blender to Unreal - Blender Addon",
-  description: "Blender to Unreal - Blender Addon",
+  description:
+    "Export objects, animations, collisions, sockets, and LODs to Unreal Engine with just a few clicks. Includes auto and custom collisions, socket creation, LOD presets, and a rename tool.",
 };
 
 export default function BlendertoUnrealPage() {
@@ -43,7 +44,6 @@ export default function BlendertoUnrealPage() {
         </CardHeader>
         <CardContent>
           <Table>
-            {/* <TableCaption>More features in the future based on requests.</TableCaption> */}
             <TableHeader>
               <TableRow>
                 <TableHead>Features</TableHead>
@@ -281,8 +281,8 @@ export default function BlendertoUnrealPage() {
                 />
               </CarouselItem>
             </CarouselContent>
-            <CarouselPrevious className="left-[-16px]" />
-            <CarouselNext className="right-[-16px]" />
+            <CarouselPrevious className="-left-4" />
+            <CarouselNext className="-right-4" />
           </Carousel>
         </CardContent>
         <CardHeader>
@@ -333,8 +333,8 @@ export default function BlendertoUnrealPage() {
                 />
               </CarouselItem>
             </CarouselContent>
-            <CarouselPrevious className="left-[-16px]" />
-            <CarouselNext className="right-[-16px]" />
+            <CarouselPrevious className="-left-4" />
+            <CarouselNext className="-right-4" />
           </Carousel>
         </CardContent>
         <CardHeader>
@@ -383,8 +383,8 @@ export default function BlendertoUnrealPage() {
                 />
               </CarouselItem>
             </CarouselContent>
-            <CarouselPrevious className="left-[-16px]" />
-            <CarouselNext className="right-[-16px]" />
+            <CarouselPrevious className="-left-4" />
+            <CarouselNext className="-right-4" />
           </Carousel>
         </CardContent>
         <CardHeader>
@@ -425,8 +425,8 @@ export default function BlendertoUnrealPage() {
                 />
               </CarouselItem>
             </CarouselContent>
-            <CarouselPrevious className="left-[-16px]" />
-            <CarouselNext className="right-[-16px]" />
+            <CarouselPrevious className="-left-4" />
+            <CarouselNext className="-right-4" />
           </Carousel>
         </CardContent>
         <CardHeader>
@@ -485,8 +485,8 @@ export default function BlendertoUnrealPage() {
                 />
               </CarouselItem>
             </CarouselContent>
-            <CarouselPrevious className="left-[-16px]" />
-            <CarouselNext className="right-[-16px]" />
+            <CarouselPrevious className="-left-4" />
+            <CarouselNext className="-right-4" />
           </Carousel>
         </CardContent>
       </Card>
@@ -559,8 +559,8 @@ export default function BlendertoUnrealPage() {
                 />
               </CarouselItem>
             </CarouselContent>
-            <CarouselPrevious className="left-[-16px]" />
-            <CarouselNext className="right-[-16px]" />
+            <CarouselPrevious className="-left-4" />
+            <CarouselNext className="-right-4" />
           </Carousel>
         </CardContent>
       </Card>
@@ -733,13 +733,6 @@ export default function BlendertoUnrealPage() {
 
       <Support>
         <CardFooter className="space-x-4">
-          <Link
-            href="https://b3dhub.github.io/blender-to-unreal-docs/"
-            className={cn(buttonVariants({ variant: "outline" }))}
-            target="_blank"
-          >
-            Documentation
-          </Link>
           <Link
             href="https://discord.com/channels/959138815602229389/959152281058697216"
             className={cn(buttonVariants({ variant: "outline" }))}
