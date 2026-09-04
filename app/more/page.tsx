@@ -24,7 +24,7 @@ export default function MoreAddonsPage() {
   return (
     <>
       <style dangerouslySetInnerHTML={{ __html: "body { background: transparent !important; }" }} />
-      <main className="flex flex-col justify-center mx-auto gap-5 max-w-[832px] p-4">
+      <main className="flex flex-col justify-center mx-auto gap-5 max-w-[832px]">
         <Suspense>
           <MoreAddons />
         </Suspense>
