@@ -7,11 +7,11 @@ export default function OtherAddons({ active }: { active?: boolean }) {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Other Addons</CardTitle>
-        <CardDescription>Other addons you might like.</CardDescription>
+        <CardTitle>Other Add-ons</CardTitle>
+        <CardDescription>Other add-ons you might like.</CardDescription>
       </CardHeader>
       <CardContent>
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 justify-items-center">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 justify-items-center">
           {Data.map((item, index) => (
             <Link
               href={`https://superhivemarket.com/products${item.productURL}`}
