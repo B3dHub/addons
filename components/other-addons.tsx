@@ -3,7 +3,8 @@ import { Data } from "./data";
 import Link from "next/link";
 import Image from "next/image";
 
-export default function OtherAddons({ active }: { active?: boolean }) {
+export default function OtherAddons({ active, refParam }: { active?: boolean; refParam?: string }) {
+  const refQuery = refParam ? `?ref=${encodeURIComponent(refParam)}` : "";
   return (
     <Card>
       <CardHeader>
@@ -14,7 +15,7 @@ export default function OtherAddons({ active }: { active?: boolean }) {
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 justify-items-center">
           {Data.map((item, index) => (
             <Link
-              href={`https://superhivemarket.com/products${item.productURL}`}
+              href={`https://superhivemarket.com/products${item.productURL}${refQuery}`}
               target="_blank"
               key={index}
               aria-label={item.title}
