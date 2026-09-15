@@ -21,6 +21,13 @@ export const Data = [
     info: "Object",
   },
   {
+    productURL: "/on-screen-key",
+    imageURL: "/addons/images/on-screen-key/thumb.png",
+    title: "On-Screen Key",
+    price: "$10 - $100",
+    info: "Interface",
+  },
+  {
     productURL: "/quick-measure",
     imageURL: "/addons/images/quick-measure/thumb.png",
     title: "Quick Measure",
@@ -69,6 +76,7 @@ export const Data = [
     price: "$10 - $100",
     info: "Object",
   },
+
   {
     productURL: "/blender-to-unity",
     imageURL: "/addons/images/blender-to-unity/thumb.png",
