@@ -734,7 +734,7 @@ export default function BlendertoUnrealPage() {
       <Support>
         <CardFooter className="space-x-4">
           <Link
-            href="https://discord.com/channels/959138815602229389/959152281058697216"
+            href="https://discord.gg/AEsJRuWrqw"
             className={cn(buttonVariants({ variant: "outline" }))}
             target="_blank"
           >

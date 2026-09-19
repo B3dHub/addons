@@ -321,7 +321,7 @@ export default function MegascansBridgePage() {
       <Support>
         <CardFooter className="space-x-4">
           <Link
-            href="https://discord.com/channels/959138815602229389/1327353624644288604"
+            href="https://discord.gg/dFYRwMty4k"
             className={cn(buttonVariants({ variant: "outline" }))}
             target="_blank"
           >

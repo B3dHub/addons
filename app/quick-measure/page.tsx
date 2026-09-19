@@ -48,6 +48,12 @@ export default function QuickMeasurePage() {
                 <TableCell className="font-medium">Saved Measurements</TableCell>
               </TableRow>
               <TableRow>
+                <TableCell className="font-medium">Wall Thickness</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium">Copy Value</TableCell>
+              </TableRow>
+              <TableRow>
                 <TableCell className="font-medium">Select Measurements</TableCell>
               </TableRow>
               <TableRow>
@@ -166,6 +172,20 @@ export default function QuickMeasurePage() {
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">
+                  <code className="mr-1">SHIFT</code>
+                  <code className="mr-1">CLICK-DRAG</code>
+                </TableCell>
+                <TableCell>Edit Wall Thickness</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium">
+                  <code className="mr-1">ALT</code>
+                  <code className="mr-1">C</code>
+                </TableCell>
+                <TableCell>Copy measurement value.</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium">
                   <code className="mr-1">ALT</code>
                   <code className="mr-1">X</code>
                 </TableCell>
@@ -206,7 +226,7 @@ export default function QuickMeasurePage() {
         </CardHeader>
         <CardContent>
           <Image
-            src="/addons/images/quick-measure/v2/quick_measurements.gif"
+            src="/addons/images/quick-measure/quick_measurements.gif"
             alt="Making quick measurements by dragging with ALT key without saving"
             width={600}
             height={325}
@@ -222,7 +242,7 @@ export default function QuickMeasurePage() {
         </CardContent>
         <CardContent>
           <Image
-            src="/addons/images/quick-measure/v2/quick_multiple_measurements.gif"
+            src="/addons/images/quick-measure/quick_multiple_measurements.gif"
             alt="Creating multiple temporary measurements with click-click method"
             width={600}
             height={325}
@@ -243,7 +263,7 @@ export default function QuickMeasurePage() {
         </CardHeader>
         <CardContent>
           <Image
-            src="/addons/images/quick-measure/v2/saved_measurements.gif"
+            src="/addons/images/quick-measure/saved_measurements.gif"
             alt="Saving measurements by holding SHIFT+ALT while dragging"
             width={600}
             height={325}
@@ -259,8 +279,29 @@ export default function QuickMeasurePage() {
         </CardContent>
         <CardContent>
           <Image
-            src="/addons/images/quick-measure/v2/saved_multiple_measurements.gif"
+            src="/addons/images/quick-measure/saved_multiple_measurements.gif"
             alt="Creating and saving multiple measurements with SHIFT+ALT clicks"
+            width={600}
+            height={325}
+            className="rounded w-full"
+            unoptimized
+          />
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle>Wall Thickness & Copy Value</CardTitle>
+          <CardDescription>
+            You can edit the wall thickness <code className="mr-1">SHIFT</code>
+            <code className="mr-1">CLICK-DRAG</code> of the selected measurements. <code className="mr-1">ALT</code>
+            <code className="mr-1">C</code> to copy the selected measurement value.
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          <Image
+            src="/addons/images/quick-measure/wall_thickness_copy_value.gif"
+            alt="Editing wall thickness of selected measurements"
             width={600}
             height={325}
             className="rounded w-full"
@@ -276,7 +317,7 @@ export default function QuickMeasurePage() {
         </CardHeader>
         <CardContent>
           <Image
-            src="/addons/images/quick-measure/v2/select_measurements.gif"
+            src="/addons/images/quick-measure/select_measurements.gif"
             alt="Selecting measurements in the viewport for editing or removal"
             width={600}
             height={325}
@@ -296,7 +337,7 @@ export default function QuickMeasurePage() {
         </CardHeader>
         <CardContent>
           <Image
-            src="/addons/images/quick-measure/v2/remove_measurements.gif"
+            src="/addons/images/quick-measure/remove_measurements.gif"
             alt="Removing selected measurements using ALT+X shortcut"
             width={600}
             height={325}
@@ -315,7 +356,7 @@ export default function QuickMeasurePage() {
         </CardHeader>
         <CardContent>
           <Image
-            src="/addons/images/quick-measure/v2/separate_measurements.gif"
+            src="/addons/images/quick-measure/separate_measurements.gif"
             alt="Separating joined measurement points by holding ALT"
             width={600}
             height={325}
@@ -334,7 +375,7 @@ export default function QuickMeasurePage() {
         </CardHeader>
         <CardContent>
           <Image
-            src="/addons/images/quick-measure/v2/join_measurements.gif"
+            src="/addons/images/quick-measure/join_measurements.gif"
             alt="Joining separate measurement points at the same position"
             width={600}
             height={325}
@@ -355,7 +396,7 @@ export default function QuickMeasurePage() {
         </CardHeader>
         <CardContent>
           <Image
-            src="/addons/images/quick-measure/v2/axis_restriction.gif"
+            src="/addons/images/quick-measure/axis_restriction.gif"
             alt="Restricting measurement movement to X, Y, or Z axis"
             width={600}
             height={325}
@@ -372,7 +413,7 @@ export default function QuickMeasurePage() {
         </CardHeader>
         <CardContent>
           <Image
-            src="/addons/images/quick-measure/v2/measure_angle.gif"
+            src="/addons/images/quick-measure/measure_angle.gif"
             alt="Measuring angles between measurement points"
             width={600}
             height={325}
@@ -389,7 +430,7 @@ export default function QuickMeasurePage() {
         </CardHeader>
         <CardContent>
           <Image
-            src="/addons/images/quick-measure/v2/object_mode_vertex_lock.gif"
+            src="/addons/images/quick-measure/object_mode_vertex_lock.gif"
             alt="Locking measurement points to object vertices in Object Mode"
             width={600}
             height={325}
@@ -404,7 +445,7 @@ export default function QuickMeasurePage() {
         </CardContent>
         <CardContent>
           <Image
-            src="/addons/images/quick-measure/v2/edit_mode_vertex_lock.gif"
+            src="/addons/images/quick-measure/edit_mode_vertex_lock.gif"
             alt="Locking measurement points to vertices in Edit Mode"
             width={600}
             height={325}
@@ -423,7 +464,7 @@ export default function QuickMeasurePage() {
         </CardHeader>
         <CardContent>
           <Image
-            src="/addons/images/quick-measure/v2/measurement_units.gif"
+            src="/addons/images/quick-measure/measurement_units.gif"
             alt="Displaying measurements in Blender units with preference override option"
             width={600}
             height={325}
@@ -433,7 +474,7 @@ export default function QuickMeasurePage() {
         </CardContent>
       </Card>
 
-      <Card>
+      {/* <Card>
         <CardHeader>
           <CardTitle>Limitations</CardTitle>
           <CardDescription>
@@ -442,12 +483,12 @@ export default function QuickMeasurePage() {
             <code className="mr-1">X</code> whenever you switch to different workspaces, e.g., Modeling, Shading, etc.
           </CardDescription>
         </CardHeader>
-      </Card>
+      </Card> */}
 
       <Support>
         <CardFooter className="space-x-4">
           <Link
-            href="https://discord.com/channels/959138815602229389/1090214367049560135"
+            href="https://discord.gg/89Vtrk4j2Z"
             className={cn(buttonVariants({ variant: "outline" }))}
             target="_blank"
           >

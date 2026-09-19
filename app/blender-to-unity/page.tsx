@@ -638,7 +638,7 @@ export default function BlendertoUnityPage() {
       <Support>
         <CardFooter className="space-x-4">
           <Link
-            href="https://discord.com/channels/959138815602229389/965691425557721159"
+            href="https://discord.gg/cERuAXPv35"
             className={cn(buttonVariants({ variant: "outline" }))}
             target="_blank"
           >

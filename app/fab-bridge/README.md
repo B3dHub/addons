@@ -92,4 +92,4 @@ Join our Discord server to stay updated.
 
 [![Discord](https://discord.com/api/guilds/959138815602229389/widget.png?theme=dark&style=banner3)](https://discord.gg/sdnHHZpWbT)
 
-[Changelogs](https://discord.com/channels/959138815602229389/1543765958475255869)
+[Changelogs](https://discord.gg/aZDcxkv7cn)

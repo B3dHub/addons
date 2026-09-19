@@ -460,7 +460,7 @@ export default function QuickDecalPage() {
       <Support>
         <CardFooter className="space-x-4">
           <Link
-            href="https://discord.com/channels/959138815602229389/1223542106539167754"
+            href="https://discord.gg/nmf6ewD7HH"
             className={cn(buttonVariants({ variant: "outline" }))}
             target="_blank"
           >

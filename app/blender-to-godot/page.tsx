@@ -1,4 +1,4 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import Link from "next/link";
@@ -9,6 +9,8 @@ import { Metadata } from "next";
 import Affiliate from "@/components/affiliate";
 import { Coupon, showCoupon } from "@/components/coupon";
 import { CheckIcon, XIcon } from "lucide-react";
+import { buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "Blender to Godot - Blender Addon",
@@ -665,7 +667,17 @@ export default function BlendertoGodotPage() {
         </CardContent>
       </Card>
 
-      <Support />
+      <Support>
+        <CardFooter className="space-x-4">
+          <Link
+            href="https://discord.gg/y6ZkUkKV54"
+            className={cn(buttonVariants({ variant: "outline" }))}
+            target="_blank"
+          >
+            Changelogs
+          </Link>
+        </CardFooter>
+      </Support>
 
       <OtherAddons />
       <Affiliate />

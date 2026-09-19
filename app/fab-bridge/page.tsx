@@ -324,7 +324,7 @@ export default function FabBridgePage() {
       <Support>
         <CardFooter className="space-x-4">
           <Link
-            href="https://discord.com/channels/959138815602229389/1543765958475255869"
+            href="https://discord.gg/aZDcxkv7cn"
             className={cn(buttonVariants({ variant: "outline" }))}
             target="_blank"
           >

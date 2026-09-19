@@ -84,4 +84,4 @@ Join our Discord server to stay updated.
 
 ## Changelogs
 
-[View Changelogs](https://discord.com/channels/959138815602229389/1223542106539167754)
+[View Changelogs](https://discord.gg/nmf6ewD7HH)

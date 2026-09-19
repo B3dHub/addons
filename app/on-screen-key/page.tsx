@@ -265,7 +265,7 @@ export default function OnScreenKeyPage() {
       <Support>
         <CardFooter className="space-x-4">
           <Link
-            href="https://discord.com/channels/959138815602229389/1549419855210479616"
+            href="https://discord.gg/SsXRGa2qku"
             className={cn(buttonVariants({ variant: "outline" }))}
             target="_blank"
           >

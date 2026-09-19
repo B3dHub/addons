@@ -344,7 +344,7 @@ export default function KnifeCirclePage() {
       <Support>
         <CardFooter className="space-x-4">
           <Link
-            href="https://discord.com/channels/959138815602229389/1439518778001199156"
+            href="https://discord.gg/VxUzDvsKvU"
             className={cn(buttonVariants({ variant: "outline" }))}
             target="_blank"
           >

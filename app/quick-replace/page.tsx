@@ -169,7 +169,7 @@ export default function QuickReplacePage() {
       <Support>
         <CardFooter className="space-x-4">
           <Link
-            href="https://discord.com/channels/959138815602229389/1078669616622096394"
+            href="https://discord.gg/ZbbnFQCcUP"
             className={cn(buttonVariants({ variant: "outline" }))}
             target="_blank"
           >

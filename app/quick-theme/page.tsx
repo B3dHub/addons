@@ -161,7 +161,7 @@ export default function QuickThemePage() {
       <Support>
         <CardFooter className="space-x-4">
           <Link
-            href="https://discord.com/channels/959138815602229389/1169021672846803027"
+            href="https://discord.gg/Y4kvsfrtXJ"
             className={cn(buttonVariants({ variant: "outline" }))}
             target="_blank"
           >

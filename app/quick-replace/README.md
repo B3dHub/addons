@@ -45,4 +45,4 @@ Join our Discord server to stay updated.
 
 ## Changelogs
 
-[View Changelogs](https://discord.com/channels/959138815602229389/1078669616622096394)
+[View Changelogs](https://discord.gg/ZbbnFQCcUP)

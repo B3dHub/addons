@@ -162,4 +162,4 @@ Join our Discord server to stay updated.
 
 ## Changelogs
 
-[View Changelogs](https://discord.com/channels/959138815602229389/965691425557721159)
+[View Changelogs](https://discord.gg/cERuAXPv35)

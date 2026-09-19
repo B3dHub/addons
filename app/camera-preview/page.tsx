@@ -46,6 +46,9 @@ export default function CameraPreviewPage() {
                 <TableCell className="font-medium">Multiple Camera Preview</TableCell>
               </TableRow>
               <TableRow>
+                <TableCell className="font-medium">Preview Move & Resize</TableCell>
+              </TableRow>
+              <TableRow>
                 <TableCell className="font-medium">Preview Position</TableCell>
               </TableRow>
               <TableRow>
@@ -59,6 +62,9 @@ export default function CameraPreviewPage() {
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">Object Hide/Unhide</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium">Composition guides (thirds, center, golden ratio)</TableCell>
               </TableRow>
             </TableBody>
           </Table>
@@ -74,6 +80,23 @@ export default function CameraPreviewPage() {
           <Image
             src="/addons/images/camera-preview/demo_full.gif"
             alt="Multiple camera preview windows displayed in viewport"
+            width={600}
+            height={325}
+            className="rounded w-full"
+            unoptimized
+          />
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle>Preview Move & Resize</CardTitle>
+          <CardDescription>Supports moving and resizing camera preview in viewport.</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <Image
+            src="/addons/images/camera-preview/move_resize.gif"
+            alt="Moving and resizing camera preview windows in viewport"
             width={600}
             height={325}
             className="rounded w-full"
@@ -168,7 +191,7 @@ export default function CameraPreviewPage() {
       <Support>
         <CardFooter className="space-x-4">
           <Link
-            href="https://discord.com/channels/959138815602229389/1001092033559142463"
+            href="https://discord.gg/ydBWfJXSGZ"
             className={cn(buttonVariants({ variant: "outline" }))}
             target="_blank"
           >

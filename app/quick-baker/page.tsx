@@ -532,7 +532,7 @@ export default function QuickBakerPage() {
       <Support>
         <CardFooter className="space-x-4">
           <Link
-            href="https://discord.com/channels/959138815602229389/1013054795562614794"
+            href="https://discord.gg/ZmEx5sfw68"
             className={cn(buttonVariants({ variant: "outline" }))}
             target="_blank"
           >
