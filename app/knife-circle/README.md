@@ -1,6 +1,6 @@
 ## Introduction
 
-Knife Circle is a powerful Blender add-on for projecting precise circular cuts onto mesh objects with a real-time preview. It features GPU-accelerated rendering, interactive radius control, and works seamlessly in both Object and Edit modes. Perfect for creating clean geometric cuts with accuracy and speed.
+Knife Circle is a powerful Blender add-on for projecting precise circular cuts onto mesh objects with a real-time preview. It features GPU-accelerated rendering, interactive radius, star and rotation control, orientation-aware cuts, and works seamlessly in both Object and Edit modes. Perfect for creating clean geometric cuts with accuracy and speed.
 
 ## Features
 
@@ -9,6 +9,9 @@ Knife Circle is a powerful Blender add-on for projecting precise circular cuts o
 - Adjustable Segments
 - Numeric Input
 - Quick Shapes
+- Orientation
+- Star Mode
+- Shape Rotation
 - Cut Through
 - Dual Mode Support
 - Precision Mode
@@ -36,6 +39,11 @@ Knife Circle is a powerful Blender add-on for projecting precise circular cuts o
 - `T` — Triangle: set to 3 segments for triangle
 - `S` — Square: set to 4 segments for square
 - `C` — Circle: set to 32 segments for smooth circle
+- `O` — Orientation: cycle View / Normal / X / Y / Z
+- `P` — Star: toggle star mode
+- `I` — Inner Radius: drag to set the star inner radius
+- `R` — Rotate: rotate the shape around its center
+- `V` — Segment Input: type an exact segment count
 - `0-9, Period` — Numeric Input: type exact radius value
 - `Backspace` — Delete Digit: remove last typed character
 - `Enter / Numpad Enter` — Apply Value: confirm numeric input
@@ -45,6 +53,24 @@ Knife Circle is a powerful Blender add-on for projecting precise circular cuts o
 Click to set the circle center, then move the mouse to dynamically adjust the radius with real-time preview.
 
 ![Interactive control demonstration](https://b3dhub.github.io/addons/images/knife-circle/interactive-controls.gif)
+
+## Orientation
+
+Press `O` to cycle the projection plane - View (screen-aligned), Normal (the surface the center was placed on) and the global X, Y and Z axes.
+
+Fixed planes are cut parallel to their normal, so the result is a true circle regardless of the viewport angle. View orientation follows the current viewport projection instead.
+
+![Orientation modes demonstration](https://b3dhub.github.io/addons/images/knife-circle/orientation.gif)
+
+## Star & Rotation
+
+Press `P` for star mode, then hold `I` while moving the mouse to set the inner radius. Star shapes start at 5 segments.
+
+Hold `R` and move the mouse to rotate the shape around its center before confirming.
+
+![Star mode with adjustable inner radius demonstration](https://b3dhub.github.io/addons/images/knife-circle/star_inner_ratio.gif)
+
+![Shape rotation demonstration](https://b3dhub.github.io/addons/images/knife-circle/rotation.gif)
 
 ## Fixed / Freeform Mode
 
@@ -72,7 +98,7 @@ Instantly switch between common shapes with a single keypress - `T` for Triangle
 
 ## Cut Through
 
-Toggle between two modes with the `X` key - Blue preview cuts only visible front faces, Red preview cuts through the entire mesh.
+Toggle between two modes with the `X` key - Blue preview cuts only the visible faces, Red preview cuts through the entire mesh. With a fixed orientation, the near-only mode stops the cut at the first surface while through mode sweeps a clean prism across the mesh.
 
 ![Cut through mode demonstration](https://b3dhub.github.io/addons/images/knife-circle/cut-through.gif)
 

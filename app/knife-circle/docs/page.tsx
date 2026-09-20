@@ -53,14 +53,63 @@ export default function KnifeCircleDocsPage() {
           <CardDescription>
             <span className="text-primary">Click</span> to place the shape center, then{" "}
             <span className="text-primary">move</span> the mouse to adjust the radius. The shape is drawn on a plane
-            aligned with your current view, so rotate the viewport to control the projection angle.
+            determined by the current <span className="text-primary">Orientation</span> - view-aligned by default, or a
+            fixed global axis / surface normal.
           </CardDescription>
         </CardContent>
         <CardContent>
           <CardDescription>
             <span className="text-primary">Confirm</span> with Left Click or{" "}
-            <span className="text-primary">Cancel</span> with Right Click/ESC. The shape is projected onto all selected
-            meshes using Blender&apos;s Knife Project operator, and the helper mesh is removed automatically.
+            <span className="text-primary">Cancel</span> with Right Click/ESC. The shape is cut into all selected
+            meshes, and the helper mesh is removed automatically.
+          </CardDescription>
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle>Orientation</CardTitle>
+          <CardDescription>How to cut on a view plane or a fixed axis?</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <CardDescription>
+            Press <span className="text-primary">O</span> to cycle the projection plane:{" "}
+            <span className="text-primary">View</span> (screen-aligned), <span className="text-primary">Normal</span>{" "}
+            (the surface the center was placed on) and the global <span className="text-primary">X</span>,{" "}
+            <span className="text-primary">Y</span> and <span className="text-primary">Z</span> axes.
+          </CardDescription>
+        </CardContent>
+        <CardContent>
+          <CardDescription>
+            The fixed planes are cut <span className="text-primary">parallel to their normal</span>, so the result is a
+            true circle regardless of the viewport angle - useful for clean cylindrical cuts. View orientation follows
+            the current viewport projection instead.
+          </CardDescription>
+        </CardContent>
+        <CardContent>
+          <CardDescription>
+            The current orientation is shown in the header text while the tool is running.
+          </CardDescription>
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle>Star &amp; Rotation</CardTitle>
+          <CardDescription>How to create stars and rotate the shape?</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <CardDescription>
+            Press <span className="text-primary">P</span> to toggle <span className="text-primary">Star</span> mode,
+            then hold <span className="text-primary">I</span> and move the mouse to set the inner radius. Star shapes
+            start at 5 segments.
+          </CardDescription>
+        </CardContent>
+        <CardContent>
+          <CardDescription>
+            Hold <span className="text-primary">R</span> and move the mouse to rotate the shape around its center before
+            confirming. Hold <span className="text-primary">Shift</span> for fine rotation or{" "}
+            <span className="text-primary">Ctrl</span> to snap to Blender&apos;s angle increments.
           </CardDescription>
         </CardContent>
       </Card>
@@ -72,8 +121,8 @@ export default function KnifeCircleDocsPage() {
         </CardHeader>
         <CardContent>
           <CardDescription>
-            <span className="text-primary">Scroll</span> the mouse wheel to increase or decrease the number of
-            segments (3-256). The header shows the current value.
+            <span className="text-primary">Scroll</span> the mouse wheel to increase or decrease the number of segments
+            (3-256). The header shows the current value.
           </CardDescription>
         </CardContent>
         <CardContent>
@@ -85,9 +134,15 @@ export default function KnifeCircleDocsPage() {
         </CardContent>
         <CardContent>
           <CardDescription>
-            Press <span className="text-primary">F</span> to toggle between{" "}
-            <span className="text-primary">Fixed</span> mode (uniform radius from the center) and{" "}
-            <span className="text-primary">Freeform</span> mode (independent X and Y radii for elliptical shapes).
+            Press <span className="text-primary">F</span> to toggle between <span className="text-primary">Fixed</span>{" "}
+            mode (uniform radius from the center) and <span className="text-primary">Freeform</span> mode (independent X
+            and Y radii for elliptical shapes).
+          </CardDescription>
+        </CardContent>
+        <CardContent>
+          <CardDescription>
+            Press <span className="text-primary">V</span> first if you want to type an exact segment count instead of a
+            radius.
           </CardDescription>
         </CardContent>
       </Card>
@@ -99,8 +154,8 @@ export default function KnifeCircleDocsPage() {
         </CardHeader>
         <CardContent>
           <CardDescription>
-            Type a number with the keyboard (top row or numpad, <span className="text-primary">.</span> for decimals)
-            to enter an exact radius. The value appears in the header.
+            Type a number with the keyboard (top row or numpad, <span className="text-primary">.</span> for decimals) to
+            enter an exact radius. The value appears in the header.
           </CardDescription>
         </CardContent>
         <CardContent>
@@ -124,15 +179,20 @@ export default function KnifeCircleDocsPage() {
         </CardHeader>
         <CardContent>
           <CardDescription>
-            Press <span className="text-primary">X</span> to toggle{" "}
-            <span className="text-primary">Cut Through</span>. When enabled, the cut goes through all faces of the
-            mesh instead of only the visible side.
+            Press <span className="text-primary">X</span> to toggle <span className="text-primary">Cut Through</span>.
+            When enabled, the cut sweeps through all faces of the mesh instead of only the visible side.
           </CardDescription>
         </CardContent>
         <CardContent>
           <CardDescription>
-            The circle outline color indicates the state: it uses the theme&apos;s Z axis color normally and switches
-            to the X axis color when Cut Through is active.
+            With a fixed orientation, the near-only mode stops the sweep at the first surface, while through mode cuts a
+            clean prism across the whole mesh.
+          </CardDescription>
+        </CardContent>
+        <CardContent>
+          <CardDescription>
+            The circle outline color indicates the state: it uses the theme&apos;s Z axis color normally and switches to
+            the X axis color when Cut Through is active.
           </CardDescription>
         </CardContent>
       </Card>

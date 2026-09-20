@@ -25,8 +25,9 @@ export default function KnifeCirclePage() {
         <CardContent>
           <CardDescription>
             Knife Circle is a powerful Blender add-on for projecting precise circular cuts onto mesh objects with a
-            real-time preview. It features GPU-accelerated rendering, interactive radius control, and works seamlessly
-            in both Object and Edit modes. Perfect for creating clean geometric cuts with accuracy and speed.
+            real-time preview. It features GPU-accelerated rendering, interactive radius, star and rotation control,
+            orientation-aware cuts, and works seamlessly in both Object and Edit modes. Perfect for creating clean
+            geometric cuts with accuracy and speed.
           </CardDescription>
         </CardContent>
         {showCoupon && <Coupon />}
@@ -51,22 +52,31 @@ export default function KnifeCirclePage() {
                 <TableCell className="font-medium">Adjustable Segments</TableCell>
               </TableRow>
               <TableRow>
+                <TableCell className="font-medium">Orientation</TableCell>
+              </TableRow>
+              <TableRow>
                 <TableCell className="font-medium">Numeric Input</TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">Quick Shapes</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">Cut Through</TableCell>
+                <TableCell className="font-medium">Star Mode</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">Dual Mode Support</TableCell>
+                <TableCell className="font-medium">Shape Rotation</TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">Precision Mode</TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">Snap Mode</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium">Cut Through</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium">Dual Mode Support</TableCell>
               </TableRow>
             </TableBody>
           </Table>
@@ -138,6 +148,25 @@ export default function KnifeCirclePage() {
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">
+                  <code>F</code>
+                </TableCell>
+                <TableCell>Fixed / Freeform Mode</TableCell>
+                <TableCell>Switch between fixed/freeform modes</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium">
+                  <code>O</code>
+                </TableCell>
+                <TableCell>Orientation</TableCell>
+                <TableCell>Cycle View / Normal / X / Y / Z</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>— Sizing &amp; Shape —</TableCell>
+                <TableCell />
+                <TableCell />
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium">
                   <code>Scroll Up</code>
                 </TableCell>
                 <TableCell>More Segments</TableCell>
@@ -149,34 +178,6 @@ export default function KnifeCirclePage() {
                 </TableCell>
                 <TableCell>Fewer Segments</TableCell>
                 <TableCell>Decrease segments (min 3)</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">
-                  <code>Shift + Mouse Move</code>
-                </TableCell>
-                <TableCell>Precise Mode</TableCell>
-                <TableCell>10x slower radius adjustment</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">
-                  <code>Ctrl + Mouse Move</code>
-                </TableCell>
-                <TableCell>Snap Mode</TableCell>
-                <TableCell>Snap radius to 5-unit increments</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">
-                  <code>F</code>
-                </TableCell>
-                <TableCell>Fixed / Freeform Mode</TableCell>
-                <TableCell>Switch between fixed/freeform modes</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">
-                  <code>X</code>
-                </TableCell>
-                <TableCell>Cut Through Mode</TableCell>
-                <TableCell>Switch between surface/through modes</TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">
@@ -201,6 +202,53 @@ export default function KnifeCirclePage() {
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">
+                  <code>V</code>
+                </TableCell>
+                <TableCell>Segment Input</TableCell>
+                <TableCell>Type an exact segment count</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium">
+                  <code>P</code>
+                </TableCell>
+                <TableCell>Star</TableCell>
+                <TableCell>Toggle star mode</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium">
+                  <code>I</code>
+                </TableCell>
+                <TableCell>Inner Radius</TableCell>
+                <TableCell>Drag to set the star inner radius</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium">
+                  <code>R</code>
+                </TableCell>
+                <TableCell>Rotate</TableCell>
+                <TableCell>Rotate the shape around its center</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium">
+                  <code>Shift + Mouse Move</code>
+                </TableCell>
+                <TableCell>Precise Mode</TableCell>
+                <TableCell>10x slower radius adjustment</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium">
+                  <code>Ctrl + Mouse Move</code>
+                </TableCell>
+                <TableCell>Snap Mode</TableCell>
+                <TableCell>Snap radius to 5-unit increments</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>— Precision —</TableCell>
+                <TableCell />
+                <TableCell />
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium">
                   <code>0-9, Period</code>
                 </TableCell>
                 <TableCell>Numeric Input</TableCell>
@@ -219,6 +267,18 @@ export default function KnifeCirclePage() {
                 </TableCell>
                 <TableCell>Apply Value</TableCell>
                 <TableCell>Confirm numeric input</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>— Cut —</TableCell>
+                <TableCell />
+                <TableCell />
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium">
+                  <code>X</code>
+                </TableCell>
+                <TableCell>Cut Through Mode</TableCell>
+                <TableCell>Switch between surface/through modes</TableCell>
               </TableRow>
             </TableBody>
           </Table>
@@ -266,6 +326,102 @@ export default function KnifeCirclePage() {
 
       <Card>
         <CardHeader>
+          <CardTitle>Orientation</CardTitle>
+          <CardDescription>Cut on a view-aligned plane or on the global axes.</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <CardDescription>
+            Press <code>O</code> to cycle the projection plane - <strong>View</strong> (screen-aligned),{" "}
+            <strong>Normal</strong> (the surface the center was placed on) and the global <strong>X</strong>,{" "}
+            <strong>Y</strong> and <strong>Z</strong> axes.
+          </CardDescription>
+        </CardContent>
+        <CardContent>
+          <CardDescription>
+            Fixed planes are cut <strong>parallel to their normal</strong>, so the result is a true circle (or a clean
+            prism through the mesh) no matter how the viewport is rotated. View orientation keeps Blender&apos;s
+            perspective projection from the current view.
+          </CardDescription>
+        </CardContent>
+        <CardContent>
+          <Image
+            src="/addons/images/knife-circle/orientation.gif"
+            alt="Orientation modes demonstration"
+            width={600}
+            height={325}
+            className="rounded w-full"
+            unoptimized
+          />
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle>Star Mode</CardTitle>
+          <CardDescription>Create stars with adjustable inner radius.</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <CardDescription>
+            Press <code>P</code> for star mode and hold <code>I</code> while moving the mouse to set the inner radius.
+            Star shapes start at 5 segments.
+          </CardDescription>
+        </CardContent>
+        <CardContent>
+          <Image
+            src="/addons/images/knife-circle/star_inner_ratio.gif"
+            alt="Star mode with adjustable inner radius demonstration"
+            width={600}
+            height={325}
+            className="rounded w-full"
+            unoptimized
+          />
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle>Shape Rotation</CardTitle>
+          <CardDescription>Rotate the shape around its center before cutting.</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <CardDescription>
+            Hold <code>R</code> and move the mouse to rotate the shape around its center before confirming.
+          </CardDescription>
+        </CardContent>
+        <CardContent>
+          <Image
+            src="/addons/images/knife-circle/rotation.gif"
+            alt="Shape rotation demonstration"
+            width={600}
+            height={325}
+            className="rounded w-full"
+            unoptimized
+          />
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle>Quick Shapes</CardTitle>
+          <CardDescription>
+            Instantly switch between common shapes with a single keypress - <code>T</code> for Triangle (3 segments),{" "}
+            <code>S</code> for Square (4 segments), <code>C</code> for Circle (32 segments).
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          <Image
+            src="/addons/images/knife-circle/quick-shapes.gif"
+            alt="Quick shape shortcuts demonstration"
+            width={600}
+            height={325}
+            className="rounded w-full"
+            unoptimized
+          />
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
           <CardTitle>Adjustable Segments</CardTitle>
           <CardDescription>Modify the number of segments on-the-fly using the mouse scroll wheel.</CardDescription>
         </CardHeader>
@@ -303,30 +459,11 @@ export default function KnifeCirclePage() {
 
       <Card>
         <CardHeader>
-          <CardTitle>Quick Shapes</CardTitle>
-          <CardDescription>
-            Instantly switch between common shapes with a single keypress - <code>T</code> for Triangle (3 segments),{" "}
-            <code>S</code> for Square (4 segments), <code>C</code> for Circle (32 segments).
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          <Image
-            src="/addons/images/knife-circle/quick-shapes.gif"
-            alt="Quick shape shortcuts demonstration"
-            width={600}
-            height={325}
-            className="rounded w-full"
-            unoptimized
-          />
-        </CardContent>
-      </Card>
-
-      <Card>
-        <CardHeader>
           <CardTitle>Cut Through</CardTitle>
           <CardDescription>
-            Toggle between two modes with the <code>X</code> key - Blue preview cuts only visible front faces, Red
-            preview cuts through the entire mesh.
+            Toggle between two modes with the <code>X</code> key - Blue preview cuts only the visible faces, Red preview
+            cuts through the entire mesh. With a fixed orientation, the near-only mode stops the cut at the first
+            surface while through mode sweeps a clean prism across the mesh.
           </CardDescription>
         </CardHeader>
         <CardContent>
