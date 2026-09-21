@@ -45,8 +45,10 @@ export default function KnifeCircleDocsPage() {
         </CardContent>
         <CardContent>
           <CardDescription>
-            <span className="text-primary">Activate</span> the Knife Circle tool from the toolbar. It is available in
-            both Object Mode and Edit Mode (placed right after the built-in Knife tool).
+            <span className="text-primary">Activate</span> the Knife Circle tool from the toolbar. It works in both
+            Object Mode and Edit Mode. In Edit Mode it lives under the{" "}
+            <span className="text-primary">Knife</span> tool group - open the Knife tool group and pick{" "}
+            <span className="text-primary">Knife Circle</span>.
           </CardDescription>
         </CardContent>
         <CardContent>

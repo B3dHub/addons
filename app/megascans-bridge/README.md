@@ -33,49 +33,49 @@ Megascans Bridge is a Blender add-on that imports Quixel Megascans assets downlo
 
 View assets in a grid view.
 
-![Grid view displaying Megascans assets in a thumbnail grid layout](https://b3dhub.github.io/addons/images/megascans-bridge/v2/grid_view.gif)
+![Grid view displaying Megascans assets in a thumbnail grid layout](https://b3dhub.github.io/addons/images/megascans-bridge/grid_view.gif)
 
 ## Asset Search
 
 Search assets by name.
 
-![Searching for Megascans assets by name using the search bar](https://b3dhub.github.io/addons/images/megascans-bridge/v2/asset_search.gif)
+![Searching for Megascans assets by name using the search bar](https://b3dhub.github.io/addons/images/megascans-bridge/asset_search.gif)
 
 ## Asset Details
 
 View asset details like name, polycount, resolution, etc.
 
-![Viewing detailed asset information including name, polycount, and resolution](https://b3dhub.github.io/addons/images/megascans-bridge/v2/asset_details.gif)
+![Viewing detailed asset information including name, polycount, and resolution](https://b3dhub.github.io/addons/images/megascans-bridge/asset_details.gif)
 
 ## Pagination
 
 Navigate through pages of assets.
 
-![Navigating through multiple pages of Megascans assets](https://b3dhub.github.io/addons/images/megascans-bridge/v2/pagination.gif)
+![Navigating through multiple pages of Megascans assets](https://b3dhub.github.io/addons/images/megascans-bridge/pagination.gif)
 
 ## Import Assets
 
 You can import 3D assets with LODs and create LOD groups.
 
-![Importing 3D Megascans assets with LODs into Blender](https://b3dhub.github.io/addons/images/megascans-bridge/v2/import_assets.gif)
+![Importing 3D Megascans assets with LODs into Blender](https://b3dhub.github.io/addons/images/megascans-bridge/import_assets.gif)
 
 LOD Groups are based on Geometry Nodes.
 
-![LOD groups created using Geometry Nodes showing different detail levels](https://b3dhub.github.io/addons/images/megascans-bridge/v2/lod_group.gif)
+![LOD groups created using Geometry Nodes showing different detail levels](https://b3dhub.github.io/addons/images/megascans-bridge/lod_group.gif)
 
 ## Import Plants
 
 You can import 3D plants with LODs and create LOD groups.
 
-![Importing 3D plant assets with LODs from Megascans library](https://b3dhub.github.io/addons/images/megascans-bridge/v2/import_plants.gif)
+![Importing 3D plant assets with LODs from Megascans library](https://b3dhub.github.io/addons/images/megascans-bridge/import_plants.gif)
 
 ## Import Surfaces
 
 You can import surface textures as materials and node groups.
 
-![Importing Megascans surface textures as materials](https://b3dhub.github.io/addons/images/megascans-bridge/v2/import_surfaces.gif)
+![Importing Megascans surface textures as materials](https://b3dhub.github.io/addons/images/megascans-bridge/import_surfaces.gif)
 
-![Importing surface textures as shader node groups in Blender](https://b3dhub.github.io/addons/images/megascans-bridge/v2/import_node_group.gif)
+![Importing surface textures as shader node groups in Blender](https://b3dhub.github.io/addons/images/megascans-bridge/import_node_group.gif)
 
 ## Copyright Disclaimer
 

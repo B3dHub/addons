@@ -25,9 +25,10 @@ export default function KnifeCirclePage() {
         <CardContent>
           <CardDescription>
             Knife Circle is a powerful Blender add-on for projecting precise circular cuts onto mesh objects with a
-            real-time preview. It features GPU-accelerated rendering, interactive radius, star and rotation control,
-            orientation-aware cuts, and works seamlessly in both Object and Edit modes. Perfect for creating clean
-            geometric cuts with accuracy and speed.
+            real-time preview. It features GPU-accelerated rendering, interactive radius, star and rotation control and
+            orientation-aware cuts. It works in both Object Mode and Edit Mode - in Edit Mode the tool lives under the{" "}
+            <span className="font-semibold text-primary">Knife</span> tool group in the toolbar. Perfect for creating
+            clean geometric cuts with accuracy and speed.
           </CardDescription>
         </CardContent>
         {showCoupon && <Coupon />}
@@ -94,7 +95,8 @@ export default function KnifeCirclePage() {
               <span className="font-semibold text-primary">Select</span> one or more mesh objects
             </li>
             <li>
-              <span className="font-semibold text-primary">Activate</span> the Circle Knife tool from the toolbar
+              <span className="font-semibold text-primary">Activate</span> the Circle Knife tool from the toolbar. In
+              Edit Mode it is found under the <span className="font-semibold text-primary">Knife</span> tool group
             </li>
             <li>
               <span className="font-semibold text-primary">Click</span> to place the circle center
@@ -470,6 +472,28 @@ export default function KnifeCirclePage() {
           <Image
             src="/addons/images/knife-circle/cut-through.gif"
             alt="Cut through mode demonstration"
+            width={600}
+            height={325}
+            className="rounded w-full"
+            unoptimized
+          />
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle>Edit Mode</CardTitle>
+          <CardDescription>
+            Knife Circle is available directly in Edit Mode, grouped under the built-in{" "}
+            <span className="font-semibold text-primary">Knife</span> tool in the toolbar. Open the Knife tool group and
+            pick <span className="font-semibold text-primary">Knife Circle</span> to cut the selected mesh without
+            leaving Edit Mode.
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          <Image
+            src="/addons/images/knife-circle/edit_mode.gif"
+            alt="Knife Circle in the Edit Mode Knife tool group"
             width={600}
             height={325}
             className="rounded w-full"

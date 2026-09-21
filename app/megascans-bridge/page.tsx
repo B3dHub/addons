@@ -163,7 +163,7 @@ export default function MegascansBridgePage() {
         </CardHeader>
         <CardContent>
           <Image
-            src="/addons/images/megascans-bridge/v2/grid_view.gif"
+            src="/addons/images/megascans-bridge/grid_view.gif"
             alt="Grid view displaying Megascans assets in a thumbnail grid layout"
             width={600}
             height={325}
@@ -180,7 +180,7 @@ export default function MegascansBridgePage() {
         </CardHeader>
         <CardContent>
           <Image
-            src="/addons/images/megascans-bridge/v2/asset_search.gif"
+            src="/addons/images/megascans-bridge/asset_search.gif"
             alt="Searching for Megascans assets by name using the search bar"
             width={600}
             height={325}
@@ -197,7 +197,7 @@ export default function MegascansBridgePage() {
         </CardHeader>
         <CardContent>
           <Image
-            src="/addons/images/megascans-bridge/v2/asset_details.gif"
+            src="/addons/images/megascans-bridge/asset_details.gif"
             alt="Viewing detailed asset information including name, polycount, and resolution"
             width={600}
             height={325}
@@ -214,7 +214,7 @@ export default function MegascansBridgePage() {
         </CardHeader>
         <CardContent>
           <Image
-            src="/addons/images/megascans-bridge/v2/pagination.gif"
+            src="/addons/images/megascans-bridge/pagination.gif"
             alt="Navigating through multiple pages of Megascans assets"
             width={600}
             height={325}
@@ -231,7 +231,7 @@ export default function MegascansBridgePage() {
         </CardHeader>
         <CardContent>
           <Image
-            src="/addons/images/megascans-bridge/v2/import_assets.gif"
+            src="/addons/images/megascans-bridge/import_assets.gif"
             alt="Importing 3D Megascans assets with LODs into Blender"
             width={600}
             height={325}
@@ -244,7 +244,7 @@ export default function MegascansBridgePage() {
         </CardContent>
         <CardContent>
           <Image
-            src="/addons/images/megascans-bridge/v2/lod_group.gif"
+            src="/addons/images/megascans-bridge/lod_group.gif"
             alt="LOD groups created using Geometry Nodes showing different detail levels"
             width={600}
             height={325}
@@ -261,7 +261,7 @@ export default function MegascansBridgePage() {
         </CardHeader>
         <CardContent>
           <Image
-            src="/addons/images/megascans-bridge/v2/import_plants.gif"
+            src="/addons/images/megascans-bridge/import_plants.gif"
             alt="Importing 3D plant assets with LODs from Megascans library"
             width={600}
             height={325}
@@ -278,7 +278,7 @@ export default function MegascansBridgePage() {
         </CardHeader>
         <CardContent>
           <Image
-            src="/addons/images/megascans-bridge/v2/import_surfaces.gif"
+            src="/addons/images/megascans-bridge/import_surfaces.gif"
             alt="Importing Megascans surface textures as materials"
             width={600}
             height={325}
@@ -288,7 +288,7 @@ export default function MegascansBridgePage() {
         </CardContent>
         <CardContent>
           <Image
-            src="/addons/images/megascans-bridge/v2/import_node_group.gif"
+            src="/addons/images/megascans-bridge/import_node_group.gif"
             alt="Importing surface textures as shader node groups in Blender"
             width={600}
             height={325}

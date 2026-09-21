@@ -1,6 +1,6 @@
 ## Introduction
 
-Knife Circle is a powerful Blender add-on for projecting precise circular cuts onto mesh objects with a real-time preview. It features GPU-accelerated rendering, interactive radius, star and rotation control, orientation-aware cuts, and works seamlessly in both Object and Edit modes. Perfect for creating clean geometric cuts with accuracy and speed.
+Knife Circle is a powerful Blender add-on for projecting precise circular cuts onto mesh objects with a real-time preview. It features GPU-accelerated rendering, interactive radius, star and rotation control and orientation-aware cuts. It works in both Object Mode and Edit Mode - in Edit Mode the tool lives under the **Knife** tool group in the toolbar. Perfect for creating clean geometric cuts with accuracy and speed.
 
 ## Features
 
@@ -20,10 +20,16 @@ Knife Circle is a powerful Blender add-on for projecting precise circular cuts o
 ## Quick Start
 
 1. **Select** one or more mesh objects
-2. **Activate** the Circle Knife tool from the toolbar
+2. **Activate** the Circle Knife tool from the toolbar. In Edit Mode it is found under the **Knife** tool group
 3. **Click** to place the circle center
 4. **Move** the mouse to adjust radius
 5. **Confirm** with Left Click or **Cancel** with Right Click/ESC
+
+## Edit Mode
+
+Knife Circle is available directly in Edit Mode, grouped under the built-in **Knife** tool in the toolbar. Open the Knife tool group and pick **Knife Circle** to cut the selected mesh without leaving Edit Mode.
+
+![Knife Circle in the Edit Mode Knife tool group](https://b3dhub.github.io/addons/images/knife-circle/edit_mode.gif)
 
 ## Controls
 
