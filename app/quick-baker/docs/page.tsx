@@ -1,4 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -106,6 +107,56 @@ export default function QuickBakerDocsPage() {
           <CardDescription>
             <span className="text-primary">UV Map</span>: use a global UV map for the whole bake group or a per-object
             UV map. The <span className="text-primary">Add UVMap</span> operator creates a new UV map when needed.
+          </CardDescription>
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle>Decal Bake</CardTitle>
+          <CardDescription>How to bake decal objects or layers?</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <CardDescription>
+            Decal bake works with two kinds of decals. Decals added with{" "}
+            <Link
+              href={"https://superhivemarket.com/products/quick-decal"}
+              target="_blank"
+              className="underline text-primary"
+            >
+              Quick Decal
+            </Link>{" "}
+            are shader decals: the QDecal Master node group blends them into the surface shader, so they are baked
+            together with the material. Mesh decals are the other method: any mesh child of the object whose name
+            contains <code className="text-foreground">_decal</code> — for example, an image-textured plane placed
+            over the surface — is detected and baked into the maps as well. Keep the name unique to actual decal
+            meshes, since every matching child is baked.
+          </CardDescription>
+        </CardContent>
+        <CardContent>
+          <CardDescription>
+            Mesh decals need no extra setup: when a baked object (Object Bake) or a{" "}
+            <span className="text-primary">High Poly</span> object (High to Low) has{" "}
+            <code className="text-foreground">_decal</code> children, Quick Baker automatically uses the decal
+            workflow. Decal meshes are evaluated as they are — modifiers included, nothing is copied or joined — and
+            rays are cast from the decal geometry onto the low poly, so decals should sit on or just above the
+            surface. The decal&apos;s <span className="text-primary">Alpha</span> input drives the coverage.
+          </CardDescription>
+        </CardContent>
+        <CardContent>
+          <CardDescription>
+            Mesh decals are baked per map in two passes: the base surface is baked without the decals first, then
+            the decals are baked alone while the object blocks the rays, so a decal cannot project onto its opposite
+            side. The decal is then alpha-composited over the base (
+            <code className="text-foreground">decal * alpha + base * (1 - alpha)</code>), so transparent decal
+            regions reveal the surface underneath instead of baking black, and the alpha channel is blended with the
+            same mask. Works for every map and channel pack.
+          </CardDescription>
+        </CardContent>
+        <CardContent>
+          <CardDescription>
+            Tiled images cannot be composited, so for <span className="text-primary">UDIM</span> layouts the mesh
+            decals are included in the base pass and baked together with it in a single pass instead.
           </CardDescription>
         </CardContent>
       </Card>

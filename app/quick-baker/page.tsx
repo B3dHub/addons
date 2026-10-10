@@ -170,6 +170,19 @@ export default function QuickBakerPage() {
                 </TableCell>
               </TableRow>
               <TableRow>
+                <TableCell className="font-medium">Decal Bake</TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <CheckIcon className="size-4" />
+                  </div>
+                </TableCell>
+                <TableCell>
+                  <div className="flex justify-center">
+                    <XIcon className="size-4" />
+                  </div>
+                </TableCell>
+              </TableRow>
+              <TableRow>
                 <TableCell className="font-medium">Map Preview</TableCell>
                 <TableCell>
                   <div className="flex justify-center">
@@ -436,6 +449,33 @@ export default function QuickBakerPage() {
           <Image
             src="/addons/images/quick-baker/existing_texture_bake.gif"
             alt="Baking onto existing texture map"
+            width={600}
+            height={325}
+            className="rounded w-full"
+            unoptimized
+          />
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle>Decal Bake</CardTitle>
+          <CardDescription>
+            Bake decal layers created with our addon{" "}
+            <Link
+              href={"https://superhivemarket.com/products/quick-decal"}
+              target="_blank"
+              className="underline text-primary"
+            >
+              Quick Decal
+            </Link>{" "}
+            or any custom <code className="text-foreground">_decal</code> child mesh object.
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          <Image
+            src="/addons/images/quick-baker/decal_bake.gif"
+            alt="Baking Quick Decal decal layers into textures"
             width={600}
             height={325}
             className="rounded w-full"

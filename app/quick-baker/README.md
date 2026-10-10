@@ -13,6 +13,7 @@ Quick Baker is an exceptional PBR texture-baking addon that brilliantly utilizes
 - Channel Packing
 - Vertex Color for Material ID
 - Existing Texture Bake
+- Decal Bake
 - Map Preview
 - Material Bake
 - Node Bake
@@ -76,6 +77,12 @@ Create vertex color for material id map.
 Bake on existing texture map.
 
 ![Baking onto existing texture map](https://b3dhub.github.io/addons/images/quick-baker/existing_texture_bake.gif)
+
+## Decal Bake
+
+Bake decal layers created with [Quick Decal](https://superhivemarket.com/products/quick-decal), or any custom `_decal` child mesh.
+
+![Baking Quick Decal decal layers into textures](https://b3dhub.github.io/addons/images/quick-baker/decal_bake.gif)
 
 ## Map Preview
 
