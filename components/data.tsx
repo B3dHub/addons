@@ -21,13 +21,6 @@ export const Data = [
     info: "Object",
   },
   {
-    productURL: "/on-screen-key",
-    imageURL: "/addons/images/on-screen-key/thumb.png",
-    title: "On-Screen Key",
-    price: "$10 - $100",
-    info: "Interface",
-  },
-  {
     productURL: "/quick-measure",
     imageURL: "/addons/images/quick-measure/thumb.png",
     title: "Quick Measure",
@@ -35,18 +28,32 @@ export const Data = [
     info: "3D View",
   },
   {
-    productURL: "/knife-circle",
-    imageURL: "/addons/images/knife-circle/thumb.png",
-    title: "Knife Circle",
-    price: "$15 - $180",
-    info: "Mesh",
-  },
-  {
     productURL: "/quick-decal",
     imageURL: "/addons/images/quick-decal/thumb.png",
     title: "Quick Decal",
     price: "$20 - $200",
     info: "Material",
+  },
+  {
+    productURL: "/on-screen-key",
+    imageURL: "/addons/images/on-screen-key/thumb.png",
+    title: "On-Screen Key",
+    price: "$10 - $100",
+    info: "Interface",
+  },
+  {
+    productURL: "/arkit-to-metahuman",
+    imageURL: "/addons/images/arkit-to-metahuman/thumb.png",
+    title: "ARKit to MetaHuman",
+    price: "$10 - $100",
+    info: "Animation",
+  },
+  {
+    productURL: "/knife-circle",
+    imageURL: "/addons/images/knife-circle/thumb.png",
+    title: "Knife Circle",
+    price: "$15 - $180",
+    info: "Mesh",
   },
   {
     productURL: "/quick-interface",
