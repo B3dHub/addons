@@ -18,15 +18,15 @@ On-Screen Key is a Blender addon that displays your keystrokes and mouse input a
 
 ## On-Screen Key vs Screencast Keys
 
-| Feature         | On-Screen Key                                                                            | Screencast Keys                                          |
-| --------------- | ---------------------------------------------------------------------------------------- | -------------------------------------------------------- |
-| Input display   | Native Blender event icons, matching the status bar                                      | Plain text event names                                   |
-| History         | Fading stack of operator-style boxes, newest at the bottom                               | Event history list, last event, or repeat count          |
+| Feature         | On-Screen Key                                                                                               | Screencast Keys                                                |
+| --------------- | ----------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| Input display   | Native Blender event icons, matching the status bar                                                         | Plain text event names                                         |
+| History         | Fading stack of operator-style boxes, newest at the bottom                                                  | Event history list, last event, or repeat count                |
 | Mouse input     | Dedicated native icons for click, drag, double-click and scroll; held buttons stay lit; rapid scrolls group | Mouse figures, event history, hold status, custom mouse images |
-| Operator names  | Shown inline after the input, e.g. `X Delete`                                            | Separate "Last Operator" display (label and/or id name)  |
-| Colors          | Theme Tool-widget colors, or custom fills and text tint                                  | Custom text, shadow and background colors                |
-| Editor coverage | 3D Viewport, Image Editor, Node Editor, Video Sequencer via each overlay panel            | Draws to a chosen Area, Region, Window or the mouse cursor |
-| Toggle          | Configurable shortcut (default Shift+Alt+C) plus persistent auto-start                    | Shift+Alt+C, optional enable-on-startup                  |
+| Operator names  | Shown inline after the input, e.g. `X Delete`                                                               | Separate "Last Operator" display (label and/or id name)        |
+| Colors          | Theme Tool-widget colors, or custom fills and text tint                                                     | Custom text, shadow and background colors                      |
+| Editor coverage | 3D Viewport, Image Editor, Node Editor, Video Sequencer via each overlay panel                              | Draws to a chosen Area, Region, Window or the mouse cursor     |
+| Toggle          | Configurable shortcut (default Shift+Alt+C) plus persistent auto-start                                      | Shift+Alt+C, optional enable-on-startup                        |
 
 In short: On-Screen Key trades Screencast Keys' older-Blender support and extra mouse-position options for native, theme-matched icon rendering and a fading operator-box history that covers every major editor.
 
@@ -50,20 +50,20 @@ Key presses stacking up and fading out as operator-style boxes, with native Blen
 
 ## Settings
 
-| Setting          | Description                                          |
-| ---------------- | ---------------------------------------------------- |
-| Align            | Left, Center or Right edge of the editor             |
-| Scale            | Sizes the icons, box and margins (1.0–2.0)           |
-| Opacity          | Opacity of the box, icons and text (0.1–1.0)         |
-| Duration         | Seconds an input stays on screen (1–10)              |
-| History          | Number of recent inputs kept in the stack (1–10)     |
-| Operator Names   | Show the executed operator after the input           |
-| Reset Overlay    | Clear the overlay when the active editor changes     |
+| Setting          | Description                                              |
+| ---------------- | -------------------------------------------------------- |
+| Align            | Left, Center or Right edge of the editor                 |
+| Scale            | Sizes the icons, box and margins (1.0–2.0)               |
+| Opacity          | Opacity of the box, icons and text (0.1–1.0)             |
+| Duration         | Seconds an input stays on screen (1–10)                  |
+| History          | Number of recent inputs kept in the stack (1–10)         |
+| Operator Names   | Show the executed operator after the input               |
+| Reset Overlay    | Clear the overlay when the active editor changes         |
 | Shortcut         | Keyboard shortcut to toggle the overlay (empty for none) |
-| Use Theme Colors | Fill boxes from the theme's Tool widget colors       |
-| Inner            | Older box fill when theme colors are off             |
-| Selected         | Newest box fill when theme colors are off            |
-| Text             | Icon and keycap text tint when theme colors are off  |
+| Use Theme Colors | Fill boxes from the theme's Tool widget colors           |
+| Inner            | Older box fill when theme colors are off                 |
+| Selected         | Newest box fill when theme colors are off                |
+| Text             | Icon and keycap text tint when theme colors are off      |
 
 ## Support
 

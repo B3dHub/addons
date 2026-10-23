@@ -15,13 +15,13 @@ Blender-to-Unity is a Blender addon that exports objects, animations, colliders,
 - Auto Create Shader Types
 - Clean UI/UX
 
-## [Collider](https://b3dhub.github.io/blender-to-unity-docs/collider.html)
+## Collider
 
 Add auto and custom collider.
 
 ![Collider types panel in addon interface](https://b3dhub.github.io/addons/images/blender-to-unity/colliders.png)
 
-### [Box](https://b3dhub.github.io/blender-to-unity-docs/collider.html#box)
+### Box
 
 Box collider will create based on the bounding box of the selection.
 
@@ -37,7 +37,7 @@ Custom box collider:
 
 ![Custom box collider from selected faces](https://b3dhub.github.io/addons/images/blender-to-unity/box_custom.webp)
 
-### [Capsule](https://b3dhub.github.io/blender-to-unity-docs/collider.html#capsule)
+### Capsule
 
 Capsule collider will create based on the bounding box and the depth of the selection.
 
@@ -53,7 +53,7 @@ Custom capsule collider:
 
 ![Custom capsule collider from selected faces](https://b3dhub.github.io/addons/images/blender-to-unity/capsule_custom.webp)
 
-### [Sphere](https://b3dhub.github.io/blender-to-unity-docs/collider.html#sphere)
+### Sphere
 
 Sphere collider will create based on the bounding box of the selection.
 
@@ -69,7 +69,7 @@ Custom sphere collider:
 
 ![Custom sphere collider from selected faces](https://b3dhub.github.io/addons/images/blender-to-unity/sphere_custom.webp)
 
-### [Cylinder](https://b3dhub.github.io/blender-to-unity-docs/collider.html#cylinder)
+### Cylinder
 
 Cylinder collider will create based on the bounding box and the depth of the selection.
 
@@ -81,7 +81,7 @@ Cylinder collider in edit mode:
 
 ![Editing cylinder collider in edit mode](https://b3dhub.github.io/addons/images/blender-to-unity/cylinder_editmode.webp)
 
-### [Convex](https://b3dhub.github.io/blender-to-unity-docs/collider.html#convex)
+### Convex
 
 Convex collider will create based on the selection.
 
@@ -101,37 +101,37 @@ Convex collider with V-HACD:
 
 ![Automatic convex decomposition using V-HACD](https://b3dhub.github.io/addons/images/blender-to-unity/convex_vhacd.webp)
 
-## [LOD](https://b3dhub.github.io/blender-to-unity-docs/lod.html)
+## LOD
 
 Create, Update, and Preset LODs.
 
 ![LOD management panel in addon interface](https://b3dhub.github.io/addons/images/blender-to-unity/lods.png)
 
-### [Create](https://b3dhub.github.io/blender-to-unity-docs/lod.html#create)
+### Create
 
 Create LODs for the selected objects.
 
 ![Creating LOD levels for selected objects](https://b3dhub.github.io/addons/images/blender-to-unity/lod_create.gif)
 
-### [Update](https://b3dhub.github.io/blender-to-unity-docs/lod.html#update)
+### Update
 
 Update LODs for the selected objects.
 
 ![Updating existing LOD levels with new settings](https://b3dhub.github.io/addons/images/blender-to-unity/lod_update.gif)
 
-### [Preset](https://b3dhub.github.io/blender-to-unity-docs/lod.html#preset)
+### Preset
 
 Preset LODs for future use.
 
 ![Saving and loading LOD presets for reuse](https://b3dhub.github.io/addons/images/blender-to-unity/lod_preset.gif)
 
-## [Rename Tool](https://b3dhub.github.io/blender-to-unity-docs/tool.html)
+## Rename Tool
 
 Rename objects and its Colliders and LODs.
 
 ![Renaming objects with colliders and LODs automatically](https://b3dhub.github.io/addons/images/blender-to-unity/rename.gif)
 
-## [Export](https://b3dhub.github.io/blender-to-unity-docs/export.html)
+## Export
 
 Export objects and collections to Unity or Disk.
 

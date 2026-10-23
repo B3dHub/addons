@@ -33,14 +33,14 @@ Applying the operation twice is safe. Keys that already have their target name a
 
 The mapping is built in and applied verbatim, including case. A sample:
 
-| ARKit | MetaHuman Live Link |
-| --- | --- |
-| `EyeBlinkLeft` | `ctrl_expressions_eyeblinkl` |
-| `EyeLookInLeft` | `ctrl_expressions_eyelookrightl` |
-| `JawOpen` | `ctrl_expressions_jawOpen` |
-| `MouthClose` | `ctrl_expressions_mouthlipspurseul` |
-| `BrowInnerUp` | `ctrl_expressions_browlaterall` |
-| `Neutral` | `Default` |
+| ARKit           | MetaHuman Live Link                 |
+| --------------- | ----------------------------------- |
+| `EyeBlinkLeft`  | `ctrl_expressions_eyeblinkl`        |
+| `EyeLookInLeft` | `ctrl_expressions_eyelookrightl`    |
+| `JawOpen`       | `ctrl_expressions_jawOpen`          |
+| `MouthClose`    | `ctrl_expressions_mouthlipspurseul` |
+| `BrowInnerUp`   | `ctrl_expressions_browlaterall`     |
+| `Neutral`       | `Default`                           |
 
 Several names are deliberately asymmetric and are not "fixed": `MouthClose` and `MouthPucker` use the purse targets, `BrowInnerUp` maps to `browlaterall`, `CheekPuff` maps to `mouthcheekblowl`, and the eye In/Out targets follow the supplied list.
 
@@ -52,23 +52,23 @@ Object-level drivers that reference `key_blocks[...]` outside the shape key data
 
 ## Why Rename Manually?
 
-| Task | ARKit to MetaHuman | Manual rename |
-| --- | --- | --- |
-| 52 names applied consistently | Yes | Error-prone |
-| Preview before applying | Yes | No |
-| Missing keys and conflicts reported | Yes | Manual check |
-| Values and sliders preserved | Yes, verified | Easy to miss |
-| Animation, NLA and drivers updated | Yes | Manual path editing |
-| Shared shape key data handled once | Yes | Easy to repeat or miss |
-| Report for review | Yes | No |
+| Task                                | ARKit to MetaHuman | Manual rename          |
+| ----------------------------------- | ------------------ | ---------------------- |
+| 52 names applied consistently       | Yes                | Error-prone            |
+| Preview before applying             | Yes                | No                     |
+| Missing keys and conflicts reported | Yes                | Manual check           |
+| Values and sliders preserved        | Yes, verified      | Easy to miss           |
+| Animation, NLA and drivers updated  | Yes                | Manual path editing    |
+| Shared shape key data handled once  | Yes                | Easy to repeat or miss |
+| Report for review                   | Yes                | No                     |
 
 ## Options
 
-| Setting | Description |
-| --- | --- |
-| Scope | Active Mesh, Selected Meshes or All Meshes. Default: Selected Meshes. |
-| Update Animation & Drivers | Rewrite shape key animation, NLA paths and drivers. Enabled by default. |
-| Skip Missing Keys | Apply available renames and report missing sources. Disable to cancel the whole run when any source is missing. |
+| Setting                    | Description                                                                                                     |
+| -------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| Scope                      | Active Mesh, Selected Meshes or All Meshes. Default: Selected Meshes.                                           |
+| Update Animation & Drivers | Rewrite shape key animation, NLA paths and drivers. Enabled by default.                                         |
+| Skip Missing Keys          | Apply available renames and report missing sources. Disable to cancel the whole run when any source is missing. |
 
 ## Report
 

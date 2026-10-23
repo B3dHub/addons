@@ -14,13 +14,13 @@ Blender-to-Godot is a Blender addon that exports objects, animations, collisions
 - Export to Disk
 - Clean UI/UX
 
-## [Collision](https://b3dhub.github.io/blender-to-godot-docs/collision.html)
+## Collision
 
 Add auto and custom collision.
 
 ![Collision types panel in addon interface](https://b3dhub.github.io/addons/images/blender-to-godot/ui_collision.png)
 
-### [Box](https://b3dhub.github.io/blender-to-godot-docs/collision.html#box)
+### Box
 
 Box collision will create based on the bounding box of the selection.
 
@@ -36,7 +36,7 @@ Custom box collision:
 
 ![Custom box collision from selected faces](https://b3dhub.github.io/addons/images/blender-to-godot/box_custom.gif)
 
-### [Capsule](https://b3dhub.github.io/blender-to-godot-docs/collision.html#capsule)
+### Capsule
 
 Capsule collision will create based on the bounding box and the depth of the selection.
 
@@ -52,7 +52,7 @@ Custom capsule collision:
 
 ![Custom capsule collision from selected faces](https://b3dhub.github.io/addons/images/blender-to-godot/capsule_custom.gif)
 
-### [Sphere](https://b3dhub.github.io/blender-to-godot-docs/collision.html#sphere)
+### Sphere
 
 Sphere collision will create based on the bounding box of the selection.
 
@@ -68,7 +68,7 @@ Custom sphere collision:
 
 ![Custom sphere collision from selected faces](https://b3dhub.github.io/addons/images/blender-to-godot/sphere_custom.gif)
 
-### [Cylinder](https://b3dhub.github.io/blender-to-godot-docs/collision.html#cylinder)
+### Cylinder
 
 Cylinder collision will create based on the bounding box and the depth of the selection.
 
@@ -84,7 +84,7 @@ Custom cylinder collision:
 
 ![Custom cylinder collision from selected faces](https://b3dhub.github.io/addons/images/blender-to-godot/cylinder_custom.gif)
 
-### [Convex](https://b3dhub.github.io/blender-to-godot-docs/collision.html#convex)
+### Convex
 
 Convex collision will create based on the selection.
 
@@ -104,49 +104,49 @@ Convex collision with V-HACD:
 
 ![Automatic convex decomposition using V-HACD](https://b3dhub.github.io/addons/images/blender-to-godot/convex_vhacd.gif)
 
-## [Component](https://b3dhub.github.io/blender-to-godot-docs/component.html)
+## Component
 
 Create component such as Navmesh, Rigid body etc.
 
 ![Component types panel in addon interface](https://b3dhub.github.io/addons/images/blender-to-godot/ui_component.png)
 
-### [Navmesh](https://b3dhub.github.io/blender-to-godot-docs/component.html#navmesh)
+### Navmesh
 
 Create navigation (-navmesh)
 
 A mesh node with the `-navmesh` suffix will be converted to a navigation mesh. The original Mesh object will be removed at import-time.
 
-### [Occluder](https://b3dhub.github.io/blender-to-godot-docs/component.html#occluder)
+### Occluder
 
 Create Occluder (-occonly)
 
 If a mesh is imported with the `-occ` suffix an [Occluder3D](https://docs.godotengine.org/en/stable/tutorials/assets_pipeline/importing_3d_scenes/node_type_customization.html#create-navigation-navmesh) node will be created based on the geometry of the mesh, it does not replace the mesh. A mesh node with the `-occonly` suffix will be converted to an [Occluder3D](https://docs.godotengine.org/en/stable/tutorials/assets_pipeline/importing_3d_scenes/node_type_customization.html#create-navigation-navmesh) on import.
 
-### [Rigid Body](https://b3dhub.github.io/blender-to-godot-docs/component.html#rigid-body)
+### Rigid Body
 
 Rigid Body (-rigid)
 
 A mesh node with the `-rigid` suffix will be imported as a [RigidBody3D](https://docs.godotengine.org/en/stable/tutorials/assets_pipeline/importing_3d_scenes/node_type_customization.html#create-navigation-navmesh).
 
-### [Vehicle Body](https://b3dhub.github.io/blender-to-godot-docs/component.html#vehicle-body)
+### Vehicle Body
 
 Create a VehicleBody (-vehicle)
 
 A mesh node with the `-vehicle` suffix will be imported as a child to a [VehicleBody3D](https://docs.godotengine.org/en/stable/tutorials/assets_pipeline/importing_3d_scenes/node_type_customization.html#create-navigation-navmesh) node.
 
-### [Vehicle Wheel](https://b3dhub.github.io/blender-to-godot-docs/component.html#vehicle-wheel)
+### Vehicle Wheel
 
 Create a VehicleWheel (-wheel)
 
 A mesh node with the `-wheel` suffix will be imported as a child to a [VehicleWheel3D](https://docs.godotengine.org/en/stable/tutorials/assets_pipeline/importing_3d_scenes/node_type_customization.html#create-navigation-navmesh) node.
 
-## [Rename Tool](https://b3dhub.github.io/blender-to-godot-docs/tool.html)
+## Rename Tool
 
 Rename object and its collisions.
 
 ![Renaming objects with collisions automatically](https://b3dhub.github.io/addons/images/blender-to-godot/rename.gif)
 
-## [Export](https://b3dhub.github.io/blender-to-godot-docs/export.html)
+## Export
 
 Export objects and collections to Godot or Disk.
 

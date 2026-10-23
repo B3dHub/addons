@@ -188,30 +188,14 @@ export default function BlendertoUnityPage() {
 
       <Card>
         <CardHeader>
-          <CardTitle>
-            <Link
-              href={"https://b3dhub.github.io/blender-to-unity-docs/collider.html"}
-              target="_blank"
-              className="hover:underline"
-            >
-              Collider
-            </Link>
-          </CardTitle>
+          <CardTitle>Collider</CardTitle>
           <CardDescription>Add auto and custom collider.</CardDescription>
         </CardHeader>
         <CardContent>
           <Image className="rounded-lg" src="/addons/images/blender-to-unity/colliders.png" alt="Collider types panel in addon interface" width={256} height={256} />
         </CardContent>
         <CardHeader>
-          <CardTitle>
-            <Link
-              href={"https://b3dhub.github.io/blender-to-unity-docs/collider.html#box"}
-              target="_blank"
-              className="hover:underline"
-            >
-              Box
-            </Link>
-          </CardTitle>
+          <CardTitle>Box</CardTitle>
           <CardDescription>Box collider will create based on the bounding box of the selection.</CardDescription>
         </CardHeader>
         <CardContent>
@@ -253,15 +237,7 @@ export default function BlendertoUnityPage() {
           </Carousel>
         </CardContent>
         <CardHeader>
-          <CardTitle>
-            <Link
-              href={"https://b3dhub.github.io/blender-to-unity-docs/collider.html#capsule"}
-              target="_blank"
-              className="hover:underline"
-            >
-              Capsule
-            </Link>
-          </CardTitle>
+          <CardTitle>Capsule</CardTitle>
           <CardDescription>
             Capsule collider will create based on the bounding box and the depth of the selection.
           </CardDescription>
@@ -305,15 +281,7 @@ export default function BlendertoUnityPage() {
           </Carousel>
         </CardContent>
         <CardHeader>
-          <CardTitle>
-            <Link
-              href={"https://b3dhub.github.io/blender-to-unity-docs/collider.html#sphere"}
-              target="_blank"
-              className="hover:underline"
-            >
-              Sphere
-            </Link>
-          </CardTitle>
+          <CardTitle>Sphere</CardTitle>
           <CardDescription>Sphere collider will create based on the bounding box of the selection.</CardDescription>
         </CardHeader>
         <CardContent>
@@ -355,15 +323,7 @@ export default function BlendertoUnityPage() {
           </Carousel>
         </CardContent>
         <CardHeader>
-          <CardTitle>
-            <Link
-              href={"https://b3dhub.github.io/blender-to-unity-docs/collider.html#cylinder"}
-              target="_blank"
-              className="hover:underline"
-            >
-              Cylinder
-            </Link>
-          </CardTitle>
+          <CardTitle>Cylinder</CardTitle>
           <CardDescription>
             Cylinder collider will create based on the bounding box and the depth of the selection.
           </CardDescription>
@@ -397,15 +357,7 @@ export default function BlendertoUnityPage() {
           </Carousel>
         </CardContent>
         <CardHeader>
-          <CardTitle>
-            <Link
-              href={"https://b3dhub.github.io/blender-to-unity-docs/collider.html#convex"}
-              target="_blank"
-              className="hover:underline"
-            >
-              Convex
-            </Link>
-          </CardTitle>
+          <CardTitle>Convex</CardTitle>
           <CardDescription>Convex collider will create based on the selection.</CardDescription>
         </CardHeader>
         <CardContent>
@@ -460,30 +412,14 @@ export default function BlendertoUnityPage() {
 
       <Card>
         <CardHeader>
-          <CardTitle>
-            <Link
-              href={"https://b3dhub.github.io/blender-to-unity-docs/lod.html"}
-              target="_blank"
-              className="hover:underline"
-            >
-              LOD
-            </Link>
-          </CardTitle>
+          <CardTitle>LOD</CardTitle>
           <CardDescription>Create, Update, and Preset LODs.</CardDescription>
         </CardHeader>
         <CardContent>
           <Image className="rounded-lg" src="/addons/images/blender-to-unity/lods.png" alt="LOD management panel in addon interface" width={256} height={256} />
         </CardContent>
         <CardHeader>
-          <CardTitle>
-            <Link
-              href={"https://b3dhub.github.io/blender-to-unity-docs/lod.html#create"}
-              target="_blank"
-              className="hover:underline"
-            >
-              Create
-            </Link>
-          </CardTitle>
+          <CardTitle>Create</CardTitle>
           <CardDescription>Create LODs for the selected objects.</CardDescription>
         </CardHeader>
         <CardContent>
@@ -497,15 +433,7 @@ export default function BlendertoUnityPage() {
           />
         </CardContent>
         <CardHeader>
-          <CardTitle>
-            <Link
-              href={"https://b3dhub.github.io/blender-to-unity-docs/lod.html#update"}
-              target="_blank"
-              className="hover:underline"
-            >
-              Update
-            </Link>
-          </CardTitle>
+          <CardTitle>Update</CardTitle>
           <CardDescription>Update LODs for the selected objects.</CardDescription>
         </CardHeader>
         <CardContent>
@@ -519,15 +447,7 @@ export default function BlendertoUnityPage() {
           />
         </CardContent>
         <CardHeader>
-          <CardTitle>
-            <Link
-              href={"https://b3dhub.github.io/blender-to-unity-docs/lod.html#preset"}
-              target="_blank"
-              className="hover:underline"
-            >
-              Preset
-            </Link>
-          </CardTitle>
+          <CardTitle>Preset</CardTitle>
           <CardDescription>Preset LODs for future use.</CardDescription>
         </CardHeader>
         <CardContent>
@@ -544,15 +464,7 @@ export default function BlendertoUnityPage() {
 
       <Card>
         <CardHeader>
-          <CardTitle>
-            <Link
-              href={"https://b3dhub.github.io/blender-to-unity-docs/tool.html"}
-              target="_blank"
-              className="hover:underline"
-            >
-              Rename Tool
-            </Link>
-          </CardTitle>
+          <CardTitle>Rename Tool</CardTitle>
           <CardDescription>Rename objects and its Colliders and LODs.</CardDescription>
         </CardHeader>
         <CardContent>
@@ -569,15 +481,7 @@ export default function BlendertoUnityPage() {
 
       <Card>
         <CardHeader>
-          <CardTitle>
-            <Link
-              href={"https://b3dhub.github.io/blender-to-unity-docs/export.html"}
-              target="_blank"
-              className="hover:underline"
-            >
-              Export
-            </Link>
-          </CardTitle>
+          <CardTitle>Export</CardTitle>
           <CardDescription>Export objects and collections to Unity or Disk.</CardDescription>
           <CardDescription>
             - Add a folder path.<br></br>- Select the objects or collections.

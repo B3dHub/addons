@@ -17,13 +17,13 @@ Blender-to-Unreal is a Blender addon that exports objects, animations, collision
 - Export to Disk
 - Clean UI/UX
 
-## [Collision](https://b3dhub.github.io/blender-to-unreal-docs/collision.html)
+## Collision
 
 Add auto and custom collision.
 
 ![Collision types panel in addon interface](https://b3dhub.github.io/addons/images/blender-to-unreal/collisions.png)
 
-### [Box](https://b3dhub.github.io/blender-to-unreal-docs/collision.html#box)
+### Box
 
 Box collision will create based on the bounding box of the selection.
 
@@ -39,7 +39,7 @@ Custom box collision:
 
 ![Custom box collision from selected faces](https://b3dhub.github.io/addons/images/blender-to-unreal/box_custom.webp)
 
-### [Capsule](https://b3dhub.github.io/blender-to-unreal-docs/collision.html#capsule)
+### Capsule
 
 Capsule collision will create based on the bounding box and the depth of the selection.
 
@@ -55,7 +55,7 @@ Custom capsule collision:
 
 ![Custom capsule collision from selected faces](https://b3dhub.github.io/addons/images/blender-to-unreal/capsule_custom.webp)
 
-### [Sphere](https://b3dhub.github.io/blender-to-unreal-docs/collision.html#sphere)
+### Sphere
 
 Sphere collision will create based on the bounding box of the selection.
 
@@ -71,7 +71,7 @@ Custom sphere collision:
 
 ![Custom sphere collision from selected faces](https://b3dhub.github.io/addons/images/blender-to-unreal/sphere_custom.webp)
 
-### [Cylinder](https://b3dhub.github.io/blender-to-unreal-docs/collision.html#cylinder)
+### Cylinder
 
 Cylinder collision will create based on the bounding box and the depth of the selection.
 
@@ -83,7 +83,7 @@ Cylinder collision in edit mode:
 
 ![Editing cylinder collision in edit mode](https://b3dhub.github.io/addons/images/blender-to-unreal/cylinder_editmode.webp)
 
-### [Convex](https://b3dhub.github.io/blender-to-unreal-docs/collision.html#convex)
+### Convex
 
 Convex collision will create based on the selection.
 
@@ -103,13 +103,13 @@ Convex collision with V-HACD:
 
 ![Automatic convex decomposition using V-HACD](https://b3dhub.github.io/addons/images/blender-to-unreal/convex_vhacd.webp)
 
-## [Socket](https://b3dhub.github.io/blender-to-unreal-docs/socket.html)
+## Socket
 
 Add socket to the selected objects.
 
 ![Socket creation panel in addon interface](https://b3dhub.github.io/addons/images/blender-to-unreal/socket.png)
 
-### [Mesh](https://b3dhub.github.io/blender-to-unreal-docs/socket.html#box)
+### Mesh
 
 Mesh socket will create in the 3d cursor location.
 
@@ -125,31 +125,31 @@ Custom mesh socket:
 
 ![Custom socket attached to mesh surface](https://b3dhub.github.io/addons/images/blender-to-unreal/socket_custom.webp)
 
-## [LOD](https://b3dhub.github.io/blender-to-unreal-docs/lod.html)
+## LOD
 
 Create, Update, and Preset LODs.
 
 ![LOD management panel in addon interface](https://b3dhub.github.io/addons/images/blender-to-unreal/lods.png)
 
-### [Create](https://b3dhub.github.io/blender-to-unreal-docs/lod.html#create)
+### Create
 
 Create LODs for the selected objects.
 
 ![Creating LOD levels for selected objects](https://b3dhub.github.io/addons/images/blender-to-unreal/lod_create.gif)
 
-### [Update](https://b3dhub.github.io/blender-to-unreal-docs/lod.html#update)
+### Update
 
 Update LODs for the selected objects.
 
 ![Updating existing LOD levels with new settings](https://b3dhub.github.io/addons/images/blender-to-unreal/lod_update.gif)
 
-### [Preset](https://b3dhub.github.io/blender-to-unreal-docs/lod.html#preset)
+### Preset
 
 Preset LODs for future use.
 
 ![Saving and loading LOD presets for reuse](https://b3dhub.github.io/addons/images/blender-to-unreal/lod_preset.gif)
 
-## [Rename Tool](https://b3dhub.github.io/blender-to-unreal-docs/tool.html)
+## Rename Tool
 
 Rename objects and its Collisions and LODs.
 
@@ -163,7 +163,7 @@ You need a vehicle body and wheels named `Wheel` parented to it. You can load th
 
 ![Automatically rigging vehicle with wheel bones](https://b3dhub.github.io/addons/images/blender-to-unreal/vehicle_rigging.gif)
 
-## [Export](https://b3dhub.github.io/blender-to-unreal-docs/export.html)
+## Export
 
 Export objects and collections to Unreal or Disk.
 

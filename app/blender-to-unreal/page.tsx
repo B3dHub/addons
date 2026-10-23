@@ -215,15 +215,7 @@ export default function BlendertoUnrealPage() {
 
       <Card>
         <CardHeader>
-          <CardTitle>
-            <Link
-              href={"https://b3dhub.github.io/blender-to-unreal-docs/collision.html"}
-              target="_blank"
-              className="hover:underline"
-            >
-              Collision
-            </Link>
-          </CardTitle>
+          <CardTitle>Collision</CardTitle>
           <CardDescription>Add auto and custom collision.</CardDescription>
         </CardHeader>
         <CardContent>
@@ -236,15 +228,7 @@ export default function BlendertoUnrealPage() {
           />
         </CardContent>
         <CardHeader>
-          <CardTitle>
-            <Link
-              href={"https://b3dhub.github.io/blender-to-unreal-docs/collision.html#box"}
-              target="_blank"
-              className="hover:underline"
-            >
-              Box
-            </Link>
-          </CardTitle>
+          <CardTitle>Box</CardTitle>
           <CardDescription>Box collision will create based on the bounding box of the selection.</CardDescription>
         </CardHeader>
         <CardContent>
@@ -286,15 +270,7 @@ export default function BlendertoUnrealPage() {
           </Carousel>
         </CardContent>
         <CardHeader>
-          <CardTitle>
-            <Link
-              href={"https://b3dhub.github.io/blender-to-unreal-docs/collision.html#capsule"}
-              target="_blank"
-              className="hover:underline"
-            >
-              Capsule
-            </Link>
-          </CardTitle>
+          <CardTitle>Capsule</CardTitle>
           <CardDescription>
             Capsule collision will create based on the bounding box and the depth of the selection.
           </CardDescription>
@@ -338,15 +314,7 @@ export default function BlendertoUnrealPage() {
           </Carousel>
         </CardContent>
         <CardHeader>
-          <CardTitle>
-            <Link
-              href={"https://b3dhub.github.io/blender-to-unreal-docs/collision.html#sphere"}
-              target="_blank"
-              className="hover:underline"
-            >
-              Sphere
-            </Link>
-          </CardTitle>
+          <CardTitle>Sphere</CardTitle>
           <CardDescription>Sphere collision will create based on the bounding box of the selection.</CardDescription>
         </CardHeader>
         <CardContent>
@@ -388,15 +356,7 @@ export default function BlendertoUnrealPage() {
           </Carousel>
         </CardContent>
         <CardHeader>
-          <CardTitle>
-            <Link
-              href={"https://b3dhub.github.io/blender-to-unreal-docs/collision.html#cylinder"}
-              target="_blank"
-              className="hover:underline"
-            >
-              Cylinder
-            </Link>
-          </CardTitle>
+          <CardTitle>Cylinder</CardTitle>
           <CardDescription>
             Cylinder collision will create based on the bounding box and the depth of the selection.
           </CardDescription>
@@ -430,15 +390,7 @@ export default function BlendertoUnrealPage() {
           </Carousel>
         </CardContent>
         <CardHeader>
-          <CardTitle>
-            <Link
-              href={"https://b3dhub.github.io/blender-to-unreal-docs/collision.html#convex"}
-              target="_blank"
-              className="hover:underline"
-            >
-              Convex
-            </Link>
-          </CardTitle>
+          <CardTitle>Convex</CardTitle>
           <CardDescription>Convex collision will create based on the selection.</CardDescription>
         </CardHeader>
         <CardContent>
@@ -493,15 +445,7 @@ export default function BlendertoUnrealPage() {
 
       <Card>
         <CardHeader>
-          <CardTitle>
-            <Link
-              href={"https://b3dhub.github.io/blender-to-unreal-docs/socket.html"}
-              target="_blank"
-              className="hover:underline"
-            >
-              Socket
-            </Link>
-          </CardTitle>
+          <CardTitle>Socket</CardTitle>
           <CardDescription>Add socket to the selected objects.</CardDescription>
         </CardHeader>
         <CardContent>
@@ -514,15 +458,7 @@ export default function BlendertoUnrealPage() {
           />
         </CardContent>
         <CardHeader>
-          <CardTitle>
-            <Link
-              href={"https://b3dhub.github.io/blender-to-unreal-docs/socket.html#box"}
-              target="_blank"
-              className="hover:underline"
-            >
-              Mesh
-            </Link>
-          </CardTitle>
+          <CardTitle>Mesh</CardTitle>
           <CardDescription>Mesh socket will create in the 3d cursor location.</CardDescription>
         </CardHeader>
         <CardContent>
@@ -567,15 +503,7 @@ export default function BlendertoUnrealPage() {
 
       <Card>
         <CardHeader>
-          <CardTitle>
-            <Link
-              href={"https://b3dhub.github.io/blender-to-unreal-docs/lod.html"}
-              target="_blank"
-              className="hover:underline"
-            >
-              LOD
-            </Link>
-          </CardTitle>
+          <CardTitle>LOD</CardTitle>
           <CardDescription>Create, Update, and Preset LODs.</CardDescription>
         </CardHeader>
         <CardContent>
@@ -588,15 +516,7 @@ export default function BlendertoUnrealPage() {
           />
         </CardContent>
         <CardHeader>
-          <CardTitle>
-            <Link
-              href={"https://b3dhub.github.io/blender-to-unreal-docs/lod.html#create"}
-              target="_blank"
-              className="hover:underline"
-            >
-              Create
-            </Link>
-          </CardTitle>
+          <CardTitle>Create</CardTitle>
           <CardDescription>Create LODs for the selected objects.</CardDescription>
         </CardHeader>
         <CardContent>
@@ -610,15 +530,7 @@ export default function BlendertoUnrealPage() {
           />
         </CardContent>
         <CardHeader>
-          <CardTitle>
-            <Link
-              href={"https://b3dhub.github.io/blender-to-unreal-docs/lod.html#update"}
-              target="_blank"
-              className="hover:underline"
-            >
-              Update
-            </Link>
-          </CardTitle>
+          <CardTitle>Update</CardTitle>
           <CardDescription>Update LODs for the selected objects.</CardDescription>
         </CardHeader>
         <CardContent>
@@ -632,15 +544,7 @@ export default function BlendertoUnrealPage() {
           />
         </CardContent>
         <CardHeader>
-          <CardTitle>
-            <Link
-              href={"https://b3dhub.github.io/blender-to-unreal-docs/lod.html#preset"}
-              target="_blank"
-              className="hover:underline"
-            >
-              Preset
-            </Link>
-          </CardTitle>
+          <CardTitle>Preset</CardTitle>
           <CardDescription>Preset LODs for future use.</CardDescription>
         </CardHeader>
         <CardContent>
@@ -657,15 +561,7 @@ export default function BlendertoUnrealPage() {
 
       <Card>
         <CardHeader>
-          <CardTitle>
-            <Link
-              href={"https://b3dhub.github.io/blender-to-unreal-docs/tool.html"}
-              target="_blank"
-              className="hover:underline"
-            >
-              Rename Tool
-            </Link>
-          </CardTitle>
+          <CardTitle>Rename Tool</CardTitle>
           <CardDescription>Rename objects and its Collisions and LODs.</CardDescription>
         </CardHeader>
         <CardContent>
@@ -704,15 +600,7 @@ export default function BlendertoUnrealPage() {
 
       <Card>
         <CardHeader>
-          <CardTitle>
-            <Link
-              href={"https://b3dhub.github.io/blender-to-unreal-docs/export.html"}
-              target="_blank"
-              className="hover:underline"
-            >
-              Export
-            </Link>
-          </CardTitle>
+          <CardTitle>Export</CardTitle>
           <CardDescription>Export objects and collections to Unreal or Disk.</CardDescription>
           <CardDescription>
             - Add a folder path.<br></br>- Select the objects or collections.
