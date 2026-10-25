@@ -9,6 +9,7 @@ import Image from "next/image";
 import { Metadata } from "next";
 import Affiliate from "@/components/affiliate";
 import { Coupon, showCoupon } from "@/components/coupon";
+import FeatureLinks from "@/components/feature-links";
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
@@ -16,6 +17,21 @@ export const metadata: Metadata = {
   description:
     "Import Quixel Megascans assets downloaded via Quixel Bridge directly into Blender. Browse with thumbnails, search, and filters, import 3D assets, plants, surfaces, decals, atlases, and brushes with automatic PBR materials and LOD groups. The add-on does not support online downloading and works only with assets already downloaded to your local library.",
 };
+
+const features = [
+  { label: "Grid View", href: "#grid-view" },
+  { label: "Asset Search", href: "#asset-search" },
+  { label: "Asset Details", href: "#asset-details" },
+  { label: "Pagination", href: "#pagination" },
+  { label: "Import Assets", href: "#import-assets" },
+  { label: "Import Plants", href: "#import-plants" },
+  { label: "Import Surfaces", href: "#import-surfaces" },
+  { label: "Import LODs", href: "#import-assets" },
+  { label: "Create Lod Group", href: "#import-assets" },
+  { label: "Apply Imported Materials", href: "#import-surfaces" },
+  { label: "Import Other Asset Types from Shader Editor", href: "#import-surfaces" },
+  { label: "Import Brushes from Texture Paint Mode", href: "#import-surfaces" },
+];
 
 export default function MegascansBridgePage() {
   return (
@@ -61,46 +77,7 @@ export default function MegascansBridgePage() {
           <CardTitle>Features</CardTitle>
         </CardHeader>
         <CardContent>
-          <Table>
-            <TableBody>
-              <TableRow>
-                <TableCell className="font-medium">Grid View</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Asset Search</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Asset Details</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Pagination</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Import Assets</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Import Plants</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Import Surfaces</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Import LODs</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Create Lod Group</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Apply Imported Materials</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Import Other Asset Types from Shader Editor</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Import Brushes from Texture Paint Mode</TableCell>
-              </TableRow>
-            </TableBody>
-          </Table>
+          <FeatureLinks features={features} />
         </CardContent>
       </Card>
 
@@ -156,7 +133,7 @@ export default function MegascansBridgePage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="grid-view">
         <CardHeader>
           <CardTitle>Grid View</CardTitle>
           <CardDescription>View assets in a grid view.</CardDescription>
@@ -168,12 +145,13 @@ export default function MegascansBridgePage() {
             width={600}
             height={325}
             className="rounded w-full"
+            loading="eager"
             unoptimized
           />
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="asset-search">
         <CardHeader>
           <CardTitle>Asset Search</CardTitle>
           <CardDescription>Search assets by name.</CardDescription>
@@ -190,7 +168,7 @@ export default function MegascansBridgePage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="asset-details">
         <CardHeader>
           <CardTitle>Asset Details</CardTitle>
           <CardDescription>View asset details like name, polycount, resolution, etc.</CardDescription>
@@ -207,7 +185,7 @@ export default function MegascansBridgePage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="pagination">
         <CardHeader>
           <CardTitle>Pagination</CardTitle>
           <CardDescription>Navigate through pages of assets.</CardDescription>
@@ -224,7 +202,7 @@ export default function MegascansBridgePage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="import-assets">
         <CardHeader>
           <CardTitle>Import Assets</CardTitle>
           <CardDescription>You can import 3D assets with LODs and create LOD groups.</CardDescription>
@@ -254,7 +232,7 @@ export default function MegascansBridgePage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="import-plants">
         <CardHeader>
           <CardTitle>Import Plants</CardTitle>
           <CardDescription>You can import 3D plants with LODs and create LOD groups.</CardDescription>
@@ -271,7 +249,7 @@ export default function MegascansBridgePage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="import-surfaces">
         <CardHeader>
           <CardTitle>Import Surfaces</CardTitle>
           <CardDescription>You can import surface textures as materials and node groups.</CardDescription>

@@ -1,16 +1,15 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
 import Support from "@/components/support";
 import OtherAddons from "@/components/other-addons";
+import FeatureLinks from "@/components/feature-links";
 import Image from "next/image";
 import { Metadata } from "next";
 import Affiliate from "@/components/affiliate";
 import { Coupon, showCoupon } from "@/components/coupon";
 import { cn } from "@/lib/utils";
-import { CheckIcon, XIcon } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Blender to Unreal - Blender Addon",
@@ -18,10 +17,25 @@ export const metadata: Metadata = {
     "Export objects, animations, collisions, sockets, and LODs to Unreal Engine with just a few clicks. Includes auto and custom collisions, socket creation, LOD presets, and a rename tool.",
 };
 
+const features = [
+  { label: "Object Export", href: "#export" },
+  { label: "Collection Export", href: "#export" },
+  { label: "Collision Export", href: "#collision" },
+  { label: "Socket Export", href: "#socket" },
+  { label: "LOD Export", href: "#lod" },
+  { label: "Animation Export", href: "#export" },
+  { label: "Rename Tool", href: "#rename-tool" },
+  { label: "Edge Decal Tool", href: "#export" },
+  { label: "Vehicle Rigging", href: "#vehicle-rigging" },
+  { label: "Export to Unreal", href: "#export" },
+  { label: "Export to Disk", href: "#export" },
+  { label: "Clean UI/UX", href: "#introduction" },
+];
+
 export default function BlendertoUnrealPage() {
   return (
     <div className="flex flex-col justify-center mx-auto gap-5 max-w-[832px]">
-      <Card>
+      <Card id="introduction">
         <CardHeader>
           <CardTitle>Introduction</CardTitle>
         </CardHeader>
@@ -39,181 +53,14 @@ export default function BlendertoUnrealPage() {
 
       <Card>
         <CardHeader>
-          <CardTitle>Why to choose Blender-to-Unreal?</CardTitle>
-          <CardDescription>Blender-to-Unreal vs Others</CardDescription>
+          <CardTitle>Features</CardTitle>
         </CardHeader>
         <CardContent>
-          <Table>
-            <TableHeader>
-              <TableRow>
-                <TableHead>Features</TableHead>
-                <TableHead className="text-center">Blender-to-Unreal</TableHead>
-                <TableHead className="text-center">Others</TableHead>
-              </TableRow>
-            </TableHeader>
-            <TableBody>
-              <TableRow>
-                <TableCell className="font-medium">Object Export</TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Collection Export</TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <XIcon className="size-4" />
-                  </div>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Collision Export</TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <XIcon className="size-4" />
-                  </div>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Socket Export</TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <XIcon className="size-4" />
-                  </div>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">LOD Export</TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <XIcon className="size-4" />
-                  </div>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Animation Export</TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <XIcon className="size-4" />
-                  </div>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Rename Tool</TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <XIcon className="size-4" />
-                  </div>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Edge Decal Tool</TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <XIcon className="size-4" />
-                  </div>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Vehicle Rigging</TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <XIcon className="size-4" />
-                  </div>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Export to Unreal</TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <XIcon className="size-4" />
-                  </div>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Export to Disk</TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <XIcon className="size-4" />
-                  </div>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Clean UI/UX</TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <XIcon className="size-4" />
-                  </div>
-                </TableCell>
-              </TableRow>
-            </TableBody>
-          </Table>
+          <FeatureLinks features={features} />
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="collision">
         <CardHeader>
           <CardTitle>Collision</CardTitle>
           <CardDescription>Add auto and custom collision.</CardDescription>
@@ -221,6 +68,7 @@ export default function BlendertoUnrealPage() {
         <CardContent>
           <Image
             className="rounded-lg"
+            loading="eager"
             src="/addons/images/blender-to-unreal/collisions.png"
             alt="Collision types panel in addon interface"
             width={256}
@@ -443,7 +291,7 @@ export default function BlendertoUnrealPage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="socket">
         <CardHeader>
           <CardTitle>Socket</CardTitle>
           <CardDescription>Add socket to the selected objects.</CardDescription>
@@ -501,7 +349,7 @@ export default function BlendertoUnrealPage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="lod">
         <CardHeader>
           <CardTitle>LOD</CardTitle>
           <CardDescription>Create, Update, and Preset LODs.</CardDescription>
@@ -559,7 +407,7 @@ export default function BlendertoUnrealPage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="rename-tool">
         <CardHeader>
           <CardTitle>Rename Tool</CardTitle>
           <CardDescription>Rename objects and its Collisions and LODs.</CardDescription>
@@ -576,7 +424,7 @@ export default function BlendertoUnrealPage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="vehicle-rigging">
         <CardHeader>
           <CardTitle>Vehicle Rigging</CardTitle>
           <CardDescription>
@@ -598,7 +446,7 @@ export default function BlendertoUnrealPage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="export">
         <CardHeader>
           <CardTitle>Export</CardTitle>
           <CardDescription>Export objects and collections to Unreal or Disk.</CardDescription>

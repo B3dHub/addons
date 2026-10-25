@@ -1,15 +1,14 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
 import Support from "@/components/support";
 import OtherAddons from "@/components/other-addons";
+import FeatureLinks from "@/components/feature-links";
 import Image from "next/image";
 import { Metadata } from "next";
 import Affiliate from "@/components/affiliate";
 import { Coupon, showCoupon } from "@/components/coupon";
 import { cn } from "@/lib/utils";
-import { CheckIcon, XIcon } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Quick Baker - Blender Addon",
@@ -17,10 +16,33 @@ export const metadata: Metadata = {
     "PBR texture baking addon for Blender. Bake multiple objects and materials into single or multiple texture sets with auto cage, auto UDIM, node bake, and realtime map preview.",
 };
 
+const features = [
+  { label: "Object Bake", href: "#object-bake" },
+  { label: "High-to-Low Poly Bake", href: "#high-to-low-poly-bake" },
+  { label: "Single Texture Set", href: "#single-texture-set" },
+  { label: "Multiple Texture Set", href: "#multiple-texture-set" },
+  { label: "Auto Cage", href: "#auto-cage" },
+  { label: "UV Unwrap & Pack", href: "#uv-unwrap-pack" },
+  { label: "Auto UDIM Bake", href: "#auto-udim-bake" },
+  { label: "Channel Packing", href: "#channel-packing" },
+  { label: "Vertex Color for Material ID", href: "#vertex-color-material-id" },
+  { label: "Existing Texture Bake", href: "#existing-texture-bake" },
+  { label: "Decal Bake", href: "#decal-bake" },
+  { label: "Map Preview", href: "#map-preview" },
+  { label: "Material Bake", href: "#node-bake" },
+  { label: "Node Bake", href: "#node-bake" },
+  { label: "UDIM Node Bake", href: "#udim-node-bake" },
+  { label: "Post Bake Options", href: "#object-bake" },
+  { label: "50 Unique Maps", href: "#50-unique-maps" },
+  { label: "Map Presets", href: "#50-unique-maps" },
+  { label: "Bake Presets", href: "#50-unique-maps" },
+  { label: "Clean UI/UX", href: "#introduction" },
+];
+
 export default function QuickBakerPage() {
   return (
     <div className="flex flex-col justify-center mx-auto gap-5 max-w-[832px]">
-      <Card>
+      <Card id="introduction">
         <CardHeader>
           <CardTitle>Introduction</CardTitle>
         </CardHeader>
@@ -39,272 +61,14 @@ export default function QuickBakerPage() {
 
       <Card>
         <CardHeader>
-          <CardTitle>Why to choose Quick Baker?</CardTitle>
-          <CardDescription>Quick Baker vs Others</CardDescription>
+          <CardTitle>Features</CardTitle>
         </CardHeader>
         <CardContent>
-          <Table>
-            <TableHeader>
-              <TableRow>
-                <TableHead>Features</TableHead>
-                <TableHead className="text-center">Quick Baker</TableHead>
-                <TableHead className="text-center">Others</TableHead>
-              </TableRow>
-            </TableHeader>
-            <TableBody>
-              <TableRow>
-                <TableCell className="font-medium">Object Bake</TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">High-to-Low Poly Bake</TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Single Texture Set</TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <XIcon className="size-4" />
-                  </div>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Multiple Texture Set</TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <XIcon className="size-4" />
-                  </div>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Auto Cage</TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <XIcon className="size-4" />
-                  </div>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Auto UDIM Bake</TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <XIcon className="size-4" />
-                  </div>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Channel Packing</TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <XIcon className="size-4" />
-                  </div>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Vertex Color for Material ID</TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <XIcon className="size-4" />
-                  </div>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Existing Texture Bake</TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <XIcon className="size-4" />
-                  </div>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Decal Bake</TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <XIcon className="size-4" />
-                  </div>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Map Preview</TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <XIcon className="size-4" />
-                  </div>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Material Bake</TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <XIcon className="size-4" />
-                  </div>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Node Bake</TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <XIcon className="size-4" />
-                  </div>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">UDIM Node Bake</TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <XIcon className="size-4" />
-                  </div>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Post Bake Options</TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <XIcon className="size-4" />
-                  </div>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">50 Unique Maps</TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <XIcon className="size-4" />
-                  </div>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Map Presets</TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <XIcon className="size-4" />
-                  </div>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Bake Presets</TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <XIcon className="size-4" />
-                  </div>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Clean UI/UX</TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <XIcon className="size-4" />
-                  </div>
-                </TableCell>
-              </TableRow>
-            </TableBody>
-          </Table>
+          <FeatureLinks features={features} />
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="object-bake">
         <CardHeader>
           <CardTitle>Object Bake</CardTitle>
           <CardDescription>Bake single or multiple objects.</CardDescription>
@@ -316,12 +80,13 @@ export default function QuickBakerPage() {
             width={600}
             height={325}
             className="rounded w-full"
+            loading="eager"
             unoptimized
           />
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="high-to-low-poly-bake">
         <CardHeader>
           <CardTitle>High-to-Low Poly Bake</CardTitle>
           <CardDescription>Bake high-to-low or low-to-low objects.</CardDescription>
@@ -338,7 +103,7 @@ export default function QuickBakerPage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="single-texture-set">
         <CardHeader>
           <CardTitle>Single Texture Set</CardTitle>
           <CardDescription>Bake multiple objects and materials into single texture set.</CardDescription>
@@ -355,7 +120,7 @@ export default function QuickBakerPage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="multiple-texture-set">
         <CardHeader>
           <CardTitle>Multiple Texture Set</CardTitle>
           <CardDescription>Bake multiple objects and materials into separate texture set.</CardDescription>
@@ -372,14 +137,14 @@ export default function QuickBakerPage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="auto-cage">
         <CardHeader>
           <CardTitle>Auto Cage</CardTitle>
           <CardDescription>Automatically create/adjust cage objects for high-to-low bake.</CardDescription>
         </CardHeader>
         <CardContent>
           <Image
-            src="/addons/images/quick-baker/auto_cage.gif"
+            src="/addons/images/quick-baker/auto_cage_preview.gif"
             alt="Automatically creating and adjusting cage for baking"
             width={600}
             height={325}
@@ -389,7 +154,24 @@ export default function QuickBakerPage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="uv-unwrap-pack">
+        <CardHeader>
+          <CardTitle>UV Unwrap & Pack</CardTitle>
+          <CardDescription>Create a bake-ready UV map with Smart UV Project and Pack Islands.</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <Image
+            src="/addons/images/quick-baker/uv_unwrap_pack.gif"
+            alt="Automatically unwrapping and packing UV islands for baking"
+            width={600}
+            height={325}
+            className="rounded w-full"
+            unoptimized
+          />
+        </CardContent>
+      </Card>
+
+      <Card id="auto-udim-bake">
         <CardHeader>
           <CardTitle>Auto UDIM Bake</CardTitle>
           <CardDescription>Automatically bake UDIM maps based on UV layout.</CardDescription>
@@ -406,7 +188,7 @@ export default function QuickBakerPage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="channel-packing">
         <CardHeader>
           <CardTitle>Channel Packing</CardTitle>
           <CardDescription>Pack multiple maps into one image (ideal for game engines).</CardDescription>
@@ -423,7 +205,7 @@ export default function QuickBakerPage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="vertex-color-material-id">
         <CardHeader>
           <CardTitle>Vertex Color for Material ID</CardTitle>
           <CardDescription>Create vertex color for material id map.</CardDescription>
@@ -440,7 +222,7 @@ export default function QuickBakerPage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="existing-texture-bake">
         <CardHeader>
           <CardTitle>Existing Texture Bake</CardTitle>
           <CardDescription>Bake on existing texture map.</CardDescription>
@@ -457,7 +239,7 @@ export default function QuickBakerPage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="decal-bake">
         <CardHeader>
           <CardTitle>Decal Bake</CardTitle>
           <CardDescription>
@@ -484,7 +266,7 @@ export default function QuickBakerPage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="map-preview">
         <CardHeader>
           <CardTitle>Map Preview</CardTitle>
           <CardDescription>Preview maps before baking (e.g. AO, Curvature, etc).</CardDescription>
@@ -501,7 +283,7 @@ export default function QuickBakerPage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="node-bake">
         <CardHeader>
           <CardTitle>Node Bake</CardTitle>
           <CardDescription>Bake shader nodes into image.</CardDescription>
@@ -518,7 +300,7 @@ export default function QuickBakerPage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="udim-node-bake">
         <CardHeader>
           <CardTitle>UDIM Node Bake</CardTitle>
           <CardDescription>Bake shader nodes into image for UDIM object.</CardDescription>
@@ -535,7 +317,7 @@ export default function QuickBakerPage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="50-unique-maps">
         <CardHeader>
           <CardTitle>50 Unique Maps</CardTitle>
           <CardDescription>Bake 50 unique maps</CardDescription>

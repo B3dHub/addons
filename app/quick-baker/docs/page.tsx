@@ -113,6 +113,35 @@ export default function QuickBakerDocsPage() {
 
       <Card>
         <CardHeader>
+          <CardTitle>UV Unwrap/Pack</CardTitle>
+          <CardDescription>How to create a bake-ready UV map?</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <CardDescription>
+            Select an existing UV map under <span className="text-primary">Global UV Map</span> or per object, or
+            press <span className="text-primary">Add UV Map</span> to create a new one. The dialog lets you name the
+            map and run Blender&apos;s <span className="text-primary">Smart UV Project</span> automatically.
+          </CardDescription>
+        </CardContent>
+        <CardContent>
+          <CardDescription>
+            Enable <span className="text-primary">Smart UV Project</span> to unwrap the mesh, and{" "}
+            <span className="text-primary">Pack Islands</span> to arrange the islands into the 0&ndash;1 UV space.{" "}
+            <span className="text-primary">Island Margin</span> controls the spacing between islands, while{" "}
+            <span className="text-primary">Margin</span> controls the border around the packed layout. Disable either
+            option to only create an empty UV map.
+          </CardDescription>
+        </CardContent>
+        <CardContent>
+          <CardDescription>
+            The new UV map is selected for the bake group, so objects without a usable UV map can be made bake-ready
+            without leaving the add-on.
+          </CardDescription>
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
           <CardTitle>Decal Bake</CardTitle>
           <CardDescription>How to bake decal objects or layers?</CardDescription>
         </CardHeader>

@@ -19,13 +19,14 @@ export default function OtherAddons({ active, refParam }: { active?: boolean; re
               target="_blank"
               key={index}
               aria-label={item.title}
+              className="relative block aspect-video w-full max-w-[250px]"
             >
               <Image
                 src={item.imageURL}
                 alt={item.title}
-                width={250}
-                height={150}
-                className={`rounded-lg transition-all hover:scale-105 ${active ? "border-4 border-primary" : ""}`}
+                fill
+                sizes="(min-width: 768px) 250px, 50vw"
+                className={`rounded-lg object-cover transition-all hover:scale-105 ${active ? "border-4 border-primary" : ""}`}
               />
             </Link>
           ))}

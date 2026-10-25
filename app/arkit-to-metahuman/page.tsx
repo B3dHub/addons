@@ -155,6 +155,7 @@ export default function ArkitToMetahumanPage() {
                 width={1383}
                 height={893}
                 className="w-full rounded-lg"
+                loading="eager"
               />
               <figcaption className="text-center text-sm text-muted-foreground">Before</figcaption>
             </figure>

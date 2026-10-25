@@ -1,9 +1,9 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Table, TableBody, TableCell, TableHeader, TableRow } from "@/components/ui/table";
 import { buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
 import Support from "@/components/support";
 import OtherAddons from "@/components/other-addons";
+import FeatureLinks from "@/components/feature-links";
 import Image from "next/image";
 import { Metadata } from "next";
 import Affiliate from "@/components/affiliate";
@@ -15,6 +15,17 @@ export const metadata: Metadata = {
   description:
     "Preview your camera view directly in the 3D viewport, similar to Unreal Engine. Supports multiple cameras with adjustable position, offset, and size, plus camera properties in the preview header.",
 };
+
+const features = [
+  { label: "Multiple Camera Preview", href: "#multiple-camera-preview" },
+  { label: "Preview Move & Resize", href: "#preview-move-resize" },
+  { label: "Preview Position", href: "#preview-position" },
+  { label: "Preview Offset", href: "#preview-offset" },
+  { label: "Preview Size", href: "#preview-size" },
+  { label: "Camera Properties in Preview Header", href: "#multiple-camera-preview" },
+  { label: "Object Hide/Unhide", href: "#object-hide-unhide" },
+  { label: "Composition guides (thirds, center, golden ratio)", href: "#multiple-camera-preview" },
+];
 
 export default function CameraPreviewPage() {
   return (
@@ -40,38 +51,11 @@ export default function CameraPreviewPage() {
           <CardTitle>Features</CardTitle>
         </CardHeader>
         <CardContent>
-          <Table>
-            <TableBody>
-              <TableRow>
-                <TableCell className="font-medium">Multiple Camera Preview</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Preview Move & Resize</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Preview Position</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Preview Offset</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Preview Size</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Camera Properties in Preview Header</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Object Hide/Unhide</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Composition guides (thirds, center, golden ratio)</TableCell>
-              </TableRow>
-            </TableBody>
-          </Table>
+          <FeatureLinks features={features} />
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="multiple-camera-preview">
         <CardHeader>
           <CardTitle>Multiple Camera Preview</CardTitle>
           <CardDescription>Supports multiple camera previews.</CardDescription>
@@ -83,12 +67,13 @@ export default function CameraPreviewPage() {
             width={600}
             height={325}
             className="rounded w-full"
+            loading="eager"
             unoptimized
           />
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="preview-move-resize">
         <CardHeader>
           <CardTitle>Preview Move & Resize</CardTitle>
           <CardDescription>Supports moving and resizing camera preview in viewport.</CardDescription>
@@ -105,7 +90,7 @@ export default function CameraPreviewPage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="preview-position">
         <CardHeader>
           <CardTitle>Preview Position</CardTitle>
           <CardDescription>Change the position of the camera preview.</CardDescription>
@@ -122,7 +107,7 @@ export default function CameraPreviewPage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="preview-offset">
         <CardHeader>
           <CardTitle>Preview Offset</CardTitle>
           <CardDescription>Adjust the offset of the camera preview.</CardDescription>
@@ -139,7 +124,7 @@ export default function CameraPreviewPage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="preview-size">
         <CardHeader>
           <CardTitle>Preview Size</CardTitle>
           <CardDescription>Change the size of the camera preview.</CardDescription>
@@ -156,7 +141,7 @@ export default function CameraPreviewPage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="object-hide-unhide">
         <CardHeader>
           <CardTitle>Object Hide/Unhide</CardTitle>
           <CardDescription>

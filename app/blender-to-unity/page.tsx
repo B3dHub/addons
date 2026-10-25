@@ -1,16 +1,15 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
 import Support from "@/components/support";
 import OtherAddons from "@/components/other-addons";
+import FeatureLinks from "@/components/feature-links";
 import Image from "next/image";
 import { Metadata } from "next";
 import Affiliate from "@/components/affiliate";
 import { Coupon, showCoupon } from "@/components/coupon";
 import { cn } from "@/lib/utils";
-import { CheckIcon, XIcon } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Blender to Unity - Blender Addon",
@@ -18,10 +17,23 @@ export const metadata: Metadata = {
     "Export objects, animations, colliders, and LODs to Unity Engine with just a few clicks. Includes auto colliders, LOD presets, rename tool, and automatic material and shader type creation.",
 };
 
+const features = [
+  { label: "Object Export", href: "#export" },
+  { label: "Collections Export", href: "#export" },
+  { label: "Collider Export", href: "#collider" },
+  { label: "LOD Export", href: "#lod" },
+  { label: "Animation Export", href: "#export" },
+  { label: "Rename Tool", href: "#rename-tool" },
+  { label: "Export to Unity & Disk", href: "#export" },
+  { label: "Auto Extract Materials & Textures", href: "#export" },
+  { label: "Auto Create Shader Types", href: "#export" },
+  { label: "Clean UI/UX", href: "#introduction" },
+];
+
 export default function BlendertoUnityPage() {
   return (
     <div className="flex flex-col justify-center mx-auto gap-5 max-w-[832px]">
-      <Card>
+      <Card id="introduction">
         <CardHeader>
           <CardTitle>Introduction</CardTitle>
         </CardHeader>
@@ -38,161 +50,20 @@ export default function BlendertoUnityPage() {
 
       <Card>
         <CardHeader>
-          <CardTitle>Why to choose Blender-to-Unity?</CardTitle>
-          <CardDescription>Blender-to-Unity vs Others</CardDescription>
+          <CardTitle>Features</CardTitle>
         </CardHeader>
         <CardContent>
-          <Table>
-            <TableHeader>
-              <TableRow>
-                <TableHead>Features</TableHead>
-                <TableHead className="text-center">Blender-to-Unity</TableHead>
-                <TableHead className="text-center">Others</TableHead>
-              </TableRow>
-            </TableHeader>
-            <TableBody>
-              <TableRow>
-                <TableCell className="font-medium">Object Export</TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Collections Export</TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <XIcon className="size-4" />
-                  </div>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Collider Export</TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <XIcon className="size-4" />
-                  </div>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">LOD Export</TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <XIcon className="size-4" />
-                  </div>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Animation Export</TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <XIcon className="size-4" />
-                  </div>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Rename Tool</TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <XIcon className="size-4" />
-                  </div>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Export to Unity & Disk</TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <XIcon className="size-4" />
-                  </div>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Auto Extract Materials & Textures</TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <XIcon className="size-4" />
-                  </div>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Auto Create Shader Types</TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <XIcon className="size-4" />
-                  </div>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Clean UI/UX</TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <XIcon className="size-4" />
-                  </div>
-                </TableCell>
-              </TableRow>
-            </TableBody>
-          </Table>
+          <FeatureLinks features={features} />
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="collider">
         <CardHeader>
           <CardTitle>Collider</CardTitle>
           <CardDescription>Add auto and custom collider.</CardDescription>
         </CardHeader>
         <CardContent>
-          <Image className="rounded-lg" src="/addons/images/blender-to-unity/colliders.png" alt="Collider types panel in addon interface" width={256} height={256} />
+          <Image className="rounded-lg" src="/addons/images/blender-to-unity/colliders.png" alt="Collider types panel in addon interface" width={256} height={256} loading="eager" />
         </CardContent>
         <CardHeader>
           <CardTitle>Box</CardTitle>
@@ -410,7 +281,7 @@ export default function BlendertoUnityPage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="lod">
         <CardHeader>
           <CardTitle>LOD</CardTitle>
           <CardDescription>Create, Update, and Preset LODs.</CardDescription>
@@ -462,7 +333,7 @@ export default function BlendertoUnityPage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="rename-tool">
         <CardHeader>
           <CardTitle>Rename Tool</CardTitle>
           <CardDescription>Rename objects and its Colliders and LODs.</CardDescription>
@@ -479,7 +350,7 @@ export default function BlendertoUnityPage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="export">
         <CardHeader>
           <CardTitle>Export</CardTitle>
           <CardDescription>Export objects and collections to Unity or Disk.</CardDescription>

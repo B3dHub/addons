@@ -1,9 +1,9 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Table, TableBody, TableCell, TableHeader, TableRow } from "@/components/ui/table";
 import { buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
 import Support from "@/components/support";
 import OtherAddons from "@/components/other-addons";
+import FeatureLinks from "@/components/feature-links";
 import Image from "next/image";
 import { Metadata } from "next";
 import Affiliate from "@/components/affiliate";
@@ -15,6 +15,14 @@ export const metadata: Metadata = {
   description:
     "Consolidate all Blender theme settings into one panel. Craft a theme with a single color slider, theme the Interface, Viewport, Outliner, and Annotations, or change the theme automatically with Auto Theme.",
 };
+
+const features = [
+  { label: "Auto Theme", href: "#auto-theme" },
+  { label: "Interface Theme", href: "#interface-theme" },
+  { label: "Viewport Theme", href: "#viewport-theme" },
+  { label: "Outliner Theme", href: "#outliner-theme" },
+  { label: "Annotations Color", href: "#interface-theme" },
+];
 
 export default function QuickThemePage() {
   return (
@@ -41,29 +49,11 @@ export default function QuickThemePage() {
           <CardTitle>Features</CardTitle>
         </CardHeader>
         <CardContent>
-          <Table>
-            <TableBody>
-              <TableRow>
-                <TableCell className="font-medium">Auto Theme</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Interface Theme</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Viewport Theme</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Outliner Theme</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Annotations Color</TableCell>
-              </TableRow>
-            </TableBody>
-          </Table>
+          <FeatureLinks features={features} />
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="auto-theme">
         <CardHeader>
           <CardTitle>Auto Theme</CardTitle>
           <CardDescription>
@@ -78,6 +68,7 @@ export default function QuickThemePage() {
             width={600}
             height={325}
             className="rounded w-full"
+            loading="eager"
             unoptimized
           />
         </CardContent>
@@ -96,7 +87,7 @@ export default function QuickThemePage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="interface-theme">
         <CardHeader>
           <CardTitle>Interface Theme</CardTitle>
           <CardDescription>
@@ -116,7 +107,7 @@ export default function QuickThemePage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="viewport-theme">
         <CardHeader>
           <CardTitle>Viewport Theme</CardTitle>
           <CardDescription>
@@ -137,7 +128,7 @@ export default function QuickThemePage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="outliner-theme">
         <CardHeader>
           <CardTitle>Outliner Theme</CardTitle>
           <CardDescription>

@@ -4,6 +4,7 @@ import { buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
 import Support from "@/components/support";
 import OtherAddons from "@/components/other-addons";
+import FeatureLinks from "@/components/feature-links";
 import Image from "next/image";
 import { Metadata } from "next";
 import Affiliate from "@/components/affiliate";
@@ -14,6 +15,21 @@ export const metadata: Metadata = {
   title: "Knife Circle - Blender Addon",
   description: "A Blender add-on for projecting precise circular cuts onto mesh objects with real-time preview.",
 };
+
+const features = [
+  { label: "Interactive Control", href: "#interactive-control" },
+  { label: "Fixed / Freeform Modes", href: "#fixed-freeform-mode" },
+  { label: "Adjustable Segments", href: "#adjustable-segments" },
+  { label: "Orientation", href: "#orientation" },
+  { label: "Numeric Input", href: "#numeric-input" },
+  { label: "Quick Shapes", href: "#quick-shapes" },
+  { label: "Star Mode", href: "#star-mode" },
+  { label: "Shape Rotation", href: "#shape-rotation" },
+  { label: "Precision Mode", href: "#controls" },
+  { label: "Snap Mode", href: "#controls" },
+  { label: "Cut Through", href: "#cut-through" },
+  { label: "Dual Mode Support", href: "#edit-mode" },
+];
 
 export default function KnifeCirclePage() {
   return (
@@ -37,50 +53,9 @@ export default function KnifeCirclePage() {
       <Card>
         <CardHeader>
           <CardTitle>Features</CardTitle>
-          <CardDescription>What Knife Circle offers?</CardDescription>
         </CardHeader>
         <CardContent>
-          <Table>
-            <TableHeader></TableHeader>
-            <TableBody>
-              <TableRow>
-                <TableCell className="font-medium">Interactive Control</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Fixed / Freeform Modes</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Adjustable Segments</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Orientation</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Numeric Input</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Quick Shapes</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Star Mode</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Shape Rotation</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Precision Mode</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Snap Mode</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Cut Through</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Dual Mode Support</TableCell>
-              </TableRow>
-            </TableBody>
-          </Table>
+          <FeatureLinks features={features} />
         </CardContent>
       </Card>
 
@@ -112,7 +87,7 @@ export default function KnifeCirclePage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="controls">
         <CardHeader>
           <CardTitle>Controls</CardTitle>
           <CardDescription>What inputs does Knife Circle respond to?</CardDescription>
@@ -287,7 +262,7 @@ export default function KnifeCirclePage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="interactive-control">
         <CardHeader>
           <CardTitle>Interactive Control</CardTitle>
           <CardDescription>
@@ -301,12 +276,13 @@ export default function KnifeCirclePage() {
             width={600}
             height={325}
             className="rounded w-full"
+            loading="eager"
             unoptimized
           />
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="fixed-freeform-mode">
         <CardHeader>
           <CardTitle>Fixed / Freeform Mode</CardTitle>
           <CardDescription>
@@ -326,7 +302,7 @@ export default function KnifeCirclePage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="orientation">
         <CardHeader>
           <CardTitle>Orientation</CardTitle>
           <CardDescription>Cut on a view-aligned plane or on the global axes.</CardDescription>
@@ -357,7 +333,7 @@ export default function KnifeCirclePage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="star-mode">
         <CardHeader>
           <CardTitle>Star Mode</CardTitle>
           <CardDescription>Create stars with adjustable inner radius.</CardDescription>
@@ -380,7 +356,7 @@ export default function KnifeCirclePage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="shape-rotation">
         <CardHeader>
           <CardTitle>Shape Rotation</CardTitle>
           <CardDescription>Rotate the shape around its center before cutting.</CardDescription>
@@ -402,7 +378,7 @@ export default function KnifeCirclePage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="quick-shapes">
         <CardHeader>
           <CardTitle>Quick Shapes</CardTitle>
           <CardDescription>
@@ -422,7 +398,7 @@ export default function KnifeCirclePage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="adjustable-segments">
         <CardHeader>
           <CardTitle>Adjustable Segments</CardTitle>
           <CardDescription>Modify the number of segments on-the-fly using the mouse scroll wheel.</CardDescription>
@@ -439,7 +415,7 @@ export default function KnifeCirclePage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="numeric-input">
         <CardHeader>
           <CardTitle>Numeric Input</CardTitle>
           <CardDescription>
@@ -459,7 +435,7 @@ export default function KnifeCirclePage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="cut-through">
         <CardHeader>
           <CardTitle>Cut Through</CardTitle>
           <CardDescription>
@@ -480,7 +456,7 @@ export default function KnifeCirclePage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="edit-mode">
         <CardHeader>
           <CardTitle>Edit Mode</CardTitle>
           <CardDescription>

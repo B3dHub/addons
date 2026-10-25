@@ -14,6 +14,7 @@ export default function Home() {
             title={item.title}
             price={item.price}
             info={item.info}
+            preload={index < 4}
           />
         ))}
       </ProductCatalog>

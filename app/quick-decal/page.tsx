@@ -1,16 +1,15 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Badge } from "@/components/ui/badge";
 import { buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
 import Support from "@/components/support";
 import OtherAddons from "@/components/other-addons";
+import FeatureLinks from "@/components/feature-links";
 import Image from "next/image";
 import { Metadata } from "next";
 import Affiliate from "@/components/affiliate";
 import { Coupon, showCoupon } from "@/components/coupon";
 import { cn } from "@/lib/utils";
-import { CheckIcon, XIcon } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Quick Decal - Blender Addon",
@@ -18,10 +17,28 @@ export const metadata: Metadata = {
     "Add decals to your models without extra geometry using a controller empty that blends with your existing material. Supports image and PBR decals, Quixel Megascans decals, layers, and multiple objects in EEVEE and Cycles.",
 };
 
+const features = [
+  { label: "Image Decal", href: "#image-decal" },
+  { label: "Quixel Megascans Decal", href: "#quixel-megascans-decal" },
+  { label: "Multiple Objects and Materials", href: "#multiple-objects-and-materials" },
+  { label: "PBR Decal", href: "#image-decal" },
+  { label: "Decal Layer", href: "#decal-layer" },
+  { label: "Layer Controller", href: "#decal-layer" },
+  { label: "Layer Controller Type", href: "#decal-layer" },
+  { label: "Layer Opacity", href: "#decal-layer" },
+  { label: "Layer Wear", href: "#layer-wear" },
+  { label: "Layer Maps", href: "#decal-layer" },
+  { label: "Auto Snap", href: "#image-decal" },
+  { label: "Auto Parent", href: "#image-decal" },
+  { label: "Auto Resize", href: "#image-decal" },
+  { label: "Clean UI/UX", href: "#introduction" },
+  { label: "Quick Baker Compatible", href: "#quick-baker-compatible" },
+];
+
 export default function QuickDecalPage() {
   return (
     <div className="flex flex-col justify-center mx-auto gap-5 max-w-[832px]">
-      <Card>
+      <Card id="introduction">
         <CardHeader>
           <CardTitle>Introduction</CardTitle>
         </CardHeader>
@@ -50,216 +67,14 @@ export default function QuickDecalPage() {
 
       <Card>
         <CardHeader>
-          <CardTitle>Why to choose Quick Decal?</CardTitle>
-          <CardDescription>Quick Decal vs Others</CardDescription>
+          <CardTitle>Features</CardTitle>
         </CardHeader>
         <CardContent>
-          <Table>
-            <TableHeader>
-              <TableRow>
-                <TableHead>Features</TableHead>
-                <TableHead className="text-center">Quick Decal</TableHead>
-                <TableHead className="text-center">Others</TableHead>
-              </TableRow>
-            </TableHeader>
-            <TableBody>
-              <TableRow>
-                <TableCell className="font-medium">Image Decal</TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Quixel Megascans Decal</TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <XIcon className="size-4" />
-                  </div>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Multiple Objects and Materials</TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <XIcon className="size-4" />
-                  </div>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">PBR Decal</TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <XIcon className="size-4" />
-                  </div>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Decal Layer</TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <XIcon className="size-4" />
-                  </div>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Layer Controller</TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <XIcon className="size-4" />
-                  </div>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Layer Controller Type</TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <XIcon className="size-4" />
-                  </div>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Layer Opacity</TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <XIcon className="size-4" />
-                  </div>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Layer Wear</TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <XIcon className="size-4" />
-                  </div>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Layer Maps</TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <XIcon className="size-4" />
-                  </div>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Auto Snap</TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <XIcon className="size-4" />
-                  </div>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Auto Parent</TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <XIcon className="size-4" />
-                  </div>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Auto Resize</TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <XIcon className="size-4" />
-                  </div>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Clean UI/UX</TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <XIcon className="size-4" />
-                  </div>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Quick Baker Compatible</TableCell>
-                <TableCell>
-                  <div className="flex justify-center">
-                    <CheckIcon className="size-4" />
-                  </div>
-                </TableCell>
-                <TableCell></TableCell>
-              </TableRow>
-            </TableBody>
-          </Table>
+          <FeatureLinks features={features} />
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="image-decal">
         <CardHeader>
           <CardTitle>Image Decal</CardTitle>
           <CardDescription>How to use image decals?</CardDescription>
@@ -278,6 +93,7 @@ export default function QuickDecalPage() {
             width={600}
             height={325}
             className="rounded w-full"
+            loading="eager"
             unoptimized
           />
         </CardContent>
@@ -299,7 +115,7 @@ export default function QuickDecalPage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="quixel-megascans-decal">
         <CardHeader>
           <CardTitle>Quixel Megascans Decal</CardTitle>
           <CardDescription>How to use Quixel Megascans decals?</CardDescription>
@@ -343,7 +159,7 @@ export default function QuickDecalPage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="multiple-objects-and-materials">
         <CardHeader>
           <CardTitle>Multiple Objects and Materials</CardTitle>
           <CardDescription>The addon supports multiple objects and materials.</CardDescription>
@@ -375,7 +191,7 @@ export default function QuickDecalPage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="decal-layer">
         <CardHeader>
           <CardTitle>Decal Layer</CardTitle>
           <CardDescription>
@@ -395,7 +211,7 @@ export default function QuickDecalPage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="layer-wear">
         <CardHeader>
           <CardTitle>Layer Wear</CardTitle>
           <CardDescription>Quickly add wear and tear to the decal layer.</CardDescription>
@@ -412,7 +228,7 @@ export default function QuickDecalPage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="quick-baker-compatible">
         <CardHeader>
           <CardTitle>Quick Baker Compatible</CardTitle>
           <CardDescription>

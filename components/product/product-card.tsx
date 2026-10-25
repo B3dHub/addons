@@ -16,6 +16,7 @@ type ProductCardProps = {
   salePercentage?: number;
   salePrice?: string;
   info?: string;
+  preload?: boolean;
 };
 
 export default function ProductCard({
@@ -30,6 +31,7 @@ export default function ProductCard({
   salePercentage = 10,
   salePrice = "$9",
   info,
+  preload = false,
 }: ProductCardProps) {
   return (
     <div className="relative border rounded-xl shadow-xl hover:bg-muted">
@@ -38,9 +40,10 @@ export default function ProductCard({
           <Image
             src={imageURL}
             alt=""
-            width={400}
-            height={200}
-            className="h-full w-full object-cover transition-all hover:scale-105"
+            fill
+            preload={preload}
+            sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+            className="object-cover transition-all hover:scale-105"
           />
           {isSale && (
             <Badge variant="default" className="absolute top-1 -right-1 shadow-md">

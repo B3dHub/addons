@@ -4,6 +4,7 @@ import { buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
 import Support from "@/components/support";
 import OtherAddons from "@/components/other-addons";
+import FeatureLinks from "@/components/feature-links";
 import Image from "next/image";
 import { Metadata } from "next";
 import Affiliate from "@/components/affiliate";
@@ -15,6 +16,11 @@ export const metadata: Metadata = {
   description:
     "Replace the mesh of selected objects with a particular object mesh. Organize objects into categories and cycle through them with hotkeys.",
 };
+
+const features = [
+  { label: "Categories List", href: "#categories-list" },
+  { label: "Objects List", href: "#objects-list" },
+];
 
 export default function QuickReplacePage() {
   return (
@@ -38,16 +44,7 @@ export default function QuickReplacePage() {
           <CardTitle>Features</CardTitle>
         </CardHeader>
         <CardContent>
-          <Table>
-            <TableBody>
-              <TableRow>
-                <TableCell className="font-medium">Categories List</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Objects List</TableCell>
-              </TableRow>
-            </TableBody>
-          </Table>
+          <FeatureLinks features={features} />
         </CardContent>
       </Card>
 
@@ -106,7 +103,7 @@ export default function QuickReplacePage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="categories-list">
         <CardHeader>
           <CardTitle>Categories List</CardTitle>
         </CardHeader>
@@ -123,6 +120,7 @@ export default function QuickReplacePage() {
             width={600}
             height={325}
             className="rounded w-full"
+            loading="eager"
             unoptimized
           />
         </CardContent>
@@ -137,7 +135,7 @@ export default function QuickReplacePage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="objects-list">
         <CardHeader>
           <CardTitle>Objects List</CardTitle>
         </CardHeader>

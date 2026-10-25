@@ -4,6 +4,7 @@ import { buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
 import Support from "@/components/support";
 import OtherAddons from "@/components/other-addons";
+import FeatureLinks from "@/components/feature-links";
 import Image from "next/image";
 import { Metadata } from "next";
 import Affiliate from "@/components/affiliate";
@@ -15,6 +16,24 @@ export const metadata: Metadata = {
   description:
     "Measure an object's length in any mode with multiple measurements, snapping, saving, axis restriction, and vertex locking — all from convenient ALT-based hotkeys.",
 };
+
+const features = [
+  { label: "Quick Measurements", href: "#quick-measurements" },
+  { label: "Saved Measurements", href: "#saved-measurements" },
+  { label: "Wall Thickness", href: "#wall-thickness-copy-value" },
+  { label: "Copy Value", href: "#wall-thickness-copy-value" },
+  { label: "Select Measurements", href: "#select-measurements" },
+  { label: "Remove Measurements", href: "#remove-measurements" },
+  { label: "Separate Measurements", href: "#separate-measurements" },
+  { label: "Join Measurements", href: "#join-measurements" },
+  { label: "Axis Restriction", href: "#axis-restriction" },
+  { label: "Measure Angle", href: "#measure-angle" },
+  { label: "Lock to Vertices", href: "#lock-to-vertices" },
+  { label: "Blender Units Compatible", href: "#blender-units-compatible" },
+  { label: "Object Snap", href: "#workflow" },
+  { label: "Grid Snap", href: "#workflow" },
+  { label: "Preference Override", href: "#blender-units-compatible" },
+];
 
 export default function QuickMeasurePage() {
   return (
@@ -39,60 +58,11 @@ export default function QuickMeasurePage() {
           <CardTitle>Features</CardTitle>
         </CardHeader>
         <CardContent>
-          <Table>
-            <TableBody>
-              <TableRow>
-                <TableCell className="font-medium">Quick Measurements</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Saved Measurements</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Wall Thickness</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Copy Value</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Select Measurements</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Remove Measurements</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Separate Measurements</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Join Measurements</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Axis Restriction</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Measure Angle</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Lock to Vertices</TableCell>
-              </TableRow>
-
-              <TableRow>
-                <TableCell className="font-medium">Blender Units Compatible</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Object Snap</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Grid Snap</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Preference Override</TableCell>
-              </TableRow>
-            </TableBody>
-          </Table>
+          <FeatureLinks features={features} />
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="workflow">
         <CardHeader>
           <CardTitle>Workflow</CardTitle>
           <CardDescription>How to use Quick Measure?</CardDescription>
@@ -216,7 +186,7 @@ export default function QuickMeasurePage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="quick-measurements">
         <CardHeader>
           <CardTitle>Quick Measurements</CardTitle>
           <CardDescription>
@@ -231,6 +201,7 @@ export default function QuickMeasurePage() {
             width={600}
             height={325}
             className="rounded w-full"
+            loading="eager"
             unoptimized
           />
         </CardContent>
@@ -252,7 +223,7 @@ export default function QuickMeasurePage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="saved-measurements">
         <CardHeader>
           <CardTitle>Saved Measurements</CardTitle>
           <CardDescription>
@@ -289,7 +260,7 @@ export default function QuickMeasurePage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="wall-thickness-copy-value">
         <CardHeader>
           <CardTitle>Wall Thickness & Copy Value</CardTitle>
           <CardDescription>
@@ -310,7 +281,7 @@ export default function QuickMeasurePage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="select-measurements">
         <CardHeader>
           <CardTitle>Select Measurements</CardTitle>
           <CardDescription>You can select the measurements in the viewport.</CardDescription>
@@ -327,7 +298,7 @@ export default function QuickMeasurePage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="remove-measurements">
         <CardHeader>
           <CardTitle>Remove Measurements</CardTitle>
           <CardDescription>
@@ -347,7 +318,7 @@ export default function QuickMeasurePage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="separate-measurements">
         <CardHeader>
           <CardTitle>Separate Measurements</CardTitle>
           <CardDescription>
@@ -366,7 +337,7 @@ export default function QuickMeasurePage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="join-measurements">
         <CardHeader>
           <CardTitle>Join Measurements</CardTitle>
           <CardDescription>
@@ -385,7 +356,7 @@ export default function QuickMeasurePage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="axis-restriction">
         <CardHeader>
           <CardTitle>Axis Restriction</CardTitle>
           <CardDescription>
@@ -406,7 +377,7 @@ export default function QuickMeasurePage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="measure-angle">
         <CardHeader>
           <CardTitle>Measure Angle</CardTitle>
           <CardDescription>You can measure the angle similar to default Blender.</CardDescription>
@@ -423,7 +394,7 @@ export default function QuickMeasurePage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="lock-to-vertices">
         <CardHeader>
           <CardTitle>Lock to Vertices</CardTitle>
           <CardDescription>You can lock the measurement points to object vertices.</CardDescription>
@@ -455,7 +426,7 @@ export default function QuickMeasurePage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="blender-units-compatible">
         <CardHeader>
           <CardTitle>Blender Units Compatible</CardTitle>
           <CardDescription>

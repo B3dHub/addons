@@ -4,6 +4,7 @@ import { buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
 import Support from "@/components/support";
 import OtherAddons from "@/components/other-addons";
+import FeatureLinks from "@/components/feature-links";
 import Image from "next/image";
 import { Metadata } from "next";
 import Affiliate from "@/components/affiliate";
@@ -15,6 +16,14 @@ export const metadata: Metadata = {
   description:
     "Manage Blender workspace areas with hotkeys: switch, split, duplicate, join, and swap areas using convenient pie menus.",
 };
+
+const features = [
+  { label: "Switch Area", href: "#switch-area" },
+  { label: "Split Area", href: "#split-area" },
+  { label: "Duplicate Area", href: "#duplicate-area" },
+  { label: "Join Area", href: "#join-area" },
+  { label: "Swap Area", href: "#swap-area" },
+];
 
 export default function QuickInterfacePage() {
   return (
@@ -39,25 +48,7 @@ export default function QuickInterfacePage() {
           <CardTitle>Features</CardTitle>
         </CardHeader>
         <CardContent>
-          <Table>
-            <TableBody>
-              <TableRow>
-                <TableCell className="font-medium">Switch Area</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Split Area</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Duplicate Area</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Join Area</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Swap Area</TableCell>
-              </TableRow>
-            </TableBody>
-          </Table>
+          <FeatureLinks features={features} />
         </CardContent>
       </Card>
 
@@ -119,7 +110,7 @@ export default function QuickInterfacePage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="switch-area">
         <CardHeader>
           <CardTitle>Switch Area</CardTitle>
           <CardDescription>
@@ -134,12 +125,13 @@ export default function QuickInterfacePage() {
             width={600}
             height={325}
             className="rounded w-full"
+            loading="eager"
             unoptimized
           />
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="split-area">
         <CardHeader>
           <CardTitle>Split Area</CardTitle>
           <CardDescription>
@@ -170,7 +162,7 @@ export default function QuickInterfacePage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="duplicate-area">
         <CardHeader>
           <CardTitle>Duplicate Area</CardTitle>
           <CardDescription>
@@ -191,7 +183,7 @@ export default function QuickInterfacePage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="join-area">
         <CardHeader>
           <CardTitle>Join Area</CardTitle>
           <CardDescription>
@@ -212,7 +204,7 @@ export default function QuickInterfacePage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="swap-area">
         <CardHeader>
           <CardTitle>Swap Area</CardTitle>
           <CardDescription>

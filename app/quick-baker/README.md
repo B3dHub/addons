@@ -9,6 +9,7 @@ Quick Baker is an exceptional PBR texture-baking addon that brilliantly utilizes
 - Single Texture Set
 - Multiple Texture Set
 - Auto Cage
+- UV Unwrap & Pack
 - Auto UDIM Bake
 - Channel Packing
 - Vertex Color for Material ID
@@ -52,7 +53,13 @@ Bake multiple objects and materials into separate texture set.
 
 Automatically create/adjust cage objects for high-to-low bake.
 
-![Automatically creating and adjusting cage for baking](https://b3dhub.github.io/addons/images/quick-baker/auto_cage.gif)
+![Automatically creating and adjusting cage for baking](https://b3dhub.github.io/addons/images/quick-baker/auto_cage_preview.gif)
+
+## UV Unwrap & Pack
+
+Create a bake-ready UV map with Smart UV Project and Pack Islands.
+
+![Automatically unwrapping and packing UV islands for baking](https://b3dhub.github.io/addons/images/quick-baker/uv_unwrap_pack.gif)
 
 ## Auto UDIM Bake
 

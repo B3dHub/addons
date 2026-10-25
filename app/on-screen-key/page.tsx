@@ -257,6 +257,7 @@ export default function OnScreenKeyPage() {
             width={600}
             height={325}
             className="rounded w-full"
+            loading="eager"
             unoptimized
           />
         </CardContent>

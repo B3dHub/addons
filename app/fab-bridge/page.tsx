@@ -5,6 +5,7 @@ import { buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
 import Support from "@/components/support";
 import OtherAddons from "@/components/other-addons";
+import FeatureLinks from "@/components/feature-links";
 import Image from "next/image";
 import { Metadata } from "next";
 import Affiliate from "@/components/affiliate";
@@ -16,6 +17,22 @@ export const metadata: Metadata = {
   description:
     "Import Fab.com assets downloaded through the Epic Games Launcher directly into Blender. Browse, preview, and import 3D assets, materials, plants, decals, and brushes from your downloaded Fab library. The add-on does not support online downloading.",
 };
+
+const features = [
+  { label: "Grid View", href: "#grid-view" },
+  { label: "Asset Search", href: "#asset-search" },
+  { label: "Asset Details", href: "#asset-details" },
+  { label: "Pagination", href: "#pagination" },
+  { label: "Import Assets", href: "#import-assets" },
+  { label: "Import Plants", href: "#import-plants" },
+  { label: "Import Materials", href: "#import-materials" },
+  { label: "Import Decals", href: "#import-materials" },
+  { label: "Import LODs", href: "#import-assets" },
+  { label: "Create Lod Group", href: "#import-assets" },
+  { label: "Apply Imported Materials", href: "#import-materials" },
+  { label: "Import Other Asset Types from Shader Editor", href: "#import-materials" },
+  { label: "Import Brushes from Texture Paint Mode", href: "#import-materials" },
+];
 
 export default function FabBridgePage() {
   return (
@@ -61,49 +78,7 @@ export default function FabBridgePage() {
           <CardTitle>Features</CardTitle>
         </CardHeader>
         <CardContent>
-          <Table>
-            <TableBody>
-              <TableRow>
-                <TableCell className="font-medium">Grid View</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Asset Search</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Asset Details</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Pagination</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Import Assets</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Import Plants</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Import Materials</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Import Decals</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Import LODs</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Create Lod Group</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Apply Imported Materials</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Import Other Asset Types from Shader Editor</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Import Brushes from Texture Paint Mode</TableCell>
-              </TableRow>
-            </TableBody>
-          </Table>
+          <FeatureLinks features={features} />
         </CardContent>
       </Card>
 
@@ -159,7 +134,7 @@ export default function FabBridgePage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="grid-view">
         <CardHeader>
           <CardTitle>Grid View</CardTitle>
           <CardDescription>View assets in a grid view.</CardDescription>
@@ -171,12 +146,13 @@ export default function FabBridgePage() {
             width={600}
             height={325}
             className="rounded w-full"
+            loading="eager"
             unoptimized
           />
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="asset-search">
         <CardHeader>
           <CardTitle>Asset Search</CardTitle>
           <CardDescription>Search assets by name.</CardDescription>
@@ -193,7 +169,7 @@ export default function FabBridgePage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="asset-details">
         <CardHeader>
           <CardTitle>Asset Details</CardTitle>
           <CardDescription>View asset details like name, polycount, resolution, etc.</CardDescription>
@@ -210,7 +186,7 @@ export default function FabBridgePage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="pagination">
         <CardHeader>
           <CardTitle>Pagination</CardTitle>
           <CardDescription>Navigate through pages of assets.</CardDescription>
@@ -227,7 +203,7 @@ export default function FabBridgePage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="import-assets">
         <CardHeader>
           <CardTitle>Import Assets</CardTitle>
           <CardDescription>You can import 3D assets with LODs and create LOD groups.</CardDescription>
@@ -244,7 +220,7 @@ export default function FabBridgePage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="import-plants">
         <CardHeader>
           <CardTitle>Import Plants</CardTitle>
           <CardDescription>You can import 3D plants with LODs and create LOD groups.</CardDescription>
@@ -274,7 +250,7 @@ export default function FabBridgePage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card id="import-materials">
         <CardHeader>
           <CardTitle>Import Materials</CardTitle>
           <CardDescription>You can import textures as materials and node groups.</CardDescription>
