@@ -36,7 +36,7 @@ const features = [
 
 export default function FabBridgePage() {
   return (
-    <div className="flex flex-col justify-center mx-auto gap-5 max-w-[832px]">
+    <div className="flex flex-col justify-center mx-auto gap-5 max-w-208">
       <Card>
         <CardHeader>
           <CardTitle>Introduction</CardTitle>

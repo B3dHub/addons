@@ -41,7 +41,7 @@ const features = [
 
 export default function QuickBakerPage() {
   return (
-    <div className="flex flex-col justify-center mx-auto gap-5 max-w-[832px]">
+    <div className="flex flex-col justify-center mx-auto gap-5 max-w-208">
       <Card id="introduction">
         <CardHeader>
           <CardTitle>Introduction</CardTitle>

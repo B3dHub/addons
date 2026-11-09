@@ -21,6 +21,13 @@ export const Data = [
     info: "Object",
   },
   {
+    productURL: "/cargo-bridge",
+    imageURL: "/addons/images/cargo-bridge/thumb.png",
+    title: "Cargo Bridge",
+    price: "$20 - $200",
+    info: "Object",
+  },
+  {
     productURL: "/quick-measure",
     imageURL: "/addons/images/quick-measure/thumb.png",
     title: "Quick Measure",
