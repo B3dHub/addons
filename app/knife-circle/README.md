@@ -112,8 +112,6 @@ Toggle between two modes with the `X` key - Blue preview cuts only the visible f
 
 Join our Discord server to stay updated.
 
-[![B3dHub Discord server widget](https://discord.com/api/guilds/959138815602229389/widget.png?theme=dark&style=banner3)](https://discord.gg/sdnHHZpWbT)
-
-## Changelogs
-
-[View Changelogs](https://discord.gg/VxUzDvsKvU)
+[Discord](https://discord.gg/sdnHHZpWbT)
+[Docs](https://b3dhub.github.io/addons/knife-circle/docs)
+[Changelogs](https://discord.gg/VxUzDvsKvU)

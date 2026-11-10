@@ -113,8 +113,6 @@ KitBash3D and Cargo are trademarks or registered trademarks of KitBash3D in the 
 
 Join our Discord server to stay updated.
 
-[![B3dHub Discord server widget](https://discord.com/api/guilds/959138815602229389/widget.png?theme=dark&style=banner3)](https://discord.gg/sdnHHZpWbT)
-
-## Changelogs
-
-[View Changelogs](https://discord.gg/F3FYWqxvGT)
+[Discord](https://discord.gg/sdnHHZpWbT)
+[Docs](https://b3dhub.github.io/addons/cargo-bridge/docs)
+[Changelogs](https://discord.gg/F3FYWqxvGT)

@@ -90,6 +90,6 @@ All Fab assets and content remain the property of Epic Games, Inc. and are subje
 
 Join our Discord server to stay updated.
 
-[![Discord](https://discord.com/api/guilds/959138815602229389/widget.png?theme=dark&style=banner3)](https://discord.gg/sdnHHZpWbT)
-
+[Discord](https://discord.gg/sdnHHZpWbT)
+[Docs](https://b3dhub.github.io/addons/fab-bridge/docs)
 [Changelogs](https://discord.gg/aZDcxkv7cn)

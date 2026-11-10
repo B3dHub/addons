@@ -14,4 +14,4 @@ Save up to 35%
 
 Join our Discord server to stay updated.
 
-[![B3dHub Discord server widget](https://discord.com/api/guilds/959138815602229389/widget.png?theme=dark&style=banner3)](https://discord.gg/sdnHHZpWbT)
+[Discord](https://discord.gg/sdnHHZpWbT)

@@ -4,7 +4,7 @@ Quick Decal is a powerful Blender addon that allows you to effortlessly add deca
 
 > Disclaimer: Users who have `claimed` or `purchased` Megascans assets through Quixel Bridge can use this add-on.
 
-## Why to choose Quick Decal?
+## Features
 
 - Image Decal
 - Quixel Megascans Decal
@@ -80,8 +80,6 @@ Do not edit or remove the `QDecal Master` node group. It is the core of the addo
 
 Join our Discord server to stay updated.
 
-[![B3dHub Discord server widget](https://discord.com/api/guilds/959138815602229389/widget.png?theme=dark&style=banner3)](https://discord.gg/sdnHHZpWbT)
-
-## Changelogs
-
-[View Changelogs](https://discord.gg/nmf6ewD7HH)
+[Discord](https://discord.gg/sdnHHZpWbT)
+[Docs](https://b3dhub.github.io/addons/quick-decal/docs)
+[Changelogs](https://discord.gg/nmf6ewD7HH)

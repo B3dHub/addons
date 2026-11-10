@@ -120,8 +120,6 @@ Measurements are compatible with Blender units.
 
 Join our Discord server to stay updated.
 
-[![B3dHub Discord server widget](https://discord.com/api/guilds/959138815602229389/widget.png?theme=dark&style=banner3)](https://discord.gg/sdnHHZpWbT)
-
-## Changelogs
-
-[View Changelogs](https://discord.gg/89Vtrk4j2Z)
+[Discord](https://discord.gg/sdnHHZpWbT)
+[Docs](https://b3dhub.github.io/addons/quick-measure/docs)
+[Changelogs](https://discord.gg/89Vtrk4j2Z)

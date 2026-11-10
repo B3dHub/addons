@@ -2,7 +2,7 @@
 
 Blender-to-Unity is a Blender addon that exports objects, animations, colliders, and LODs to Unity Engine. It is designed to be simple and easy to use. You can export your models to Unity with just a few clicks. This addon is perfect for game developers, architects, and 3D artists who want to export their models to Unity Engine. Get Blender-to-Unity today and start exporting your models to Unity with ease!
 
-## Why to choose Blender-to-Unity?
+## Features
 
 - Object Export
 - Collections Export
@@ -158,8 +158,6 @@ To install the `com.unity.nuget.newtonsoft-json` package in Unity:
 
 Join our Discord server to stay updated.
 
-[![B3dHub Discord server widget](https://discord.com/api/guilds/959138815602229389/widget.png?theme=dark&style=banner3)](https://discord.gg/sdnHHZpWbT)
-
-## Changelogs
-
-[View Changelogs](https://discord.gg/cERuAXPv35)
+[Discord](https://discord.gg/sdnHHZpWbT)
+[Docs](https://b3dhub.github.io/addons/blender-to-unity/docs)
+[Changelogs](https://discord.gg/cERuAXPv35)

@@ -4,8 +4,6 @@ ARKit to MetaHuman is a Blender add-on that renames the 52 ARKit facial shape ke
 
 It is made for facial rigs that were authored with ARKit names but need to drive a MetaHuman. No new shape keys are created, no mesh data is edited, and no expressions are changed.
 
-![ARKit to MetaHuman](https://b3dhub.github.io/addons/images/arkit-to-metahuman/thumb.png)
-
 ## Features
 
 - Built-in corrected 52-pair ARKit mapping, plus `Neutral` to `Default`.
@@ -100,14 +98,6 @@ Every run writes `ARKit2MH_report` to **Text Editor > Text** and shows the count
 
 Join our Discord server to stay updated.
 
-[![B3dHub Discord server widget](https://discord.com/api/guilds/959138815602229389/widget.png?theme=dark&style=banner3)](https://discord.gg/sdnHHZpWbT)
-
-## Changelogs
-
-[View Changelogs](https://discord.gg/ydBWfJXSGZ)
-
-## Links
-
-- [Documentation](https://b3dhub.github.io/addons/arkit-to-metahuman/docs)
-- [Superhive](https://superhivemarket.com/products/arkit-to-metahuman)
-- [Gumroad](https://b3dhub.gumroad.com/l/arkit-to-metahuman)
+[Discord](https://discord.gg/sdnHHZpWbT)
+[Docs](https://b3dhub.github.io/addons/arkit-to-metahuman/docs)
+[Changelogs](https://discord.gg/dsZjbKb7tY)

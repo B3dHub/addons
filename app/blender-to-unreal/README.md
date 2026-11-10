@@ -2,7 +2,7 @@
 
 Blender-to-Unreal is a Blender addon that exports objects, animations, collisions, sockets, and LODs to Unreal Engine. It is designed to be simple and easy to use. You can export your models to Unreal Engine with just a few clicks. This addon is perfect for game developers, architects, and 3D artists who want to export their models to Unreal Engine. Get Blender-to-Unreal today and start exporting your models to Unreal Engine with ease!
 
-## Why to choose Blender-to-Unreal?
+## Features
 
 - Object Export
 - Collection Export
@@ -177,8 +177,6 @@ Export objects and collections to Unreal or Disk.
 
 Join our Discord server to stay updated.
 
-[![B3dHub Discord server widget](https://discord.com/api/guilds/959138815602229389/widget.png?theme=dark&style=banner3)](https://discord.gg/sdnHHZpWbT)
-
-## Changelogs
-
-[View Changelogs](https://discord.gg/AEsJRuWrqw)
+[Discord](https://discord.gg/sdnHHZpWbT)
+[Docs](https://b3dhub.github.io/addons/blender-to-unreal/docs)
+[Changelogs](https://discord.gg/AEsJRuWrqw)

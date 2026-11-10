@@ -2,7 +2,7 @@
 
 Blender-to-Godot is a Blender addon that exports objects, animations, collisions and components to Godot Engine. It is designed to be simple and easy to use. You can export your models to Godot Engine with just a few clicks. This addon is perfect for game developers, architects, and 3D artists who want to export their models to Godot Engine. Get Blender-to-Godot today and start exporting your models to Godot Engine with ease!
 
-## Why to choose Blender-to-Godot?
+## Features
 
 - Object Export
 - Collection Export
@@ -160,4 +160,6 @@ Export objects and collections to Godot or Disk.
 
 Join our Discord server to stay updated.
 
-[![B3dHub Discord server widget](https://discord.com/api/guilds/959138815602229389/widget.png?theme=dark&style=banner3)](https://discord.gg/sdnHHZpWbT)
+[Discord](https://discord.gg/sdnHHZpWbT)
+[Docs](https://b3dhub.github.io/addons/blender-to-godot/docs)
+[Changelogs](https://discord.gg/y6ZkUkKV54)

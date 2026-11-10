@@ -2,7 +2,7 @@
 
 Quick Baker is an exceptional PBR texture-baking addon that brilliantly utilizes Blender's native baking operator for baking `PBR`, `Mesh`, `Principled BSDF`, and `Cycles` maps. It significantly enhances the Blender baking process for multiple objects with multiple materials, offering unparalleled efficiency. Capable of baking both high-to-low and low-to-low poly objects. It simplifies the baking process with an ingenious automatic cage setup. Designed with speed and ease-of-use in mind, Quick Baker stands out as the ultimate tool for your baking needs.
 
-## Why to choose Quick Baker?
+## Features
 
 - Object Bake
 - High-to-Low Poly Bake
@@ -124,8 +124,6 @@ Bake 50 unique maps
 
 Join our Discord server to stay updated.
 
-[![B3dHub Discord server widget](https://discord.com/api/guilds/959138815602229389/widget.png?theme=dark&style=banner3)](https://discord.gg/sdnHHZpWbT)
-
-## Changelogs
-
-[View Changelogs](https://discord.gg/ZmEx5sfw68)
+[Discord](https://discord.gg/sdnHHZpWbT)
+[Docs](https://b3dhub.github.io/addons/quick-baker/docs)
+[Changelogs](https://discord.gg/ZmEx5sfw68)
